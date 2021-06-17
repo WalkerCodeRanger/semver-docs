@@ -1,3 +1,5 @@
+#addin nuget:?package=Cake.DocFx&version=1.0.0
+
 var target = Argument("target", "Test");
 var configuration = Argument("configuration", "Release");
 
