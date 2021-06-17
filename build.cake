@@ -1,11 +1,16 @@
 #addin nuget:?package=Cake.DocFx&version=1.0.0
+#tool "nuget:?package=docfx.console&version=2.58.0" 
 
-var target = Argument("target", "Test");
+var target = Argument("target", "Doc");
 var configuration = Argument("configuration", "Release");
 
-//////////////////////////////////////////////////////////////////////
 // TASKS
-//////////////////////////////////////////////////////////////////////
+
+Task("Doc")
+    .Does(() =>
+{
+    DocFxBuild();
+});
 
 Task("Clean")
     .WithCriteria(c => HasArgument("rebuild"))
@@ -35,8 +40,6 @@ Task("Test")
     });
 });
 
-//////////////////////////////////////////////////////////////////////
 // EXECUTION
-//////////////////////////////////////////////////////////////////////
 
 RunTarget(target);
