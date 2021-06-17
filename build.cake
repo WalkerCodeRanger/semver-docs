@@ -9,7 +9,15 @@ var configuration = Argument("configuration", "Release");
 Task("Doc")
     .Does(() =>
 {
+    DocFxMetadata();
     DocFxBuild();
+});
+
+Task("Serve")
+    .IsDependentOn("Doc")
+    .Does(() =>
+{
+    DocFxServe("./_site");
 });
 
 Task("Clean")
