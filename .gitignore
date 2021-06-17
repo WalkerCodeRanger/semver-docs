@@ -1,1 +1,9 @@
 /tools/
+
+# DocFX
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site
