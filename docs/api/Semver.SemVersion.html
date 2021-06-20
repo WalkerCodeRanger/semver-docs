@@ -84,13 +84,31 @@ Conforms with v2.0.0 of <a href="http://semver.org">http://semver.org</a></p>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><span class="xref">IComparable</span></div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Semver.SemVersion.html">SemVersion</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Semver.html">Semver</a></h6>
   <h6><strong>Assembly</strong>: Semver.dll</h6>
   <h5 id="Semver_SemVersion_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class SemVersion : IComparable&lt;SemVersion&gt;, IComparable</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public sealed class SemVersion : IComparable&lt;SemVersion&gt;, IComparable, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -154,15 +172,15 @@ Conforms with v2.0.0 of <a href="http://semver.org">http://semver.org</a></p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/maxhauser/semver/new/v2.0.6/apiSpec/new?filename=Semver_SemVersion__ctor_Version_.md&amp;value=---%0Auid%3A%20Semver.SemVersion.%23ctor(Version)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/maxhauser/semver/new/v2.0.6/apiSpec/new?filename=Semver_SemVersion__ctor_System_Version_.md&amp;value=---%0Auid%3A%20Semver.SemVersion.%23ctor(System.Version)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/maxhauser/semver/blob/v2.0.6/Semver/SemVersion.cs/#L83">View Source</a>
   </span>
   <a id="Semver_SemVersion__ctor_" data-uid="Semver.SemVersion.#ctor*"></a>
-  <h4 id="Semver_SemVersion__ctor_Version_" data-uid="Semver.SemVersion.#ctor(Version)">SemVersion(Version)</h4>
+  <h4 id="Semver_SemVersion__ctor_System_Version_" data-uid="Semver.SemVersion.#ctor(System.Version)">SemVersion(Version)</h4>
   <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class from
-a <see cref="!:System.Version"></see>.</p>
+a <span class="xref">System.Version</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -180,9 +198,9 @@ a <see cref="!:System.Version"></see>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Version</span></td>
+        <td><span class="xref">System.Version</span></td>
         <td><span class="parametername">version</span></td>
-        <td><p>The <see cref="!:Version"></see> that is used to initialize
+        <td><p>The <span class="xref">System.Version</span> that is used to initialize
 the Major, Minor, Patch and Build.</p>
 </td>
       </tr>
@@ -366,7 +384,7 @@ the Major, Minor, Patch and Build.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion Change(int? major = null, int? minor = null, int? patch = null, string prerelease = null, string build = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public SemVersion Change(int? major = default(int? ), int? minor = default(int? ), int? patch = default(int? ), string prerelease = null, string build = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -657,6 +675,22 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">obj</code> is not a <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/maxhauser/semver/new/v2.0.6/apiSpec/new?filename=Semver_SemVersion_Equals_Semver_SemVersion_Semver_SemVersion_.md&amp;value=---%0Auid%3A%20Semver.SemVersion.Equals(Semver.SemVersion%2CSemver.SemVersion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -722,7 +756,7 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
   </span>
   <a id="Semver_SemVersion_Equals_" data-uid="Semver.SemVersion.Equals*"></a>
   <h4 id="Semver_SemVersion_Equals_System_Object_" data-uid="Semver.SemVersion.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the specified <see cref="!:System.Object"></see> is equal to this instance.</p>
+  <div class="markdown level1 summary"><p>Determines whether the specified <span class="xref">System.Object</span> is equal to this instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -742,7 +776,7 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">obj</span></td>
-        <td><p>The <see cref="!:System.Object"></see> to compare with this instance.</p>
+        <td><p>The <span class="xref">System.Object</span> to compare with this instance.</p>
 </td>
       </tr>
     </tbody>
@@ -758,7 +792,25 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the specified <see cref="!:System.Object"></see> is equal to this instance, otherwise <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the specified <span class="xref">System.Object</span> is equal to this instance, otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">obj</code> is not a <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -791,6 +843,49 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/maxhauser/semver/new/v2.0.6/apiSpec/new?filename=Semver_SemVersion_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_.md&amp;value=---%0Auid%3A%20Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo%2CSystem.Runtime.Serialization.StreamingContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/maxhauser/semver/blob/v2.0.6/Semver/SemVersion.cs/#L487">View Source</a>
+  </span>
+  <a id="Semver_SemVersion_GetObjectData_" data-uid="Semver.SemVersion.GetObjectData*"></a>
+  <h4 id="Semver_SemVersion_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_" data-uid="Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">GetObjectData(SerializationInfo, StreamingContext)</h4>
+  <div class="markdown level1 summary"><p>Populates a <span class="xref">System.Runtime.Serialization.SerializationInfo</span> with the data needed to serialize the target object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SecurityPermission(SecurityAction.Demand, SerializationFormatter = true)]
+public void GetObjectData(SerializationInfo info, StreamingContext context)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.SerializationInfo</span></td>
+        <td><span class="parametername">info</span></td>
+        <td><p>The <span class="xref">System.Runtime.Serialization.SerializationInfo</span> to populate with data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Runtime.Serialization.StreamingContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>The destination (see <span class="xref">System.Runtime.Serialization.SerializationInfo</span>) for this serialization.</p>
 </td>
       </tr>
     </tbody>
@@ -848,6 +943,37 @@ otherwise they are optional.</p>
       <tr>
         <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
         <td><p>The <a class="xref" href="Semver.SemVersion.html">SemVersion</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">version</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">version</code> has an invalid format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">version</code> is missing Minor or Patch versions and <code data-dev-comment-type="paramref" class="paramref">strict</code> is <span class="xref">true</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>The Major, Minor, or Patch versions are larger than <pre><code>int.MaxValue</code></pre>.</p>
 </td>
       </tr>
     </tbody>
@@ -912,7 +1038,7 @@ that differ only by build metadata have the same precedence.</p>
   </span>
   <a id="Semver_SemVersion_ToString_" data-uid="Semver.SemVersion.ToString*"></a>
   <h4 id="Semver_SemVersion_ToString" data-uid="Semver.SemVersion.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns the <see cref="!:System.String"></see> equivalent of this version.</p>
+  <div class="markdown level1 summary"><p>Returns the <span class="xref">System.String</span> equivalent of this version.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -930,11 +1056,13 @@ that differ only by build metadata have the same precedence.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The <see cref="!:System.String"></see> equivalent of this version.</p>
+        <td><p>The <span class="xref">System.String</span> equivalent of this version.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/maxhauser/semver/new/v2.0.6/apiSpec/new?filename=Semver_SemVersion_TryParse_System_String_Semver_SemVersion__System_Boolean_.md&amp;value=---%0Auid%3A%20Semver.SemVersion.TryParse(System.String%2CSemver.SemVersion%40%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
@@ -1180,7 +1308,7 @@ otherwise they are optional.</p>
   </span>
   <a id="Semver_SemVersion_op_Implicit_" data-uid="Semver.SemVersion.op_Implicit*"></a>
   <h4 id="Semver_SemVersion_op_Implicit_System_String__Semver_SemVersion" data-uid="Semver.SemVersion.op_Implicit(System.String)~Semver.SemVersion">Implicit(String to SemVersion)</h4>
-  <div class="markdown level1 summary"><p>Implicit conversion from <see cref="!:System.String"></see> to <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+  <div class="markdown level1 summary"><p>Implicit conversion from <span class="xref">System.String</span> to <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1217,6 +1345,32 @@ otherwise they are optional.</p>
       <tr>
         <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
         <td><p>The <a class="xref" href="Semver.SemVersion.html">SemVersion</a> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">version</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>The version number has an invalid format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>The Major, Minor, or Patch versions are larger than <pre><code>int.MaxValue</code></pre>.</p>
 </td>
       </tr>
     </tbody>
@@ -1391,7 +1545,13 @@ otherwise they are optional.</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <span class="xref">IComparable</span>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <span class="xref">System.Runtime.Serialization.ISerializable</span>
   </div>
 </article>
           </div>
@@ -1404,7 +1564,7 @@ otherwise they are optional.</p>
                     <a href="https://github.com/maxhauser/semver/new/v2.0.6/apiSpec/new?filename=Semver_SemVersion.md&amp;value=---%0Auid%3A%20Semver.SemVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/maxhauser/semver/blob/v2.0.6/Semver/SemVersion.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/maxhauser/semver/blob/v2.0.6/Semver/SemVersion.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

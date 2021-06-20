@@ -19,11 +19,11 @@ references:
   commentId: M:Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
   fullName: Semver.SemVersion.SemVersion(System.Int32, System.Int32, System.Int32, System.String, System.String)
   nameWithType: SemVersion.SemVersion(Int32, Int32, Int32, String, String)
-- uid: Semver.SemVersion.#ctor(Version)
+- uid: Semver.SemVersion.#ctor(System.Version)
   name: SemVersion(Version)
-  href: api/Semver.SemVersion.html#Semver_SemVersion__ctor_Version_
-  commentId: M:Semver.SemVersion.#ctor(Version)
-  fullName: Semver.SemVersion.SemVersion(Version)
+  href: api/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Version_
+  commentId: M:Semver.SemVersion.#ctor(System.Version)
+  fullName: Semver.SemVersion.SemVersion(System.Version)
   nameWithType: SemVersion.SemVersion(Version)
 - uid: Semver.SemVersion.#ctor*
   name: SemVersion
@@ -138,6 +138,19 @@ references:
   isSpec: "True"
   fullName: Semver.SemVersion.GetHashCode
   nameWithType: SemVersion.GetHashCode
+- uid: Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: api/Semver.SemVersion.html#Semver_SemVersion_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: SemVersion.GetObjectData(SerializationInfo, StreamingContext)
+- uid: Semver.SemVersion.GetObjectData*
+  name: GetObjectData
+  href: api/Semver.SemVersion.html#Semver_SemVersion_GetObjectData_
+  commentId: Overload:Semver.SemVersion.GetObjectData
+  isSpec: "True"
+  fullName: Semver.SemVersion.GetObjectData
+  nameWithType: SemVersion.GetObjectData
 - uid: Semver.SemVersion.Major
   name: Major
   href: api/Semver.SemVersion.html#Semver_SemVersion_Major

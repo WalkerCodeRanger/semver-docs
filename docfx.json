@@ -8,7 +8,10 @@
         "dest": "api",
         "disableGitFeatures": false,
         "disableDefaultFilter": false,
-        "force": true
+        "force": true,
+        "properties": {
+            "TargetFramework": "net452"
+        }
     }],
     "build": {
         "content": [{
