@@ -9,6 +9,7 @@ var configuration = Argument("configuration", "Release");
 Task("Doc")
     .Does(() =>
 {
+    Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "v2.0.6");
     DocFxMetadata();
     DocFxBuild();
 });
