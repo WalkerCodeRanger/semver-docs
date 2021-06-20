@@ -17,7 +17,7 @@ Task("Serve")
     .IsDependentOn("Doc")
     .Does(() =>
 {
-    DocFxServe("./_site");
+    DocFxServe("./docs");
 });
 
 Task("Clean")
