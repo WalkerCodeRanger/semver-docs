@@ -20,10 +20,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Semver.SemVersion.html",
-          "hash": "zIyRC4UpEowEwWUbOXRdfa123Nh7HGmM/t3CzaF93k8="
+          "hash": "6PHHIpgbJBrJk9a/4KTtHMAmD7ll7Nl9N7wVtnmY0gw="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -32,10 +32,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Semver.html",
-          "hash": "3Rhp1alvXWnikFDI1gGq3n3L2lSwtiAYCt73bFaxTqo="
+          "hash": "tvirzE+NGvO1ZcD0DLDeY8i6qx6Weeez1iyH+Tx/kpE="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -44,7 +44,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "qR8+bYeEFNB9vdIQ7t4dnFXPWOa8Uugyr5615Gc4CS8="
+          "hash": "6C08/yMWX7q2Yg6GKIv+PWCs2QvaRePV5dHed4A/b5I="
         }
       },
       "is_incremental": true,
@@ -68,7 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "a489E70GJ5cqDQfXnB/moFq61mwVFhHm+HflEEdyBEI="
+          "hash": "45n/vfJE2Xh6sAy5ctWxHT9TZSMcx3uDOROFImm8tI0="
         }
       },
       "is_incremental": true,
@@ -106,7 +106,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 1
+          "skipped_file_count": 2
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
