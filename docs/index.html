@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>This is the HOMEPAGE </title>
+    <title>A Semantic Version Library for .Net </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="This is the HOMEPAGE ">
+    <meta name="title" content="A Semantic Version Library for .Net ">
     <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -60,13 +60,41 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong></h1>
+<h1 id="a-semantic-version-library-for-net">A Semantic Version Library for .Net</h1>
 
-<p>Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for how to write markdown files.</p>
-<h2 id="quick-start-notes">Quick Start Notes:</h2>
-<ol>
-<li>Add images to the <em>images</em> folder if the file is referencing an image.</li>
-</ol>
+<p>This library implements the SemVersion class, which complies with v2.0.0 of the spec from <a href="http://semver.org">semver.org</a>.</p>
+<ul>
+<li><a href="https://www.nuget.org/packages/semver"><code>semver</code> NuGet Package</a></li>
+<li><a href="https://github.com/maxhauser/semver">GitHub Project</a></li>
+<li><a href="https://github.com/WalkerCodeRanger/semver-docs">Source Code for Doc Website</a></li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>With the NuGet console:</p>
+<pre><code class="lang-powershell">Install-Package semver
+</code></pre>
+<h2 id="parsing">Parsing</h2>
+<pre><code class="lang-csharp">var version = SemVersion.Parse(&quot;1.1.0-rc.1+nightly.2345&quot;, SemVersionStyles.Strict);
+</code></pre>
+<h2 id="constructing">Constructing</h2>
+<pre><code class="lang-csharp">var v1 = new SemVersion(1, 0);
+</code></pre>
+<h2 id="comparing">Comparing</h2>
+<pre><code class="lang-csharp">if (version &lt; v1)
+    Console.WriteLine($&quot;Initial development version {version}!&quot;);
+</code></pre>
+<h2 id="manipulating">Manipulating</h2>
+<pre><code class="lang-csharp">Console.WriteLine($&quot;Current: {version}&quot;);
+if (version.IsPrerelease)
+{
+    Console.WriteLine($&quot;Prerelease: {version.Prerelease}&quot;);
+    Console.WriteLine($&quot;Next release version is: {version.WithoutPrereleaseOrMetadata()}&quot;);
+}
+</code></pre>
+<p>Outputs:</p>
+<pre><code class="lang-text">Current: 1.1.0-rc.1+nightly.2345
+Prerelease: rc.1
+Next release version is: 1.1.0
+</code></pre>
 </article>
           </div>
           
