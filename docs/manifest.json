@@ -15,72 +15,48 @@
       "version": ""
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Semver.SemVersion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Semver.SemVersion.html",
-          "hash": "6PHHIpgbJBrJk9a/4KTtHMAmD7ll7Nl9N7wVtnmY0gw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Semver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Semver.html",
-          "hash": "tvirzE+NGvO1ZcD0DLDeY8i6qx6Weeez1iyH+Tx/kpE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "api/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/index.html",
-          "hash": "6C08/yMWX7q2Yg6GKIv+PWCs2QvaRePV5dHed4A/b5I="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "kDHWVa4K3VC9mvBUaboYyDZOeErmsvtI4IRwpii0caE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "EaoniNtP7ThQQR12VmmbRTLeDR7Q7qPsy260ICBkhnM="
+          "hash": "sGRX5/Wx1eSVwY0q9gNFvoSpYqqE6RoBH7A7syKGcJM="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "toc.yml",
+      "type": "ManagedReference",
+      "source_relative_path": "metadata/v2.0.x/Semver.SemVersion.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "q0tH1CqjB832ZNnwMIWWO0ZcGDHzltvclIfHjXOjzMQ="
+          "relative_path": "v2.0.x/api/Semver.SemVersion.html",
+          "hash": "/bKrw2VszPLuyilFRPpmqOM6WsAP8w+XfVsl/zqswd0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "metadata/v2.0.x/Semver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.0.x/api/Semver.html",
+          "hash": "5OhFz+V/T7oBLW5+61rgLW3Eoe+4okXDRnYhLMXDoWQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "metadata/v2.0.x/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "v2.0.x/api/index.html",
+          "hash": "ympeenSv3/mDOWkRM87nGiTibf5Az5LaMI1WRlsiGNA="
         }
       },
       "is_incremental": false,
@@ -90,23 +66,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
@@ -126,8 +104,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

@@ -3,9 +3,9 @@
     [{
         "src": 
         [{
-            "files": [ "src/Semver/**.csproj" ]
+            "files": [ "src/v2.0.x/Semver/**.csproj" ]
         }],
-        "dest": "api",
+        "dest": "metadata/v2.0.x",
         "disableGitFeatures": false,
         "disableDefaultFilter": false,
         "force": true,
@@ -16,10 +16,12 @@
         "content":
         [
             {
+                "src": "metadata/v2.0.x",
+                "dest": "v2.0.x/api",
                 "files":
                 [
-                    "api/**.yml",
-                    "api/index.md"
+                    "**.yml",
+                    "index.md"
                 ]
             },
             {
@@ -49,7 +51,7 @@
         "dest": "docs",
         "globalMetadataFiles": [],
         "fileMetadataFiles": [],
-        "template": [ "default" ],
+        "template": [ "statictoc" ],
         "postProcessors": [],
         "markdownEngineName": "markdig",
         "noLangKeyword": false,

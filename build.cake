@@ -14,14 +14,7 @@ Task("metadata")
 });
 
 Task("build")
-    .IsDependentOn("Metadata")
-    .Does(() =>
-{
-    DocFxBuild();
-});
-
-Task("rebuild")
-    .IsDependentOn("Metadata")
+    .IsDependentOn("metadata")
     .Does(() =>
 {
     DocFxBuild(new DocFxBuildSettings()
@@ -31,7 +24,7 @@ Task("rebuild")
 });
 
 Task("serve")
-    .IsDependentOn("Build")
+    .IsDependentOn("build")
     .Does(() =>
 {
     DocFxServe("./docs");

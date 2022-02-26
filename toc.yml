@@ -1,8 +1,4 @@
-- name: API
-  items:
-    - name: v2.0.x
-      href: api/
-    - name: dev
-      href: api/
-- name: Baz
-  href: http://semver.org
+- name: v2.0.x
+  href: v2.0.x/api
+- name: dev
+  href: api/
