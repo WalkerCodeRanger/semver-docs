@@ -1,42 +1,46 @@
 {
-    "metadata": [{
-        "src": [{
-            "files": [
-                "src/Semver/**.csproj"
-            ]
+    "metadata": 
+    [{
+        "src": 
+        [{
+            "files": [ "src/Semver/**.csproj" ]
         }],
         "dest": "api",
         "disableGitFeatures": false,
         "disableDefaultFilter": false,
         "force": true,
-        "properties": {
-            "TargetFramework": "net452"
-        }
+        "properties": { "TargetFramework": "net452" }
     }],
-    "build": {
-        "content": [{
-                "files": [
+    "build":
+    {
+        "content":
+        [
+            {
+                "files":
+                [
                     "api/**.yml",
                     "api/index.md"
                 ]
             },
             {
-                "files": [
+                "files":
+                [
                     "toc.yml",
                     "*.md"
-                ]
+                ],
+                "exclude": [ "README.md" ]
             }
         ],
-        "resource": [{
+        "resource":
+        [{
             "files": [
                 "images/**",
                 "CNAME"
             ]
         }],
-        "overwrite": [{
-            "files": [
-                "apidoc/**.md"
-            ],
+        "overwrite":
+        [{
+            "files": [ "apidoc/**.md" ],
             "exclude": [
                 "obj/**",
                 "docs/**"
@@ -45,9 +49,7 @@
         "dest": "docs",
         "globalMetadataFiles": [],
         "fileMetadataFiles": [],
-        "template": [
-            "default"
-        ],
+        "template": [ "default" ],
         "postProcessors": [],
         "markdownEngineName": "markdig",
         "noLangKeyword": false,

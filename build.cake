@@ -1,53 +1,42 @@
 #addin nuget:?package=Cake.DocFx&version=1.0.0
 #tool "nuget:?package=docfx.console&version=2.59.0" 
 
-var target = Argument("target", "Doc");
+var target = Argument("target", "build");
 var configuration = Argument("configuration", "Release");
 
 // TASKS
 
-Task("Doc")
+Task("metadata")
     .Does(() =>
 {
     Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "v2.0.6");
     DocFxMetadata();
+});
+
+Task("build")
+    .IsDependentOn("Metadata")
+    .Does(() =>
+{
     DocFxBuild();
 });
 
-Task("Serve")
-    .IsDependentOn("Doc")
+Task("rebuild")
+    .IsDependentOn("Metadata")
+    .Does(() =>
+{
+    DocFxBuild(new DocFxBuildSettings()
+    {
+        Force = true,
+    });
+});
+
+Task("serve")
+    .IsDependentOn("Build")
     .Does(() =>
 {
     DocFxServe("./docs");
 });
 
-Task("Clean")
-    .WithCriteria(c => HasArgument("rebuild"))
-    .Does(() =>
-{
-    CleanDirectory($"./src/Example/bin/{configuration}");
-});
-
-Task("Build")
-    .IsDependentOn("Clean")
-    .Does(() =>
-{
-    DotNetCoreBuild("./src/Example.sln", new DotNetCoreBuildSettings
-    {
-        Configuration = configuration,
-    });
-});
-
-Task("Test")
-    .IsDependentOn("Build")
-    .Does(() =>
-{
-    DotNetCoreTest("./src/Example.sln", new DotNetCoreTestSettings
-    {
-        Configuration = configuration,
-        NoBuild = true,
-    });
-});
 
 // EXECUTION
 
