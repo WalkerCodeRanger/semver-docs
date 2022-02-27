@@ -5,17 +5,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>A Semantic Version Library for .Net | semver </title>
+    <title>PLACEHOLDER | semver </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="A Semantic Version Library for .Net | semver ">
+    <meta name="title" content="PLACEHOLDER | semver ">
     <meta name="generator" content="docfx 2.59.0.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -60,35 +60,37 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="placeholder">PLACEHOLDER</h1>
 
-<p><a href="https://ci.appveyor.com/project/maxhauser/semver/branch/master"><img src="https://ci.appveyor.com/api/projects/status/kek3h7gflo3qqidb/branch/master?svg=true" alt="Build Status"></a>
-<a href="https://www.nuget.org/packages/semver/"><img src="https://img.shields.io/nuget/v/semver.svg" alt="NuGet"></a></p>
-<h1 id="a-semantic-version-library-for-net">A Semantic Version Library for .Net</h1>
-<p>This library implements the <code>SemVersion</code> class, which
-complies with v2.0.0 of the spec from <a href="http://semver.org.">http://semver.org.</a></p>
-<h2 id="installation">Installation</h2>
-<p>With the NuGet console:</p>
-<pre><code class="lang-powershell">Install-Package semver
-</code></pre>
+<p>Placeholder for v2.1.x docs</p>
 <h2 id="parsing">Parsing</h2>
-<pre><code class="lang-csharp">var version = SemVersion.Parse(&quot;1.1.0-rc.1+nightly.2345&quot;);
+<pre><code class="lang-csharp">var version = SemVersion.Parse(&quot;1.1.0-rc.1+nightly.2345&quot;, SemVersionStyles.Strict);
+</code></pre>
+<h2 id="constructing">Constructing</h2>
+<pre><code class="lang-csharp">var v1 = new SemVersion(1, 0);
 </code></pre>
 <h2 id="comparing">Comparing</h2>
-<pre><code class="lang-csharp">if(version &gt;= &quot;1.0&quot;)
-    Console.WriteLine(&quot;released version {0}!&quot;, version)
+<pre><code class="lang-csharp">if (version &lt; v1)
+    Console.WriteLine($&quot;Initial development version {version}!&quot;);
+</code></pre>
+<h2 id="manipulating">Manipulating</h2>
+<pre><code class="lang-csharp">Console.WriteLine($&quot;Current: {version}&quot;);
+if (version.IsPrerelease)
+{
+    Console.WriteLine($&quot;Prerelease: {version.Prerelease}&quot;);
+    Console.WriteLine($&quot;Next release version is: {version.WithoutPrereleaseOrMetadata()}&quot;);
+}
+</code></pre>
+<p>Outputs:</p>
+<pre><code class="lang-text">Current: 1.1.0-rc.1+nightly.2345
+Prerelease: rc.1
+Next release version is: 1.1.0
 </code></pre>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/maxhauser/semver/blob/9398386011b84642e5da0c17b681ecfd6d79d81c/README.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -112,8 +114,8 @@ complies with v2.0.0 of the spec from <a href="http://semver.org.">http://semver
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

@@ -1,4 +1,15 @@
 {
+    "metadata": 
+    [{
+        "src": 
+        [{
+            "src": "src/v2.0.6",
+            "files": [ "Semver/**.csproj" ]
+        }],
+        "dest": "metadata/v2.0.6/net452",
+        "force": true,
+        "properties": { "TargetFramework": "net452" }
+    }],
     "build":
     {
         "content":
@@ -6,20 +17,14 @@
             {
                 "src": "metadata/v2.0.6/net452",
                 "dest": "v2.0.x",
-                "files": [ "**.yml" ],
-                "version": "v2.0.x"
-            },
-            {
-                "src": "metadata/release-2.1/net452",
-                "dest": "dev",
-                "files": [ "**.yml" ],
-                "version": "dev"
+                "files": [ "**.yml" ]
             },
             {
                 "files":
                 [
                     "toc.yml",
-                    "**/*.md"
+                    "*.md",
+                    "v*/*.md"
                 ],
                 "exclude": [ "README.md" ]
             }
@@ -42,10 +47,10 @@
         "dest": "docs",
         "globalMetadata":
         {
-            "_disableContribution": false,
+            "_disableContribution": true,
             "_appTitle": "semver"
         },
-        "globalMetadataFiles": [],
+        "globalMetadataFiles": [ ],
         "fileMetadataFiles": [],
         "template": [ "default" ],
         "postProcessors": [],

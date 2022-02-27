@@ -1,11 +1,7 @@
 {
   "homepages": [],
   "source_base_path": "C:/dataFast/hobbies/semver-docs",
-  "xrefmap": [
-    "xrefmap.yml",
-    "v2.0.x.xrefmap.yml",
-    "dev.xrefmap.yml"
-  ],
+  "xrefmap": "xrefmap.yml",
   "files": [
     {
       "type": "Resource",
@@ -20,105 +16,15 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "dev/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "dev/index.html",
-          "hash": "NxaOMPjdKBcwS1Swg9pl/7Sf9tm9U82YK5RThaMXBp8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "Spx3stDA1NEr0l0lQRZC9EClczO4/wn0QGdqq5HMgbg="
+          "hash": "+czrHETcoWHLnnI/BF0xnOVX521/pIgIxD3ECwab26I="
         }
       },
       "is_incremental": false,
       "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "metadata/release-2.1/net452/Semver.MetadataIdentifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "dev/Semver.MetadataIdentifier.html",
-          "hash": "Vtksx8MQZFKMby1/WrQfemHqovmWtxkqu+GAvgqFt/M="
-        }
-      },
-      "is_incremental": false,
-      "version": "dev",
-      "group": "dev"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "metadata/release-2.1/net452/Semver.PrereleaseIdentifier.yml",
-      "output": {
-        ".html": {
-          "relative_path": "dev/Semver.PrereleaseIdentifier.html",
-          "hash": "td8ZRKF8WaoGDBcuSxh7D32DgtuZWzCOT5Ah0thkwY0="
-        }
-      },
-      "is_incremental": false,
-      "version": "dev",
-      "group": "dev"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "metadata/release-2.1/net452/Semver.SemVersion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "dev/Semver.SemVersion.html",
-          "hash": "CtTJmFym1z7Jy2bbsH2sZr1Jo4Tab3SKq8IWJo+Fogo="
-        }
-      },
-      "is_incremental": false,
-      "version": "dev",
-      "group": "dev"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "metadata/release-2.1/net452/Semver.SemVersionStyles.yml",
-      "output": {
-        ".html": {
-          "relative_path": "dev/Semver.SemVersionStyles.html",
-          "hash": "KPpLwLR8iYPjPYWiEDv5XtRcLt6iZqTeDH3EvtHbJnI="
-        }
-      },
-      "is_incremental": false,
-      "version": "dev",
-      "group": "dev"
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "metadata/release-2.1/net452/Semver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "dev/Semver.html",
-          "hash": "MW9YqJX5bSNhjb7YtEQ4xY0F5DZjXr0MuU6BiZadauU="
-        }
-      },
-      "is_incremental": false,
-      "version": "dev",
-      "group": "dev"
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "metadata/release-2.1/net452/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "dev/toc.html",
-          "hash": "PE+VXQzBDQftOUUecSI8cKdWabmm6m9OT6kderz+vpM="
-        }
-      },
-      "is_incremental": false,
-      "version": "dev",
-      "group": "dev"
     },
     {
       "type": "ManagedReference",
@@ -126,12 +32,11 @@
       "output": {
         ".html": {
           "relative_path": "v2.0.x/Semver.SemVersion.html",
-          "hash": "d4kDtcU4kFD6U4ubeFGx576ThzYLZbt0z2gxLbnkDhQ="
+          "hash": "4ihkkQhk1IUeRV4Q627XkpWouO6MaOAMVK7tegUllc4="
         }
       },
       "is_incremental": false,
-      "version": "v2.0.x",
-      "group": "v2.0.x"
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -139,12 +44,11 @@
       "output": {
         ".html": {
           "relative_path": "v2.0.x/Semver.html",
-          "hash": "kIShdce3k9ArjmbjExReg96KRiRbdd5Wykip9hwJQhY="
+          "hash": "/OlFk/fknKJ0mDxqUxg3oP525E1R2cVKEQaa/FM2mM4="
         }
       },
       "is_incremental": false,
-      "version": "v2.0.x",
-      "group": "v2.0.x"
+      "version": ""
     },
     {
       "type": "Toc",
@@ -156,52 +60,18 @@
         }
       },
       "is_incremental": false,
-      "version": "v2.0.x",
-      "group": "v2.0.x"
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "src/release-2.1/CONTRIBUTING.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/release-2.1/CONTRIBUTING.html",
-          "hash": "uWjB441MN69mkcgBc/dz4GTogtBm5sSNt1FnaGxUMOM="
-        }
-      },
-      "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "src/release-2.1/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/release-2.1/README.html",
-          "hash": "pEhoNDRoC9rrA9RDETX/YQhsQ0mmtvwV7ZJjv6m7NqE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "src/v2.0.6/README.md",
-      "output": {
-        ".html": {
-          "relative_path": "src/v2.0.6/README.html",
-          "hash": "L3Xy0ixWwUtqiD8Mn2FsxCJsLPDpEbSIYzmArBJmPqk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "gAwdHa+S+/BwWkgDz3cq9anFU1OzWBKBWkfjo78KUF0="
+          "hash": "wu0SEdPLOVAsDIS9v+o7ItQPQvZVJ0p2N3vRTTA0f3c="
         }
       },
       "is_incremental": false,
@@ -209,59 +79,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "tools/docfx.console.2.59.0/content/api/index.md",
+      "source_relative_path": "v2.1.x/index.md",
       "output": {
         ".html": {
-          "relative_path": "tools/docfx.console.2.59.0/content/api/index.html",
-          "hash": "Nc2a3lgaXMxTN9EW7zvsy9Zx3/yvskxIFRcWEzJsMRk="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tools/docfx.console.2.59.0/content/articles/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "tools/docfx.console.2.59.0/content/articles/intro.html",
-          "hash": "bUtRwaiR9YCKw1EIXbAXI2duJkPoit87Y4JY1adKxN8="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "tools/docfx.console.2.59.0/content/articles/toc.md",
-      "output": {
-        ".html": {
-          "relative_path": "tools/docfx.console.2.59.0/content/articles/toc.html",
-          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "tools/docfx.console.2.59.0/content/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "tools/docfx.console.2.59.0/content/index.html",
-          "hash": "3Xyg4JWlsUtcJekHqsdOd/BVEisuhvPGihDt6vyqjBw="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v2.0.x/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "v2.0.x/index.html",
-          "hash": "OLOji4onItXJwbioCxLdooeOyXrfGxqhMLpLkeeKB2Y="
+          "relative_path": "v2.1.x/index.html",
+          "hash": "ohTz6xEU1sqYfoC1OsQL875MGoSRSLcdAgZ3mfBTZgQ="
         }
       },
       "is_incremental": false,
@@ -282,7 +104,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 9,
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
@@ -290,56 +118,6 @@
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
           "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
-      },
-      "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 2,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
-      },
-      "processors": {
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
@@ -362,21 +140,10 @@
       "processors": {}
     }
   ],
-  "version_info": {
-    "v2.0.x": {},
-    "dev": {}
-  },
+  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
-    },
-    {
-      "name": "v2.0.x",
-      "xrefmap": "v2.0.x.xrefmap.yml"
-    },
-    {
-      "name": "dev",
-      "xrefmap": "dev.xrefmap.yml"
     }
   ]
 }

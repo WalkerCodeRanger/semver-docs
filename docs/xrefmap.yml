@@ -1,3 +1,357 @@
 ### YamlMime:XRefMap
 sorted: true
-references: []
+references:
+- uid: Semver
+  name: Semver
+  href: v2.0.x/Semver.html
+  commentId: N:Semver
+  fullName: Semver
+  nameWithType: Semver
+- uid: Semver.SemVersion
+  name: SemVersion
+  href: v2.0.x/Semver.SemVersion.html
+  commentId: T:Semver.SemVersion
+  fullName: Semver.SemVersion
+  nameWithType: SemVersion
+- uid: Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
+  name: SemVersion(Int32, Int32, Int32, String, String)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_
+  commentId: M:Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
+  fullName: Semver.SemVersion.SemVersion(System.Int32, System.Int32, System.Int32, System.String, System.String)
+  nameWithType: SemVersion.SemVersion(Int32, Int32, Int32, String, String)
+- uid: Semver.SemVersion.#ctor(System.Version)
+  name: SemVersion(Version)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Version_
+  commentId: M:Semver.SemVersion.#ctor(System.Version)
+  fullName: Semver.SemVersion.SemVersion(System.Version)
+  nameWithType: SemVersion.SemVersion(Version)
+- uid: Semver.SemVersion.#ctor*
+  name: SemVersion
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion__ctor_
+  commentId: Overload:Semver.SemVersion.#ctor
+  isSpec: "True"
+  fullName: Semver.SemVersion.SemVersion
+  nameWithType: SemVersion.SemVersion
+- uid: Semver.SemVersion.Build
+  name: Build
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Build
+  commentId: P:Semver.SemVersion.Build
+  fullName: Semver.SemVersion.Build
+  nameWithType: SemVersion.Build
+- uid: Semver.SemVersion.Build*
+  name: Build
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Build_
+  commentId: Overload:Semver.SemVersion.Build
+  isSpec: "True"
+  fullName: Semver.SemVersion.Build
+  nameWithType: SemVersion.Build
+- uid: Semver.SemVersion.Change(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)
+  name: Change(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Change_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_
+  commentId: M:Semver.SemVersion.Change(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)
+  name.vb: Change(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String)
+  fullName: Semver.SemVersion.Change(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.String, System.String)
+  fullName.vb: Semver.SemVersion.Change(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.String, System.String)
+  nameWithType: SemVersion.Change(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String)
+  nameWithType.vb: SemVersion.Change(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String)
+- uid: Semver.SemVersion.Change*
+  name: Change
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Change_
+  commentId: Overload:Semver.SemVersion.Change
+  isSpec: "True"
+  fullName: Semver.SemVersion.Change
+  nameWithType: SemVersion.Change
+- uid: Semver.SemVersion.Compare(Semver.SemVersion,Semver.SemVersion)
+  name: Compare(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Compare_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.Compare(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.Compare(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.Compare(SemVersion, SemVersion)
+- uid: Semver.SemVersion.Compare*
+  name: Compare
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Compare_
+  commentId: Overload:Semver.SemVersion.Compare
+  isSpec: "True"
+  fullName: Semver.SemVersion.Compare
+  nameWithType: SemVersion.Compare
+- uid: Semver.SemVersion.CompareByPrecedence(Semver.SemVersion)
+  name: CompareByPrecedence(SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_CompareByPrecedence_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.CompareByPrecedence(Semver.SemVersion)
+  fullName: Semver.SemVersion.CompareByPrecedence(Semver.SemVersion)
+  nameWithType: SemVersion.CompareByPrecedence(SemVersion)
+- uid: Semver.SemVersion.CompareByPrecedence*
+  name: CompareByPrecedence
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_CompareByPrecedence_
+  commentId: Overload:Semver.SemVersion.CompareByPrecedence
+  isSpec: "True"
+  fullName: Semver.SemVersion.CompareByPrecedence
+  nameWithType: SemVersion.CompareByPrecedence
+- uid: Semver.SemVersion.CompareTo(Semver.SemVersion)
+  name: CompareTo(SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_CompareTo_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.CompareTo(Semver.SemVersion)
+  fullName: Semver.SemVersion.CompareTo(Semver.SemVersion)
+  nameWithType: SemVersion.CompareTo(SemVersion)
+- uid: Semver.SemVersion.CompareTo(System.Object)
+  name: CompareTo(Object)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_CompareTo_System_Object_
+  commentId: M:Semver.SemVersion.CompareTo(System.Object)
+  fullName: Semver.SemVersion.CompareTo(System.Object)
+  nameWithType: SemVersion.CompareTo(Object)
+- uid: Semver.SemVersion.CompareTo*
+  name: CompareTo
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_CompareTo_
+  commentId: Overload:Semver.SemVersion.CompareTo
+  isSpec: "True"
+  fullName: Semver.SemVersion.CompareTo
+  nameWithType: SemVersion.CompareTo
+- uid: Semver.SemVersion.Equals(Semver.SemVersion,Semver.SemVersion)
+  name: Equals(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Equals_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.Equals(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.Equals(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.Equals(SemVersion, SemVersion)
+- uid: Semver.SemVersion.Equals(System.Object)
+  name: Equals(Object)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Equals_System_Object_
+  commentId: M:Semver.SemVersion.Equals(System.Object)
+  fullName: Semver.SemVersion.Equals(System.Object)
+  nameWithType: SemVersion.Equals(Object)
+- uid: Semver.SemVersion.Equals*
+  name: Equals
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Equals_
+  commentId: Overload:Semver.SemVersion.Equals
+  isSpec: "True"
+  fullName: Semver.SemVersion.Equals
+  nameWithType: SemVersion.Equals
+- uid: Semver.SemVersion.GetHashCode
+  name: GetHashCode()
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_GetHashCode
+  commentId: M:Semver.SemVersion.GetHashCode
+  fullName: Semver.SemVersion.GetHashCode()
+  nameWithType: SemVersion.GetHashCode()
+- uid: Semver.SemVersion.GetHashCode*
+  name: GetHashCode
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_GetHashCode_
+  commentId: Overload:Semver.SemVersion.GetHashCode
+  isSpec: "True"
+  fullName: Semver.SemVersion.GetHashCode
+  nameWithType: SemVersion.GetHashCode
+- uid: Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_GetObjectData_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: SemVersion.GetObjectData(SerializationInfo, StreamingContext)
+- uid: Semver.SemVersion.GetObjectData*
+  name: GetObjectData
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_GetObjectData_
+  commentId: Overload:Semver.SemVersion.GetObjectData
+  isSpec: "True"
+  fullName: Semver.SemVersion.GetObjectData
+  nameWithType: SemVersion.GetObjectData
+- uid: Semver.SemVersion.Major
+  name: Major
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Major
+  commentId: P:Semver.SemVersion.Major
+  fullName: Semver.SemVersion.Major
+  nameWithType: SemVersion.Major
+- uid: Semver.SemVersion.Major*
+  name: Major
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Major_
+  commentId: Overload:Semver.SemVersion.Major
+  isSpec: "True"
+  fullName: Semver.SemVersion.Major
+  nameWithType: SemVersion.Major
+- uid: Semver.SemVersion.Minor
+  name: Minor
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Minor
+  commentId: P:Semver.SemVersion.Minor
+  fullName: Semver.SemVersion.Minor
+  nameWithType: SemVersion.Minor
+- uid: Semver.SemVersion.Minor*
+  name: Minor
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Minor_
+  commentId: Overload:Semver.SemVersion.Minor
+  isSpec: "True"
+  fullName: Semver.SemVersion.Minor
+  nameWithType: SemVersion.Minor
+- uid: Semver.SemVersion.op_Equality(Semver.SemVersion,Semver.SemVersion)
+  name: Equality(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_Equality_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.op_Equality(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.Equality(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.Equality(SemVersion, SemVersion)
+- uid: Semver.SemVersion.op_Equality*
+  name: Equality
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_Equality_
+  commentId: Overload:Semver.SemVersion.op_Equality
+  isSpec: "True"
+  fullName: Semver.SemVersion.Equality
+  nameWithType: SemVersion.Equality
+- uid: Semver.SemVersion.op_GreaterThan(Semver.SemVersion,Semver.SemVersion)
+  name: GreaterThan(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_GreaterThan_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.op_GreaterThan(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.GreaterThan(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.GreaterThan(SemVersion, SemVersion)
+- uid: Semver.SemVersion.op_GreaterThan*
+  name: GreaterThan
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_GreaterThan_
+  commentId: Overload:Semver.SemVersion.op_GreaterThan
+  isSpec: "True"
+  fullName: Semver.SemVersion.GreaterThan
+  nameWithType: SemVersion.GreaterThan
+- uid: Semver.SemVersion.op_GreaterThanOrEqual(Semver.SemVersion,Semver.SemVersion)
+  name: GreaterThanOrEqual(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_GreaterThanOrEqual_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.op_GreaterThanOrEqual(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.GreaterThanOrEqual(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.GreaterThanOrEqual(SemVersion, SemVersion)
+- uid: Semver.SemVersion.op_GreaterThanOrEqual*
+  name: GreaterThanOrEqual
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_GreaterThanOrEqual_
+  commentId: Overload:Semver.SemVersion.op_GreaterThanOrEqual
+  isSpec: "True"
+  fullName: Semver.SemVersion.GreaterThanOrEqual
+  nameWithType: SemVersion.GreaterThanOrEqual
+- uid: Semver.SemVersion.op_Implicit(System.String)~Semver.SemVersion
+  name: Implicit(String to SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_Implicit_System_String__Semver_SemVersion
+  commentId: M:Semver.SemVersion.op_Implicit(System.String)~Semver.SemVersion
+  name.vb: Widening(String to SemVersion)
+  fullName: Semver.SemVersion.Implicit(System.String to Semver.SemVersion)
+  fullName.vb: Semver.SemVersion.Widening(System.String to Semver.SemVersion)
+  nameWithType: SemVersion.Implicit(String to SemVersion)
+  nameWithType.vb: SemVersion.Widening(String to SemVersion)
+- uid: Semver.SemVersion.op_Implicit*
+  name: Implicit
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_Implicit_
+  commentId: Overload:Semver.SemVersion.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Semver.SemVersion.Implicit
+  fullName.vb: Semver.SemVersion.Widening
+  nameWithType: SemVersion.Implicit
+  nameWithType.vb: SemVersion.Widening
+- uid: Semver.SemVersion.op_Inequality(Semver.SemVersion,Semver.SemVersion)
+  name: Inequality(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_Inequality_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.op_Inequality(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.Inequality(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.Inequality(SemVersion, SemVersion)
+- uid: Semver.SemVersion.op_Inequality*
+  name: Inequality
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_Inequality_
+  commentId: Overload:Semver.SemVersion.op_Inequality
+  isSpec: "True"
+  fullName: Semver.SemVersion.Inequality
+  nameWithType: SemVersion.Inequality
+- uid: Semver.SemVersion.op_LessThan(Semver.SemVersion,Semver.SemVersion)
+  name: LessThan(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_LessThan_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.op_LessThan(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.LessThan(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.LessThan(SemVersion, SemVersion)
+- uid: Semver.SemVersion.op_LessThan*
+  name: LessThan
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_LessThan_
+  commentId: Overload:Semver.SemVersion.op_LessThan
+  isSpec: "True"
+  fullName: Semver.SemVersion.LessThan
+  nameWithType: SemVersion.LessThan
+- uid: Semver.SemVersion.op_LessThanOrEqual(Semver.SemVersion,Semver.SemVersion)
+  name: LessThanOrEqual(SemVersion, SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_LessThanOrEqual_Semver_SemVersion_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.op_LessThanOrEqual(Semver.SemVersion,Semver.SemVersion)
+  fullName: Semver.SemVersion.LessThanOrEqual(Semver.SemVersion, Semver.SemVersion)
+  nameWithType: SemVersion.LessThanOrEqual(SemVersion, SemVersion)
+- uid: Semver.SemVersion.op_LessThanOrEqual*
+  name: LessThanOrEqual
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_op_LessThanOrEqual_
+  commentId: Overload:Semver.SemVersion.op_LessThanOrEqual
+  isSpec: "True"
+  fullName: Semver.SemVersion.LessThanOrEqual
+  nameWithType: SemVersion.LessThanOrEqual
+- uid: Semver.SemVersion.Parse(System.String,System.Boolean)
+  name: Parse(String, Boolean)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Parse_System_String_System_Boolean_
+  commentId: M:Semver.SemVersion.Parse(System.String,System.Boolean)
+  fullName: Semver.SemVersion.Parse(System.String, System.Boolean)
+  nameWithType: SemVersion.Parse(String, Boolean)
+- uid: Semver.SemVersion.Parse*
+  name: Parse
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Parse_
+  commentId: Overload:Semver.SemVersion.Parse
+  isSpec: "True"
+  fullName: Semver.SemVersion.Parse
+  nameWithType: SemVersion.Parse
+- uid: Semver.SemVersion.Patch
+  name: Patch
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Patch
+  commentId: P:Semver.SemVersion.Patch
+  fullName: Semver.SemVersion.Patch
+  nameWithType: SemVersion.Patch
+- uid: Semver.SemVersion.Patch*
+  name: Patch
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Patch_
+  commentId: Overload:Semver.SemVersion.Patch
+  isSpec: "True"
+  fullName: Semver.SemVersion.Patch
+  nameWithType: SemVersion.Patch
+- uid: Semver.SemVersion.PrecedenceMatches(Semver.SemVersion)
+  name: PrecedenceMatches(SemVersion)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_PrecedenceMatches_Semver_SemVersion_
+  commentId: M:Semver.SemVersion.PrecedenceMatches(Semver.SemVersion)
+  fullName: Semver.SemVersion.PrecedenceMatches(Semver.SemVersion)
+  nameWithType: SemVersion.PrecedenceMatches(SemVersion)
+- uid: Semver.SemVersion.PrecedenceMatches*
+  name: PrecedenceMatches
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_PrecedenceMatches_
+  commentId: Overload:Semver.SemVersion.PrecedenceMatches
+  isSpec: "True"
+  fullName: Semver.SemVersion.PrecedenceMatches
+  nameWithType: SemVersion.PrecedenceMatches
+- uid: Semver.SemVersion.Prerelease
+  name: Prerelease
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Prerelease
+  commentId: P:Semver.SemVersion.Prerelease
+  fullName: Semver.SemVersion.Prerelease
+  nameWithType: SemVersion.Prerelease
+- uid: Semver.SemVersion.Prerelease*
+  name: Prerelease
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_Prerelease_
+  commentId: Overload:Semver.SemVersion.Prerelease
+  isSpec: "True"
+  fullName: Semver.SemVersion.Prerelease
+  nameWithType: SemVersion.Prerelease
+- uid: Semver.SemVersion.ToString
+  name: ToString()
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_ToString
+  commentId: M:Semver.SemVersion.ToString
+  fullName: Semver.SemVersion.ToString()
+  nameWithType: SemVersion.ToString()
+- uid: Semver.SemVersion.ToString*
+  name: ToString
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_ToString_
+  commentId: Overload:Semver.SemVersion.ToString
+  isSpec: "True"
+  fullName: Semver.SemVersion.ToString
+  nameWithType: SemVersion.ToString
+- uid: Semver.SemVersion.TryParse(System.String,Semver.SemVersion@,System.Boolean)
+  name: TryParse(String, out SemVersion, Boolean)
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_TryParse_System_String_Semver_SemVersion__System_Boolean_
+  commentId: M:Semver.SemVersion.TryParse(System.String,Semver.SemVersion@,System.Boolean)
+  name.vb: TryParse(String, ByRef SemVersion, Boolean)
+  fullName: Semver.SemVersion.TryParse(System.String, out Semver.SemVersion, System.Boolean)
+  fullName.vb: Semver.SemVersion.TryParse(System.String, ByRef Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersion.TryParse(String, out SemVersion, Boolean)
+  nameWithType.vb: SemVersion.TryParse(String, ByRef SemVersion, Boolean)
+- uid: Semver.SemVersion.TryParse*
+  name: TryParse
+  href: v2.0.x/Semver.SemVersion.html#Semver_SemVersion_TryParse_
+  commentId: Overload:Semver.SemVersion.TryParse
+  isSpec: "True"
+  fullName: Semver.SemVersion.TryParse
+  nameWithType: SemVersion.TryParse
