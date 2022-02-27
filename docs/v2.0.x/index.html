@@ -10,11 +10,11 @@
     <meta name="title" content="A Semantic Version Library for .Net | semver ">
     <meta name="generator" content="docfx 2.59.0.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="index.html">
-                <img id="logo" class="svg" src="logo.svg" alt="">
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -57,18 +57,31 @@
         </div>
       </header>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="a-semantic-version-library-for-net">A Semantic Version Library for .Net</h1>
 
-<p>This library implements the SemVersion class, which complies with v2.0.0 of the spec from <a href="http://semver.org">semver.org</a>.</p>
-<ul>
-<li><a href="v2.0.x/index.html">v2.0.x API Docs</a></li>
-<li><a href="https://www.nuget.org/packages/semver"><code>semver</code> NuGet Package</a></li>
-<li><a href="https://github.com/maxhauser/semver">GitHub Project</a></li>
-<li><a href="https://github.com/WalkerCodeRanger/semver-docs">Source Code for Doc Website</a></li>
-</ul>
+<p>This library implements the <code>SemVersion</code> class, which
+complies with v2.0.0 of the spec from <a href="http://semver.org">semver.org</a>.</p>
+<h2 id="installation">Installation</h2>
+<p>With the NuGet console:</p>
+<pre><code class="lang-powershell">Install-Package semver
+</code></pre>
+<h2 id="parsing">Parsing</h2>
+<pre><code class="lang-csharp">var version = SemVersion.Parse(&quot;1.1.0-rc.1+nightly.2345&quot;);
+</code></pre>
+<h2 id="comparing">Comparing</h2>
+<pre><code class="lang-csharp">if(version &gt;= &quot;1.0&quot;)
+    Console.WriteLine(&quot;released version {0}!&quot;, version)
+</code></pre>
 </article>
           </div>
           
@@ -97,8 +110,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

@@ -9,7 +9,6 @@ var configuration = Argument("configuration", "Release");
 Task("metadata")
     .Does(()=>
 {
-    CleanDirectories("./metadata");
     Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "v2.0.6");
     DocFxMetadata();
 });

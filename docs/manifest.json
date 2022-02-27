@@ -20,58 +20,67 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "+czrHETcoWHLnnI/BF0xnOVX521/pIgIxD3ECwab26I="
+          "hash": "HWUHy8EN7BB8gre/JxeS8ymUhHaFxJWS/w/4iu0WAOA="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "ManagedReference",
-      "source_relative_path": "metadata/v2.0.6/net452/Semver.SemVersion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "v2.0.x/Semver.SemVersion.html",
-          "hash": "4ihkkQhk1IUeRV4Q627XkpWouO6MaOAMVK7tegUllc4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "metadata/v2.0.6/net452/Semver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "v2.0.x/Semver.html",
-          "hash": "/OlFk/fknKJ0mDxqUxg3oP525E1R2cVKEQaa/FM2mM4="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "metadata/v2.0.6/net452/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "v2.0.x/toc.html",
-          "hash": "kDHWVa4K3VC9mvBUaboYyDZOeErmsvtI4IRwpii0caE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "wu0SEdPLOVAsDIS9v+o7ItQPQvZVJ0p2N3vRTTA0f3c="
+          "hash": "xpNPrCvNbS3TMlDjGTEeJvbxdhkzHeTucOrv+h8S1uo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "v2.0.x/Semver.SemVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.0.x/Semver.SemVersion.html",
+          "hash": "JB8lbexkEPJ/cbAzCGCSP1VBMlbA484JYduVxkzYZFg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "v2.0.x/Semver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.0.x/Semver.html",
+          "hash": "jRM20TsY8ec1I+IGoWZ6tmll+g9fMKsSLgIKXb+uP5s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "v2.0.x/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "v2.0.x/index.html",
+          "hash": "ZMNs0HAI92h3F9dQdko26FX1/Eko/jhI+2xDMxoYHqg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "v2.0.x/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.0.x/toc.html",
+          "hash": "kDHWVa4K3VC9mvBUaboYyDZOeErmsvtI4IRwpii0caE="
         }
       },
       "is_incremental": false,
@@ -104,7 +113,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2,
+          "total_file_count": 3,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {

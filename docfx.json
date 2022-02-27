@@ -6,7 +6,7 @@
             "src": "src/v2.0.6",
             "files": [ "Semver/**.csproj" ]
         }],
-        "dest": "metadata/v2.0.6/net452",
+        "dest": "v2.0.x",
         "force": true,
         "properties": { "TargetFramework": "net452" }
     }],
@@ -15,16 +15,12 @@
         "content":
         [
             {
-                "src": "metadata/v2.0.6/net452",
-                "dest": "v2.0.x",
-                "files": [ "**.yml" ]
-            },
-            {
                 "files":
                 [
+                    "v*/**.yml",
+                    "v*/*.md",
                     "toc.yml",
-                    "*.md",
-                    "v*/*.md"
+                    "*.md"
                 ],
                 "exclude": [ "README.md" ]
             }
