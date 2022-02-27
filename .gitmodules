@@ -1,6 +1,6 @@
-[submodule "v2.0.x"]
-	path = src/v2.0.x
+[submodule "v2.0.6"]
+	path = src/v2.0.6
 	url = https://github.com/maxhauser/semver.git
-[submodule "master"]
-	path = src/master
+[submodule "release-2.1"]
+	path = src/release-2.1
 	url = https://github.com/maxhauser/semver.git

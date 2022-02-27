@@ -1,34 +1,25 @@
 {
-    "metadata": 
-    [{
-        "src": 
-        [{
-            "files": [ "src/v2.0.x/Semver/**.csproj" ]
-        }],
-        "dest": "metadata/v2.0.x",
-        "disableGitFeatures": false,
-        "disableDefaultFilter": false,
-        "force": true,
-        "properties": { "TargetFramework": "net452" }
-    }],
     "build":
     {
         "content":
         [
             {
-                "src": "metadata/v2.0.x",
-                "dest": "v2.0.x/api",
-                "files":
-                [
-                    "**.yml",
-                    "index.md"
-                ]
+                "src": "metadata/v2.0.6/net452",
+                "dest": "v2.0.x",
+                "files": [ "**.yml" ],
+                "version": "v2.0.x"
+            },
+            {
+                "src": "metadata/release-2.1/net452",
+                "dest": "dev",
+                "files": [ "**.yml" ],
+                "version": "dev"
             },
             {
                 "files":
                 [
                     "toc.yml",
-                    "*.md"
+                    "**/*.md"
                 ],
                 "exclude": [ "README.md" ]
             }
@@ -48,10 +39,15 @@
                 "docs/**"
             ]
         }],
-        "dest": "docs",
+        "dest": "_site",
+        "globalMetadata":
+        {
+            "_disableContribution": false,
+            "_appTitle": "semver"
+        },
         "globalMetadataFiles": [],
         "fileMetadataFiles": [],
-        "template": [ "statictoc" ],
+        "template": [ "default" ],
         "postProcessors": [],
         "markdownEngineName": "markdig",
         "noLangKeyword": false,

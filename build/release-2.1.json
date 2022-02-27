@@ -1,0 +1,12 @@
+{
+    "metadata": 
+    [{
+        "src": 
+        [{
+            "src": "../",
+            "files": [ "src/release-2.1/Semver/**.csproj" ]
+        }],
+        "dest": "./",
+        "force": true
+    }]
+}
