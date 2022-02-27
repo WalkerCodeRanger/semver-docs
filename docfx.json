@@ -39,7 +39,7 @@
                 "docs/**"
             ]
         }],
-        "dest": "_site",
+        "dest": "docs",
         "globalMetadata":
         {
             "_disableContribution": false,

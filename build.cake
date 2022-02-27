@@ -50,7 +50,7 @@ Task("build")
     .Does(() =>
 {
     // Even force build doesn't properly clean up old files
-    CleanDirectories("./_site");
+    CleanDirectories("./docs");
     //Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "master");
     DocFxBuild(new DocFxBuildSettings()
     {
@@ -62,7 +62,7 @@ Task("serve")
     .IsDependentOn("build")
     .Does(() =>
 {
-    DocFxServe("./_site");
+    DocFxServe("./docs");
 });
 
 
