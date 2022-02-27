@@ -1,6 +1,15 @@
-# PLACEHOLDER
+# A Semantic Version Library for .Net
 
-Placeholder for v2.1.x docs
+This library implements the `SemVersion` class, which
+complies with v2.0.0 of the spec from [semver.org](http://semver.org).
+
+## Installation
+
+With the NuGet console:
+
+```powershell
+Install-Package semver
+```
 
 ## Parsing
 

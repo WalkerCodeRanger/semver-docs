@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "HWUHy8EN7BB8gre/JxeS8ymUhHaFxJWS/w/4iu0WAOA="
+          "hash": "X86djFD8jUF2s7yNJLp3QZjiTwh239P5IC4shZ+sl+g="
         }
       },
       "is_incremental": false,
@@ -32,7 +32,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "xpNPrCvNbS3TMlDjGTEeJvbxdhkzHeTucOrv+h8S1uo="
+          "hash": "oiPnkpwY6hsgHjPotNUwa8H0DTGiDjUiQnEGuwLO4Ng="
         }
       },
       "is_incremental": false,
@@ -40,11 +40,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "v2.0.x/Semver.SemVersion.yml",
+      "source_relative_path": "v2.1.x/Semver.MetadataIdentifier.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.0.x/Semver.SemVersion.html",
-          "hash": "JB8lbexkEPJ/cbAzCGCSP1VBMlbA484JYduVxkzYZFg="
+          "relative_path": "v2.1.x/Semver.MetadataIdentifier.html",
+          "hash": "rs5l3xoAbL64emjRJjYGukU/02EisrdCis29hxyinM0="
         }
       },
       "is_incremental": false,
@@ -52,35 +52,47 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "v2.0.x/Semver.yml",
+      "source_relative_path": "v2.1.x/Semver.PrereleaseIdentifier.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.0.x/Semver.html",
-          "hash": "jRM20TsY8ec1I+IGoWZ6tmll+g9fMKsSLgIKXb+uP5s="
+          "relative_path": "v2.1.x/Semver.PrereleaseIdentifier.html",
+          "hash": "j4LH7JyIgVJF6Wpc2bLQgD8h5NcnZf4E7QJhIiNOn2c="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "v2.0.x/index.md",
+      "type": "ManagedReference",
+      "source_relative_path": "v2.1.x/Semver.SemVersion.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.0.x/index.html",
-          "hash": "ZMNs0HAI92h3F9dQdko26FX1/Eko/jhI+2xDMxoYHqg="
+          "relative_path": "v2.1.x/Semver.SemVersion.html",
+          "hash": "7A7kO4Wo+5ow9hp3/CZqSd3/KGk52PH+UwSfvzaDZdU="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "v2.0.x/toc.yml",
+      "type": "ManagedReference",
+      "source_relative_path": "v2.1.x/Semver.SemVersionStyles.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.0.x/toc.html",
-          "hash": "kDHWVa4K3VC9mvBUaboYyDZOeErmsvtI4IRwpii0caE="
+          "relative_path": "v2.1.x/Semver.SemVersionStyles.html",
+          "hash": "n2XqQmJ2lGiqpekKCRg0xA9wQfYXPEojNgzQljWbPsQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "v2.1.x/Semver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.1.x/Semver.html",
+          "hash": "iFoITiKYzc+OGBYAAOzUHgdwRosFIJcRHRkhXGVnsH0="
         }
       },
       "is_incremental": false,
@@ -92,7 +104,19 @@
       "output": {
         ".html": {
           "relative_path": "v2.1.x/index.html",
-          "hash": "ohTz6xEU1sqYfoC1OsQL875MGoSRSLcdAgZ3mfBTZgQ="
+          "hash": "GdxglePe4VijH++SKoxurb4GJkA2S3TKxjrcUFyljU4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "v2.1.x/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.1.x/toc.html",
+          "hash": "PE+VXQzBDQftOUUecSI8cKdWabmm6m9OT6kderz+vpM="
         }
       },
       "is_incremental": false,
@@ -113,13 +137,13 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 2,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 2,
+          "total_file_count": 5,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

@@ -73,8 +73,8 @@
   
   <h1 id="Semver_SemVersion" data-uid="Semver.SemVersion" class="text-break">Class SemVersion
   </h1>
-  <div class="markdown level0 summary"><p>A semantic version implementation.
-Conforms with v2.0.0 of <a href="http://semver.org">http://semver.org</a></p>
+  <div class="markdown level0 summary"><p>A semantic version number.
+Conforms with v2.0.0 of semantic versioning (<a href="http://semver.org">http://semver.org</a>).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -86,6 +86,7 @@ Conforms with v2.0.0 of <a href="http://semver.org">http://semver.org</a></p>
     <h5>Implements</h5>
     <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Semver.SemVersion.html">SemVersion</a>&gt;</div>
     <div><span class="xref">System.IComparable</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Semver.SemVersion.html">SemVersion</a>&gt;</div>
     <div><span class="xref">System.Runtime.Serialization.ISerializable</span></div>
   </div>
   <div class="inheritedMembers">
@@ -108,7 +109,7 @@ Conforms with v2.0.0 of <a href="http://semver.org">http://semver.org</a></p>
   <h5 id="Semver_SemVersion_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Serializable]
-public sealed class SemVersion : IComparable&lt;SemVersion&gt;, IComparable, ISerializable</code></pre>
+public sealed class SemVersion : IComparable&lt;SemVersion&gt;, IComparable, IEquatable&lt;SemVersion&gt;, ISerializable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -171,7 +172,8 @@ a <span class="xref">System.Version</span>.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion(Version version)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This constructor is obsolete. Use SemVersion.FromVersion() instead.&quot;)]
+public SemVersion(Version version)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -187,7 +189,7 @@ a <span class="xref">System.Version</span>.</p>
         <td><span class="xref">System.Version</span></td>
         <td><span class="parametername">version</span></td>
         <td><p>The <span class="xref">System.Version</span> that is used to initialize
-the Major, Minor, Patch and Build.</p>
+the Major, Minor, and Patch versions and the build metadata.</p>
 </td>
       </tr>
     </tbody>
@@ -196,12 +198,12 @@ the Major, Minor, Patch and Build.</p>
   </h3>
   <a id="Semver_SemVersion_Build_" data-uid="Semver.SemVersion.Build*"></a>
   <h4 id="Semver_SemVersion_Build" data-uid="Semver.SemVersion.Build">Build</h4>
-  <div class="markdown level1 summary"><p>Gets the build metadata.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Build { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This property is obsolete. Use Metadata instead.&quot;)]
+public string Build { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,15 +216,40 @@ the Major, Minor, Patch and Build.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The build metadata. Empty string if there is no build metadata.</p>
+        <td><p>The build metadata or empty string if there is no build metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_IsPrerelease_" data-uid="Semver.SemVersion.IsPrerelease*"></a>
+  <h4 id="Semver_SemVersion_IsPrerelease" data-uid="Semver.SemVersion.IsPrerelease">IsPrerelease</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrerelease { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether this is a prerelease version. <span class="xref">true</span>
+if the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Prerelease">Prerelease</a> property is non-empty; <span class="xref">false</span>
+if it is empty.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="Semver_SemVersion_Major_" data-uid="Semver.SemVersion.Major*"></a>
   <h4 id="Semver_SemVersion_Major" data-uid="Semver.SemVersion.Major">Major</h4>
-  <div class="markdown level1 summary"><p>Gets the major version.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -244,10 +271,64 @@ the Major, Minor, Patch and Build.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Semver_SemVersion_Metadata_" data-uid="Semver.SemVersion.Metadata*"></a>
+  <h4 id="Semver_SemVersion_Metadata" data-uid="Semver.SemVersion.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Metadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The build metadata of this version or empty string if there
+is no metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_Metadata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The build metadata is a series of dot separated alphanumeric identifiers separated
+from the rest of the version number with a plus sign ('+').</p>
+<p>The metadata does not affect precedence. Two versions with different
+build metadata have the same precedence. However, metadata does affect
+sort order. A version without metadata sorts before one that has metadata.</p>
+</div>
+  <a id="Semver_SemVersion_MetadataIdentifiers_" data-uid="Semver.SemVersion.MetadataIdentifiers*"></a>
+  <h4 id="Semver_SemVersion_MetadataIdentifiers" data-uid="Semver.SemVersion.MetadataIdentifiers">MetadataIdentifiers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;MetadataIdentifier&gt; MetadataIdentifiers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Semver_SemVersion_Minor_" data-uid="Semver.SemVersion.Minor*"></a>
   <h4 id="Semver_SemVersion_Minor" data-uid="Semver.SemVersion.Minor">Minor</h4>
-  <div class="markdown level1 summary"><p>Gets the minor version.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -271,8 +352,7 @@ the Major, Minor, Patch and Build.</p>
   </table>
   <a id="Semver_SemVersion_Patch_" data-uid="Semver.SemVersion.Patch*"></a>
   <h4 id="Semver_SemVersion_Patch" data-uid="Semver.SemVersion.Patch">Patch</h4>
-  <div class="markdown level1 summary"><p>Gets the patch version.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -296,8 +376,7 @@ the Major, Minor, Patch and Build.</p>
   </table>
   <a id="Semver_SemVersion_Prerelease_" data-uid="Semver.SemVersion.Prerelease*"></a>
   <h4 id="Semver_SemVersion_Prerelease" data-uid="Semver.SemVersion.Prerelease">Prerelease</h4>
-  <div class="markdown level1 summary"><p>Gets the prerelease version.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -314,8 +393,37 @@ the Major, Minor, Patch and Build.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The prerelease version. Empty string if this is a release version.</p>
+        <td><p>The prerelease identifiers or empty string if this is a release version.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_Prerelease_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A prerelease version label follows the main version number separated
+by a dash ('-'). It is a series of identifiers each of which may either
+be alphanumeric or numeric. Prerelease versions have lower precedence
+than release versions.</p>
+</div>
+  <a id="Semver_SemVersion_PrereleaseIdentifiers_" data-uid="Semver.SemVersion.PrereleaseIdentifiers*"></a>
+  <h4 id="Semver_SemVersion_PrereleaseIdentifiers" data-uid="Semver.SemVersion.PrereleaseIdentifiers">PrereleaseIdentifiers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;PrereleaseIdentifier&gt; PrereleaseIdentifiers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>&gt;</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -328,7 +436,8 @@ the Major, Minor, Patch and Build.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion Change(int? major = null, int? minor = null, int? patch = null, string prerelease = null, string build = null)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use With() or With...() method instead.&quot;)]
+public SemVersion Change(int? major = null, int? minor = null, int? patch = null, string prerelease = null, string build = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -608,6 +717,49 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
     </tbody>
   </table>
   <a id="Semver_SemVersion_Equals_" data-uid="Semver.SemVersion.Equals*"></a>
+  <h4 id="Semver_SemVersion_Equals_Semver_SemVersion_" data-uid="Semver.SemVersion.Equals(Semver.SemVersion)">Equals(SemVersion)</h4>
+  <div class="markdown level1 summary"><p>Indicates whether the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> is equal to another <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(SemVersion other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>An version to compare with this object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the current version is equal to the <code data-dev-comment-type="paramref" class="paramref">other</code> parameter, otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_Equals_" data-uid="Semver.SemVersion.Equals*"></a>
   <h4 id="Semver_SemVersion_Equals_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.Equals(Semver.SemVersion,Semver.SemVersion)">Equals(SemVersion, SemVersion)</h4>
   <div class="markdown level1 summary"><p>Checks whether two semantic versions are equal.</p>
 </div>
@@ -701,6 +853,57 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <a id="Semver_SemVersion_FromVersion_" data-uid="Semver.SemVersion.FromVersion*"></a>
+  <h4 id="Semver_SemVersion_FromVersion_System_Version_" data-uid="Semver.SemVersion.FromVersion(System.Version)">FromVersion(Version)</h4>
+  <div class="markdown level1 summary"><p>Converts a <span class="xref">System.Version</span> into the equivalent semantic version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersion FromVersion(Version version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Version</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version to be converted to a semantic version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><p>The equivalent semantic version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_FromVersion_System_Version__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><span class="xref">System.Version</span> numbers have the form <em>major</em>.<em>minor</em>[.<em>build</em>[.<em>revision</em>]]
+where square brackets ('[' and ']')  indicate optional components. The first three parts
+are converted to the Major, Minor, and Patch versions of a semantic version. If the build component
+is not defined (-1), the Patch number is assumed to be zero. <span class="xref">System.Version</span> numbers
+with a revision greater than zero cannot be converted to semantic versions. An
+<span class="xref">System.ArgumentException</span> is thrown when this method is called with such a <span class="xref">System.Version</span>.</p>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -711,8 +914,13 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.InvalidCastException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">obj</code> is not a <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">version</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">version</code> has a Revision greater than zero.</p>
 </td>
       </tr>
     </tbody>
@@ -737,7 +945,8 @@ Greater than zero: This instance follows <code data-dev-comment-type="paramref" 
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><p>A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.</p>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms
+and data structures like a hash table.</p>
 </td>
       </tr>
     </tbody>
@@ -779,13 +988,64 @@ public void GetObjectData(SerializationInfo info, StreamingContext context)</cod
     </tbody>
   </table>
   <a id="Semver_SemVersion_Parse_" data-uid="Semver.SemVersion.Parse*"></a>
+  <h4 id="Semver_SemVersion_Parse_System_String_Semver_SemVersionStyles_System_Int32_" data-uid="Semver.SemVersion.Parse(System.String,Semver.SemVersionStyles,System.Int32)">Parse(String, SemVersionStyles, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersion Parse(string version, SemVersionStyles style, int maxLength = 1024)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionStyles.html">SemVersionStyles</a></td>
+        <td><span class="parametername">style</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_Parse_" data-uid="Semver.SemVersion.Parse*"></a>
   <h4 id="Semver_SemVersion_Parse_System_String_System_Boolean_" data-uid="Semver.SemVersion.Parse(System.String,System.Boolean)">Parse(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Converts the string representation of a semantic version to its <a class="xref" href="Semver.SemVersion.html">SemVersion</a> equivalent.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SemVersion Parse(string version, bool strict = false)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use Parse() overload with SemVersionStyles instead.&quot;)]
+public static SemVersion Parse(string version, bool strict = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -854,7 +1114,7 @@ otherwise they are optional.</p>
       </tr>
       <tr>
         <td><span class="xref">System.OverflowException</span></td>
-        <td><p>The Major, Minor, or Patch versions are larger than <pre><code>int.MaxValue</code></pre>.</p>
+        <td><p>The Major, Minor, or Patch versions are larger than <code>int.MaxValue</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -905,7 +1165,7 @@ that differ only by build metadata have the same precedence.</p>
   </table>
   <a id="Semver_SemVersion_ToString_" data-uid="Semver.SemVersion.ToString*"></a>
   <h4 id="Semver_SemVersion_ToString" data-uid="Semver.SemVersion.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns the <span class="xref">System.String</span> equivalent of this version.</p>
+  <div class="markdown level1 summary"><p>Converts this version to a <span class="xref">System.String</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -930,6 +1190,57 @@ that differ only by build metadata have the same precedence.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  <a id="Semver_SemVersion_ToVersion_" data-uid="Semver.SemVersion.ToVersion*"></a>
+  <h4 id="Semver_SemVersion_ToVersion" data-uid="Semver.SemVersion.ToVersion">ToVersion()</h4>
+  <div class="markdown level1 summary"><p>Converts this semantic version to a <span class="xref">System.Version</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Version ToVersion()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Version</span></td>
+        <td><p>The equivalent <span class="xref">System.Version</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_ToVersion_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A semantic version of the form <em>major</em>.<em>minor</em>.<em>patch</em>
+is converted to a <span class="xref">System.Version</span> of the form
+<em>major</em>.<em>minor</em>.<em>build</em> where the build number is the
+patch version of the semantic version. Prerelease versions and build metadata
+are not representable in a <span class="xref">System.Version</span>. This method throws
+an <span class="xref">System.InvalidOperationException</span> if the semantic version is a
+prerelease version or has build metadata.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>The semantic version is a prerelease version
+or has build metadata or has a negative major, minor, or patch version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Semver_SemVersion_TryParse_" data-uid="Semver.SemVersion.TryParse*"></a>
   <h4 id="Semver_SemVersion_TryParse_System_String_Semver_SemVersion__System_Boolean_" data-uid="Semver.SemVersion.TryParse(System.String,Semver.SemVersion@,System.Boolean)">TryParse(String, out SemVersion, Boolean)</h4>
   <div class="markdown level1 summary"><p>Converts the string representation of a semantic version to its <a class="xref" href="Semver.SemVersion.html">SemVersion</a>
@@ -938,7 +1249,8 @@ equivalent and returns a value that indicates whether the conversion succeeded.<
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool TryParse(string version, out SemVersion semver, bool strict = false)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use TryParse() overload with SemVersionStyles instead.&quot;)]
+public static bool TryParse(string version, out SemVersion semver, bool strict = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -986,6 +1298,661 @@ otherwise they are optional.</p>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><span class="xref">false</span> when a invalid version string is passed, otherwise <span class="xref">true</span>.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_TryParse_" data-uid="Semver.SemVersion.TryParse*"></a>
+  <h4 id="Semver_SemVersion_TryParse_System_String_Semver_SemVersionStyles_Semver_SemVersion__System_Int32_" data-uid="Semver.SemVersion.TryParse(System.String,Semver.SemVersionStyles,Semver.SemVersion@,System.Int32)">TryParse(String, SemVersionStyles, out SemVersion, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string version, SemVersionStyles style, out SemVersion semver, int maxLength = 1024)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionStyles.html">SemVersionStyles</a></td>
+        <td><span class="parametername">style</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">semver</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_With_" data-uid="Semver.SemVersion.With*"></a>
+  <h4 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_" data-uid="Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)">With(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Make a copy of the current instance with changed properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion With(int? major = null, int? minor = null, int? patch = null, string prerelease = null, string metadata = null, bool allowLeadingZeros = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The value to replace the major version or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>The value to replace the minor version or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>The value to replace the patch version or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prerelease</span></td>
+        <td><p>The value to replace the prerelease identifiers or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>The value to replace the build metadata identifiers or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowLeadingZeros</span></td>
+        <td><p>Allow leading zeros in numeric prerelease identifiers. Leading zeros will be trimmed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><p>The new version object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_">With(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, String, Boolean)</a> method is intended to be called using named argument syntax, passing only
+those fields to be changed.</p>
+</div>
+  <h5 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean__examples">Examples</h5>
+  <p>To change only the patch version:</p>
+<pre><code>version.With(patch: 4)</code></pre>
+
+  <a id="Semver_SemVersion_WithMajor_" data-uid="Semver.SemVersion.WithMajor*"></a>
+  <h4 id="Semver_SemVersion_WithMajor_System_Int32_" data-uid="Semver.SemVersion.WithMajor(System.Int32)">WithMajor(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMajor(int major)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
+  <h4 id="Semver_SemVersion_WithMetadata_System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__" data-uid="Semver.SemVersion.WithMetadata(System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})">WithMetadata(IEnumerable&lt;MetadataIdentifier&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(IEnumerable&lt;MetadataIdentifier&gt; metadataIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>&gt;</td>
+        <td><span class="parametername">metadataIdentifiers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
+  <h4 id="Semver_SemVersion_WithMetadata_System_Collections_Generic_IEnumerable_System_String__" data-uid="Semver.SemVersion.WithMetadata(System.Collections.Generic.IEnumerable{System.String})">WithMetadata(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(IEnumerable&lt;string&gt; metadataIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadataIdentifiers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
+  <h4 id="Semver_SemVersion_WithMetadata_System_String_" data-uid="Semver.SemVersion.WithMetadata(System.String)">WithMetadata(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(string metadata)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
+  <h4 id="Semver_SemVersion_WithMetadata_System_String___" data-uid="Semver.SemVersion.WithMetadata(System.String[])">WithMetadata(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(params string[] metadataIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">metadataIdentifiers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithMinor_" data-uid="Semver.SemVersion.WithMinor*"></a>
+  <h4 id="Semver_SemVersion_WithMinor_System_Int32_" data-uid="Semver.SemVersion.WithMinor(System.Int32)">WithMinor(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMinor(int minor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithoutMetadata_" data-uid="Semver.SemVersion.WithoutMetadata*"></a>
+  <h4 id="Semver_SemVersion_WithoutMetadata" data-uid="Semver.SemVersion.WithoutMetadata">WithoutMetadata()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithoutMetadata()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithoutPrerelease_" data-uid="Semver.SemVersion.WithoutPrerelease*"></a>
+  <h4 id="Semver_SemVersion_WithoutPrerelease" data-uid="Semver.SemVersion.WithoutPrerelease">WithoutPrerelease()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithoutPrerelease()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithoutPrereleaseOrMetadata_" data-uid="Semver.SemVersion.WithoutPrereleaseOrMetadata*"></a>
+  <h4 id="Semver_SemVersion_WithoutPrereleaseOrMetadata" data-uid="Semver.SemVersion.WithoutPrereleaseOrMetadata">WithoutPrereleaseOrMetadata()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithoutPrereleaseOrMetadata()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPatch_" data-uid="Semver.SemVersion.WithPatch*"></a>
+  <h4 id="Semver_SemVersion_WithPatch_System_Int32_" data-uid="Semver.SemVersion.WithPatch(System.Int32)">WithPatch(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPatch(int patch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
+  <h4 id="Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__" data-uid="Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier})">WithPrerelease(IEnumerable&lt;PrereleaseIdentifier&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(IEnumerable&lt;PrereleaseIdentifier&gt; prereleaseIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>&gt;</td>
+        <td><span class="parametername">prereleaseIdentifiers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
+  <h4 id="Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_System_String__System_Boolean_" data-uid="Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">WithPrerelease(IEnumerable&lt;String&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(IEnumerable&lt;string&gt; prereleaseIdentifiers, bool allowLeadingZeros = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">prereleaseIdentifiers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowLeadingZeros</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
+  <h4 id="Semver_SemVersion_WithPrerelease_System_String_System_Boolean_" data-uid="Semver.SemVersion.WithPrerelease(System.String,System.Boolean)">WithPrerelease(String, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(string prerelease, bool allowLeadingZeros = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prerelease</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowLeadingZeros</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
+  <h4 id="Semver_SemVersion_WithPrerelease_System_String___" data-uid="Semver.SemVersion.WithPrerelease(System.String[])">WithPrerelease(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(params string[] prereleaseIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">prereleaseIdentifiers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -1145,7 +2112,8 @@ otherwise they are optional.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator SemVersion(string version)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Implicit conversion from string is obsolete. Use Parse() or TryParse() method instead.&quot;)]
+public static implicit operator SemVersion(string version)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1202,7 +2170,7 @@ otherwise they are optional.</p>
       </tr>
       <tr>
         <td><span class="xref">System.OverflowException</span></td>
-        <td><p>The Major, Minor, or Patch versions are larger than <pre><code>int.MaxValue</code></pre>.</p>
+        <td><p>The Major, Minor, or Patch versions are larger than <code>int.MaxValue</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -1360,6 +2328,9 @@ otherwise they are optional.</p>
   </div>
   <div>
       <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
   </div>
   <div>
       <span class="xref">System.Runtime.Serialization.ISerializable</span>

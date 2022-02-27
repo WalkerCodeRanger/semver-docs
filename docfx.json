@@ -3,10 +3,10 @@
     [{
         "src": 
         [{
-            "src": "src/v2.0.6",
+            "src": "src/v2.1.0",
             "files": [ "Semver/**.csproj" ]
         }],
-        "dest": "v2.0.x",
+        "dest": "v2.1.x",
         "force": true,
         "properties": { "TargetFramework": "net452" }
     }],
