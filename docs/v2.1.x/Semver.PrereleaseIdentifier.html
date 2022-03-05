@@ -73,7 +73,8 @@
   
   <h1 id="Semver_PrereleaseIdentifier" data-uid="Semver.PrereleaseIdentifier" class="text-break">Struct PrereleaseIdentifier
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An individual prerelease identifier for a semantic version.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -99,11 +100,34 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public readonly struct PrereleaseIdentifier : IEquatable&lt;PrereleaseIdentifier&gt;, IComparable&lt;PrereleaseIdentifier&gt;, IComparable</code></pre>
   </div>
+  <h5 id="Semver_PrereleaseIdentifier_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The prerelease portion of a semantic version is composed of dot (&apos;<code>.</code>&apos;) separated identifiers.
+A prerelease identifier is either an alphanumeric or numeric identifier. A valid numeric
+identifier is composed of ASCII digits (<code>[0-9]</code>) without leading zeros. A valid
+alphanumeric identifier is a non-empty string of ASCII alphanumeric and hyphen characters
+(<code>[0-9A-Za-z-]</code>) with at least one non-digit character. Prerelease identifiers are
+compared first by whether they are numeric or alphanumeric. Numeric identifiers have lower
+precedence than alphanumeric identifiers. Numeric identifiers are compared to each other
+numerically. Alphanumeric identifiers are compared to each other lexically in ASCII sort
+order.</p>
+<p>Because <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> is a struct, the default value is a
+<a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> with a <span class="xref">null</span> value. However, the
+<a class="xref" href="Semver.html">Semver</a> namespace types do not accept and will not return such a
+<a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>.</p>
+<p>Invalid prerelease identifiers including arbitrary Unicode characters, empty string,
+and numeric identifiers with leading zero can currently be produced by the
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_">SemVersion(Int32, Int32, Int32, String, String)</a> constructor and the obsolete
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Parse_System_String_System_Boolean_">Parse(String, Boolean)</a> and
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_TryParse_System_String_Semver_SemVersion__System_Boolean_">TryParse(String, out SemVersion, Boolean)</a> methods. Such alphanumeric
+identifiers are compared via an ordinal string comparision. Numeric identifiers with
+leading zeros are considered equal (e.g. &apos;<code>15</code>&apos; is equal to &apos;<code>015</code>&apos;).
+</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Semver_PrereleaseIdentifier__ctor_" data-uid="Semver.PrereleaseIdentifier.#ctor*"></a>
   <h4 id="Semver_PrereleaseIdentifier__ctor_System_Int32_" data-uid="Semver.PrereleaseIdentifier.#ctor(System.Int32)">PrereleaseIdentifier(Int32)</h4>
-  <div class="markdown level1 summary"><p>Construct a numeric prerelease identifier.</p>
+  <div class="markdown level1 summary"><p>Construct a valid numeric <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> from an integer value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -128,9 +152,26 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Semver_PrereleaseIdentifier__ctor_" data-uid="Semver.PrereleaseIdentifier.#ctor*"></a>
   <h4 id="Semver_PrereleaseIdentifier__ctor_System_String_System_Boolean_" data-uid="Semver.PrereleaseIdentifier.#ctor(System.String,System.Boolean)">PrereleaseIdentifier(String, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Constructs a valid <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -149,12 +190,50 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The string value of this prerelease identifier.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">allowLeadingZeros</span></td>
-        <td></td>
+        <td><p>Whether to allow leading zeros in the <code data-dev-comment-type="paramref" class="paramref">value</code>
+parameter. If <span class="xref">true</span>, leading zeros will be allowed on numeric identifiers
+but will be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_PrereleaseIdentifier__ctor_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Because a valid numeric identifier does not have leading zeros, this constructor
+will never create a <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> with leading zeros even if
+<code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">true</span>. Any leading zeros will
+be removed.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> is empty or contains invalid characters
+(i.e. characters that are not ASCII alphanumerics or hyphens) or has leading zeros for
+a numeric identifier when <code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">false</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>The numeric identifier value is too large for <span class="xref">System.Int32</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -162,7 +241,9 @@
   </h3>
   <a id="Semver_PrereleaseIdentifier_IntValue_" data-uid="Semver.PrereleaseIdentifier.IntValue*"></a>
   <h4 id="Semver_PrereleaseIdentifier_IntValue" data-uid="Semver.PrereleaseIdentifier.IntValue">IntValue</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The numeric value of the prerelease identifier if it is a numeric identifier, otherwise
+<span class="xref">null</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -179,13 +260,19 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
+        <td><p>The numeric value of the prerelease identifier if it is a numeric identifier,
+otherwise <span class="xref">null</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_PrereleaseIdentifier_IntValue_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The numeric value of a prerelease identifier will never be negative.</p>
+</div>
   <a id="Semver_PrereleaseIdentifier_Value_" data-uid="Semver.PrereleaseIdentifier.Value*"></a>
   <h4 id="Semver_PrereleaseIdentifier_Value" data-uid="Semver.PrereleaseIdentifier.Value">Value</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The string value of the prerelease identifier even if it is a numeric identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -202,19 +289,28 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The string value of this prerelease identifier even if it is a numeric identifier
+or <span class="xref">null</span> if this is a default <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_PrereleaseIdentifier_Value_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Invalid numeric prerelease identifiers with leading zeros will have a string
+value including the leading zeros. This can be used to distinguish numeric identifiers
+with different numbers of leading zeros.</p>
+</div>
   <h3 id="methods">Methods
   </h3>
   <a id="Semver_PrereleaseIdentifier_CompareTo_" data-uid="Semver.PrereleaseIdentifier.CompareTo*"></a>
   <h4 id="Semver_PrereleaseIdentifier_CompareTo_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.CompareTo(Semver.PrereleaseIdentifier)">CompareTo(PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compares two identifiers and indicates whether this instance precedes, follows, or is
+equal to the other in precedence order.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly int CompareTo(PrereleaseIdentifier other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int CompareTo(PrereleaseIdentifier value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,7 +324,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">other</span></td>
+        <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -244,17 +340,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>An integer that indicates whether this instance precedes, follows, or is equal to
+<code data-dev-comment-type="paramref" class="paramref">value</code> in precedence order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>0</td><td>This instance is equal to <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>1</td><td>This instance follows <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr></tbody></table>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_PrereleaseIdentifier_CompareTo_Semver_PrereleaseIdentifier__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Numeric identifiers have lower precedence than alphanumeric identifiers.
+Numeric identifiers are compared numerically. Numeric identifiers with leading zeros are
+considered equal (e.g. '<code>15</code>' is equal to '<code>015</code>'). Alphanumeric identifiers are
+compared lexically in ASCII sort order. Invalid alphanumeric identifiers are
+compared via an ordinal string comparision.</p>
+</div>
   <a id="Semver_PrereleaseIdentifier_CompareTo_" data-uid="Semver.PrereleaseIdentifier.CompareTo*"></a>
   <h4 id="Semver_PrereleaseIdentifier_CompareTo_System_Object_" data-uid="Semver.PrereleaseIdentifier.CompareTo(System.Object)">CompareTo(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compares this identifier to an <span class="xref">System.Object</span> and indicates whether this instance
+precedes, follows, or is equal to the object in precedence order.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly int CompareTo(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int CompareTo(object value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -268,7 +376,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
+        <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -284,17 +392,45 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>An integer that indicates whether this instance precedes, follows, or is equal to
+<code data-dev-comment-type="paramref" class="paramref">value</code> in precedence order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>0</td><td>This instance is equal to <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>1</td><td>This instance follows <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">value</code>
+                        is <span class="xref">null</span>.</td></tr></tbody></table>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_PrereleaseIdentifier_CompareTo_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Numeric identifiers have lower precedence than alphanumeric identifiers.
+Numeric identifiers are compared numerically. Numeric identifiers with leading zeros are
+considered equal (e.g. '<code>15</code>' is equal to '<code>015</code>'). Alphanumeric identifiers are
+compared lexically in ASCII sort order. Invalid alphanumeric identifiers are
+compared via an ordinal string comparision.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is not a <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="Semver_PrereleaseIdentifier_Equals_" data-uid="Semver.PrereleaseIdentifier.Equals*"></a>
   <h4 id="Semver_PrereleaseIdentifier_Equals_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.Equals(Semver.PrereleaseIdentifier)">Equals(PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly bool Equals(PrereleaseIdentifier other)</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly bool Equals(PrereleaseIdentifier value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,7 +444,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">other</span></td>
+        <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -324,17 +460,24 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to the this identifier;
+otherwise <span class="xref">false</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_PrereleaseIdentifier_Equals_Semver_PrereleaseIdentifier__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are considered equal (e.g. '<code>15</code>'
+is equal to '<code>015</code>').</p>
+</div>
   <a id="Semver_PrereleaseIdentifier_Equals_" data-uid="Semver.PrereleaseIdentifier.Equals*"></a>
   <h4 id="Semver_PrereleaseIdentifier_Equals_System_Object_" data-uid="Semver.PrereleaseIdentifier.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether the given object is equal to this identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public override readonly bool Equals(object value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -348,7 +491,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
+        <td><span class="parametername">value</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -364,15 +507,22 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to the this identifier;
+otherwise <span class="xref">false</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <h5 id="Semver_PrereleaseIdentifier_Equals_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are considered equal (e.g. '<code>15</code>'
+is equal to '<code>015</code>').</p>
+</div>
   <a id="Semver_PrereleaseIdentifier_GetHashCode_" data-uid="Semver.PrereleaseIdentifier.GetHashCode*"></a>
   <h4 id="Semver_PrereleaseIdentifier_GetHashCode" data-uid="Semver.PrereleaseIdentifier.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets a hash code for this identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -389,15 +539,21 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>A hash code for this identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <h5 id="Semver_PrereleaseIdentifier_GetHashCode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are have the same hash code (e.g.
+'<code>15</code>' has the same hash code as '<code>015</code>').</p>
+</div>
   <a id="Semver_PrereleaseIdentifier_ToString_" data-uid="Semver.PrereleaseIdentifier.ToString*"></a>
   <h4 id="Semver_PrereleaseIdentifier_ToString" data-uid="Semver.PrereleaseIdentifier.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -414,7 +570,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The string value of this identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -424,7 +582,8 @@
   </h3>
   <a id="Semver_PrereleaseIdentifier_op_Equality_" data-uid="Semver.PrereleaseIdentifier.op_Equality*"></a>
   <h4 id="Semver_PrereleaseIdentifier_op_Equality_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_Equality(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">Equality(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -463,103 +622,20 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is the same as
+the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="Semver_PrereleaseIdentifier_op_GreaterThan_" data-uid="Semver.PrereleaseIdentifier.op_GreaterThan*"></a>
-  <h4 id="Semver_PrereleaseIdentifier_op_GreaterThan_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_GreaterThan(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">GreaterThan(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator&gt;(PrereleaseIdentifier left, PrereleaseIdentifier right)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">right</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Semver_PrereleaseIdentifier_op_GreaterThanOrEqual_" data-uid="Semver.PrereleaseIdentifier.op_GreaterThanOrEqual*"></a>
-  <h4 id="Semver_PrereleaseIdentifier_op_GreaterThanOrEqual_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_GreaterThanOrEqual(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">GreaterThanOrEqual(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(PrereleaseIdentifier left, PrereleaseIdentifier right)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">right</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Semver_PrereleaseIdentifier_op_Equality_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are considered equal (e.g. '<code>15</code>'
+is equal to '<code>015</code>').</p>
+</div>
   <a id="Semver_PrereleaseIdentifier_op_Implicit_" data-uid="Semver.PrereleaseIdentifier.op_Implicit*"></a>
   <h4 id="Semver_PrereleaseIdentifier_op_Implicit_Semver_PrereleaseIdentifier__System_String" data-uid="Semver.PrereleaseIdentifier.op_Implicit(Semver.PrereleaseIdentifier)~System.String">Implicit(PrereleaseIdentifier to String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -593,13 +669,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The string value of this identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="Semver_PrereleaseIdentifier_op_Inequality_" data-uid="Semver.PrereleaseIdentifier.op_Inequality*"></a>
   <h4 id="Semver_PrereleaseIdentifier_op_Inequality_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_Inequality(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">Inequality(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether two identifiers are <em>not</em> equal.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -638,100 +717,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is different
+from the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <a id="Semver_PrereleaseIdentifier_op_LessThan_" data-uid="Semver.PrereleaseIdentifier.op_LessThan*"></a>
-  <h4 id="Semver_PrereleaseIdentifier_op_LessThan_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_LessThan(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">LessThan(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;(PrereleaseIdentifier left, PrereleaseIdentifier right)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">right</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Semver_PrereleaseIdentifier_op_LessThanOrEqual_" data-uid="Semver.PrereleaseIdentifier.op_LessThanOrEqual*"></a>
-  <h4 id="Semver_PrereleaseIdentifier_op_LessThanOrEqual_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_LessThanOrEqual(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">LessThanOrEqual(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(PrereleaseIdentifier left, PrereleaseIdentifier right)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">left</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
-        <td><span class="parametername">right</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="Semver_PrereleaseIdentifier_op_Inequality_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are considered equal (e.g. '<code>15</code>'
+is equal to '<code>015</code>').</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">System.IEquatable&lt;T&gt;</span>

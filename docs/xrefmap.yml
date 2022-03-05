@@ -23,7 +23,6 @@ references:
   name: MetadataIdentifier
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier__ctor_
   commentId: Overload:Semver.MetadataIdentifier.#ctor
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.MetadataIdentifier
   nameWithType: MetadataIdentifier.MetadataIdentifier
 - uid: Semver.MetadataIdentifier.CompareTo(Semver.MetadataIdentifier)
@@ -42,7 +41,6 @@ references:
   name: CompareTo
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_CompareTo_
   commentId: Overload:Semver.MetadataIdentifier.CompareTo
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.CompareTo
   nameWithType: MetadataIdentifier.CompareTo
 - uid: Semver.MetadataIdentifier.Equals(Semver.MetadataIdentifier)
@@ -61,7 +59,6 @@ references:
   name: Equals
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_Equals_
   commentId: Overload:Semver.MetadataIdentifier.Equals
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.Equals
   nameWithType: MetadataIdentifier.Equals
 - uid: Semver.MetadataIdentifier.GetHashCode
@@ -74,7 +71,6 @@ references:
   name: GetHashCode
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_GetHashCode_
   commentId: Overload:Semver.MetadataIdentifier.GetHashCode
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.GetHashCode
   nameWithType: MetadataIdentifier.GetHashCode
 - uid: Semver.MetadataIdentifier.op_Equality(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
@@ -87,35 +83,8 @@ references:
   name: Equality
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_Equality_
   commentId: Overload:Semver.MetadataIdentifier.op_Equality
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.Equality
   nameWithType: MetadataIdentifier.Equality
-- uid: Semver.MetadataIdentifier.op_GreaterThan(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  name: GreaterThan(MetadataIdentifier, MetadataIdentifier)
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_GreaterThan_Semver_MetadataIdentifier_Semver_MetadataIdentifier_
-  commentId: M:Semver.MetadataIdentifier.op_GreaterThan(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  fullName: Semver.MetadataIdentifier.GreaterThan(Semver.MetadataIdentifier, Semver.MetadataIdentifier)
-  nameWithType: MetadataIdentifier.GreaterThan(MetadataIdentifier, MetadataIdentifier)
-- uid: Semver.MetadataIdentifier.op_GreaterThan*
-  name: GreaterThan
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_GreaterThan_
-  commentId: Overload:Semver.MetadataIdentifier.op_GreaterThan
-  isSpec: "True"
-  fullName: Semver.MetadataIdentifier.GreaterThan
-  nameWithType: MetadataIdentifier.GreaterThan
-- uid: Semver.MetadataIdentifier.op_GreaterThanOrEqual(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  name: GreaterThanOrEqual(MetadataIdentifier, MetadataIdentifier)
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_GreaterThanOrEqual_Semver_MetadataIdentifier_Semver_MetadataIdentifier_
-  commentId: M:Semver.MetadataIdentifier.op_GreaterThanOrEqual(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  fullName: Semver.MetadataIdentifier.GreaterThanOrEqual(Semver.MetadataIdentifier, Semver.MetadataIdentifier)
-  nameWithType: MetadataIdentifier.GreaterThanOrEqual(MetadataIdentifier, MetadataIdentifier)
-- uid: Semver.MetadataIdentifier.op_GreaterThanOrEqual*
-  name: GreaterThanOrEqual
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_GreaterThanOrEqual_
-  commentId: Overload:Semver.MetadataIdentifier.op_GreaterThanOrEqual
-  isSpec: "True"
-  fullName: Semver.MetadataIdentifier.GreaterThanOrEqual
-  nameWithType: MetadataIdentifier.GreaterThanOrEqual
 - uid: Semver.MetadataIdentifier.op_Implicit(Semver.MetadataIdentifier)~System.String
   name: Implicit(MetadataIdentifier to String)
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_Implicit_Semver_MetadataIdentifier__System_String
@@ -129,7 +98,6 @@ references:
   name: Implicit
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_Implicit_
   commentId: Overload:Semver.MetadataIdentifier.op_Implicit
-  isSpec: "True"
   name.vb: Widening
   fullName: Semver.MetadataIdentifier.Implicit
   fullName.vb: Semver.MetadataIdentifier.Widening
@@ -145,35 +113,8 @@ references:
   name: Inequality
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_Inequality_
   commentId: Overload:Semver.MetadataIdentifier.op_Inequality
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.Inequality
   nameWithType: MetadataIdentifier.Inequality
-- uid: Semver.MetadataIdentifier.op_LessThan(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  name: LessThan(MetadataIdentifier, MetadataIdentifier)
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_LessThan_Semver_MetadataIdentifier_Semver_MetadataIdentifier_
-  commentId: M:Semver.MetadataIdentifier.op_LessThan(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  fullName: Semver.MetadataIdentifier.LessThan(Semver.MetadataIdentifier, Semver.MetadataIdentifier)
-  nameWithType: MetadataIdentifier.LessThan(MetadataIdentifier, MetadataIdentifier)
-- uid: Semver.MetadataIdentifier.op_LessThan*
-  name: LessThan
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_LessThan_
-  commentId: Overload:Semver.MetadataIdentifier.op_LessThan
-  isSpec: "True"
-  fullName: Semver.MetadataIdentifier.LessThan
-  nameWithType: MetadataIdentifier.LessThan
-- uid: Semver.MetadataIdentifier.op_LessThanOrEqual(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  name: LessThanOrEqual(MetadataIdentifier, MetadataIdentifier)
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_LessThanOrEqual_Semver_MetadataIdentifier_Semver_MetadataIdentifier_
-  commentId: M:Semver.MetadataIdentifier.op_LessThanOrEqual(Semver.MetadataIdentifier,Semver.MetadataIdentifier)
-  fullName: Semver.MetadataIdentifier.LessThanOrEqual(Semver.MetadataIdentifier, Semver.MetadataIdentifier)
-  nameWithType: MetadataIdentifier.LessThanOrEqual(MetadataIdentifier, MetadataIdentifier)
-- uid: Semver.MetadataIdentifier.op_LessThanOrEqual*
-  name: LessThanOrEqual
-  href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_op_LessThanOrEqual_
-  commentId: Overload:Semver.MetadataIdentifier.op_LessThanOrEqual
-  isSpec: "True"
-  fullName: Semver.MetadataIdentifier.LessThanOrEqual
-  nameWithType: MetadataIdentifier.LessThanOrEqual
 - uid: Semver.MetadataIdentifier.ToString
   name: ToString()
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_ToString
@@ -184,7 +125,6 @@ references:
   name: ToString
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_ToString_
   commentId: Overload:Semver.MetadataIdentifier.ToString
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.ToString
   nameWithType: MetadataIdentifier.ToString
 - uid: Semver.MetadataIdentifier.Value
@@ -197,7 +137,6 @@ references:
   name: Value
   href: v2.1.x/Semver.MetadataIdentifier.html#Semver_MetadataIdentifier_Value_
   commentId: Overload:Semver.MetadataIdentifier.Value
-  isSpec: "True"
   fullName: Semver.MetadataIdentifier.Value
   nameWithType: MetadataIdentifier.Value
 - uid: Semver.PrereleaseIdentifier
@@ -222,7 +161,6 @@ references:
   name: PrereleaseIdentifier
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier__ctor_
   commentId: Overload:Semver.PrereleaseIdentifier.#ctor
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.PrereleaseIdentifier
   nameWithType: PrereleaseIdentifier.PrereleaseIdentifier
 - uid: Semver.PrereleaseIdentifier.CompareTo(Semver.PrereleaseIdentifier)
@@ -241,7 +179,6 @@ references:
   name: CompareTo
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_CompareTo_
   commentId: Overload:Semver.PrereleaseIdentifier.CompareTo
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.CompareTo
   nameWithType: PrereleaseIdentifier.CompareTo
 - uid: Semver.PrereleaseIdentifier.Equals(Semver.PrereleaseIdentifier)
@@ -260,7 +197,6 @@ references:
   name: Equals
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_Equals_
   commentId: Overload:Semver.PrereleaseIdentifier.Equals
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.Equals
   nameWithType: PrereleaseIdentifier.Equals
 - uid: Semver.PrereleaseIdentifier.GetHashCode
@@ -273,7 +209,6 @@ references:
   name: GetHashCode
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_GetHashCode_
   commentId: Overload:Semver.PrereleaseIdentifier.GetHashCode
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.GetHashCode
   nameWithType: PrereleaseIdentifier.GetHashCode
 - uid: Semver.PrereleaseIdentifier.IntValue
@@ -286,7 +221,6 @@ references:
   name: IntValue
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_IntValue_
   commentId: Overload:Semver.PrereleaseIdentifier.IntValue
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.IntValue
   nameWithType: PrereleaseIdentifier.IntValue
 - uid: Semver.PrereleaseIdentifier.op_Equality(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
@@ -299,35 +233,8 @@ references:
   name: Equality
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_Equality_
   commentId: Overload:Semver.PrereleaseIdentifier.op_Equality
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.Equality
   nameWithType: PrereleaseIdentifier.Equality
-- uid: Semver.PrereleaseIdentifier.op_GreaterThan(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  name: GreaterThan(PrereleaseIdentifier, PrereleaseIdentifier)
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_GreaterThan_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_
-  commentId: M:Semver.PrereleaseIdentifier.op_GreaterThan(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  fullName: Semver.PrereleaseIdentifier.GreaterThan(Semver.PrereleaseIdentifier, Semver.PrereleaseIdentifier)
-  nameWithType: PrereleaseIdentifier.GreaterThan(PrereleaseIdentifier, PrereleaseIdentifier)
-- uid: Semver.PrereleaseIdentifier.op_GreaterThan*
-  name: GreaterThan
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_GreaterThan_
-  commentId: Overload:Semver.PrereleaseIdentifier.op_GreaterThan
-  isSpec: "True"
-  fullName: Semver.PrereleaseIdentifier.GreaterThan
-  nameWithType: PrereleaseIdentifier.GreaterThan
-- uid: Semver.PrereleaseIdentifier.op_GreaterThanOrEqual(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  name: GreaterThanOrEqual(PrereleaseIdentifier, PrereleaseIdentifier)
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_GreaterThanOrEqual_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_
-  commentId: M:Semver.PrereleaseIdentifier.op_GreaterThanOrEqual(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  fullName: Semver.PrereleaseIdentifier.GreaterThanOrEqual(Semver.PrereleaseIdentifier, Semver.PrereleaseIdentifier)
-  nameWithType: PrereleaseIdentifier.GreaterThanOrEqual(PrereleaseIdentifier, PrereleaseIdentifier)
-- uid: Semver.PrereleaseIdentifier.op_GreaterThanOrEqual*
-  name: GreaterThanOrEqual
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_GreaterThanOrEqual_
-  commentId: Overload:Semver.PrereleaseIdentifier.op_GreaterThanOrEqual
-  isSpec: "True"
-  fullName: Semver.PrereleaseIdentifier.GreaterThanOrEqual
-  nameWithType: PrereleaseIdentifier.GreaterThanOrEqual
 - uid: Semver.PrereleaseIdentifier.op_Implicit(Semver.PrereleaseIdentifier)~System.String
   name: Implicit(PrereleaseIdentifier to String)
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_Implicit_Semver_PrereleaseIdentifier__System_String
@@ -341,7 +248,6 @@ references:
   name: Implicit
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_Implicit_
   commentId: Overload:Semver.PrereleaseIdentifier.op_Implicit
-  isSpec: "True"
   name.vb: Widening
   fullName: Semver.PrereleaseIdentifier.Implicit
   fullName.vb: Semver.PrereleaseIdentifier.Widening
@@ -357,35 +263,8 @@ references:
   name: Inequality
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_Inequality_
   commentId: Overload:Semver.PrereleaseIdentifier.op_Inequality
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.Inequality
   nameWithType: PrereleaseIdentifier.Inequality
-- uid: Semver.PrereleaseIdentifier.op_LessThan(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  name: LessThan(PrereleaseIdentifier, PrereleaseIdentifier)
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_LessThan_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_
-  commentId: M:Semver.PrereleaseIdentifier.op_LessThan(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  fullName: Semver.PrereleaseIdentifier.LessThan(Semver.PrereleaseIdentifier, Semver.PrereleaseIdentifier)
-  nameWithType: PrereleaseIdentifier.LessThan(PrereleaseIdentifier, PrereleaseIdentifier)
-- uid: Semver.PrereleaseIdentifier.op_LessThan*
-  name: LessThan
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_LessThan_
-  commentId: Overload:Semver.PrereleaseIdentifier.op_LessThan
-  isSpec: "True"
-  fullName: Semver.PrereleaseIdentifier.LessThan
-  nameWithType: PrereleaseIdentifier.LessThan
-- uid: Semver.PrereleaseIdentifier.op_LessThanOrEqual(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  name: LessThanOrEqual(PrereleaseIdentifier, PrereleaseIdentifier)
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_LessThanOrEqual_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_
-  commentId: M:Semver.PrereleaseIdentifier.op_LessThanOrEqual(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
-  fullName: Semver.PrereleaseIdentifier.LessThanOrEqual(Semver.PrereleaseIdentifier, Semver.PrereleaseIdentifier)
-  nameWithType: PrereleaseIdentifier.LessThanOrEqual(PrereleaseIdentifier, PrereleaseIdentifier)
-- uid: Semver.PrereleaseIdentifier.op_LessThanOrEqual*
-  name: LessThanOrEqual
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_LessThanOrEqual_
-  commentId: Overload:Semver.PrereleaseIdentifier.op_LessThanOrEqual
-  isSpec: "True"
-  fullName: Semver.PrereleaseIdentifier.LessThanOrEqual
-  nameWithType: PrereleaseIdentifier.LessThanOrEqual
 - uid: Semver.PrereleaseIdentifier.ToString
   name: ToString()
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_ToString
@@ -396,7 +275,6 @@ references:
   name: ToString
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_ToString_
   commentId: Overload:Semver.PrereleaseIdentifier.ToString
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.ToString
   nameWithType: PrereleaseIdentifier.ToString
 - uid: Semver.PrereleaseIdentifier.Value
@@ -409,7 +287,6 @@ references:
   name: Value
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_Value_
   commentId: Overload:Semver.PrereleaseIdentifier.Value
-  isSpec: "True"
   fullName: Semver.PrereleaseIdentifier.Value
   nameWithType: PrereleaseIdentifier.Value
 - uid: Semver.SemVersion
@@ -434,7 +311,6 @@ references:
   name: SemVersion
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion__ctor_
   commentId: Overload:Semver.SemVersion.#ctor
-  isSpec: "True"
   fullName: Semver.SemVersion.SemVersion
   nameWithType: SemVersion.SemVersion
 - uid: Semver.SemVersion.Build
@@ -447,7 +323,6 @@ references:
   name: Build
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Build_
   commentId: Overload:Semver.SemVersion.Build
-  isSpec: "True"
   fullName: Semver.SemVersion.Build
   nameWithType: SemVersion.Build
 - uid: Semver.SemVersion.Change(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String)
@@ -463,7 +338,6 @@ references:
   name: Change
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Change_
   commentId: Overload:Semver.SemVersion.Change
-  isSpec: "True"
   fullName: Semver.SemVersion.Change
   nameWithType: SemVersion.Change
 - uid: Semver.SemVersion.Compare(Semver.SemVersion,Semver.SemVersion)
@@ -476,7 +350,6 @@ references:
   name: Compare
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Compare_
   commentId: Overload:Semver.SemVersion.Compare
-  isSpec: "True"
   fullName: Semver.SemVersion.Compare
   nameWithType: SemVersion.Compare
 - uid: Semver.SemVersion.CompareByPrecedence(Semver.SemVersion)
@@ -489,7 +362,6 @@ references:
   name: CompareByPrecedence
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_CompareByPrecedence_
   commentId: Overload:Semver.SemVersion.CompareByPrecedence
-  isSpec: "True"
   fullName: Semver.SemVersion.CompareByPrecedence
   nameWithType: SemVersion.CompareByPrecedence
 - uid: Semver.SemVersion.CompareTo(Semver.SemVersion)
@@ -508,7 +380,6 @@ references:
   name: CompareTo
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_CompareTo_
   commentId: Overload:Semver.SemVersion.CompareTo
-  isSpec: "True"
   fullName: Semver.SemVersion.CompareTo
   nameWithType: SemVersion.CompareTo
 - uid: Semver.SemVersion.Equals(Semver.SemVersion)
@@ -533,7 +404,6 @@ references:
   name: Equals
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Equals_
   commentId: Overload:Semver.SemVersion.Equals
-  isSpec: "True"
   fullName: Semver.SemVersion.Equals
   nameWithType: SemVersion.Equals
 - uid: Semver.SemVersion.FromVersion(System.Version)
@@ -546,7 +416,6 @@ references:
   name: FromVersion
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_FromVersion_
   commentId: Overload:Semver.SemVersion.FromVersion
-  isSpec: "True"
   fullName: Semver.SemVersion.FromVersion
   nameWithType: SemVersion.FromVersion
 - uid: Semver.SemVersion.GetHashCode
@@ -559,7 +428,6 @@ references:
   name: GetHashCode
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_GetHashCode_
   commentId: Overload:Semver.SemVersion.GetHashCode
-  isSpec: "True"
   fullName: Semver.SemVersion.GetHashCode
   nameWithType: SemVersion.GetHashCode
 - uid: Semver.SemVersion.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
@@ -572,7 +440,6 @@ references:
   name: GetObjectData
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_GetObjectData_
   commentId: Overload:Semver.SemVersion.GetObjectData
-  isSpec: "True"
   fullName: Semver.SemVersion.GetObjectData
   nameWithType: SemVersion.GetObjectData
 - uid: Semver.SemVersion.IsPrerelease
@@ -585,7 +452,6 @@ references:
   name: IsPrerelease
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_IsPrerelease_
   commentId: Overload:Semver.SemVersion.IsPrerelease
-  isSpec: "True"
   fullName: Semver.SemVersion.IsPrerelease
   nameWithType: SemVersion.IsPrerelease
 - uid: Semver.SemVersion.Major
@@ -598,7 +464,6 @@ references:
   name: Major
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Major_
   commentId: Overload:Semver.SemVersion.Major
-  isSpec: "True"
   fullName: Semver.SemVersion.Major
   nameWithType: SemVersion.Major
 - uid: Semver.SemVersion.Metadata
@@ -611,7 +476,6 @@ references:
   name: Metadata
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Metadata_
   commentId: Overload:Semver.SemVersion.Metadata
-  isSpec: "True"
   fullName: Semver.SemVersion.Metadata
   nameWithType: SemVersion.Metadata
 - uid: Semver.SemVersion.MetadataIdentifiers
@@ -624,7 +488,6 @@ references:
   name: MetadataIdentifiers
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_MetadataIdentifiers_
   commentId: Overload:Semver.SemVersion.MetadataIdentifiers
-  isSpec: "True"
   fullName: Semver.SemVersion.MetadataIdentifiers
   nameWithType: SemVersion.MetadataIdentifiers
 - uid: Semver.SemVersion.Minor
@@ -637,7 +500,6 @@ references:
   name: Minor
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Minor_
   commentId: Overload:Semver.SemVersion.Minor
-  isSpec: "True"
   fullName: Semver.SemVersion.Minor
   nameWithType: SemVersion.Minor
 - uid: Semver.SemVersion.op_Equality(Semver.SemVersion,Semver.SemVersion)
@@ -650,7 +512,6 @@ references:
   name: Equality
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_op_Equality_
   commentId: Overload:Semver.SemVersion.op_Equality
-  isSpec: "True"
   fullName: Semver.SemVersion.Equality
   nameWithType: SemVersion.Equality
 - uid: Semver.SemVersion.op_GreaterThan(Semver.SemVersion,Semver.SemVersion)
@@ -663,7 +524,6 @@ references:
   name: GreaterThan
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_op_GreaterThan_
   commentId: Overload:Semver.SemVersion.op_GreaterThan
-  isSpec: "True"
   fullName: Semver.SemVersion.GreaterThan
   nameWithType: SemVersion.GreaterThan
 - uid: Semver.SemVersion.op_GreaterThanOrEqual(Semver.SemVersion,Semver.SemVersion)
@@ -676,7 +536,6 @@ references:
   name: GreaterThanOrEqual
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_op_GreaterThanOrEqual_
   commentId: Overload:Semver.SemVersion.op_GreaterThanOrEqual
-  isSpec: "True"
   fullName: Semver.SemVersion.GreaterThanOrEqual
   nameWithType: SemVersion.GreaterThanOrEqual
 - uid: Semver.SemVersion.op_Implicit(System.String)~Semver.SemVersion
@@ -692,7 +551,6 @@ references:
   name: Implicit
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_op_Implicit_
   commentId: Overload:Semver.SemVersion.op_Implicit
-  isSpec: "True"
   name.vb: Widening
   fullName: Semver.SemVersion.Implicit
   fullName.vb: Semver.SemVersion.Widening
@@ -708,7 +566,6 @@ references:
   name: Inequality
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_op_Inequality_
   commentId: Overload:Semver.SemVersion.op_Inequality
-  isSpec: "True"
   fullName: Semver.SemVersion.Inequality
   nameWithType: SemVersion.Inequality
 - uid: Semver.SemVersion.op_LessThan(Semver.SemVersion,Semver.SemVersion)
@@ -721,7 +578,6 @@ references:
   name: LessThan
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_op_LessThan_
   commentId: Overload:Semver.SemVersion.op_LessThan
-  isSpec: "True"
   fullName: Semver.SemVersion.LessThan
   nameWithType: SemVersion.LessThan
 - uid: Semver.SemVersion.op_LessThanOrEqual(Semver.SemVersion,Semver.SemVersion)
@@ -734,7 +590,6 @@ references:
   name: LessThanOrEqual
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_op_LessThanOrEqual_
   commentId: Overload:Semver.SemVersion.op_LessThanOrEqual
-  isSpec: "True"
   fullName: Semver.SemVersion.LessThanOrEqual
   nameWithType: SemVersion.LessThanOrEqual
 - uid: Semver.SemVersion.Parse(System.String,Semver.SemVersionStyles,System.Int32)
@@ -753,7 +608,6 @@ references:
   name: Parse
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Parse_
   commentId: Overload:Semver.SemVersion.Parse
-  isSpec: "True"
   fullName: Semver.SemVersion.Parse
   nameWithType: SemVersion.Parse
 - uid: Semver.SemVersion.Patch
@@ -766,7 +620,6 @@ references:
   name: Patch
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Patch_
   commentId: Overload:Semver.SemVersion.Patch
-  isSpec: "True"
   fullName: Semver.SemVersion.Patch
   nameWithType: SemVersion.Patch
 - uid: Semver.SemVersion.PrecedenceMatches(Semver.SemVersion)
@@ -779,7 +632,6 @@ references:
   name: PrecedenceMatches
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_PrecedenceMatches_
   commentId: Overload:Semver.SemVersion.PrecedenceMatches
-  isSpec: "True"
   fullName: Semver.SemVersion.PrecedenceMatches
   nameWithType: SemVersion.PrecedenceMatches
 - uid: Semver.SemVersion.Prerelease
@@ -792,7 +644,6 @@ references:
   name: Prerelease
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Prerelease_
   commentId: Overload:Semver.SemVersion.Prerelease
-  isSpec: "True"
   fullName: Semver.SemVersion.Prerelease
   nameWithType: SemVersion.Prerelease
 - uid: Semver.SemVersion.PrereleaseIdentifiers
@@ -805,7 +656,6 @@ references:
   name: PrereleaseIdentifiers
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_PrereleaseIdentifiers_
   commentId: Overload:Semver.SemVersion.PrereleaseIdentifiers
-  isSpec: "True"
   fullName: Semver.SemVersion.PrereleaseIdentifiers
   nameWithType: SemVersion.PrereleaseIdentifiers
 - uid: Semver.SemVersion.ToString
@@ -818,7 +668,6 @@ references:
   name: ToString
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_ToString_
   commentId: Overload:Semver.SemVersion.ToString
-  isSpec: "True"
   fullName: Semver.SemVersion.ToString
   nameWithType: SemVersion.ToString
 - uid: Semver.SemVersion.ToVersion
@@ -831,7 +680,6 @@ references:
   name: ToVersion
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_ToVersion_
   commentId: Overload:Semver.SemVersion.ToVersion
-  isSpec: "True"
   fullName: Semver.SemVersion.ToVersion
   nameWithType: SemVersion.ToVersion
 - uid: Semver.SemVersion.TryParse(System.String,Semver.SemVersion@,System.Boolean)
@@ -856,7 +704,6 @@ references:
   name: TryParse
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_TryParse_
   commentId: Overload:Semver.SemVersion.TryParse
-  isSpec: "True"
   fullName: Semver.SemVersion.TryParse
   nameWithType: SemVersion.TryParse
 - uid: Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)
@@ -872,7 +719,6 @@ references:
   name: With
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_With_
   commentId: Overload:Semver.SemVersion.With
-  isSpec: "True"
   fullName: Semver.SemVersion.With
   nameWithType: SemVersion.With
 - uid: Semver.SemVersion.WithMajor(System.Int32)
@@ -885,7 +731,6 @@ references:
   name: WithMajor
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMajor_
   commentId: Overload:Semver.SemVersion.WithMajor
-  isSpec: "True"
   fullName: Semver.SemVersion.WithMajor
   nameWithType: SemVersion.WithMajor
 - uid: Semver.SemVersion.WithMetadata(System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})
@@ -925,7 +770,6 @@ references:
   name: WithMetadata
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadata_
   commentId: Overload:Semver.SemVersion.WithMetadata
-  isSpec: "True"
   fullName: Semver.SemVersion.WithMetadata
   nameWithType: SemVersion.WithMetadata
 - uid: Semver.SemVersion.WithMinor(System.Int32)
@@ -938,7 +782,6 @@ references:
   name: WithMinor
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMinor_
   commentId: Overload:Semver.SemVersion.WithMinor
-  isSpec: "True"
   fullName: Semver.SemVersion.WithMinor
   nameWithType: SemVersion.WithMinor
 - uid: Semver.SemVersion.WithoutMetadata
@@ -951,7 +794,6 @@ references:
   name: WithoutMetadata
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithoutMetadata_
   commentId: Overload:Semver.SemVersion.WithoutMetadata
-  isSpec: "True"
   fullName: Semver.SemVersion.WithoutMetadata
   nameWithType: SemVersion.WithoutMetadata
 - uid: Semver.SemVersion.WithoutPrerelease
@@ -964,7 +806,6 @@ references:
   name: WithoutPrerelease
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithoutPrerelease_
   commentId: Overload:Semver.SemVersion.WithoutPrerelease
-  isSpec: "True"
   fullName: Semver.SemVersion.WithoutPrerelease
   nameWithType: SemVersion.WithoutPrerelease
 - uid: Semver.SemVersion.WithoutPrereleaseOrMetadata
@@ -977,7 +818,6 @@ references:
   name: WithoutPrereleaseOrMetadata
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithoutPrereleaseOrMetadata_
   commentId: Overload:Semver.SemVersion.WithoutPrereleaseOrMetadata
-  isSpec: "True"
   fullName: Semver.SemVersion.WithoutPrereleaseOrMetadata
   nameWithType: SemVersion.WithoutPrereleaseOrMetadata
 - uid: Semver.SemVersion.WithPatch(System.Int32)
@@ -990,7 +830,6 @@ references:
   name: WithPatch
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPatch_
   commentId: Overload:Semver.SemVersion.WithPatch
-  isSpec: "True"
   fullName: Semver.SemVersion.WithPatch
   nameWithType: SemVersion.WithPatch
 - uid: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier})
@@ -1030,7 +869,6 @@ references:
   name: WithPrerelease
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_
   commentId: Overload:Semver.SemVersion.WithPrerelease
-  isSpec: "True"
   fullName: Semver.SemVersion.WithPrerelease
   nameWithType: SemVersion.WithPrerelease
 - uid: Semver.SemVersionStyles

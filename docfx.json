@@ -3,8 +3,8 @@
     [{
         "src": 
         [{
-            "src": "src/v2.1.0",
-            "files": [ "Semver/**.csproj" ]
+            "src": "src/v2.1.0/",
+            "files": [ "Semver/**/net452/*.dll" ]
         }],
         "dest": "v2.1.x",
         "force": true,

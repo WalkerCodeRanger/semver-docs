@@ -78,20 +78,27 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Semver.SemVersion.html">SemVersion</a></h4>
-      <section><p>A semantic version number.
-Conforms with v2.0.0 of semantic versioning (<a href="http://semver.org">http://semver.org</a>).</p>
+      <section><p>A semantic version number. Conforms with v2.0.0 of semantic versioning
+(<a href="https://semver.org">semver.org</a>).</p>
 </section>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></h4>
-      <section></section>
+      <section><p>An individual metadata identifier for a semantic version.</p>
+</section>
       <h4><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></h4>
-      <section></section>
+      <section><p>An individual prerelease identifier for a semantic version.</p>
+</section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="Semver.SemVersionStyles.html">SemVersionStyles</a></h4>
       <section><p>Determines the styles that are allowed in version strings passed to the
-<code>Parse</code> and <code>TryParse</code> methods of <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Parse_System_String_Semver_SemVersionStyles_System_Int32_">Parse(String, SemVersionStyles, Int32)</a> and
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_TryParse_System_String_Semver_SemVersionStyles_Semver_SemVersion__System_Int32_">TryParse(String, SemVersionStyles, out SemVersion, Int32)</a>
+methods. These styles only affect which strings are accepted when parsing. The
+constructed version numbers are valid semantic versions without any of the
+optional features in the original string.</p>
+<p>This enumeration supports a bitwise combination of its member values.</p>
 </section>
 </article>
           </div>
