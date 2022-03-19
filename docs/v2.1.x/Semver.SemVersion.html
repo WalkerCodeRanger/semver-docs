@@ -113,13 +113,273 @@
   <h3 id="constructors">Constructors
   </h3>
   <a id="Semver_SemVersion__ctor_" data-uid="Semver.SemVersion.#ctor*"></a>
+  <h4 id="Semver_SemVersion__ctor_System_Int32_" data-uid="Semver.SemVersion.#ctor(System.Int32)">SemVersion(Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion(int major)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The major version number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion__ctor_" data-uid="Semver.SemVersion.#ctor*"></a>
+  <h4 id="Semver_SemVersion__ctor_System_Int32_System_Int32_" data-uid="Semver.SemVersion.#ctor(System.Int32,System.Int32)">SemVersion(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion(int major, int minor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>The minor version number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion__ctor_" data-uid="Semver.SemVersion.#ctor*"></a>
+  <h4 id="Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_" data-uid="Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32)">SemVersion(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion(int major, int minor, int patch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>The minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>The patch version number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion__ctor_" data-uid="Semver.SemVersion.#ctor*"></a>
+  <h4 id="Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__" data-uid="Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier},System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})">SemVersion(Int32, Int32, Int32, IEnumerable&lt;PrereleaseIdentifier&gt;, IEnumerable&lt;MetadataIdentifier&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion(int major, int minor = 0, int patch = 0, IEnumerable&lt;PrereleaseIdentifier&gt; prerelease = null, IEnumerable&lt;MetadataIdentifier&gt; metadata = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>The minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>The patch version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>&gt;</td>
+        <td><span class="parametername">prerelease</span></td>
+        <td><p>The prerelease identifiers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>The build metadata identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>A <code data-dev-comment-type="paramref" class="paramref">major</code>,
+<code data-dev-comment-type="paramref" class="paramref">minor</code>, or <code data-dev-comment-type="paramref" class="paramref">patch</code> version number is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease or metadata identifier has the default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion__ctor_" data-uid="Semver.SemVersion.#ctor*"></a>
+  <h4 id="Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__" data-uid="Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">SemVersion(Int32, Int32, Int32, IEnumerable&lt;String&gt;, IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion(int major, int minor = 0, int patch = 0, IEnumerable&lt;string&gt; prerelease = null, IEnumerable&lt;string&gt; metadata = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>The minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>The patch version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">prerelease</span></td>
+        <td><p>The prerelease identifiers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>The build metadata identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>A <code data-dev-comment-type="paramref" class="paramref">major</code>,
+<code data-dev-comment-type="paramref" class="paramref">minor</code>, or <code data-dev-comment-type="paramref" class="paramref">patch</code> version number is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>One of the prerelease or metadata identifiers is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
+zeros for a numeric identifier. Or, a metadata identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>A numeric prerelease identifier value is too large
+for <span class="xref">System.Int32</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion__ctor_" data-uid="Semver.SemVersion.#ctor*"></a>
   <h4 id="Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_" data-uid="Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)">SemVersion(Int32, Int32, Int32, String, String)</h4>
   <div class="markdown level1 summary"><p>Constructs a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion(int major, int minor = 0, int patch = 0, string prerelease = &quot;&quot;, string build = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This constructor is obsolete. Use another constructor or SemVersion.ParsedFrom() instead.&quot;)]
+public SemVersion(int major, int minor = 0, int patch = 0, string prerelease = &quot;&quot;, string build = &quot;&quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -188,7 +448,7 @@ public SemVersion(Version version)</code></pre>
         <td><span class="xref">System.Version</span></td>
         <td><span class="parametername">version</span></td>
         <td><p><span class="xref">System.Version</span> used to initialize
-the major, minor, and match version numbers and the build metadata.</p>
+the major, minor, and patch version numbers and the build metadata.</p>
 </td>
       </tr>
     </tbody>
@@ -283,6 +543,39 @@ and <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_PrereleaseIde
 this is <span class="xref">false</span>, the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Prerelease">Prerelease</a> property
 will be an empty string and the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_PrereleaseIdentifiers">PrereleaseIdentifiers</a> will
 be an empty collection.</p>
+</div>
+  <a id="Semver_SemVersion_IsRelease_" data-uid="Semver.SemVersion.IsRelease*"></a>
+  <h4 id="Semver_SemVersion_IsRelease" data-uid="Semver.SemVersion.IsRelease">IsRelease</h4>
+  <div class="markdown level1 summary"><p>Whether this is a release version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRelease { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether this is a release version. A semantic version without
+prerelease identifiers is a release version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_IsRelease_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When this is <span class="xref">true</span>, the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Prerelease">Prerelease</a>
+property will be an empty string and the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_PrereleaseIdentifiers">PrereleaseIdentifiers</a>
+will be an empty collection. When this is <span class="xref">false</span>,
+the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Prerelease">Prerelease</a> and <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_PrereleaseIdentifiers">PrereleaseIdentifiers</a>
+properties are non-empty.</p>
 </div>
   <a id="Semver_SemVersion_Major_" data-uid="Semver.SemVersion.Major*"></a>
   <h4 id="Semver_SemVersion_Major" data-uid="Semver.SemVersion.Major">Major</h4>
@@ -459,7 +752,7 @@ compatible bug fixes.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The prerelease identifiers for this version or empty if this is a release version.</p>
+        <td><p>The prerelease identifiers for this version or empty string if this is a release version.</p>
 </td>
       </tr>
     </tbody>
@@ -561,7 +854,7 @@ public SemVersion Change(int? major = null, int? minor = null, int? patch = null
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">prerelease</span></td>
-        <td><p>The value to replace the prerelease version
+        <td><p>The value to replace the prerelease portion
 or <span class="xref">null</span> to leave it unchanged.</p>
 </td>
       </tr>
@@ -596,7 +889,7 @@ those fields to be changed.</p>
 </div>
   <h5 id="Semver_SemVersion_Change_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String__examples">Examples</h5>
   <p>To change only the patch version:</p>
-<pre><code>var newVersion = version.Change(patch: 4);</code></pre>
+<pre><code>var changedVersion = version.Change(patch: 4);</code></pre>
 
   <a id="Semver_SemVersion_Compare_" data-uid="Semver.SemVersion.Compare*"></a>
   <h4 id="Semver_SemVersion_Compare_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.Compare(Semver.SemVersion,Semver.SemVersion)">Compare(SemVersion, SemVersion)</h4>
@@ -654,19 +947,19 @@ or <code data-dev-comment-type="paramref" class="paramref">versionB</code> is <s
   <h5 id="Semver_SemVersion_Compare_Semver_SemVersion_Semver_SemVersion__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
 with the same precedence. Sort order is determined by comparing the major, minor,
-patch, prerelease, and build metadata portions in order from left to right. The major,
+patch, prerelease portion, and build metadata in order from left to right. The major,
 minor, and patch version numbers are compared numerically. A prerelease version precedes
 a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric identifiers
-are compared numerically. Alphanumeric identifiers are compared lexically in ASCII sort
-order. A longer series of metadata identifiers follows a shorter series if all the
-preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Numeric metadata
+identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
+Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
+metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_CompareByPrecedence_" data-uid="Semver.SemVersion.CompareByPrecedence*"></a>
   <h4 id="Semver_SemVersion_CompareByPrecedence_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareByPrecedence(Semver.SemVersion)">CompareByPrecedence(SemVersion)</h4>
@@ -723,7 +1016,7 @@ portion in order from left to right. Versions that differ only by build metadata
 same precedence. The major, minor, and patch version numbers are compared numerically. A
 prerelease version precedes a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
@@ -779,19 +1072,19 @@ the other in the sort order.</p>
   <h5 id="Semver_SemVersion_CompareTo_Semver_SemVersion__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
 with the same precedence. Sort order is determined by comparing the major, minor,
-patch, prerelease, and build metadata portions in order from left to right. The major,
+patch, prerelease portion, and build metadata in order from left to right. The major,
 minor, and patch version numbers are compared numerically. A prerelease version precedes
 a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric identifiers
-are compared numerically. Alphanumeric identifiers are compared lexically in ASCII sort
-order. A longer series of metadata identifiers follows a shorter series if all the
-preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Numeric metadata
+identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
+Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
+metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_CompareTo_" data-uid="Semver.SemVersion.CompareTo*"></a>
   <h4 id="Semver_SemVersion_CompareTo_System_Object_" data-uid="Semver.SemVersion.CompareTo(System.Object)">CompareTo(Object)</h4>
@@ -845,19 +1138,19 @@ the other in the sort order.</p>
   <h5 id="Semver_SemVersion_CompareTo_System_Object__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
 with the same precedence. Sort order is determined by comparing the major, minor,
-patch, prerelease, and build metadata portions in order from left to right. The major,
+patch, prerelease portion, and build metadata in order from left to right. The major,
 minor, and patch version numbers are compared numerically. A prerelease version precedes
 a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric identifiers
-are compared numerically. Alphanumeric identifiers are compared lexically in ASCII sort
-order. A longer series of metadata identifiers follows a shorter series if all the
-preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Numeric metadata
+identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
+Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
+metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1068,10 +1361,11 @@ versions with the same precedence may not be equal.</p>
   <h5 id="Semver_SemVersion_FromVersion_System_Version__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p><span class="xref">System.Version</span> numbers have the form <em>major</em>.<em>minor</em>[.<em>build</em>[.<em>revision</em>]]
 where square brackets ('[' and ']')  indicate optional components. The first three parts
-are converted to the major, minor, and match versions of a semantic version. If the build component
-is not defined (-1), the patch number is assumed to be zero. <span class="xref">System.Version</span> numbers
-with a revision greater than zero cannot be converted to semantic versions. An
-<span class="xref">System.ArgumentException</span> is thrown when this method is called with such a <span class="xref">System.Version</span>.</p>
+are converted to the major, minor, and patch version numbers of a semantic version. If the
+build component is not defined (-1), the patch number is assumed to be zero.
+<span class="xref">System.Version</span> numbers with a revision greater than zero cannot be converted to
+semantic versions. An <span class="xref">System.ArgumentException</span> is thrown when this method is called
+with such a <span class="xref">System.Version</span>.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1089,7 +1383,7 @@ with a revision greater than zero cannot be converted to semantic versions. An
       </tr>
       <tr>
         <td><span class="xref">System.ArgumentException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">version</code> has a Revision greater than zero.</p>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">version</code> has a revision number greater than zero.</p>
 </td>
       </tr>
     </tbody>
@@ -1327,7 +1621,115 @@ or patch version numbers when <code data-dev-comment-type="paramref" class="para
       </tr>
       <tr>
         <td><span class="xref">System.OverflowException</span></td>
-        <td><p>The Major, Minor, or Patch versions are larger than <span class="xref">System.Int32.MaxValue</span>.</p>
+        <td><p>The major, minor, or patch version number is larger
+than <span class="xref">System.Int32.MaxValue</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_ParsedFrom_" data-uid="Semver.SemVersion.ParsedFrom*"></a>
+  <h4 id="Semver_SemVersion_ParsedFrom_System_Int32_System_Int32_System_Int32_System_String_System_String_System_Boolean_" data-uid="Semver.SemVersion.ParsedFrom(System.Int32,System.Int32,System.Int32,System.String,System.String,System.Boolean)">ParsedFrom(Int32, Int32, Int32, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create a new instance of the <a class="xref" href="Semver.SemVersion.html">SemVersion</a> class. Parses prerelease
+and metadata identifiers from dot separated strings. If parsing is not needed, use a
+constructor instead.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersion ParsedFrom(int major, int minor = 0, int patch = 0, string prerelease = &quot;&quot;, string metadata = &quot;&quot;, bool allowLeadingZeros = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>The minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>The patch version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prerelease</span></td>
+        <td><p>The prerelease portion (e.g. &quot;alpha.5&quot;).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>The build metadata (e.g. &quot;nightly.232&quot;).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowLeadingZeros</span></td>
+        <td><p>Allow leading zeros in numeric prerelease identifiers. Leading
+zeros will be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>A <code data-dev-comment-type="paramref" class="paramref">major</code>,
+<code data-dev-comment-type="paramref" class="paramref">minor</code>, or <code data-dev-comment-type="paramref" class="paramref">patch</code> version number is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
+zeros for a numeric identifier when <code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is
+<span class="xref">false</span>. Or, a metadata identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>A numeric prerelease identifier value is too large
+for <span class="xref">System.Int32</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -1449,7 +1851,7 @@ prerelease version or has build metadata.</p>
       <tr>
         <td><span class="xref">System.InvalidOperationException</span></td>
         <td><p>The semantic version is a prerelease version
-or has build metadata or has a negative major, minor, or patch version.</p>
+or has build metadata or has a negative major, minor, or patch version number.</p>
 </td>
       </tr>
     </tbody>
@@ -1581,13 +1983,14 @@ parsed. This prevents attacks using very long version strings.</p>
     </tbody>
   </table>
   <a id="Semver_SemVersion_With_" data-uid="Semver.SemVersion.With*"></a>
-  <h4 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_" data-uid="Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)">With(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a copy of the current instance with changed properties.</p>
+  <h4 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__" data-uid="Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier},System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})">With(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;PrereleaseIdentifier&gt;, IEnumerable&lt;MetadataIdentifier&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with multiple changed properties. If changing only
+one property use one of the more specific <code>WithX()</code> methods.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion With(int? major = null, int? minor = null, int? patch = null, string prerelease = null, string metadata = null, bool allowLeadingZeros = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public SemVersion With(int? major = null, int? minor = null, int? patch = null, IEnumerable&lt;PrereleaseIdentifier&gt; prerelease = null, IEnumerable&lt;MetadataIdentifier&gt; metadata = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1602,37 +2005,31 @@ parsed. This prevents attacks using very long version strings.</p>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">major</span></td>
-        <td><p>The value to replace the major version or <span class="xref">null</span> to leave it unchanged.</p>
+        <td><p>The value to replace the major version number or <span class="xref">null</span> to leave it unchanged.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">minor</span></td>
-        <td><p>The value to replace the minor version or <span class="xref">null</span> to leave it unchanged.</p>
+        <td><p>The value to replace the minor version number or <span class="xref">null</span> to leave it unchanged.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td><span class="parametername">patch</span></td>
-        <td><p>The value to replace the patch version or <span class="xref">null</span> to leave it unchanged.</p>
+        <td><p>The value to replace the patch version number or <span class="xref">null</span> to leave it unchanged.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>&gt;</td>
         <td><span class="parametername">prerelease</span></td>
         <td><p>The value to replace the prerelease identifiers or <span class="xref">null</span> to leave it unchanged.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>&gt;</td>
         <td><span class="parametername">metadata</span></td>
         <td><p>The value to replace the build metadata identifiers or <span class="xref">null</span> to leave it unchanged.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">allowLeadingZeros</span></td>
-        <td><p>Allow leading zeros in numeric prerelease identifiers. Leading zeros will be trimmed.</p>
 </td>
       </tr>
     </tbody>
@@ -1653,14 +2050,42 @@ parsed. This prevents attacks using very long version strings.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_">With(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, String, Boolean)</a> method is intended to be called using named argument syntax, passing only
+  <h5 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__">With(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;PrereleaseIdentifier&gt;, IEnumerable&lt;MetadataIdentifier&gt;)</a> method is intended to be called using named argument syntax, passing only
 those fields to be changed.</p>
 </div>
-  <h5 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean__examples">Examples</h5>
-  <p>To change only the patch version:</p>
-<pre><code>version.With(patch: 4)</code></pre>
+  <h5 id="Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier___examples">Examples</h5>
+  <p>To change the minor and patch versions:</p>
+<pre><code>var modifiedVersion = version.With(minor: 2, patch: 4);</code></pre>
 
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>A <code data-dev-comment-type="paramref" class="paramref">major</code>,
+<code data-dev-comment-type="paramref" class="paramref">minor</code>, or <code data-dev-comment-type="paramref" class="paramref">patch</code> version number is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease or metadata identifier has the default value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>A numeric prerelease identifier value is too large
+for <span class="xref">System.Int32</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Semver_SemVersion_WithMajor_" data-uid="Semver.SemVersion.WithMajor*"></a>
   <h4 id="Semver_SemVersion_WithMajor_System_Int32_" data-uid="Semver.SemVersion.WithMajor(System.Int32)">WithMajor(Int32)</h4>
   <div class="markdown level1 summary"><p>Creates a copy of the current instance with a different major version number.</p>
@@ -1721,6 +2146,78 @@ those fields to be changed.</p>
     </tbody>
   </table>
   <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
+  <h4 id="Semver_SemVersion_WithMetadata_Semver_MetadataIdentifier_Semver_MetadataIdentifier___" data-uid="Semver.SemVersion.WithMetadata(Semver.MetadataIdentifier,Semver.MetadataIdentifier[])">WithMetadata(MetadataIdentifier, MetadataIdentifier[])</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with different build metadata identifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(MetadataIdentifier metadataIdentifier, params MetadataIdentifier[] metadataIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">metadataIdentifier</span></td>
+        <td><p>The first identifier to replace the existing
+build metadata identifiers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>[]</td>
+        <td><span class="parametername">metadataIdentifiers</span></td>
+        <td><p>The rest of the identifiers to replace the
+existing build metadata identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">metadataIdentifiers</code> is
+<span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A metadata identifier has the default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
   <h4 id="Semver_SemVersion_WithMetadata_System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__" data-uid="Semver.SemVersion.WithMetadata(System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})">WithMetadata(IEnumerable&lt;MetadataIdentifier&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a copy of the current instance with different build metadata identifiers.</p>
 </div>
@@ -1742,7 +2239,7 @@ those fields to be changed.</p>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>&gt;</td>
         <td><span class="parametername">metadataIdentifiers</span></td>
-        <td><p>The values to replace the build metadata identifiers.</p>
+        <td><p>The identifiers to replace the build metadata identifiers.</p>
 </td>
       </tr>
     </tbody>
@@ -1775,7 +2272,7 @@ those fields to be changed.</p>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">metadataIdentifiers</code> is
-<span class="xref">null</span> or one of the metadata identifiers is <span class="xref">null</span>.</p>
+<span class="xref">null</span>.</p>
 </td>
       </tr>
       <tr>
@@ -1807,7 +2304,7 @@ those fields to be changed.</p>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">metadataIdentifiers</span></td>
-        <td><p>The values to replace the build metadata identifiers.</p>
+        <td><p>The identifiers to replace the build metadata identifiers.</p>
 </td>
       </tr>
     </tbody>
@@ -1852,13 +2349,88 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
     </tbody>
   </table>
   <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
-  <h4 id="Semver_SemVersion_WithMetadata_System_String_" data-uid="Semver.SemVersion.WithMetadata(System.String)">WithMetadata(String)</h4>
+  <h4 id="Semver_SemVersion_WithMetadata_System_String_System_String___" data-uid="Semver.SemVersion.WithMetadata(System.String,System.String[])">WithMetadata(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with different build metadata identifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(string metadataIdentifier, params string[] metadataIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadataIdentifier</span></td>
+        <td><p>The first identifier to replace the existing
+build metadata identifiers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">metadataIdentifiers</span></td>
+        <td><p>The rest of the build metadata identifiers to replace the
+existing build metadata identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><p>The new version with the different build metadata identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">metadataIdentifier</code> or
+<code data-dev-comment-type="paramref" class="paramref">metadataIdentifiers</code> is <span class="xref">null</span> or one of the metadata
+identifiers is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A metadata identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithMetadataParsedFrom_" data-uid="Semver.SemVersion.WithMetadataParsedFrom*"></a>
+  <h4 id="Semver_SemVersion_WithMetadataParsedFrom_System_String_" data-uid="Semver.SemVersion.WithMetadataParsedFrom(System.String)">WithMetadataParsedFrom(String)</h4>
   <div class="markdown level1 summary"><p>Creates a copy of the current instance with different build metadata.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(string metadata)</code></pre>
+    <pre><code class="lang-csharp hljs">public SemVersion WithMetadataParsedFrom(string metadata)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1906,72 +2478,6 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">metadata</code> is <span class="xref">null</span>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>A metadata identifier is empty or contains invalid
-characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Semver_SemVersion_WithMetadata_" data-uid="Semver.SemVersion.WithMetadata*"></a>
-  <h4 id="Semver_SemVersion_WithMetadata_System_String___" data-uid="Semver.SemVersion.WithMetadata(System.String[])">WithMetadata(String[])</h4>
-  <div class="markdown level1 summary"><p>Creates a copy of the current instance with different build metadata identifiers.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion WithMetadata(params string[] metadataIdentifiers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">metadataIdentifiers</span></td>
-        <td><p>The values to replace the build metadata identifiers.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
-        <td><p>The new version with the different build metadata identifiers.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">metadataIdentifiers</code> is
-<span class="xref">null</span> or one of the metadata identifiers is <span class="xref">null</span>.</p>
 </td>
       </tr>
       <tr>
@@ -2086,7 +2592,7 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
-        <td><p>The new version without prerelease portion.</p>
+        <td><p>The new version without prerelease identifiers.</p>
 </td>
       </tr>
     </tbody>
@@ -2112,6 +2618,123 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
       <tr>
         <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
         <td><p>The new version without prerelease identifiers or build metadata.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithParsedFrom_" data-uid="Semver.SemVersion.WithParsedFrom*"></a>
+  <h4 id="Semver_SemVersion_WithParsedFrom_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_" data-uid="Semver.SemVersion.WithParsedFrom(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)">WithParsedFrom(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with multiple changed properties. Parses prerelease
+and metadata identifiers from dot separated strings. Use <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__">With(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, IEnumerable&lt;PrereleaseIdentifier&gt;, IEnumerable&lt;MetadataIdentifier&gt;)</a> instead if
+parsing is not needed. If changing only one property use one of the more specific
+<code>WithX()</code> methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithParsedFrom(int? major = null, int? minor = null, int? patch = null, string prerelease = null, string metadata = null, bool allowLeadingZeros = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">major</span></td>
+        <td><p>The value to replace the major version number or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>The value to replace the minor version number or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>The value to replace the patch version number or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prerelease</span></td>
+        <td><p>The value to replace the prerelease identifiers or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>The value to replace the build metadata identifiers or <span class="xref">null</span> to leave it unchanged.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowLeadingZeros</span></td>
+        <td><p>Allow leading zeros in numeric prerelease identifiers. Leading
+zeros will be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><p>The new version with changed properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_WithParsedFrom_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_WithParsedFrom_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_">WithParsedFrom(Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, String, Boolean)</a> method is intended to be called using named argument
+syntax, passing only those fields to be changed.</p>
+</div>
+  <h5 id="Semver_SemVersion_WithParsedFrom_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean__examples">Examples</h5>
+  <p>To change the patch version and prerelease identifiers version:</p>
+<pre><code>var modifiedVersion = version.WithParsedFrom(patch: 4, prerelease: &quot;alpha.5&quot;);</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>A <code data-dev-comment-type="paramref" class="paramref">major</code>,
+<code data-dev-comment-type="paramref" class="paramref">minor</code>, or <code data-dev-comment-type="paramref" class="paramref">patch</code> version number is negative.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
+zeros for a numeric identifier when <code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is
+<span class="xref">false</span>. Or, a metadata identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>A numeric prerelease identifier value is too large
+for <span class="xref">System.Int32</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -2176,8 +2799,81 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
     </tbody>
   </table>
   <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
+  <h4 id="Semver_SemVersion_WithPrerelease_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier___" data-uid="Semver.SemVersion.WithPrerelease(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier[])">WithPrerelease(PrereleaseIdentifier, PrereleaseIdentifier[])</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with different prerelease identifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(PrereleaseIdentifier prereleaseIdentifier, params PrereleaseIdentifier[] prereleaseIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></td>
+        <td><span class="parametername">prereleaseIdentifier</span></td>
+        <td><p>The first identifier to replace the existing
+prerelease identifiers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>[]</td>
+        <td><span class="parametername">prereleaseIdentifiers</span></td>
+        <td><p>The rest of the identifiers to replace the
+existing prerelease identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><p>The new version with the different prerelease identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">prereleaseIdentifiers</code> is
+<span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease identifier has the default value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
   <h4 id="Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__" data-uid="Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier})">WithPrerelease(IEnumerable&lt;PrereleaseIdentifier&gt;)</h4>
-  <div class="markdown level1 summary"><p>Creates a copy of the current instance with a different prerelease identifiers.</p>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with different prerelease identifiers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2197,7 +2893,7 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>&gt;</td>
         <td><span class="parametername">prereleaseIdentifiers</span></td>
-        <td><p>The values to replace the prerelease identifiers.</p>
+        <td><p>The identifiers to replace the prerelease identifiers.</p>
 </td>
       </tr>
     </tbody>
@@ -2213,7 +2909,7 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
     <tbody>
       <tr>
         <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
-        <td><p>The new version with the different prerelease portion.</p>
+        <td><p>The new version with the different prerelease identifiers.</p>
 </td>
       </tr>
     </tbody>
@@ -2240,13 +2936,13 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
     </tbody>
   </table>
   <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
-  <h4 id="Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_System_String__System_Boolean_" data-uid="Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{System.String},System.Boolean)">WithPrerelease(IEnumerable&lt;String&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a copy of the current instance with a different prerelease identifiers.</p>
+  <h4 id="Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_System_String__" data-uid="Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{System.String})">WithPrerelease(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with different prerelease identifiers.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(IEnumerable&lt;string&gt; prereleaseIdentifiers, bool allowLeadingZeros = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(IEnumerable&lt;string&gt; prereleaseIdentifiers)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -2261,180 +2957,7 @@ characters (i.e. characters that are not ASCII alphanumerics or hyphens).</p>
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">prereleaseIdentifiers</span></td>
-        <td><p>The values to replace the prerelease identifiers.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">allowLeadingZeros</span></td>
-        <td><p>Whether to allow leading zeros in the prerelease identifiers.
-If <span class="xref">true</span>, leading zeros will be allowed on numeric identifiers
-but will be removed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
-        <td><p>The new version with the different prerelease portion.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_System_String__System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Because a valid numeric identifier does not have leading zeros, this constructor
-will never create a <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> with leading zeros even if
-<code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">true</span>. Any leading zeros will
-be removed.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">prereleaseIdentifiers</code> is
-<span class="xref">null</span> or one of the prerelease identifiers is <span class="xref">null</span>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>A prerelease identifier is empty or contains invalid
-characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
-zeros for a numeric identifier when <code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">false</span>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.OverflowException</span></td>
-        <td><p>A numeric prerelease identifier value is too large
-for <span class="xref">System.Int32</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
-  <h4 id="Semver_SemVersion_WithPrerelease_System_String_System_Boolean_" data-uid="Semver.SemVersion.WithPrerelease(System.String,System.Boolean)">WithPrerelease(String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a copy of the current instance with a different prerelease portion.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(string prerelease, bool allowLeadingZeros = false)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">prerelease</span></td>
-        <td><p>The value to replace the prerelease portion.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">allowLeadingZeros</span></td>
-        <td><p>Whether to allow leading zeros in the prerelease identifiers.
-If <span class="xref">true</span>, leading zeros will be allowed on numeric identifiers
-but will be removed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
-        <td><p>The new version with the different prerelease portion.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Semver_SemVersion_WithPrerelease_System_String_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Because a valid numeric identifier does not have leading zeros, this constructor
-will never create a <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> with leading zeros even if
-<code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">true</span>. Any leading zeros will
-be removed.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">prerelease</code> is <span class="xref">null</span>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>A prerelease identifier is empty or contains invalid
-characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
-zeros for a numeric identifier when <code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">false</span>.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.OverflowException</span></td>
-        <td><p>A numeric prerelease identifier value is too large
-for <span class="xref">System.Int32</span>.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
-  <h4 id="Semver_SemVersion_WithPrerelease_System_String___" data-uid="Semver.SemVersion.WithPrerelease(System.String[])">WithPrerelease(String[])</h4>
-  <div class="markdown level1 summary"><p>Creates a copy of the current instance with a different prerelease identifiers.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(params string[] prereleaseIdentifiers)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span>[]</td>
-        <td><span class="parametername">prereleaseIdentifiers</span></td>
-        <td><p>The values to replace the prerelease identifiers.</p>
+        <td><p>The identifiers to replace the prerelease identifiers.</p>
 </td>
       </tr>
     </tbody>
@@ -2475,6 +2998,174 @@ for <span class="xref">System.Int32</span>.</p>
         <td><p>A prerelease identifier is empty or contains invalid
 characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
 zeros for a numeric identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>A numeric prerelease identifier value is too large
+for <span class="xref">System.Int32</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPrerelease_" data-uid="Semver.SemVersion.WithPrerelease*"></a>
+  <h4 id="Semver_SemVersion_WithPrerelease_System_String_System_String___" data-uid="Semver.SemVersion.WithPrerelease(System.String,System.String[])">WithPrerelease(String, String[])</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with different prerelease identifiers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrerelease(string prereleaseIdentifier, params string[] prereleaseIdentifiers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prereleaseIdentifier</span></td>
+        <td><p>The first identifier to replace the existing
+prerelease identifiers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">prereleaseIdentifiers</span></td>
+        <td><p>The rest of the identifiers to replace the
+existing prerelease identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><p>The new version with the different prerelease identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">prereleaseIdentifier</code> or
+<code data-dev-comment-type="paramref" class="paramref">prereleaseIdentifiers</code> is <span class="xref">null</span> or one of the
+prerelease identifiers is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
+zeros for a numeric identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>A numeric prerelease identifier value is too large
+for <span class="xref">System.Int32</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_WithPrereleaseParsedFrom_" data-uid="Semver.SemVersion.WithPrereleaseParsedFrom*"></a>
+  <h4 id="Semver_SemVersion_WithPrereleaseParsedFrom_System_String_System_Boolean_" data-uid="Semver.SemVersion.WithPrereleaseParsedFrom(System.String,System.Boolean)">WithPrereleaseParsedFrom(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Creates a copy of the current instance with a different prerelease portion.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemVersion WithPrereleaseParsedFrom(string prerelease, bool allowLeadingZeros = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">prerelease</span></td>
+        <td><p>The value to replace the prerelease portion.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowLeadingZeros</span></td>
+        <td><p>Whether to allow leading zeros in the prerelease identifiers.
+If <span class="xref">true</span>, leading zeros will be allowed on numeric identifiers
+but will be removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><p>The new version with the different prerelease identifiers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_WithPrereleaseParsedFrom_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Because a valid numeric identifier does not have leading zeros, this constructor
+will never create a <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> with leading zeros even if
+<code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">true</span>. Any leading zeros will
+be removed.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">prerelease</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>A prerelease identifier is empty or contains invalid
+characters (i.e. characters that are not ASCII alphanumerics or hyphens) or has leading
+zeros for a numeric identifier when <code data-dev-comment-type="paramref" class="paramref">allowLeadingZeros</code> is <span class="xref">false</span>.</p>
 </td>
       </tr>
       <tr>
@@ -2589,19 +3280,19 @@ in the sort order; otherwise <span class="xref">false</span>.</p>
   <h5 id="Semver_SemVersion_op_GreaterThan_Semver_SemVersion_Semver_SemVersion__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
 with the same precedence. Sort order is determined by comparing the major, minor,
-patch, prerelease, and build metadata portions in order from left to right. The major,
+patch, prerelease portion, and build metadata in order from left to right. The major,
 minor, and patch version numbers are compared numerically. A prerelease version precedes
 a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric identifiers
-are compared numerically. Alphanumeric identifiers are compared lexically in ASCII sort
-order. A longer series of metadata identifiers follows a shorter series if all the
-preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Numeric metadata
+identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
+Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
+metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_op_GreaterThanOrEqual_" data-uid="Semver.SemVersion.op_GreaterThanOrEqual*"></a>
   <h4 id="Semver_SemVersion_op_GreaterThanOrEqual_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.op_GreaterThanOrEqual(Semver.SemVersion,Semver.SemVersion)">GreaterThanOrEqual(SemVersion, SemVersion)</h4>
@@ -2654,19 +3345,19 @@ preceding identifiers are equal.</p>
   <h5 id="Semver_SemVersion_op_GreaterThanOrEqual_Semver_SemVersion_Semver_SemVersion__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
 with the same precedence. Sort order is determined by comparing the major, minor,
-patch, prerelease, and build metadata portions in order from left to right. The major,
+patch, prerelease portion, and build metadata in order from left to right. The major,
 minor, and patch version numbers are compared numerically. A prerelease version precedes
 a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric identifiers
-are compared numerically. Alphanumeric identifiers are compared lexically in ASCII sort
-order. A longer series of metadata identifiers follows a shorter series if all the
-preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Numeric metadata
+identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
+Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
+metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_op_Implicit_" data-uid="Semver.SemVersion.op_Implicit*"></a>
   <h4 id="Semver_SemVersion_op_Implicit_System_String__Semver_SemVersion" data-uid="Semver.SemVersion.op_Implicit(System.String)~Semver.SemVersion">Implicit(String to SemVersion)</h4>
@@ -2733,7 +3424,7 @@ public static implicit operator SemVersion(string version)</code></pre>
       </tr>
       <tr>
         <td><span class="xref">System.OverflowException</span></td>
-        <td><p>The Major, Minor, or Patch versions are larger than <code>int.MaxValue</code>.</p>
+        <td><p>The major, minor, or patch version number is larger than <span class="xref">System.Int32.MaxValue</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -2840,19 +3531,19 @@ in the sort order; otherwise <span class="xref">false</span>.</p>
   <h5 id="Semver_SemVersion_op_LessThan_Semver_SemVersion_Semver_SemVersion__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
 with the same precedence. Sort order is determined by comparing the major, minor,
-patch, prerelease, and build metadata portions in order from left to right. The major,
+patch, prerelease portion, and build metadata in order from left to right. The major,
 minor, and patch version numbers are compared numerically. A prerelease version precedes
 a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric identifiers
-are compared numerically. Alphanumeric identifiers are compared lexically in ASCII sort
-order. A longer series of metadata identifiers follows a shorter series if all the
-preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Numeric metadata
+identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
+Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
+metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_op_LessThanOrEqual_" data-uid="Semver.SemVersion.op_LessThanOrEqual*"></a>
   <h4 id="Semver_SemVersion_op_LessThanOrEqual_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.op_LessThanOrEqual(Semver.SemVersion,Semver.SemVersion)">LessThanOrEqual(SemVersion, SemVersion)</h4>
@@ -2905,19 +3596,19 @@ preceding identifiers are equal.</p>
   <h5 id="Semver_SemVersion_op_LessThanOrEqual_Semver_SemVersion_Semver_SemVersion__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
 with the same precedence. Sort order is determined by comparing the major, minor,
-patch, prerelease, and build metadata portions in order from left to right. The major,
+patch, prerelease portion, and build metadata in order from left to right. The major,
 minor, and patch version numbers are compared numerically. A prerelease version precedes
 a release version.</p>
 <p>The prerelease portion is compared by comparing each prerelease identifier from
-left to right. Numeric prerelease identifiers proceed alphanumeric identifiers. Numeric
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
 identifiers are compared numerically. Alphanumeric identifiers are compared lexically
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric identifiers
-are compared numerically. Alphanumeric identifiers are compared lexically in ASCII sort
-order. A longer series of metadata identifiers follows a shorter series if all the
-preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Numeric metadata
+identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
+Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
+metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <h3 id="implements">Implements</h3>
   <div>

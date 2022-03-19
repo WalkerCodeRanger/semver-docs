@@ -239,15 +239,15 @@ a numeric identifier when <code data-dev-comment-type="paramref" class="paramref
   </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="Semver_PrereleaseIdentifier_IntValue_" data-uid="Semver.PrereleaseIdentifier.IntValue*"></a>
-  <h4 id="Semver_PrereleaseIdentifier_IntValue" data-uid="Semver.PrereleaseIdentifier.IntValue">IntValue</h4>
+  <a id="Semver_PrereleaseIdentifier_NumericValue_" data-uid="Semver.PrereleaseIdentifier.NumericValue*"></a>
+  <h4 id="Semver_PrereleaseIdentifier_NumericValue" data-uid="Semver.PrereleaseIdentifier.NumericValue">NumericValue</h4>
   <div class="markdown level1 summary"><p>The numeric value of the prerelease identifier if it is a numeric identifier, otherwise
 <span class="xref">null</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly int? IntValue { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public readonly int? NumericValue { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -266,7 +266,7 @@ otherwise <span class="xref">null</span>.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Semver_PrereleaseIdentifier_IntValue_remarks">Remarks</h5>
+  <h5 id="Semver_PrereleaseIdentifier_NumericValue_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The numeric value of a prerelease identifier will never be negative.</p>
 </div>
   <a id="Semver_PrereleaseIdentifier_Value_" data-uid="Semver.PrereleaseIdentifier.Value*"></a>
@@ -297,8 +297,8 @@ or <span class="xref">null</span> if this is a default <a class="xref" href="Sem
   </table>
   <h5 id="Semver_PrereleaseIdentifier_Value_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Invalid numeric prerelease identifiers with leading zeros will have a string
-value including the leading zeros. This can be used to distinguish numeric identifiers
-with different numbers of leading zeros.</p>
+value including the leading zeros. This can be used to distinguish invalid numeric
+identifiers with different numbers of leading zeros.</p>
 </div>
   <h3 id="methods">Methods
   </h3>

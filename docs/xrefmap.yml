@@ -211,18 +211,18 @@ references:
   commentId: Overload:Semver.PrereleaseIdentifier.GetHashCode
   fullName: Semver.PrereleaseIdentifier.GetHashCode
   nameWithType: PrereleaseIdentifier.GetHashCode
-- uid: Semver.PrereleaseIdentifier.IntValue
-  name: IntValue
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_IntValue
-  commentId: P:Semver.PrereleaseIdentifier.IntValue
-  fullName: Semver.PrereleaseIdentifier.IntValue
-  nameWithType: PrereleaseIdentifier.IntValue
-- uid: Semver.PrereleaseIdentifier.IntValue*
-  name: IntValue
-  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_IntValue_
-  commentId: Overload:Semver.PrereleaseIdentifier.IntValue
-  fullName: Semver.PrereleaseIdentifier.IntValue
-  nameWithType: PrereleaseIdentifier.IntValue
+- uid: Semver.PrereleaseIdentifier.NumericValue
+  name: NumericValue
+  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_NumericValue
+  commentId: P:Semver.PrereleaseIdentifier.NumericValue
+  fullName: Semver.PrereleaseIdentifier.NumericValue
+  nameWithType: PrereleaseIdentifier.NumericValue
+- uid: Semver.PrereleaseIdentifier.NumericValue*
+  name: NumericValue
+  href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_NumericValue_
+  commentId: Overload:Semver.PrereleaseIdentifier.NumericValue
+  fullName: Semver.PrereleaseIdentifier.NumericValue
+  nameWithType: PrereleaseIdentifier.NumericValue
 - uid: Semver.PrereleaseIdentifier.op_Equality(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)
   name: Equality(PrereleaseIdentifier, PrereleaseIdentifier)
   href: v2.1.x/Semver.PrereleaseIdentifier.html#Semver_PrereleaseIdentifier_op_Equality_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_
@@ -295,6 +295,42 @@ references:
   commentId: T:Semver.SemVersion
   fullName: Semver.SemVersion
   nameWithType: SemVersion
+- uid: Semver.SemVersion.#ctor(System.Int32)
+  name: SemVersion(Int32)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_
+  commentId: M:Semver.SemVersion.#ctor(System.Int32)
+  fullName: Semver.SemVersion.SemVersion(System.Int32)
+  nameWithType: SemVersion.SemVersion(Int32)
+- uid: Semver.SemVersion.#ctor(System.Int32,System.Int32)
+  name: SemVersion(Int32, Int32)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_
+  commentId: M:Semver.SemVersion.#ctor(System.Int32,System.Int32)
+  fullName: Semver.SemVersion.SemVersion(System.Int32, System.Int32)
+  nameWithType: SemVersion.SemVersion(Int32, Int32)
+- uid: Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32)
+  name: SemVersion(Int32, Int32, Int32)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_
+  commentId: M:Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32)
+  fullName: Semver.SemVersion.SemVersion(System.Int32, System.Int32, System.Int32)
+  nameWithType: SemVersion.SemVersion(Int32, Int32, Int32)
+- uid: Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier},System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})
+  name: SemVersion(Int32, Int32, Int32, IEnumerable<PrereleaseIdentifier>, IEnumerable<MetadataIdentifier>)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__
+  commentId: M:Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier},System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})
+  name.vb: SemVersion(Int32, Int32, Int32, IEnumerable(Of PrereleaseIdentifier), IEnumerable(Of MetadataIdentifier))
+  fullName: Semver.SemVersion.SemVersion(System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable<Semver.PrereleaseIdentifier>, System.Collections.Generic.IEnumerable<Semver.MetadataIdentifier>)
+  fullName.vb: Semver.SemVersion.SemVersion(System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable(Of Semver.PrereleaseIdentifier), System.Collections.Generic.IEnumerable(Of Semver.MetadataIdentifier))
+  nameWithType: SemVersion.SemVersion(Int32, Int32, Int32, IEnumerable<PrereleaseIdentifier>, IEnumerable<MetadataIdentifier>)
+  nameWithType.vb: SemVersion.SemVersion(Int32, Int32, Int32, IEnumerable(Of PrereleaseIdentifier), IEnumerable(Of MetadataIdentifier))
+- uid: Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
+  name: SemVersion(Int32, Int32, Int32, IEnumerable<String>, IEnumerable<String>)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
+  name.vb: SemVersion(Int32, Int32, Int32, IEnumerable(Of String), IEnumerable(Of String))
+  fullName: Semver.SemVersion.SemVersion(System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable<System.String>, System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Semver.SemVersion.SemVersion(System.Int32, System.Int32, System.Int32, System.Collections.Generic.IEnumerable(Of System.String), System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: SemVersion.SemVersion(Int32, Int32, Int32, IEnumerable<String>, IEnumerable<String>)
+  nameWithType.vb: SemVersion.SemVersion(Int32, Int32, Int32, IEnumerable(Of String), IEnumerable(Of String))
 - uid: Semver.SemVersion.#ctor(System.Int32,System.Int32,System.Int32,System.String,System.String)
   name: SemVersion(Int32, Int32, Int32, String, String)
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_
@@ -454,6 +490,18 @@ references:
   commentId: Overload:Semver.SemVersion.IsPrerelease
   fullName: Semver.SemVersion.IsPrerelease
   nameWithType: SemVersion.IsPrerelease
+- uid: Semver.SemVersion.IsRelease
+  name: IsRelease
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_IsRelease
+  commentId: P:Semver.SemVersion.IsRelease
+  fullName: Semver.SemVersion.IsRelease
+  nameWithType: SemVersion.IsRelease
+- uid: Semver.SemVersion.IsRelease*
+  name: IsRelease
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_IsRelease_
+  commentId: Overload:Semver.SemVersion.IsRelease
+  fullName: Semver.SemVersion.IsRelease
+  nameWithType: SemVersion.IsRelease
 - uid: Semver.SemVersion.Major
   name: Major
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Major
@@ -610,6 +658,18 @@ references:
   commentId: Overload:Semver.SemVersion.Parse
   fullName: Semver.SemVersion.Parse
   nameWithType: SemVersion.Parse
+- uid: Semver.SemVersion.ParsedFrom(System.Int32,System.Int32,System.Int32,System.String,System.String,System.Boolean)
+  name: ParsedFrom(Int32, Int32, Int32, String, String, Boolean)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_ParsedFrom_System_Int32_System_Int32_System_Int32_System_String_System_String_System_Boolean_
+  commentId: M:Semver.SemVersion.ParsedFrom(System.Int32,System.Int32,System.Int32,System.String,System.String,System.Boolean)
+  fullName: Semver.SemVersion.ParsedFrom(System.Int32, System.Int32, System.Int32, System.String, System.String, System.Boolean)
+  nameWithType: SemVersion.ParsedFrom(Int32, Int32, Int32, String, String, Boolean)
+- uid: Semver.SemVersion.ParsedFrom*
+  name: ParsedFrom
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_ParsedFrom_
+  commentId: Overload:Semver.SemVersion.ParsedFrom
+  fullName: Semver.SemVersion.ParsedFrom
+  nameWithType: SemVersion.ParsedFrom
 - uid: Semver.SemVersion.Patch
   name: Patch
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_Patch
@@ -706,15 +766,15 @@ references:
   commentId: Overload:Semver.SemVersion.TryParse
   fullName: Semver.SemVersion.TryParse
   nameWithType: SemVersion.TryParse
-- uid: Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)
-  name: With(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String, Boolean)
-  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_
-  commentId: M:Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)
-  name.vb: With(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String, Boolean)
-  fullName: Semver.SemVersion.With(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.String, System.String, System.Boolean)
-  fullName.vb: Semver.SemVersion.With(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.String, System.String, System.Boolean)
-  nameWithType: SemVersion.With(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String, Boolean)
-  nameWithType.vb: SemVersion.With(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String, Boolean)
+- uid: Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier},System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})
+  name: With(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, IEnumerable<PrereleaseIdentifier>, IEnumerable<MetadataIdentifier>)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_With_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__
+  commentId: M:Semver.SemVersion.With(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier},System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})
+  name.vb: With(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), IEnumerable(Of PrereleaseIdentifier), IEnumerable(Of MetadataIdentifier))
+  fullName: Semver.SemVersion.With(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Collections.Generic.IEnumerable<Semver.PrereleaseIdentifier>, System.Collections.Generic.IEnumerable<Semver.MetadataIdentifier>)
+  fullName.vb: Semver.SemVersion.With(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Collections.Generic.IEnumerable(Of Semver.PrereleaseIdentifier), System.Collections.Generic.IEnumerable(Of Semver.MetadataIdentifier))
+  nameWithType: SemVersion.With(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, IEnumerable<PrereleaseIdentifier>, IEnumerable<MetadataIdentifier>)
+  nameWithType.vb: SemVersion.With(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), IEnumerable(Of PrereleaseIdentifier), IEnumerable(Of MetadataIdentifier))
 - uid: Semver.SemVersion.With*
   name: With
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_With_
@@ -733,6 +793,15 @@ references:
   commentId: Overload:Semver.SemVersion.WithMajor
   fullName: Semver.SemVersion.WithMajor
   nameWithType: SemVersion.WithMajor
+- uid: Semver.SemVersion.WithMetadata(Semver.MetadataIdentifier,Semver.MetadataIdentifier[])
+  name: WithMetadata(MetadataIdentifier, MetadataIdentifier[])
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadata_Semver_MetadataIdentifier_Semver_MetadataIdentifier___
+  commentId: M:Semver.SemVersion.WithMetadata(Semver.MetadataIdentifier,Semver.MetadataIdentifier[])
+  name.vb: WithMetadata(MetadataIdentifier, MetadataIdentifier())
+  fullName: Semver.SemVersion.WithMetadata(Semver.MetadataIdentifier, Semver.MetadataIdentifier[])
+  fullName.vb: Semver.SemVersion.WithMetadata(Semver.MetadataIdentifier, Semver.MetadataIdentifier())
+  nameWithType: SemVersion.WithMetadata(MetadataIdentifier, MetadataIdentifier[])
+  nameWithType.vb: SemVersion.WithMetadata(MetadataIdentifier, MetadataIdentifier())
 - uid: Semver.SemVersion.WithMetadata(System.Collections.Generic.IEnumerable{Semver.MetadataIdentifier})
   name: WithMetadata(IEnumerable<MetadataIdentifier>)
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadata_System_Collections_Generic_IEnumerable_Semver_MetadataIdentifier__
@@ -751,27 +820,33 @@ references:
   fullName.vb: Semver.SemVersion.WithMetadata(System.Collections.Generic.IEnumerable(Of System.String))
   nameWithType: SemVersion.WithMetadata(IEnumerable<String>)
   nameWithType.vb: SemVersion.WithMetadata(IEnumerable(Of String))
-- uid: Semver.SemVersion.WithMetadata(System.String)
-  name: WithMetadata(String)
-  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadata_System_String_
-  commentId: M:Semver.SemVersion.WithMetadata(System.String)
-  fullName: Semver.SemVersion.WithMetadata(System.String)
-  nameWithType: SemVersion.WithMetadata(String)
-- uid: Semver.SemVersion.WithMetadata(System.String[])
-  name: WithMetadata(String[])
-  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadata_System_String___
-  commentId: M:Semver.SemVersion.WithMetadata(System.String[])
-  name.vb: WithMetadata(String())
-  fullName: Semver.SemVersion.WithMetadata(System.String[])
-  fullName.vb: Semver.SemVersion.WithMetadata(System.String())
-  nameWithType: SemVersion.WithMetadata(String[])
-  nameWithType.vb: SemVersion.WithMetadata(String())
+- uid: Semver.SemVersion.WithMetadata(System.String,System.String[])
+  name: WithMetadata(String, String[])
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadata_System_String_System_String___
+  commentId: M:Semver.SemVersion.WithMetadata(System.String,System.String[])
+  name.vb: WithMetadata(String, String())
+  fullName: Semver.SemVersion.WithMetadata(System.String, System.String[])
+  fullName.vb: Semver.SemVersion.WithMetadata(System.String, System.String())
+  nameWithType: SemVersion.WithMetadata(String, String[])
+  nameWithType.vb: SemVersion.WithMetadata(String, String())
 - uid: Semver.SemVersion.WithMetadata*
   name: WithMetadata
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadata_
   commentId: Overload:Semver.SemVersion.WithMetadata
   fullName: Semver.SemVersion.WithMetadata
   nameWithType: SemVersion.WithMetadata
+- uid: Semver.SemVersion.WithMetadataParsedFrom(System.String)
+  name: WithMetadataParsedFrom(String)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadataParsedFrom_System_String_
+  commentId: M:Semver.SemVersion.WithMetadataParsedFrom(System.String)
+  fullName: Semver.SemVersion.WithMetadataParsedFrom(System.String)
+  nameWithType: SemVersion.WithMetadataParsedFrom(String)
+- uid: Semver.SemVersion.WithMetadataParsedFrom*
+  name: WithMetadataParsedFrom
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMetadataParsedFrom_
+  commentId: Overload:Semver.SemVersion.WithMetadataParsedFrom
+  fullName: Semver.SemVersion.WithMetadataParsedFrom
+  nameWithType: SemVersion.WithMetadataParsedFrom
 - uid: Semver.SemVersion.WithMinor(System.Int32)
   name: WithMinor(Int32)
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithMinor_System_Int32_
@@ -820,6 +895,21 @@ references:
   commentId: Overload:Semver.SemVersion.WithoutPrereleaseOrMetadata
   fullName: Semver.SemVersion.WithoutPrereleaseOrMetadata
   nameWithType: SemVersion.WithoutPrereleaseOrMetadata
+- uid: Semver.SemVersion.WithParsedFrom(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)
+  name: WithParsedFrom(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String, Boolean)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithParsedFrom_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_String_System_Boolean_
+  commentId: M:Semver.SemVersion.WithParsedFrom(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.Boolean)
+  name.vb: WithParsedFrom(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String, Boolean)
+  fullName: Semver.SemVersion.WithParsedFrom(System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.Nullable<System.Int32>, System.String, System.String, System.Boolean)
+  fullName.vb: Semver.SemVersion.WithParsedFrom(System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.Nullable(Of System.Int32), System.String, System.String, System.Boolean)
+  nameWithType: SemVersion.WithParsedFrom(Nullable<Int32>, Nullable<Int32>, Nullable<Int32>, String, String, Boolean)
+  nameWithType.vb: SemVersion.WithParsedFrom(Nullable(Of Int32), Nullable(Of Int32), Nullable(Of Int32), String, String, Boolean)
+- uid: Semver.SemVersion.WithParsedFrom*
+  name: WithParsedFrom
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithParsedFrom_
+  commentId: Overload:Semver.SemVersion.WithParsedFrom
+  fullName: Semver.SemVersion.WithParsedFrom
+  nameWithType: SemVersion.WithParsedFrom
 - uid: Semver.SemVersion.WithPatch(System.Int32)
   name: WithPatch(Int32)
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPatch_System_Int32_
@@ -832,6 +922,15 @@ references:
   commentId: Overload:Semver.SemVersion.WithPatch
   fullName: Semver.SemVersion.WithPatch
   nameWithType: SemVersion.WithPatch
+- uid: Semver.SemVersion.WithPrerelease(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier[])
+  name: WithPrerelease(PrereleaseIdentifier, PrereleaseIdentifier[])
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier___
+  commentId: M:Semver.SemVersion.WithPrerelease(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier[])
+  name.vb: WithPrerelease(PrereleaseIdentifier, PrereleaseIdentifier())
+  fullName: Semver.SemVersion.WithPrerelease(Semver.PrereleaseIdentifier, Semver.PrereleaseIdentifier[])
+  fullName.vb: Semver.SemVersion.WithPrerelease(Semver.PrereleaseIdentifier, Semver.PrereleaseIdentifier())
+  nameWithType: SemVersion.WithPrerelease(PrereleaseIdentifier, PrereleaseIdentifier[])
+  nameWithType.vb: SemVersion.WithPrerelease(PrereleaseIdentifier, PrereleaseIdentifier())
 - uid: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{Semver.PrereleaseIdentifier})
   name: WithPrerelease(IEnumerable<PrereleaseIdentifier>)
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_Semver_PrereleaseIdentifier__
@@ -841,36 +940,42 @@ references:
   fullName.vb: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable(Of Semver.PrereleaseIdentifier))
   nameWithType: SemVersion.WithPrerelease(IEnumerable<PrereleaseIdentifier>)
   nameWithType.vb: SemVersion.WithPrerelease(IEnumerable(Of PrereleaseIdentifier))
-- uid: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
-  name: WithPrerelease(IEnumerable<String>, Boolean)
-  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_System_String__System_Boolean_
-  commentId: M:Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{System.String},System.Boolean)
-  name.vb: WithPrerelease(IEnumerable(Of String), Boolean)
-  fullName: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable<System.String>, System.Boolean)
-  fullName.vb: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable(Of System.String), System.Boolean)
-  nameWithType: SemVersion.WithPrerelease(IEnumerable<String>, Boolean)
-  nameWithType.vb: SemVersion.WithPrerelease(IEnumerable(Of String), Boolean)
-- uid: Semver.SemVersion.WithPrerelease(System.String,System.Boolean)
-  name: WithPrerelease(String, Boolean)
-  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_System_String_System_Boolean_
-  commentId: M:Semver.SemVersion.WithPrerelease(System.String,System.Boolean)
-  fullName: Semver.SemVersion.WithPrerelease(System.String, System.Boolean)
-  nameWithType: SemVersion.WithPrerelease(String, Boolean)
-- uid: Semver.SemVersion.WithPrerelease(System.String[])
-  name: WithPrerelease(String[])
-  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_System_String___
-  commentId: M:Semver.SemVersion.WithPrerelease(System.String[])
-  name.vb: WithPrerelease(String())
-  fullName: Semver.SemVersion.WithPrerelease(System.String[])
-  fullName.vb: Semver.SemVersion.WithPrerelease(System.String())
-  nameWithType: SemVersion.WithPrerelease(String[])
-  nameWithType.vb: SemVersion.WithPrerelease(String())
+- uid: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{System.String})
+  name: WithPrerelease(IEnumerable<String>)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: WithPrerelease(IEnumerable(Of String))
+  fullName: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable<System.String>)
+  fullName.vb: Semver.SemVersion.WithPrerelease(System.Collections.Generic.IEnumerable(Of System.String))
+  nameWithType: SemVersion.WithPrerelease(IEnumerable<String>)
+  nameWithType.vb: SemVersion.WithPrerelease(IEnumerable(Of String))
+- uid: Semver.SemVersion.WithPrerelease(System.String,System.String[])
+  name: WithPrerelease(String, String[])
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_System_String_System_String___
+  commentId: M:Semver.SemVersion.WithPrerelease(System.String,System.String[])
+  name.vb: WithPrerelease(String, String())
+  fullName: Semver.SemVersion.WithPrerelease(System.String, System.String[])
+  fullName.vb: Semver.SemVersion.WithPrerelease(System.String, System.String())
+  nameWithType: SemVersion.WithPrerelease(String, String[])
+  nameWithType.vb: SemVersion.WithPrerelease(String, String())
 - uid: Semver.SemVersion.WithPrerelease*
   name: WithPrerelease
   href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrerelease_
   commentId: Overload:Semver.SemVersion.WithPrerelease
   fullName: Semver.SemVersion.WithPrerelease
   nameWithType: SemVersion.WithPrerelease
+- uid: Semver.SemVersion.WithPrereleaseParsedFrom(System.String,System.Boolean)
+  name: WithPrereleaseParsedFrom(String, Boolean)
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrereleaseParsedFrom_System_String_System_Boolean_
+  commentId: M:Semver.SemVersion.WithPrereleaseParsedFrom(System.String,System.Boolean)
+  fullName: Semver.SemVersion.WithPrereleaseParsedFrom(System.String, System.Boolean)
+  nameWithType: SemVersion.WithPrereleaseParsedFrom(String, Boolean)
+- uid: Semver.SemVersion.WithPrereleaseParsedFrom*
+  name: WithPrereleaseParsedFrom
+  href: v2.1.x/Semver.SemVersion.html#Semver_SemVersion_WithPrereleaseParsedFrom_
+  commentId: Overload:Semver.SemVersion.WithPrereleaseParsedFrom
+  fullName: Semver.SemVersion.WithPrereleaseParsedFrom
+  nameWithType: SemVersion.WithPrereleaseParsedFrom
 - uid: Semver.SemVersionStyles
   name: SemVersionStyles
   href: v2.1.x/Semver.SemVersionStyles.html
