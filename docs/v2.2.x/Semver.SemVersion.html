@@ -475,6 +475,52 @@ of the <code data-dev-comment-type="paramref" class="paramref">version</code> if
       </tr>
     </tbody>
   </table>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Semver_SemVersion_PrecedenceComparer" data-uid="Semver.SemVersion.PrecedenceComparer">PrecedenceComparer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ISemVersionComparer PrecedenceComparer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.Comparers.ISemVersionComparer.html">ISemVersionComparer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersion_SortOrderComparer" data-uid="Semver.SemVersion.SortOrderComparer">SortOrderComparer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly ISemVersionComparer SortOrderComparer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.Comparers.ISemVersionComparer.html">ISemVersionComparer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="Semver_SemVersion_Build_" data-uid="Semver.SemVersion.Build*"></a>
@@ -899,7 +945,8 @@ equal to the other in the sort order. Note that sort order is more specific than
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static int Compare(SemVersion versionA, SemVersion versionB)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use CompareSortOrder() or ComparePrecedence() instead.&quot;)]
+public static int Compare(SemVersion versionA, SemVersion versionB)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -970,7 +1017,8 @@ have the same precedence.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CompareByPrecedence(SemVersion other)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use ComparePrecedenceTo() or CompareSortOrderTo() instead.&quot;)]
+public int CompareByPrecedence(SemVersion other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1021,6 +1069,176 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 </div>
+  <a id="Semver_SemVersion_ComparePrecedence_" data-uid="Semver.SemVersion.ComparePrecedence*"></a>
+  <h4 id="Semver_SemVersion_ComparePrecedence_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.ComparePrecedence(Semver.SemVersion,Semver.SemVersion)">ComparePrecedence(SemVersion, SemVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ComparePrecedence(SemVersion left, SemVersion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_ComparePrecedenceTo_" data-uid="Semver.SemVersion.ComparePrecedenceTo*"></a>
+  <h4 id="Semver_SemVersion_ComparePrecedenceTo_Semver_SemVersion_" data-uid="Semver.SemVersion.ComparePrecedenceTo(Semver.SemVersion)">ComparePrecedenceTo(SemVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ComparePrecedenceTo(SemVersion other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_CompareSortOrder_" data-uid="Semver.SemVersion.CompareSortOrder*"></a>
+  <h4 id="Semver_SemVersion_CompareSortOrder_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareSortOrder(Semver.SemVersion,Semver.SemVersion)">CompareSortOrder(SemVersion, SemVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int CompareSortOrder(SemVersion left, SemVersion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_CompareSortOrderTo_" data-uid="Semver.SemVersion.CompareSortOrderTo*"></a>
+  <h4 id="Semver_SemVersion_CompareSortOrderTo_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareSortOrderTo(Semver.SemVersion)">CompareSortOrderTo(SemVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareSortOrderTo(SemVersion other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Semver_SemVersion_CompareTo_" data-uid="Semver.SemVersion.CompareTo*"></a>
   <h4 id="Semver_SemVersion_CompareTo_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareTo(Semver.SemVersion)">CompareTo(SemVersion)</h4>
   <div class="markdown level1 summary"><p>Compares two versions and indicates whether this instance precedes, follows, or is
@@ -1029,7 +1247,8 @@ equal to the other in the sort order. Note that sort order is more specific than
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CompareTo(SemVersion other)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use CompareSortOrderTo() or ComparePrecedenceTo() instead.&quot;)]
+public int CompareTo(SemVersion other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1095,7 +1314,8 @@ is more specific than precedence order.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use CompareSortOrderTo() or ComparePrecedenceTo() instead.&quot;)]
+public int CompareTo(object obj)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1734,6 +1954,91 @@ for <span class="xref">System.Int32</span>.</p>
       </tr>
     </tbody>
   </table>
+  <a id="Semver_SemVersion_PrecedenceEquals_" data-uid="Semver.SemVersion.PrecedenceEquals*"></a>
+  <h4 id="Semver_SemVersion_PrecedenceEquals_Semver_SemVersion_" data-uid="Semver.SemVersion.PrecedenceEquals(Semver.SemVersion)">PrecedenceEquals(SemVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PrecedenceEquals(SemVersion other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_PrecedenceEquals_" data-uid="Semver.SemVersion.PrecedenceEquals*"></a>
+  <h4 id="Semver_SemVersion_PrecedenceEquals_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.PrecedenceEquals(Semver.SemVersion,Semver.SemVersion)">PrecedenceEquals(SemVersion, SemVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PrecedenceEquals(SemVersion left, SemVersion right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <a id="Semver_SemVersion_PrecedenceMatches_" data-uid="Semver.SemVersion.PrecedenceMatches*"></a>
   <h4 id="Semver_SemVersion_PrecedenceMatches_Semver_SemVersion_" data-uid="Semver.SemVersion.PrecedenceMatches(Semver.SemVersion)">PrecedenceMatches(SemVersion)</h4>
   <div class="markdown level1 summary"><p>Returns whether two semantic versions have the same precedence. Versions
@@ -1742,7 +2047,8 @@ that differ only by build metadata have the same precedence.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool PrecedenceMatches(SemVersion other)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Method is obsolete. Use PrecedenceEquals() instead.&quot;)]
+public bool PrecedenceMatches(SemVersion other)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3236,7 +3542,8 @@ versions with the same precedence may not be equal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator&gt;(SemVersion left, SemVersion right)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Operator is obsolete. Use CompareSortOrder() or ComparePrecedence() instead.&quot;)]
+public static bool operator&gt;(SemVersion left, SemVersion right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3301,7 +3608,8 @@ metadata identifiers follows a shorter series if all the preceding identifiers a
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(SemVersion left, SemVersion right)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Operator is obsolete. Use CompareSortOrder() or ComparePrecedence() instead.&quot;)]
+public static bool operator &gt;=(SemVersion left, SemVersion right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3487,7 +3795,8 @@ versions with the same precedence may not be equal.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;(SemVersion left, SemVersion right)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Operator is obsolete. Use CompareSortOrder() or ComparePrecedence() instead.&quot;)]
+public static bool operator &lt;(SemVersion left, SemVersion right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -3552,7 +3861,8 @@ metadata identifiers follows a shorter series if all the preceding identifiers a
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(SemVersion left, SemVersion right)</code></pre>
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Operator is obsolete. Use CompareSortOrder() or ComparePrecedence() instead.&quot;)]
+public static bool operator &lt;=(SemVersion left, SemVersion right)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

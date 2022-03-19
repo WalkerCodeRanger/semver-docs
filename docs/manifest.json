@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "8K/ZLryr2965YZ3chG8tvFo/oAic8T0y0FYHwAavpko="
+          "hash": "WZHb/2y6hJ7Vchb2aXE29YDwazkTUrsgShkbDAYR5pY="
         }
       },
       "is_incremental": false,
@@ -32,7 +32,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "oiPnkpwY6hsgHjPotNUwa8H0DTGiDjUiQnEGuwLO4Ng="
+          "hash": "22/qRa0ZlogFaqjg78LzYOGoUN5USsseNtxCdBiQUxU="
         }
       },
       "is_incremental": false,
@@ -40,11 +40,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "v2.1.x/Semver.MetadataIdentifier.yml",
+      "source_relative_path": "v2.2.x/Semver.Comparers.ISemVersionComparer.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.1.x/Semver.MetadataIdentifier.html",
-          "hash": "wZ/9KsMUlPsXsPU9/wzYQVxg5Vyzo2LVWHOJ1EJeeaI="
+          "relative_path": "v2.2.x/Semver.Comparers.ISemVersionComparer.html",
+          "hash": "GmL/riHB6N0BV3g6yak0lh2DlnNtsZpXFMnlH3zQXQs="
         }
       },
       "is_incremental": false,
@@ -52,11 +52,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "v2.1.x/Semver.PrereleaseIdentifier.yml",
+      "source_relative_path": "v2.2.x/Semver.Comparers.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.1.x/Semver.PrereleaseIdentifier.html",
-          "hash": "EaNHYyZ5glZPKPy375Hb3x2rTWG/VNF7eP4inIcZrGA="
+          "relative_path": "v2.2.x/Semver.Comparers.html",
+          "hash": "i1sGCNeEUWg9bjDuq/Hy993Q3acoUL17UhZ5lYg/IOo="
         }
       },
       "is_incremental": false,
@@ -64,11 +64,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "v2.1.x/Semver.SemVersion.yml",
+      "source_relative_path": "v2.2.x/Semver.MetadataIdentifier.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.1.x/Semver.SemVersion.html",
-          "hash": "q19LY+mG+JGSzXZhd1r61KNJOo75NpTZtnuWpkOhdZU="
+          "relative_path": "v2.2.x/Semver.MetadataIdentifier.html",
+          "hash": "2yKgMNGd1jii98Dw8utF1S9jlExhDYpIx0c6or4JBno="
         }
       },
       "is_incremental": false,
@@ -76,11 +76,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "v2.1.x/Semver.SemVersionStyles.yml",
+      "source_relative_path": "v2.2.x/Semver.PrereleaseIdentifier.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.1.x/Semver.SemVersionStyles.html",
-          "hash": "2HRfzZjFCojRZ6mTdj0iQ3qmganCCtLf64tHBfWscmM="
+          "relative_path": "v2.2.x/Semver.PrereleaseIdentifier.html",
+          "hash": "sRkfaqSyO90aoq1lMfQvmKTFNb+OmiSf5nMucftZqRY="
         }
       },
       "is_incremental": false,
@@ -88,11 +88,35 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "v2.1.x/Semver.yml",
+      "source_relative_path": "v2.2.x/Semver.SemVersion.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.1.x/Semver.html",
-          "hash": "YqH660C3EFmYe/KJNLVuysul00wAbLrU2HJhlQ5Hhjs="
+          "relative_path": "v2.2.x/Semver.SemVersion.html",
+          "hash": "NxU1tjcn0SgH7osBX9NTqCDcGK3Y3zUUC/P7BIXJlMM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "v2.2.x/Semver.SemVersionStyles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.2.x/Semver.SemVersionStyles.html",
+          "hash": "J1l02t51K+EqR2OvT32K0qkYRfgv1n/3l2vb4GMzS6Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "v2.2.x/Semver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "v2.2.x/Semver.html",
+          "hash": "1Y1iVwOwZO0JJLHhcKIePCNMhQ6fLSJFhVx05A9isNU="
         }
       },
       "is_incremental": false,
@@ -100,11 +124,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "v2.1.x/index.md",
+      "source_relative_path": "v2.2.x/index.md",
       "output": {
         ".html": {
-          "relative_path": "v2.1.x/index.html",
-          "hash": "GdxglePe4VijH++SKoxurb4GJkA2S3TKxjrcUFyljU4="
+          "relative_path": "v2.2.x/index.html",
+          "hash": "2RnLelnrc7JMMxHKV/7pGC2PwpZ2Qv4JFMF6ipFxx2Y="
         }
       },
       "is_incremental": false,
@@ -112,11 +136,11 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "v2.1.x/toc.yml",
+      "source_relative_path": "v2.2.x/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "v2.1.x/toc.html",
-          "hash": "PE+VXQzBDQftOUUecSI8cKdWabmm6m9OT6kderz+vpM="
+          "relative_path": "v2.2.x/toc.html",
+          "hash": "OY7Rzdvg1UyslA+LITAr4Ee/y3E06hqyfsbPTDs4k5U="
         }
       },
       "is_incremental": false,
@@ -143,7 +167,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 7,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

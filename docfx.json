@@ -3,10 +3,10 @@
     [{
         "src": 
         [{
-            "src": "src/v2.1.0/",
+            "src": "src/v2.2.0/",
             "files": [ "Semver/**/net452/*.dll" ]
         }],
-        "dest": "v2.1.x",
+        "dest": "v2.2.x",
         "force": true,
         "properties": { "TargetFramework": "net452" }
     }],
