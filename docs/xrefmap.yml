@@ -745,7 +745,13 @@ references:
 - uid: Semver.SemVersion.PrecedenceComparer
   name: PrecedenceComparer
   href: v2.2.x/Semver.SemVersion.html#Semver_SemVersion_PrecedenceComparer
-  commentId: F:Semver.SemVersion.PrecedenceComparer
+  commentId: P:Semver.SemVersion.PrecedenceComparer
+  fullName: Semver.SemVersion.PrecedenceComparer
+  nameWithType: SemVersion.PrecedenceComparer
+- uid: Semver.SemVersion.PrecedenceComparer*
+  name: PrecedenceComparer
+  href: v2.2.x/Semver.SemVersion.html#Semver_SemVersion_PrecedenceComparer_
+  commentId: Overload:Semver.SemVersion.PrecedenceComparer
   fullName: Semver.SemVersion.PrecedenceComparer
   nameWithType: SemVersion.PrecedenceComparer
 - uid: Semver.SemVersion.PrecedenceEquals(Semver.SemVersion)
@@ -805,7 +811,13 @@ references:
 - uid: Semver.SemVersion.SortOrderComparer
   name: SortOrderComparer
   href: v2.2.x/Semver.SemVersion.html#Semver_SemVersion_SortOrderComparer
-  commentId: F:Semver.SemVersion.SortOrderComparer
+  commentId: P:Semver.SemVersion.SortOrderComparer
+  fullName: Semver.SemVersion.SortOrderComparer
+  nameWithType: SemVersion.SortOrderComparer
+- uid: Semver.SemVersion.SortOrderComparer*
+  name: SortOrderComparer
+  href: v2.2.x/Semver.SemVersion.html#Semver_SemVersion_SortOrderComparer_
+  commentId: Overload:Semver.SemVersion.SortOrderComparer
   fullName: Semver.SemVersion.SortOrderComparer
   nameWithType: SemVersion.SortOrderComparer
 - uid: Semver.SemVersion.ToString

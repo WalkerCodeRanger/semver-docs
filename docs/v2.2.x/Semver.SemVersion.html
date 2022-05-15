@@ -475,52 +475,6 @@ of the <code data-dev-comment-type="paramref" class="paramref">version</code> if
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
-  <h4 id="Semver_SemVersion_PrecedenceComparer" data-uid="Semver.SemVersion.PrecedenceComparer">PrecedenceComparer</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly ISemVersionComparer PrecedenceComparer</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.Comparers.ISemVersionComparer.html">ISemVersionComparer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="Semver_SemVersion_SortOrderComparer" data-uid="Semver.SemVersion.SortOrderComparer">SortOrderComparer</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly ISemVersionComparer SortOrderComparer</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Semver.Comparers.ISemVersionComparer.html">ISemVersionComparer</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   <a id="Semver_SemVersion_Build_" data-uid="Semver.SemVersion.Build*"></a>
@@ -778,6 +732,45 @@ compatible changes.</p>
   <div class="markdown level1 remarks"><p>An increase in the patch version number indicates backwards
 compatible bug fixes.</p>
 </div>
+  <a id="Semver_SemVersion_PrecedenceComparer_" data-uid="Semver.SemVersion.PrecedenceComparer*"></a>
+  <h4 id="Semver_SemVersion_PrecedenceComparer" data-uid="Semver.SemVersion.PrecedenceComparer">PrecedenceComparer</h4>
+  <div class="markdown level1 summary"><p>An <span class="xref">System.Collections.Generic.IEqualityComparer&lt;T&gt;</span> and <span class="xref">System.Collections.Generic.IComparer&lt;T&gt;</span>
+that compares <a class="xref" href="Semver.SemVersion.html">SemVersion</a> by precedence. This can be used for sorting,
+binary search, and using <a class="xref" href="Semver.SemVersion.html">SemVersion</a> as a dictionary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISemVersionComparer PrecedenceComparer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.Comparers.ISemVersionComparer.html">ISemVersionComparer</a></td>
+        <td><p>A precedence comparer that implements <span class="xref">System.Collections.Generic.IEqualityComparer&lt;T&gt;</span> and
+<span class="xref">System.Collections.Generic.IComparer&lt;T&gt;</span> for <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_PrecedenceComparer_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Precedence order is determined by comparing the major, minor, patch, and prerelease
+portion in order from left to right. Versions that differ only by build metadata have the
+same precedence. The major, minor, and patch version numbers are compared numerically. A
+prerelease version precedes a release version.</p>
+<p>The prerelease portion is compared by comparing each prerelease identifier from
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
+identifiers are compared numerically. Alphanumeric identifiers are compared lexically
+in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
+if all the preceding identifiers are equal.</p>
+</div>
   <a id="Semver_SemVersion_Prerelease_" data-uid="Semver.SemVersion.Prerelease*"></a>
   <h4 id="Semver_SemVersion_Prerelease" data-uid="Semver.SemVersion.Prerelease">Prerelease</h4>
   <div class="markdown level1 summary"><p>The prerelease identifiers for this version.</p>
@@ -853,6 +846,50 @@ version precedence is determined by comparing each prerelease identifier in orde
 left to right. Numeric identifiers have lower precedence than alphanumeric identifiers.
 Numeric identifiers are compared numerically. Alphanumeric identifiers are compared
 lexically in ASCII sort order.</p>
+</div>
+  <a id="Semver_SemVersion_SortOrderComparer_" data-uid="Semver.SemVersion.SortOrderComparer*"></a>
+  <h4 id="Semver_SemVersion_SortOrderComparer" data-uid="Semver.SemVersion.SortOrderComparer">SortOrderComparer</h4>
+  <div class="markdown level1 summary"><p>An <span class="xref">System.Collections.Generic.IEqualityComparer&lt;T&gt;</span> and <span class="xref">System.Collections.Generic.IComparer&lt;T&gt;</span>
+that compares <a class="xref" href="Semver.SemVersion.html">SemVersion</a> by sort order. This can be used for sorting,
+binary search, and using <a class="xref" href="Semver.SemVersion.html">SemVersion</a> as a dictionary key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISemVersionComparer SortOrderComparer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.Comparers.ISemVersionComparer.html">ISemVersionComparer</a></td>
+        <td><p>A sort order comparer that implements <span class="xref">System.Collections.Generic.IEqualityComparer&lt;T&gt;</span> and
+<span class="xref">System.Collections.Generic.IComparer&lt;T&gt;</span> for <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_SortOrderComparer_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
+with the same precedence. Sort order is determined by comparing the major, minor,
+patch, prerelease portion, and build metadata in order from left to right. The major,
+minor, and patch version numbers are compared numerically. A prerelease version precedes
+a release version.</p>
+<p>The prerelease portion is compared by comparing each prerelease identifier from
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
+identifiers are compared numerically. Alphanumeric identifiers are compared lexically
+in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
+if all the preceding identifiers are equal.</p>
+<p>Otherwise equal versions without build metadata precede those with metadata. The
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <h3 id="methods">Methods
   </h3>
@@ -1003,14 +1040,13 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric metadata
-identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
-Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
-metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_CompareByPrecedence_" data-uid="Semver.SemVersion.CompareByPrecedence*"></a>
   <h4 id="Semver_SemVersion_CompareByPrecedence_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareByPrecedence(Semver.SemVersion)">CompareByPrecedence(SemVersion)</h4>
-  <div class="markdown level1 summary"><p>Compares two versions and indicates whether the first precedes, follows, or is in the same
+  <div class="markdown level1 summary"><p>Compares two versions and indicates whether this instance precedes, follows, or is in the same
 position as the other in the precedence order. Versions that differ only by build metadata
 have the same precedence.</p>
 </div>
@@ -1050,7 +1086,7 @@ public int CompareByPrecedence(SemVersion other)</code></pre>
         <td><span class="xref">System.Int32</span></td>
         <td><p>An integer that indicates whether this instance precedes, follows, or is in the same
 position as <code data-dev-comment-type="paramref" class="paramref">other</code> in the precedence order.</p>
-<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>Less than zero</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">other</code> in the precedence order.</td></tr><tr><td>Zero</td><td>This instance is has the same precedence as <code data-dev-comment-type="paramref" class="paramref">other</code>.</td></tr><tr><td>Greater than zero</td><td>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>Less than zero</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">other</code> in the precedence order.</td></tr><tr><td>Zero</td><td>This instance has the same precedence as <code data-dev-comment-type="paramref" class="paramref">other</code>.</td></tr><tr><td>Greater than zero</td><td>
             This instance follows <code data-dev-comment-type="paramref" class="paramref">other</code> in the precedence order
             or <code data-dev-comment-type="paramref" class="paramref">other</code> is <span class="xref">null</span>.
 </td></tr></tbody></table>
@@ -1071,7 +1107,10 @@ if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_ComparePrecedence_" data-uid="Semver.SemVersion.ComparePrecedence*"></a>
   <h4 id="Semver_SemVersion_ComparePrecedence_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.ComparePrecedence(Semver.SemVersion,Semver.SemVersion)">ComparePrecedence(SemVersion, SemVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compares two versions and indicates whether the first precedes, follows, or is in the same
+position as the second in the precedence order. Versions that differ only by build metadata
+have the same precedence.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1110,13 +1149,35 @@ if all the preceding identifiers are equal.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>An integer that indicates whether <code data-dev-comment-type="paramref" class="paramref">left</code> precedes, follows, or is in the same
+position as <code data-dev-comment-type="paramref" class="paramref">right</code> in the precedence order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>
+<code data-dev-comment-type="paramref" class="paramref">left</code> precedes <code data-dev-comment-type="paramref" class="paramref">right</code> in the precedence
+order or <code data-dev-comment-type="paramref" class="paramref">left</code> is <span class="xref">null</span>.</td></tr><tr><td>0</td><td><code data-dev-comment-type="paramref" class="paramref">left</code> has the same precedence as <code data-dev-comment-type="paramref" class="paramref">right</code>.</td></tr><tr><td>1</td><td>
+<code data-dev-comment-type="paramref" class="paramref">left</code> follows <code data-dev-comment-type="paramref" class="paramref">right</code> in the precedence order
+or <code data-dev-comment-type="paramref" class="paramref">right</code> is <span class="xref">null</span>.
+</td></tr></tbody></table>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_SemVersion_ComparePrecedence_Semver_SemVersion_Semver_SemVersion__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Precedence order is determined by comparing the major, minor, patch, and prerelease
+portion in order from left to right. Versions that differ only by build metadata have the
+same precedence. The major, minor, and patch version numbers are compared numerically. A
+prerelease version precedes a release version.</p>
+<p>The prerelease portion is compared by comparing each prerelease identifier from
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
+identifiers are compared numerically. Alphanumeric identifiers are compared lexically
+in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
+if all the preceding identifiers are equal.</p>
+</div>
   <a id="Semver_SemVersion_ComparePrecedenceTo_" data-uid="Semver.SemVersion.ComparePrecedenceTo*"></a>
   <h4 id="Semver_SemVersion_ComparePrecedenceTo_Semver_SemVersion_" data-uid="Semver.SemVersion.ComparePrecedenceTo(Semver.SemVersion)">ComparePrecedenceTo(SemVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compares two versions and indicates whether this instance precedes, follows, or is in the same
+position as the other in the precedence order. Versions that differ only by build metadata
+have the same precedence.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1150,13 +1211,32 @@ if all the preceding identifiers are equal.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>An integer that indicates whether this instance precedes, follows, or is in the same
+position as <code data-dev-comment-type="paramref" class="paramref">other</code> in the precedence order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">other</code> in the precedence order.</td></tr><tr><td>0</td><td>This instance has the same precedence as <code data-dev-comment-type="paramref" class="paramref">other</code>.</td></tr><tr><td>1</td><td>
+            This instance follows <code data-dev-comment-type="paramref" class="paramref">other</code> in the precedence order
+            or <code data-dev-comment-type="paramref" class="paramref">other</code> is <span class="xref">null</span>.
+</td></tr></tbody></table>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_SemVersion_ComparePrecedenceTo_Semver_SemVersion__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Precedence order is determined by comparing the major, minor, patch, and prerelease
+portion in order from left to right. Versions that differ only by build metadata have the
+same precedence. The major, minor, and patch version numbers are compared numerically. A
+prerelease version precedes a release version.</p>
+<p>The prerelease portion is compared by comparing each prerelease identifier from
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
+identifiers are compared numerically. Alphanumeric identifiers are compared lexically
+in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
+if all the preceding identifiers are equal.</p>
+</div>
   <a id="Semver_SemVersion_CompareSortOrder_" data-uid="Semver.SemVersion.CompareSortOrder*"></a>
   <h4 id="Semver_SemVersion_CompareSortOrder_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareSortOrder(Semver.SemVersion,Semver.SemVersion)">CompareSortOrder(SemVersion, SemVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compares two versions and indicates whether the first precedes, follows, or is equal to
+the second in the sort order. Note that sort order is more specific than precedence order.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1195,13 +1275,39 @@ if all the preceding identifiers are equal.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>An integer that indicates whether <code data-dev-comment-type="paramref" class="paramref">left</code> precedes, follows, or is equal
+to <code data-dev-comment-type="paramref" class="paramref">right</code> in the sort order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>
+<code data-dev-comment-type="paramref" class="paramref">left</code> precedes <code data-dev-comment-type="paramref" class="paramref">right</code> in the sort
+order or <code data-dev-comment-type="paramref" class="paramref">left</code> is <span class="xref">null</span>.</td></tr><tr><td>0</td><td><code data-dev-comment-type="paramref" class="paramref">left</code> is equal to <code data-dev-comment-type="paramref" class="paramref">right</code>.</td></tr><tr><td>1</td><td>
+<code data-dev-comment-type="paramref" class="paramref">left</code> follows <code data-dev-comment-type="paramref" class="paramref">right</code> in the sort order
+or <code data-dev-comment-type="paramref" class="paramref">right</code> is <span class="xref">null</span>.
+</td></tr></tbody></table>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_SemVersion_CompareSortOrder_Semver_SemVersion_Semver_SemVersion__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
+with the same precedence. Sort order is determined by comparing the major, minor,
+patch, prerelease portion, and build metadata in order from left to right. The major,
+minor, and patch version numbers are compared numerically. A prerelease version precedes
+a release version.</p>
+<p>The prerelease portion is compared by comparing each prerelease identifier from
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
+identifiers are compared numerically. Alphanumeric identifiers are compared lexically
+in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
+if all the preceding identifiers are equal.</p>
+<p>Otherwise equal versions without build metadata precede those with metadata. The
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
+</div>
   <a id="Semver_SemVersion_CompareSortOrderTo_" data-uid="Semver.SemVersion.CompareSortOrderTo*"></a>
   <h4 id="Semver_SemVersion_CompareSortOrderTo_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareSortOrderTo(Semver.SemVersion)">CompareSortOrderTo(SemVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Compares two versions and indicates whether this instance precedes, follows, or is equal
+to the other in the sort order. Note that sort order is more specific than precedence order.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1235,10 +1341,32 @@ if all the preceding identifiers are equal.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>An integer that indicates whether this instance precedes, follows, or is equal to the
+other in the sort order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes the other in the sort order.</td></tr><tr><td>0</td><td>This instance is equal to the other.</td></tr><tr><td>1</td><td>
+			This instance follows the other in the sort order
+			or the other is <span class="xref">null</span>.
+</td></tr></tbody></table>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Semver_SemVersion_CompareSortOrderTo_Semver_SemVersion__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Sort order is consistent with precedence order, but provides an order for versions
+with the same precedence. Sort order is determined by comparing the major, minor,
+patch, prerelease portion, and build metadata in order from left to right. The major,
+minor, and patch version numbers are compared numerically. A prerelease version precedes
+a release version.</p>
+<p>The prerelease portion is compared by comparing each prerelease identifier from
+left to right. Numeric prerelease identifiers precede alphanumeric identifiers. Numeric
+identifiers are compared numerically. Alphanumeric identifiers are compared lexically
+in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
+if all the preceding identifiers are equal.</p>
+<p>Otherwise equal versions without build metadata precede those with metadata. The
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
+</div>
   <a id="Semver_SemVersion_CompareTo_" data-uid="Semver.SemVersion.CompareTo*"></a>
   <h4 id="Semver_SemVersion_CompareTo_Semver_SemVersion_" data-uid="Semver.SemVersion.CompareTo(Semver.SemVersion)">CompareTo(SemVersion)</h4>
   <div class="markdown level1 summary"><p>Compares two versions and indicates whether this instance precedes, follows, or is
@@ -1300,10 +1428,9 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric metadata
-identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
-Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
-metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_CompareTo_" data-uid="Semver.SemVersion.CompareTo*"></a>
   <h4 id="Semver_SemVersion_CompareTo_System_Object_" data-uid="Semver.SemVersion.CompareTo(System.Object)">CompareTo(Object)</h4>
@@ -1367,10 +1494,9 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric metadata
-identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
-Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
-metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1390,7 +1516,7 @@ metadata identifiers follows a shorter series if all the preceding identifiers a
   </table>
   <a id="Semver_SemVersion_Equals_" data-uid="Semver.SemVersion.Equals*"></a>
   <h4 id="Semver_SemVersion_Equals_Semver_SemVersion_" data-uid="Semver.SemVersion.Equals(Semver.SemVersion)">Equals(SemVersion)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two versions are equal.</p>
+  <div class="markdown level1 summary"><p>Determines whether two semantic versions are equal.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1523,7 +1649,7 @@ versions with the same precedence may not be equal.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is equal to the this identifier;
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is equal to the this version;
 otherwise <span class="xref">false</span>.</p>
 </td>
       </tr>
@@ -1956,7 +2082,9 @@ for <span class="xref">System.Int32</span>.</p>
   </table>
   <a id="Semver_SemVersion_PrecedenceEquals_" data-uid="Semver.SemVersion.PrecedenceEquals*"></a>
   <h4 id="Semver_SemVersion_PrecedenceEquals_Semver_SemVersion_" data-uid="Semver.SemVersion.PrecedenceEquals(Semver.SemVersion)">PrecedenceEquals(SemVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether two semantic versions have the same precedence. Versions that differ
+only by build metadata have the same precedence.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1975,7 +2103,8 @@ for <span class="xref">System.Int32</span>.</p>
       <tr>
         <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
         <td><span class="parametername">other</span></td>
-        <td></td>
+        <td><p>The semantic version to compare to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1990,13 +2119,17 @@ for <span class="xref">System.Int32</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><span class="xref">true</span> if the version precedences are equal, otherwise
+<span class="xref">false</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="Semver_SemVersion_PrecedenceEquals_" data-uid="Semver.SemVersion.PrecedenceEquals*"></a>
   <h4 id="Semver_SemVersion_PrecedenceEquals_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.PrecedenceEquals(Semver.SemVersion,Semver.SemVersion)">PrecedenceEquals(SemVersion, SemVersion)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Determines whether two semantic versions have the same precedence. Versions that differ
+only by build metadata have the same precedence.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2035,13 +2168,15 @@ for <span class="xref">System.Int32</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><span class="xref">true</span> if the version precedences are equal, otherwise
+<span class="xref">false</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="Semver_SemVersion_PrecedenceMatches_" data-uid="Semver.SemVersion.PrecedenceMatches*"></a>
   <h4 id="Semver_SemVersion_PrecedenceMatches_Semver_SemVersion_" data-uid="Semver.SemVersion.PrecedenceMatches(Semver.SemVersion)">PrecedenceMatches(SemVersion)</h4>
-  <div class="markdown level1 summary"><p>Returns whether two semantic versions have the same precedence. Versions
+  <div class="markdown level1 summary"><p>Determines whether two semantic versions have the same precedence. Versions
 that differ only by build metadata have the same precedence.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -3596,10 +3731,9 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric metadata
-identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
-Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
-metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_op_GreaterThanOrEqual_" data-uid="Semver.SemVersion.op_GreaterThanOrEqual*"></a>
   <h4 id="Semver_SemVersion_op_GreaterThanOrEqual_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.op_GreaterThanOrEqual(Semver.SemVersion,Semver.SemVersion)">GreaterThanOrEqual(SemVersion, SemVersion)</h4>
@@ -3662,10 +3796,9 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric metadata
-identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
-Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
-metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_op_Implicit_" data-uid="Semver.SemVersion.op_Implicit*"></a>
   <h4 id="Semver_SemVersion_op_Implicit_System_String__Semver_SemVersion" data-uid="Semver.SemVersion.op_Implicit(System.String)~Semver.SemVersion">Implicit(String to SemVersion)</h4>
@@ -3849,10 +3982,9 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric metadata
-identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
-Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
-metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <a id="Semver_SemVersion_op_LessThanOrEqual_" data-uid="Semver.SemVersion.op_LessThanOrEqual*"></a>
   <h4 id="Semver_SemVersion_op_LessThanOrEqual_Semver_SemVersion_Semver_SemVersion_" data-uid="Semver.SemVersion.op_LessThanOrEqual(Semver.SemVersion,Semver.SemVersion)">LessThanOrEqual(SemVersion, SemVersion)</h4>
@@ -3915,10 +4047,9 @@ identifiers are compared numerically. Alphanumeric identifiers are compared lexi
 in ASCII sort order. A longer series of prerelease identifiers follows a shorter series
 if all the preceding identifiers are equal.</p>
 <p>Otherwise equal versions without build metadata precede those with metadata. The
-build metadata is compared by comparing each metadata identifier. Numeric metadata
-identifiers precede alphanumeric metadata. Numeric identifiers are compared numerically.
-Alphanumeric identifiers are compared lexically in ASCII sort order. A longer series of
-metadata identifiers follows a shorter series if all the preceding identifiers are equal.</p>
+build metadata is compared by comparing each metadata identifier. Identifiers are
+compared lexically in ASCII sort order. A longer series of metadata identifiers follows
+a shorter series if all the preceding identifiers are equal.</p>
 </div>
   <h3 id="implements">Implements</h3>
   <div>
