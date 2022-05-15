@@ -76,14 +76,22 @@ complies with v2.0.0 of the spec from <a href="http://semver.org">semver.org</a>
 <pre><code class="lang-powershell">Install-Package semver
 </code></pre>
 <h2 id="parsing">Parsing</h2>
-<pre><code class="lang-csharp">var version = SemVersion.Parse(&quot;1.1.0-rc.1+nightly.2345&quot;, SemVersionStyles.Strict);
+<pre><code class="lang-csharp">var version = SemVersion.Parse(&quot;1.1.0-rc.1+e471d15&quot;, SemVersionStyles.Strict);
 </code></pre>
 <h2 id="constructing">Constructing</h2>
 <pre><code class="lang-csharp">var v1 = new SemVersion(1, 0);
+var vNextRc = SemVersion.ParsedFrom(1, 1, 0, &quot;rc.1&quot;);
 </code></pre>
 <h2 id="comparing">Comparing</h2>
-<pre><code class="lang-csharp">if (version &lt; v1)
-    Console.WriteLine($&quot;Initial development version {version}!&quot;);
+<pre><code class="lang-csharp">if (version.ComparePrecedenceTo(vNextRc) == 0)
+    Console.WriteLine($&quot;{version} has the same precedence as {vNextRc}&quot;);
+
+if (version.CompareSortOrderTo(vNextRc) &gt; 0)
+    Console.WriteLine($&quot;{version} sorts after {vNextRc}&quot;);
+</code></pre>
+<p>Outputs:</p>
+<pre><code class="lang-text">1.1.0-rc.1+e471d15 has the same precedence as 1.1.0-rc.1
+1.1.0-rc.1+e471d15 sorts after 1.1.0-rc.1
 </code></pre>
 <h2 id="manipulating">Manipulating</h2>
 <pre><code class="lang-csharp">Console.WriteLine($&quot;Current: {version}&quot;);
