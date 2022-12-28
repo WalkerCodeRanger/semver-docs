@@ -504,10 +504,10 @@ public string Build { get; }</code></pre>
     </tbody>
   </table>
   <h5 id="Semver_SemVersion_Build_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p> The build metadata is a series of dot separated identifiers separated from the
+  <div class="markdown level1 remarks"><p>The build metadata is a series of dot separated identifiers separated from the
 rest of the version number with a plus sign (&apos;<code>+</code>&apos;). Valid metadata identifiers are
 non-empty and consist of ASCII alphanumeric characters and hyphens (<code>[0-9A-Za-z-]</code>).</p>
-<p> The metadata does not affect precedence. Two version numbers differing only in
+<p>The metadata does not affect precedence. Two version numbers differing only in
 build metadata have the same precedence. However, metadata does affect sort order. An
 otherwise identical version without metadata sorts before one that has metadata.</p>
 </div>
@@ -633,10 +633,10 @@ is no metadata.</p>
     </tbody>
   </table>
   <h5 id="Semver_SemVersion_Metadata_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p> The build metadata is a series of dot separated identifiers separated from the
+  <div class="markdown level1 remarks"><p>The build metadata is a series of dot separated identifiers separated from the
 rest of the version number with a plus sign (&apos;<code>+</code>&apos;). Valid metadata identifiers are
 non-empty and consist of ASCII alphanumeric characters and hyphens (<code>[0-9A-Za-z-]</code>).</p>
-<p> The metadata does not affect precedence. Two version numbers differing only in
+<p>The metadata does not affect precedence. Two version numbers differing only in
 build metadata have the same precedence. However, metadata does affect sort order. An
 otherwise identical version without metadata sorts before one that has metadata.</p>
 </div>
@@ -667,10 +667,10 @@ is no metadata.</p>
     </tbody>
   </table>
   <h5 id="Semver_SemVersion_MetadataIdentifiers_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p> The build metadata is a series of dot separated identifiers separated from the
+  <div class="markdown level1 remarks"><p>The build metadata is a series of dot separated identifiers separated from the
 rest of the version number with a plus sign (&apos;<code>+</code>&apos;). Valid metadata identifiers are
 non-empty and consist of ASCII alphanumeric characters and hyphens (<code>[0-9A-Za-z-]</code>).</p>
-<p> The metadata does not affect precedence. Two version numbers differing only in
+<p>The metadata does not affect precedence. Two version numbers differing only in
 build metadata have the same precedence. However, metadata does affect sort order. An
 otherwise identical version without metadata sorts before one that has metadata.</p>
 </div>
@@ -797,7 +797,7 @@ if all the preceding identifiers are equal.</p>
     </tbody>
   </table>
   <h5 id="Semver_SemVersion_Prerelease_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p> A prerelease version is denoted by appending a hyphen (&apos;<code>-</code>&apos;) and a series
+  <div class="markdown level1 remarks"><p>A prerelease version is denoted by appending a hyphen (&apos;<code>-</code>&apos;) and a series
 of dot separated identifiers immediately following the patch version number. Each
 prerelease identifier may be numeric or alphanumeric. Valid numeric identifiers consist
 of ASCII digits (<code>[0-9]</code>) without leading zeros. Valid alphanumeric identifiers are
@@ -835,7 +835,7 @@ lexically in ASCII sort order.</p>
     </tbody>
   </table>
   <h5 id="Semver_SemVersion_PrereleaseIdentifiers_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p> A prerelease version is denoted by appending a hyphen (&apos;<code>-</code>&apos;) and a series
+  <div class="markdown level1 remarks"><p>A prerelease version is denoted by appending a hyphen (&apos;<code>-</code>&apos;) and a series
 of dot separated identifiers immediately following the patch version number. Each
 prerelease identifier may be numeric or alphanumeric. Valid numeric identifiers consist
 of ASCII digits (<code>[0-9]</code>) without leading zeros. Valid alphanumeric identifiers are
@@ -2216,6 +2216,284 @@ public bool PrecedenceMatches(SemVersion other)</code></pre>
         <td><span class="xref">System.Boolean</span></td>
         <td><p><span class="xref">true</span> if the version precedences are equal.</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
+  <h4 id="Semver_SemVersion_Satisfies_System_Predicate_Semver_SemVersion__" data-uid="Semver.SemVersion.Satisfies(System.Predicate{Semver.SemVersion})">Satisfies(Predicate&lt;SemVersion&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks if this version satisfies the predicate. Typically this is called with a
+<a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a> or <a class="xref" href="Semver.Ranges.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Satisfies(Predicate&lt;SemVersion&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Semver.SemVersion.html">SemVersion</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate to evaluate. Commonly a
+<a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a> or <a class="xref" href="Semver.Ranges.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the version is contained in the range,
+otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">predicate</code> is
+<span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
+  <h4 id="Semver_SemVersion_Satisfies_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_" data-uid="Semver.SemVersion.Satisfies(System.String,Semver.Ranges.SemVersionRangeOptions,System.Int32)">Satisfies(String, SemVersionRangeOptions, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Satisfies(string range, SemVersionRangeOptions options, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
+  <h4 id="Semver_SemVersion_Satisfies_System_String_System_Int32_" data-uid="Semver.SemVersion.Satisfies(System.String,System.Int32)">Satisfies(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Satisfies(string range, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_SatisfiesNpm_" data-uid="Semver.SemVersion.SatisfiesNpm*"></a>
+  <h4 id="Semver_SemVersion_SatisfiesNpm_System_String_System_Boolean_System_Int32_" data-uid="Semver.SemVersion.SatisfiesNpm(System.String,System.Boolean,System.Int32)">SatisfiesNpm(String, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Checks if this version is in the given range. Uses the same range syntax as npm.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SatisfiesNpm(string range, bool includeAllPrerelease, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range to compare with.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the version is contained in the range,
+otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersion_SatisfiesNpm_System_String_System_Boolean_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It's more optimal to use the static parse methods on <a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a>
+if you're going to be testing multiple versions against the same range
+to avoid having to parse the range multiple times.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>Thrown if the <code data-dev-comment-type="paramref" class="paramref">range</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersion_SatisfiesNpm_" data-uid="Semver.SemVersion.SatisfiesNpm*"></a>
+  <h4 id="Semver_SemVersion_SatisfiesNpm_System_String_System_Int32_" data-uid="Semver.SemVersion.SatisfiesNpm(System.String,System.Int32)">SatisfiesNpm(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SatisfiesNpm(string range, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
