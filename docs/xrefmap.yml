@@ -316,13 +316,25 @@ references:
 - uid: Semver.Ranges.SemVersionRange.All
   name: All
   href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_All
-  commentId: F:Semver.Ranges.SemVersionRange.All
+  commentId: P:Semver.Ranges.SemVersionRange.All
+  fullName: Semver.Ranges.SemVersionRange.All
+  nameWithType: SemVersionRange.All
+- uid: Semver.Ranges.SemVersionRange.All*
+  name: All
+  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_All_
+  commentId: Overload:Semver.Ranges.SemVersionRange.All
   fullName: Semver.Ranges.SemVersionRange.All
   nameWithType: SemVersionRange.All
 - uid: Semver.Ranges.SemVersionRange.AllRelease
   name: AllRelease
   href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AllRelease
-  commentId: F:Semver.Ranges.SemVersionRange.AllRelease
+  commentId: P:Semver.Ranges.SemVersionRange.AllRelease
+  fullName: Semver.Ranges.SemVersionRange.AllRelease
+  nameWithType: SemVersionRange.AllRelease
+- uid: Semver.Ranges.SemVersionRange.AllRelease*
+  name: AllRelease
+  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AllRelease_
+  commentId: Overload:Semver.Ranges.SemVersionRange.AllRelease
   fullName: Semver.Ranges.SemVersionRange.AllRelease
   nameWithType: SemVersionRange.AllRelease
 - uid: Semver.Ranges.SemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
@@ -400,7 +412,13 @@ references:
 - uid: Semver.Ranges.SemVersionRange.Empty
   name: Empty
   href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Empty
-  commentId: F:Semver.Ranges.SemVersionRange.Empty
+  commentId: P:Semver.Ranges.SemVersionRange.Empty
+  fullName: Semver.Ranges.SemVersionRange.Empty
+  nameWithType: SemVersionRange.Empty
+- uid: Semver.Ranges.SemVersionRange.Empty*
+  name: Empty
+  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Empty_
+  commentId: Overload:Semver.Ranges.SemVersionRange.Empty
   fullName: Semver.Ranges.SemVersionRange.Empty
   nameWithType: SemVersionRange.Empty
 - uid: Semver.Ranges.SemVersionRange.Equals(Semver.Ranges.SemVersionRange)
@@ -767,13 +785,25 @@ references:
 - uid: Semver.Ranges.UnbrokenSemVersionRange.All
   name: All
   href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_All
-  commentId: F:Semver.Ranges.UnbrokenSemVersionRange.All
+  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.All
+  fullName: Semver.Ranges.UnbrokenSemVersionRange.All
+  nameWithType: UnbrokenSemVersionRange.All
+- uid: Semver.Ranges.UnbrokenSemVersionRange.All*
+  name: All
+  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_All_
+  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.All
   fullName: Semver.Ranges.UnbrokenSemVersionRange.All
   nameWithType: UnbrokenSemVersionRange.All
 - uid: Semver.Ranges.UnbrokenSemVersionRange.AllRelease
   name: AllRelease
   href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AllRelease
-  commentId: F:Semver.Ranges.UnbrokenSemVersionRange.AllRelease
+  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.AllRelease
+  fullName: Semver.Ranges.UnbrokenSemVersionRange.AllRelease
+  nameWithType: UnbrokenSemVersionRange.AllRelease
+- uid: Semver.Ranges.UnbrokenSemVersionRange.AllRelease*
+  name: AllRelease
+  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AllRelease_
+  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.AllRelease
   fullName: Semver.Ranges.UnbrokenSemVersionRange.AllRelease
   nameWithType: UnbrokenSemVersionRange.AllRelease
 - uid: Semver.Ranges.UnbrokenSemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
@@ -815,7 +845,13 @@ references:
 - uid: Semver.Ranges.UnbrokenSemVersionRange.Empty
   name: Empty
   href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Empty
-  commentId: F:Semver.Ranges.UnbrokenSemVersionRange.Empty
+  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.Empty
+  fullName: Semver.Ranges.UnbrokenSemVersionRange.Empty
+  nameWithType: UnbrokenSemVersionRange.Empty
+- uid: Semver.Ranges.UnbrokenSemVersionRange.Empty*
+  name: Empty
+  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Empty_
+  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.Empty
   fullName: Semver.Ranges.UnbrokenSemVersionRange.Empty
   nameWithType: UnbrokenSemVersionRange.Empty
 - uid: Semver.Ranges.UnbrokenSemVersionRange.End

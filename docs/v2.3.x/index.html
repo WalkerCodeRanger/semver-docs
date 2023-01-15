@@ -69,8 +69,9 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="a-semantic-version-library-for-net">A Semantic Version Library for .Net</h1>
 
-<p>This library implements the <code>SemVersion</code> class, which
-complies with v2.0.0 of the spec from <a href="http://semver.org">semver.org</a>.</p>
+<p>Create, parse, and manipulate semantic version numbers with the <code>SemVersion</code> class and semantic
+version ranges with the <code>SemVersionRange</code> class. This library complies with v2.0.0 of the semantic
+versioning spec from <a href="http://semver.org">semver.org</a>.</p>
 <h2 id="installation">Installation</h2>
 <p>With the NuGet console:</p>
 <pre><code class="lang-powershell">Install-Package semver
@@ -105,6 +106,26 @@ if (version.IsPrerelease)
 <pre><code class="lang-text">Current: 1.1.0-rc.1+nightly.2345
 Prerelease: rc.1
 Next release version is: 1.1.0
+</code></pre>
+<h2 id="version-ranges">Version Ranges</h2>
+<pre><code class="lang-csharp">var range = SemVersionRange.Parse(&quot;^1.0.0&quot;);
+var prereleaseRange = SemVersionRange.ParseNpm(&quot;^1.0.0&quot;, SemVersionRangeOptions.IncludeAllPrerelease);
+Console.WriteLine($&quot;Range: {range}&quot;);
+Console.WriteLine($&quot;Prerelease range: {prereleaseRange}&quot;);
+Console.WriteLine($&quot;Range includes version: {range.Contains(version)}&quot;);
+Console.WriteLine($&quot;Prerelease range includes version: {prereleaseRange.Contains(version)}&quot;);
+
+// Alternative: another way to call SemVersionRange.Contains(version)
+version.Satisfies(range);
+
+// Alternative: slower because it parses the range on every call
+version.Satisfies(&quot;^1.0.0&quot;, SemVersionRangeOptions.IncludeAllPrerelease);
+</code></pre>
+<p>Outputs:</p>
+<pre><code class="lang-text">Range: ^1.0.0
+Prerelease range: *-* ^1.0.0
+Range includes version: False
+Prerelease range includes version: True
 </code></pre>
 </article>
           </div>
