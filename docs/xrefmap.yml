@@ -1583,6 +1583,18 @@ references:
   commentId: Overload:Semver.SemVersion.PrereleaseIdentifiers
   fullName: Semver.SemVersion.PrereleaseIdentifiers
   nameWithType: SemVersion.PrereleaseIdentifiers
+- uid: Semver.SemVersion.Satisfies(Semver.Ranges.SemVersionRange)
+  name: Satisfies(SemVersionRange)
+  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_Semver_Ranges_SemVersionRange_
+  commentId: M:Semver.SemVersion.Satisfies(Semver.Ranges.SemVersionRange)
+  fullName: Semver.SemVersion.Satisfies(Semver.Ranges.SemVersionRange)
+  nameWithType: SemVersion.Satisfies(SemVersionRange)
+- uid: Semver.SemVersion.Satisfies(Semver.Ranges.UnbrokenSemVersionRange)
+  name: Satisfies(UnbrokenSemVersionRange)
+  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_Semver_Ranges_UnbrokenSemVersionRange_
+  commentId: M:Semver.SemVersion.Satisfies(Semver.Ranges.UnbrokenSemVersionRange)
+  fullName: Semver.SemVersion.Satisfies(Semver.Ranges.UnbrokenSemVersionRange)
+  nameWithType: SemVersion.Satisfies(UnbrokenSemVersionRange)
 - uid: Semver.SemVersion.Satisfies(System.Predicate{Semver.SemVersion})
   name: Satisfies(Predicate<SemVersion>)
   href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_System_Predicate_Semver_SemVersion__
