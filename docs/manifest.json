@@ -67,7 +67,7 @@
       "output": {
         ".html": {
           "relative_path": "v2.3.x/Semver.Comparers.html",
-          "hash": "sWYGhOp/ElhCztZFw040iSiksdLqUnWgYq1zPs9xjKs="
+          "hash": "dwnNNrdZSFjCOjcbllN6o/xlPLVsRaUJZfIaMhAQq3U="
         }
       },
       "is_incremental": false,
@@ -175,7 +175,7 @@
       "output": {
         ".html": {
           "relative_path": "v2.3.x/Semver.html",
-          "hash": "YVcnInh8Elfd92PIQ5ShgAc7QH9zt7TnKfnSfJVTUNg="
+          "hash": "cEEbD2y//LlHy5RYJOqc+eWZ00eg/BsG2xjGcht+tnE="
         }
       },
       "is_incremental": false,
@@ -226,7 +226,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 13,
+          "total_file_count": 15,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
