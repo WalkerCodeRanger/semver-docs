@@ -2,4 +2,4 @@
 uid: Semver.Ranges
 summary: *content
 ---
-### Overwritten Summary
+Classes for working with ranges of semantic versions.
