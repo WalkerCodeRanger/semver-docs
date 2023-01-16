@@ -72,8 +72,10 @@
   
   <h1 id="Semver_Ranges" data-uid="Semver.Ranges" class="text-break">Namespace Semver.Ranges
   </h1>
-  <div class="markdown level0 summary"></div>
-  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 summary"><h3 id="overwritten-summary">Overwritten Summary</h3>
+</div>
+  <div class="markdown level0 conceptual"><h3 id="overwritten-conceptual">Overwritten Conceptual</h3>
+</div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
@@ -87,7 +89,21 @@ gaps see the <a class="xref" href="Semver.Ranges.UnbrokenSemVersionRange.html">U
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html">SemVersionRangeOptions</a></h4>
-      <section></section>
+      <section><p>Determines the parsing options and allowed styles of range and version strings passed
+to the <a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Parse_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> and
+<a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParse_System_String_Semver_Ranges_SemVersionRangeOptions_Semver_Ranges_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a>
+methods. These styles only affect which strings are accepted when parsing. The
+constructed ranges and version numbers are valid semantic version ranges without any of the
+optional features in the original string.</p>
+<p>Most options only allow additional version styles. However, the
+<a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option modifies how version ranges are interpreted. With
+this option, all prerelease versions within the range bounds will be considered to be in the
+range. Without this option, only prerelease versions where one comparison with the same
+major, minor, and patch versions is prerelease will satisfy the range. For more information,
+see the <a href="https://semver-nuget.org/ranges/">range expressions documentation</a>.</p>
+<p>This enumeration supports a bitwise combination of its member values (e.g.
+<code>SemVersionRangeOptions.OptionalPatch | SemVersionRangeOptions.AllowV</code>).</p>
+</section>
 </article>
           </div>
           

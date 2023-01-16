@@ -27,6 +27,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "ranges/index.html",
+      "output": {
+        "resource": {
+          "relative_path": "ranges/index.html"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
@@ -104,7 +115,7 @@
       "output": {
         ".html": {
           "relative_path": "v2.3.x/Semver.Ranges.SemVersionRangeOptions.html",
-          "hash": "/BxkKU3VTZZK8tveSXHBCnV4TTvJuHZvglSkaUhpjds="
+          "hash": "rn9uRQ3n0h+0uhmtiiWK2jHeRM82ExZHJBltI7vVPII="
         }
       },
       "is_incremental": false,
@@ -128,7 +139,7 @@
       "output": {
         ".html": {
           "relative_path": "v2.3.x/Semver.Ranges.html",
-          "hash": "CK90vKdG82wmT0MO494EEKYdLhn/LpEH1VflimLw0uY="
+          "hash": "ozRC+fHym/afFpMi5JnIVJ+BBDIBnkf1d0jIOUOPKjE="
         }
       },
       "is_incremental": false,
@@ -140,7 +151,7 @@
       "output": {
         ".html": {
           "relative_path": "v2.3.x/Semver.SemVersion.html",
-          "hash": "4atQMzWv+Z77FBB991xOLHLsDXRzKBYTD0n4HBg5Dm8="
+          "hash": "kv2yKTN0/K0ZOpbJ80mJnsyeeqEue5ZETjOACRAJlhQ="
         }
       },
       "is_incremental": false,
@@ -215,7 +226,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 11,
+          "total_file_count": 13,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

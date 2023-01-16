@@ -29,7 +29,8 @@
         [{
             "files": [
                 "images/**",
-                "CNAME"
+                "CNAME",
+                "ranges/index.html"
             ]
         }],
         "overwrite":

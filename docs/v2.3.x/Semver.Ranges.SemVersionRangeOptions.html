@@ -73,7 +73,21 @@
   
   <h1 id="Semver_Ranges_SemVersionRangeOptions" data-uid="Semver.Ranges.SemVersionRangeOptions" class="text-break">Enum SemVersionRangeOptions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Determines the parsing options and allowed styles of range and version strings passed
+to the <a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Parse_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> and
+<a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParse_System_String_Semver_Ranges_SemVersionRangeOptions_Semver_Ranges_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a>
+methods. These styles only affect which strings are accepted when parsing. The
+constructed ranges and version numbers are valid semantic version ranges without any of the
+optional features in the original string.</p>
+<p>Most options only allow additional version styles. However, the
+<a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option modifies how version ranges are interpreted. With
+this option, all prerelease versions within the range bounds will be considered to be in the
+range. Without this option, only prerelease versions where one comparison with the same
+major, minor, and patch versions is prerelease will satisfy the range. For more information,
+see the <a href="https://semver-nuget.org/ranges/">range expressions documentation</a>.</p>
+<p>This enumeration supports a bitwise combination of its member values (e.g.
+<code>SemVersionRangeOptions.OptionalPatch | SemVersionRangeOptions.AllowV</code>).</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Semver.Ranges.html">Semver.Ranges</a></h6>
   <h6><strong>Assembly</strong>: Semver.dll</h6>
@@ -100,7 +114,7 @@ public enum SemVersionRangeOptions</code></pre>
       </tr>
       <tr>
         <td id="Semver_Ranges_SemVersionRangeOptions_AllowLowerV">AllowLowerV</td>
-        <td><p>Allow a leading lowercase &quot;v&quot;.</p>
+        <td><p>Allow a leading lowercase &quot;v&quot; on versions.</p>
 </td>
       </tr>
       <tr>
@@ -111,12 +125,12 @@ will be removed/ignored for the definition of the version range.</p>
       </tr>
       <tr>
         <td id="Semver_Ranges_SemVersionRangeOptions_AllowUpperV">AllowUpperV</td>
-        <td><p>Allow a leading uppercase &quot;V&quot;.</p>
+        <td><p>Allow a leading uppercase &quot;V&quot; on versions.</p>
 </td>
       </tr>
       <tr>
         <td id="Semver_Ranges_SemVersionRangeOptions_AllowV">AllowV</td>
-        <td><p>Allow a leading &quot;v&quot; or &quot;V&quot;.</p>
+        <td><p>Allow a leading &quot;v&quot; or &quot;V&quot; on versions.</p>
 </td>
       </tr>
       <tr>
@@ -127,21 +141,23 @@ matching a prerelease identifier in the range.</p>
       </tr>
       <tr>
         <td id="Semver_Ranges_SemVersionRangeOptions_Loose">Loose</td>
-        <td></td>
+        <td><p>Accept any version string format supported.</p>
+<p>The formats accepted by this style will change if/when more formats are supported.</p>
+</td>
       </tr>
       <tr>
         <td id="Semver_Ranges_SemVersionRangeOptions_OptionalMinorPatch">OptionalMinorPatch</td>
-        <td><p>Minor and patch version numbers are optional.</p>
+        <td><p>Minor and patch version numbers are optional on versions.</p>
 </td>
       </tr>
       <tr>
         <td id="Semver_Ranges_SemVersionRangeOptions_OptionalPatch">OptionalPatch</td>
-        <td><p>Patch version number is optional.</p>
+        <td><p>Patch version number is optional on versions.</p>
 </td>
       </tr>
       <tr>
         <td id="Semver_Ranges_SemVersionRangeOptions_Strict">Strict</td>
-        <td><p>Accept version strings strictly conforming to the SemVer 2.0 spec without metadata.</p>
+        <td><p>Accept versions strictly conforming to the SemVer 2.0 spec without metadata.</p>
 </td>
       </tr>
     </tbody>
