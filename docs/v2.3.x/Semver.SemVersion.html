@@ -1603,7 +1603,7 @@ versions with the same precedence may not be equal.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the two values are equal, otherwise <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the two versions are equal, otherwise <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -2274,7 +2274,7 @@ otherwise <span class="xref">false</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">range</code> is
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is
 <span class="xref">null</span>.</p>
 </td>
       </tr>
@@ -2335,7 +2335,7 @@ otherwise <span class="xref">false</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">range</code> is
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is
 <span class="xref">null</span>.</p>
 </td>
       </tr>
@@ -2396,7 +2396,7 @@ otherwise <span class="xref">false</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">predicate</code> is
+        <td><p><code data-dev-comment-type="paramref" class="paramref">predicate</code> is
 <span class="xref">null</span>.</p>
 </td>
       </tr>
@@ -2404,7 +2404,7 @@ otherwise <span class="xref">false</span>.</p>
   </table>
   <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
   <h4 id="Semver_SemVersion_Satisfies_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_" data-uid="Semver.SemVersion.Satisfies(System.String,Semver.Ranges.SemVersionRangeOptions,System.Int32)">Satisfies(String, SemVersionRangeOptions, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks if this version is contained in the given range string.</p>
+  <div class="markdown level1 summary"><p>Checks if this version is contained in the given range.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2477,7 +2477,7 @@ object to repeatedly check for containment.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">range</code> is
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is
 <span class="xref">null</span>.</p>
 </td>
       </tr>
@@ -2509,7 +2509,7 @@ is too large for an <span class="xref">System.Int32</span>.</p>
   </table>
   <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
   <h4 id="Semver_SemVersion_Satisfies_System_String_System_Int32_" data-uid="Semver.SemVersion.Satisfies(System.String,System.Int32)">Satisfies(String, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks if this version is contained in the given range string. The range is parsed using
+  <div class="markdown level1 summary"><p>Checks if this version is contained in the given range. The range is parsed using
 <a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_Strict">Strict</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2575,7 +2575,7 @@ object to repeatedly check for containment.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">range</code> is
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is
 <span class="xref">null</span>.</p>
 </td>
       </tr>
@@ -2601,7 +2601,7 @@ is too large for an <span class="xref">System.Int32</span>.</p>
   </table>
   <a id="Semver_SemVersion_SatisfiesNpm_" data-uid="Semver.SemVersion.SatisfiesNpm*"></a>
   <h4 id="Semver_SemVersion_SatisfiesNpm_System_String_System_Boolean_System_Int32_" data-uid="Semver.SemVersion.SatisfiesNpm(System.String,System.Boolean,System.Int32)">SatisfiesNpm(String, Boolean, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks if this version is contained in the given npm format range string.</p>
+  <div class="markdown level1 summary"><p>Checks if this version is contained in the given range in npm format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2675,7 +2675,7 @@ repeatedly check for containment.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">range</code> is
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is
 <span class="xref">null</span>.</p>
 </td>
       </tr>
@@ -2700,8 +2700,8 @@ is too large for an <span class="xref">System.Int32</span>.</p>
   </table>
   <a id="Semver_SemVersion_SatisfiesNpm_" data-uid="Semver.SemVersion.SatisfiesNpm*"></a>
   <h4 id="Semver_SemVersion_SatisfiesNpm_System_String_System_Int32_" data-uid="Semver.SemVersion.SatisfiesNpm(System.String,System.Int32)">SatisfiesNpm(String, Int32)</h4>
-  <div class="markdown level1 summary"><p>Checks if this version is contained in the given npm format range string. Does not
-include all prerelease when parsing the range.</p>
+  <div class="markdown level1 summary"><p>Checks if this version is contained in the given range in npm format. Does not include
+all prerelease when parsing the range.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2767,7 +2767,7 @@ repeatedly check for containment.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>Thrown if <code data-dev-comment-type="paramref" class="paramref">range</code> is
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is
 <span class="xref">null</span>.</p>
 </td>
       </tr>
@@ -2923,7 +2923,7 @@ otherwise they are optional.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">false</span> when a invalid version string is passed, otherwise <span class="xref">true</span>.</p>
+        <td><p><span class="xref">false</span> when an invalid version string is passed, otherwise <span class="xref">true</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -2990,7 +2990,25 @@ parsed. This prevents attacks using very long version strings.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p><span class="xref">false</span> when an invalid version string is passed, otherwise <span class="xref">true</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">style</code> is not a valid
+<a class="xref" href="Semver.SemVersionStyles.html">SemVersionStyles</a> value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -4232,7 +4250,7 @@ for <span class="xref">System.Int32</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the two values are equal, otherwise <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the two versions are equal, otherwise <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
@@ -4483,7 +4501,7 @@ public static implicit operator SemVersion(string version)</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the two values are <em>not</em> equal, otherwise <span class="xref">false</span>.</p>
+        <td><p><span class="xref">true</span> if the two versions are <em>not</em> equal, otherwise <span class="xref">false</span>.</p>
 </td>
       </tr>
     </tbody>
