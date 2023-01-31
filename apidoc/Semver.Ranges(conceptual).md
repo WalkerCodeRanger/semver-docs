@@ -27,8 +27,8 @@ Versions](#prerelease-versions)).
 
 #### Versions in Ranges
 
-By default all versions in a range must strictly conform to the semantic versioning spec and not
-have a metadata section. This can be relaxed using the
+By default the syntax of all versions appear in a range expression must strictly conform to the
+semantic versioning spec and not have a metadata section. This can be relaxed using the
 [SemVersionRangeOptions](xref:Semver.Ranges.SemVersionRangeOptions).
 
 #### Comparison Sets
@@ -36,16 +36,14 @@ have a metadata section. This can be relaxed using the
 Comparison sets combine one or more comparisons consisting of basic operators, advanced operators,
 and wildcards into a single [UnbrokenSemVersionRange](xref:Semver.Ranges.UnbrokenSemVersionRange).
 Individual comparisons in a comparison set may be optional surrounded by one or more spaces on
-either side. A space is not needed to separate two comparisons (e.g. `>1.0.0<2.0.0`) except to
-separate two wildcard versions from one another (e.g. `2.2.* 2.*`). Of course, the latter wouldn't
-typically be done.
+either side. A space is not needed to separate two comparisons (e.g. `>1.0.0<2.0.0`).
 
 Since all comparisons in a comparison set must be met, they can always be simplified down to an
 unbroken range with a minimum and maximum version each of which may or may not be included in the
 range.
 
 Comparison sets can be combined using the `||` operator. The `||` operator may be optionally
-separated from the comparison sets one by or more spaces on either side. The `||` operator unions
+separated from the comparison sets by one or more spaces on either side. The `||` operator unions
 the comparison sets it joins together.
 
 #### Prerelease Versions
@@ -86,7 +84,7 @@ There are two advanced operators that provide both a lower and upper bound with 
 
 ##### Compatible Operator (Caret)
 
-The caret (`^`) is the compatible operator. It matches all backwards compatible versions to the given version according to the semantic version specification. Thus it matches all versions greater than or equal to the given version and less than the next major version. Since many authors treat a `0.x.y` version as if the `x` were the major "breaking-change" indicator, the caret operator behaves differently when used with initial development versions (i.e. `0.x.y`). The exact rule is that it allows changes that do not modify the left-most non-zero element of the major, minor, or patch version. In other words, this allows patch and minor updates for versions `1.0.0-0` and above, patch updates for versions `0.x.y-*` `>=0.1.0`, and only prerelease updates for versions `0.0.x-*`.
+The caret (`^`) is the compatible operator. It matches all backwards compatible versions to the given version according to the semantic version specification. Thus it matches all versions greater than or equal to the given version and less than the next major version. Since many authors treat a `0.x.y` version as if the `x` were the major "breaking-change" indicator, the caret operator behaves differently when used with initial development versions (i.e. `0.x.y`). The exact rule is that it allows changes that do not modify the left-most non-zero element of the major, minor, or patch version. In other words, this allows patch and minor updates for versions `1.0.0-0` and above, patch updates for versions `0.x.y-* >=0.1.0`, and only prerelease updates for versions `0.0.x-*`.
 
 The caret operator is always equivalent to a `>=` combined with a `<`. The examples below illustrate each of the possible cases.
 
@@ -108,7 +106,27 @@ The tilde operator is always equivalent to a `>=` combined with a `<`. The examp
 
 #### Wildcards
 
-**TODO**
+In addition to the basic and advanced operators, comparisons can be formed using wildcards. A
+wildcard comparison cannot be combined with an operator. The wildcard character "`*`" may be used in
+place of the major, minor, or patch version as well as the final prerelease identifier.
+
+A wildcard in the major, minor, or patch version matches any version number in that position. For
+example, `2.*.*` matches all release versions with a major version of `2`. If a version number is
+replaced with a wildcard, then all later version numbers must also be wildcards. Thus `2.*.6` is an
+invalid wildcard version. Additionally, no prerelease identifiers can be specified after a wildcard
+version number. A wildcard may be optionally used to match all prerelease versions (e.g. `1.2.*-*`).
+In a wildcard version with multiple wildcards, the subsequent wildcards can be omitted. For example,
+`6.*.*` can be shortened to `6.*` and `*.*.*` can be shortened to just `*`.
+
+A wildcard may be used in place of the final prerelease identifier (e.g. `1.2.3-alpha.*`,
+`1.2.3-*`). Such a prerelease wildcard will match all prerelease versions with the same prerelease
+identifiers as appear before the prerelease wildcard. It does not match prerelease versions with no
+identifier in that place. For example, `1.2.3-alpha.*` does not match `1.2.3-alpha`, but it does
+match `1.2.3-alpha.0` and `1.2.3-alpha.something`.
+
+There are two wildcard versions of special note. The first "`*`" matches all release versions. The
+second "`*-*`" matches all versions both release and prerelease. The latter can be used in a
+comparison set to include all prerelease versions in that comparison set.
 
 #### Differences from npm Syntax
 

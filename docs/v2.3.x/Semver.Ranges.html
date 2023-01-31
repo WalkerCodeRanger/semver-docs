@@ -96,21 +96,19 @@ included in a range. Only prerelease versions whose major, minor, and patch vers
 comparison version that is itself prerelease are includes (see <a href="#prerelease-versions">Prerelease
 Versions</a>).</p>
 <h4 id="versions-in-ranges">Versions in Ranges</h4>
-<p>By default all versions in a range must strictly conform to the semantic versioning spec and not
-have a metadata section. This can be relaxed using the
+<p>By default the syntax of all versions appear in a range expression must strictly conform to the
+semantic versioning spec and not have a metadata section. This can be relaxed using the
 <a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html">SemVersionRangeOptions</a>.</p>
 <h4 id="comparison-sets">Comparison Sets</h4>
 <p>Comparison sets combine one or more comparisons consisting of basic operators, advanced operators,
 and wildcards into a single <a class="xref" href="Semver.Ranges.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>.
 Individual comparisons in a comparison set may be optional surrounded by one or more spaces on
-either side. A space is not needed to separate two comparisons (e.g. <code>&gt;1.0.0&lt;2.0.0</code>) except to
-separate two wildcard versions from one another (e.g. <code>2.2.* 2.*</code>). Of course, the latter wouldn't
-typically be done.</p>
+either side. A space is not needed to separate two comparisons (e.g. <code>&gt;1.0.0&lt;2.0.0</code>).</p>
 <p>Since all comparisons in a comparison set must be met, they can always be simplified down to an
 unbroken range with a minimum and maximum version each of which may or may not be included in the
 range.</p>
 <p>Comparison sets can be combined using the <code>||</code> operator. The <code>||</code> operator may be optionally
-separated from the comparison sets one by or more spaces on either side. The <code>||</code> operator unions
+separated from the comparison sets by one or more spaces on either side. The <code>||</code> operator unions
 the comparison sets it joins together.</p>
 <h4 id="prerelease-versions">Prerelease Versions</h4>
 <p>By default, not all prerelease versions are included in a version range. This can be overridden with
@@ -141,7 +139,7 @@ included.</p>
 <h4 id="advanced-operators">Advanced Operators</h4>
 <p>There are two advanced operators that provide both a lower and upper bound with a single comparison.</p>
 <h5 id="compatible-operator-caret">Compatible Operator (Caret)</h5>
-<p>The caret (<code>^</code>) is the compatible operator. It matches all backwards compatible versions to the given version according to the semantic version specification. Thus it matches all versions greater than or equal to the given version and less than the next major version. Since many authors treat a <code>0.x.y</code> version as if the <code>x</code> were the major &quot;breaking-change&quot; indicator, the caret operator behaves differently when used with initial development versions (i.e. <code>0.x.y</code>). The exact rule is that it allows changes that do not modify the left-most non-zero element of the major, minor, or patch version. In other words, this allows patch and minor updates for versions <code>1.0.0-0</code> and above, patch updates for versions <code>0.x.y-*</code> <code>&gt;=0.1.0</code>, and only prerelease updates for versions <code>0.0.x-*</code>.</p>
+<p>The caret (<code>^</code>) is the compatible operator. It matches all backwards compatible versions to the given version according to the semantic version specification. Thus it matches all versions greater than or equal to the given version and less than the next major version. Since many authors treat a <code>0.x.y</code> version as if the <code>x</code> were the major &quot;breaking-change&quot; indicator, the caret operator behaves differently when used with initial development versions (i.e. <code>0.x.y</code>). The exact rule is that it allows changes that do not modify the left-most non-zero element of the major, minor, or patch version. In other words, this allows patch and minor updates for versions <code>1.0.0-0</code> and above, patch updates for versions <code>0.x.y-* &gt;=0.1.0</code>, and only prerelease updates for versions <code>0.0.x-*</code>.</p>
 <p>The caret operator is always equivalent to a <code>&gt;=</code> combined with a <code>&lt;</code>. The examples below illustrate each of the possible cases.</p>
 <ul>
 <li><code>^1.2.3</code> := <code>&gt;=1.2.3 &lt;2.0.0-0</code></li>
@@ -159,7 +157,24 @@ included.</p>
 <li><code>~1.2.3-beta.2</code> := <code>&gt;=1.2.3-beta.2 &lt;1.3.0-0</code> Note that prereleases in the <code>1.2.3</code> version will be allowed, if they are greater than or equal to <code>beta.2</code>. So, <code>1.2.3-beta.4</code> would be allowed, but <code>1.2.4-beta.2</code> would not, because it is a prerelease of a different major, minor, or patch version.</li>
 </ul>
 <h4 id="wildcards">Wildcards</h4>
-<p><strong>TODO</strong></p>
+<p>In addition to the basic and advanced operators, comparisons can be formed using wildcards. A
+wildcard comparison cannot be combined with an operator. The wildcard character &quot;<code>*</code>&quot; may be used in
+place of the major, minor, or patch version as well as the final prerelease identifier.</p>
+<p>A wildcard in the major, minor, or patch version matches any version number in that position. For
+example, <code>2.*.*</code> matches all release versions with a major version of <code>2</code>. If a version number is
+replaced with a wildcard, then all later version numbers must also be wildcards. Thus <code>2.*.6</code> is an
+invalid wildcard version. Additionally, no prerelease identifiers can be specified after a wildcard
+version number. A wildcard may be optionally used to match all prerelease versions (e.g. <code>1.2.*-*</code>).
+In a wildcard version with multiple wildcards, the subsequent wildcards can be omitted. For example,
+<code>6.*.*</code> can be shortened to <code>6.*</code> and <code>*.*.*</code> can be shortened to just <code>*</code>.</p>
+<p>A wildcard may be used in place of the final prerelease identifier (e.g. <code>1.2.3-alpha.*</code>,
+<code>1.2.3-*</code>). Such a prerelease wildcard will match all prerelease versions with the same prerelease
+identifiers as appear before the prerelease wildcard. It does not match prerelease versions with no
+identifier in that place. For example, <code>1.2.3-alpha.*</code> does not match <code>1.2.3-alpha</code>, but it does
+match <code>1.2.3-alpha.0</code> and <code>1.2.3-alpha.something</code>.</p>
+<p>There are two wildcard versions of special note. The first &quot;<code>*</code>&quot; matches all release versions. The
+second &quot;<code>*-*</code>&quot; matches all versions both release and prerelease. The latter can be used in a
+comparison set to include all prerelease versions in that comparison set.</p>
 <h4 id="differences-from-npm-syntax">Differences from npm Syntax</h4>
 <p>Unfortunately, there is no official standard for the syntax of semantic versions ranges. However,
 the syntax defined by the npm package seems to have become somewhat of a defacto standard. Many
