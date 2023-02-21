@@ -109,7 +109,7 @@ Next release version is: 1.1.0
 </code></pre>
 <h2 id="version-ranges">Version Ranges</h2>
 <pre><code class="lang-csharp">var range = SemVersionRange.Parse(&quot;^1.0.0&quot;);
-var prereleaseRange = SemVersionRange.ParseNpm(&quot;^1.0.0&quot;, SemVersionRangeOptions.IncludeAllPrerelease);
+var prereleaseRange = SemVersionRange.ParseNpm(&quot;^1.0.0&quot;, includeAllPrerelease: true);
 Console.WriteLine($&quot;Range: {range}&quot;);
 Console.WriteLine($&quot;Prerelease range: {prereleaseRange}&quot;);
 Console.WriteLine($&quot;Range includes version {version}: {range.Contains(version)}&quot;);
@@ -119,11 +119,11 @@ Console.WriteLine($&quot;Prerelease range includes version {version}: {prereleas
 version.Satisfies(range);
 
 // Alternative: slower because it parses the range on every call
-version.Satisfies(&quot;^1.0.0&quot;, SemVersionRangeOptions.IncludeAllPrerelease);
+version.SatisfiesNpm(&quot;^1.0.0&quot;, includeAllPrerelease: true)
 </code></pre>
 <p>Outputs:</p>
-<pre><code class="lang-text">Range: ^1.0.0
-Prerelease range: *-* ^1.0.0
+<pre><code class="lang-text">Range: 1.*
+Prerelease range: *-* 1.*
 Range includes version 1.1.0-rc.1+e471d15: False
 Prerelease range includes version 1.1.0-rc.1+e471d15: True
 </code></pre>
