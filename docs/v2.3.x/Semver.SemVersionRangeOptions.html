@@ -68,19 +68,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Semver.Ranges.SemVersionRangeOptions">
+            <article class="content wrap" id="_content" data-uid="Semver.SemVersionRangeOptions">
   
   
-  <h1 id="Semver_Ranges_SemVersionRangeOptions" data-uid="Semver.Ranges.SemVersionRangeOptions" class="text-break">Enum SemVersionRangeOptions
+  <h1 id="Semver_SemVersionRangeOptions" data-uid="Semver.SemVersionRangeOptions" class="text-break">Enum SemVersionRangeOptions
   </h1>
   <div class="markdown level0 summary"><p>Determines the parsing options and allowed styles of range and version strings passed
-to the <a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Parse_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> and
-<a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParse_System_String_Semver_Ranges_SemVersionRangeOptions_Semver_Ranges_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a>
+to the <a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> and
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a>
 methods. These styles only affect which strings are accepted when parsing. The
 constructed ranges and version numbers are valid semantic version ranges without any of the
 optional features in the original string.</p>
 <p>Most options only allow additional version styles. However, the
-<a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option modifies how version ranges are interpreted. With
+<a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option modifies how version ranges are interpreted. With
 this option, all prerelease versions within the range bounds will be considered to be in the
 range. Without this option, only prerelease versions where one comparison with the same
 major, minor, and patch versions is prerelease will satisfy the range. For more information,
@@ -89,9 +89,9 @@ see the <a href="https://semver-nuget.org/ranges/">range expressions documentati
 <code>SemVersionRangeOptions.OptionalPatch | SemVersionRangeOptions.AllowV</code>).</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Semver.Ranges.html">Semver.Ranges</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semver.html">Semver</a></h6>
   <h6><strong>Assembly</strong>: Semver.dll</h6>
-  <h5 id="Semver_Ranges_SemVersionRangeOptions_syntax">Syntax</h5>
+  <h5 id="Semver_SemVersionRangeOptions_syntax">Syntax</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Flags]
 public enum SemVersionRangeOptions</code></pre>
@@ -107,56 +107,56 @@ public enum SemVersionRangeOptions</code></pre>
     <thead>
     <tbody>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_AllowLeadingZeros">AllowLeadingZeros</td>
+        <td id="Semver_SemVersionRangeOptions_AllowLeadingZeros">AllowLeadingZeros</td>
         <td><p>Allow leading zeros on major, minor, patch, and prerelease version numbers.</p>
 <p>Leading zeros will be removed from the constructed version number.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_AllowLowerV">AllowLowerV</td>
+        <td id="Semver_SemVersionRangeOptions_AllowLowerV">AllowLowerV</td>
         <td><p>Allow a leading lowercase &quot;v&quot; on versions.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_AllowMetadata">AllowMetadata</td>
+        <td id="Semver_SemVersionRangeOptions_AllowMetadata">AllowMetadata</td>
         <td><p>Allow version numbers with build metadata in version range expressions. The metadata
 will be removed/ignored for the definition of the version range.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_AllowUpperV">AllowUpperV</td>
+        <td id="Semver_SemVersionRangeOptions_AllowUpperV">AllowUpperV</td>
         <td><p>Allow a leading uppercase &quot;V&quot; on versions.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_AllowV">AllowV</td>
+        <td id="Semver_SemVersionRangeOptions_AllowV">AllowV</td>
         <td><p>Allow a leading &quot;v&quot; or &quot;V&quot; on versions.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</td>
+        <td id="Semver_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</td>
         <td><p>Include all prerelease versions in the range rather than just prerelease versions
 matching a prerelease identifier in the range.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_Loose">Loose</td>
+        <td id="Semver_SemVersionRangeOptions_Loose">Loose</td>
         <td><p>Accept any version string format supported.</p>
 <p>The formats accepted by this style will change if/when more formats are supported.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_OptionalMinorPatch">OptionalMinorPatch</td>
+        <td id="Semver_SemVersionRangeOptions_OptionalMinorPatch">OptionalMinorPatch</td>
         <td><p>Minor and patch version numbers are optional on versions.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_OptionalPatch">OptionalPatch</td>
+        <td id="Semver_SemVersionRangeOptions_OptionalPatch">OptionalPatch</td>
         <td><p>Patch version number is optional on versions.</p>
 </td>
       </tr>
       <tr>
-        <td id="Semver_Ranges_SemVersionRangeOptions_Strict">Strict</td>
+        <td id="Semver_SemVersionRangeOptions_Strict">Strict</td>
         <td><p>Accept versions strictly conforming to the SemVer 2.0 spec without metadata.</p>
 </td>
       </tr>

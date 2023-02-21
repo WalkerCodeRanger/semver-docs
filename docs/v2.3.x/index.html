@@ -112,8 +112,8 @@ Next release version is: 1.1.0
 var prereleaseRange = SemVersionRange.ParseNpm(&quot;^1.0.0&quot;, SemVersionRangeOptions.IncludeAllPrerelease);
 Console.WriteLine($&quot;Range: {range}&quot;);
 Console.WriteLine($&quot;Prerelease range: {prereleaseRange}&quot;);
-Console.WriteLine($&quot;Range includes version: {range.Contains(version)}&quot;);
-Console.WriteLine($&quot;Prerelease range includes version: {prereleaseRange.Contains(version)}&quot;);
+Console.WriteLine($&quot;Range includes version {version}: {range.Contains(version)}&quot;);
+Console.WriteLine($&quot;Prerelease range includes version {version}: {prereleaseRange.Contains(version)}&quot;);
 
 // Alternative: another way to call SemVersionRange.Contains(version)
 version.Satisfies(range);
@@ -124,8 +124,8 @@ version.Satisfies(&quot;^1.0.0&quot;, SemVersionRangeOptions.IncludeAllPrereleas
 <p>Outputs:</p>
 <pre><code class="lang-text">Range: ^1.0.0
 Prerelease range: *-* ^1.0.0
-Range includes version: False
-Prerelease range includes version: True
+Range includes version 1.1.0-rc.1+e471d15: False
+Prerelease range includes version 1.1.0-rc.1+e471d15: True
 </code></pre>
 </article>
           </div>

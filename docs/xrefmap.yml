@@ -301,781 +301,6 @@ references:
   commentId: Overload:Semver.PrereleaseIdentifier.Value
   fullName: Semver.PrereleaseIdentifier.Value
   nameWithType: PrereleaseIdentifier.Value
-- uid: Semver.Ranges
-  name: Semver.Ranges
-  href: v2.3.x/Semver.Ranges.html
-  commentId: N:Semver.Ranges
-  fullName: Semver.Ranges
-  nameWithType: Semver.Ranges
-- uid: Semver.Ranges.SemVersionRange
-  name: SemVersionRange
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html
-  commentId: T:Semver.Ranges.SemVersionRange
-  fullName: Semver.Ranges.SemVersionRange
-  nameWithType: SemVersionRange
-- uid: Semver.Ranges.SemVersionRange.All
-  name: All
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_All
-  commentId: P:Semver.Ranges.SemVersionRange.All
-  fullName: Semver.Ranges.SemVersionRange.All
-  nameWithType: SemVersionRange.All
-- uid: Semver.Ranges.SemVersionRange.All*
-  name: All
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_All_
-  commentId: Overload:Semver.Ranges.SemVersionRange.All
-  fullName: Semver.Ranges.SemVersionRange.All
-  nameWithType: SemVersionRange.All
-- uid: Semver.Ranges.SemVersionRange.AllRelease
-  name: AllRelease
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AllRelease
-  commentId: P:Semver.Ranges.SemVersionRange.AllRelease
-  fullName: Semver.Ranges.SemVersionRange.AllRelease
-  nameWithType: SemVersionRange.AllRelease
-- uid: Semver.Ranges.SemVersionRange.AllRelease*
-  name: AllRelease
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AllRelease_
-  commentId: Overload:Semver.Ranges.SemVersionRange.AllRelease
-  fullName: Semver.Ranges.SemVersionRange.AllRelease
-  nameWithType: SemVersionRange.AllRelease
-- uid: Semver.Ranges.SemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
-  name: AtLeast(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AtLeast_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.AtLeast(Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.AtLeast(SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.AtLeast*
-  name: AtLeast
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AtLeast_
-  commentId: Overload:Semver.Ranges.SemVersionRange.AtLeast
-  fullName: Semver.Ranges.SemVersionRange.AtLeast
-  nameWithType: SemVersionRange.AtLeast
-- uid: Semver.Ranges.SemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
-  name: AtMost(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AtMost_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.AtMost(Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.AtMost(SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.AtMost*
-  name: AtMost
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_AtMost_
-  commentId: Overload:Semver.Ranges.SemVersionRange.AtMost
-  fullName: Semver.Ranges.SemVersionRange.AtMost
-  nameWithType: SemVersionRange.AtMost
-- uid: Semver.Ranges.SemVersionRange.Contains(Semver.SemVersion)
-  name: Contains(SemVersion)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Contains_Semver_SemVersion_
-  commentId: M:Semver.Ranges.SemVersionRange.Contains(Semver.SemVersion)
-  fullName: Semver.Ranges.SemVersionRange.Contains(Semver.SemVersion)
-  nameWithType: SemVersionRange.Contains(SemVersion)
-- uid: Semver.Ranges.SemVersionRange.Contains*
-  name: Contains
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Contains_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Contains
-  fullName: Semver.Ranges.SemVersionRange.Contains
-  nameWithType: SemVersionRange.Contains
-- uid: Semver.Ranges.SemVersionRange.Count
-  name: Count
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Count
-  commentId: P:Semver.Ranges.SemVersionRange.Count
-  fullName: Semver.Ranges.SemVersionRange.Count
-  nameWithType: SemVersionRange.Count
-- uid: Semver.Ranges.SemVersionRange.Count*
-  name: Count
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Count_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Count
-  fullName: Semver.Ranges.SemVersionRange.Count
-  nameWithType: SemVersionRange.Count
-- uid: Semver.Ranges.SemVersionRange.Create(Semver.Ranges.UnbrokenSemVersionRange[])
-  name: Create(UnbrokenSemVersionRange[])
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Create_Semver_Ranges_UnbrokenSemVersionRange___
-  commentId: M:Semver.Ranges.SemVersionRange.Create(Semver.Ranges.UnbrokenSemVersionRange[])
-  name.vb: Create(UnbrokenSemVersionRange())
-  fullName: Semver.Ranges.SemVersionRange.Create(Semver.Ranges.UnbrokenSemVersionRange[])
-  fullName.vb: Semver.Ranges.SemVersionRange.Create(Semver.Ranges.UnbrokenSemVersionRange())
-  nameWithType: SemVersionRange.Create(UnbrokenSemVersionRange[])
-  nameWithType.vb: SemVersionRange.Create(UnbrokenSemVersionRange())
-- uid: Semver.Ranges.SemVersionRange.Create(System.Collections.Generic.IEnumerable{Semver.Ranges.UnbrokenSemVersionRange})
-  name: Create(IEnumerable<UnbrokenSemVersionRange>)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Create_System_Collections_Generic_IEnumerable_Semver_Ranges_UnbrokenSemVersionRange__
-  commentId: M:Semver.Ranges.SemVersionRange.Create(System.Collections.Generic.IEnumerable{Semver.Ranges.UnbrokenSemVersionRange})
-  name.vb: Create(IEnumerable(Of UnbrokenSemVersionRange))
-  fullName: Semver.Ranges.SemVersionRange.Create(System.Collections.Generic.IEnumerable<Semver.Ranges.UnbrokenSemVersionRange>)
-  fullName.vb: Semver.Ranges.SemVersionRange.Create(System.Collections.Generic.IEnumerable(Of Semver.Ranges.UnbrokenSemVersionRange))
-  nameWithType: SemVersionRange.Create(IEnumerable<UnbrokenSemVersionRange>)
-  nameWithType.vb: SemVersionRange.Create(IEnumerable(Of UnbrokenSemVersionRange))
-- uid: Semver.Ranges.SemVersionRange.Create*
-  name: Create
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Create_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Create
-  fullName: Semver.Ranges.SemVersionRange.Create
-  nameWithType: SemVersionRange.Create
-- uid: Semver.Ranges.SemVersionRange.Empty
-  name: Empty
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Empty
-  commentId: P:Semver.Ranges.SemVersionRange.Empty
-  fullName: Semver.Ranges.SemVersionRange.Empty
-  nameWithType: SemVersionRange.Empty
-- uid: Semver.Ranges.SemVersionRange.Empty*
-  name: Empty
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Empty_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Empty
-  fullName: Semver.Ranges.SemVersionRange.Empty
-  nameWithType: SemVersionRange.Empty
-- uid: Semver.Ranges.SemVersionRange.Equals(Semver.Ranges.SemVersionRange)
-  name: Equals(SemVersionRange)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Equals_Semver_Ranges_SemVersionRange_
-  commentId: M:Semver.Ranges.SemVersionRange.Equals(Semver.Ranges.SemVersionRange)
-  fullName: Semver.Ranges.SemVersionRange.Equals(Semver.Ranges.SemVersionRange)
-  nameWithType: SemVersionRange.Equals(SemVersionRange)
-- uid: Semver.Ranges.SemVersionRange.Equals(Semver.SemVersion)
-  name: Equals(SemVersion)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Equals_Semver_SemVersion_
-  commentId: M:Semver.Ranges.SemVersionRange.Equals(Semver.SemVersion)
-  fullName: Semver.Ranges.SemVersionRange.Equals(Semver.SemVersion)
-  nameWithType: SemVersionRange.Equals(SemVersion)
-- uid: Semver.Ranges.SemVersionRange.Equals(System.Object)
-  name: Equals(Object)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Equals_System_Object_
-  commentId: M:Semver.Ranges.SemVersionRange.Equals(System.Object)
-  fullName: Semver.Ranges.SemVersionRange.Equals(System.Object)
-  nameWithType: SemVersionRange.Equals(Object)
-- uid: Semver.Ranges.SemVersionRange.Equals*
-  name: Equals
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Equals_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Equals
-  fullName: Semver.Ranges.SemVersionRange.Equals
-  nameWithType: SemVersionRange.Equals
-- uid: Semver.Ranges.SemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: Exclusive(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Exclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.Exclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.Exclusive(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.Exclusive*
-  name: Exclusive
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Exclusive_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Exclusive
-  fullName: Semver.Ranges.SemVersionRange.Exclusive
-  nameWithType: SemVersionRange.Exclusive
-- uid: Semver.Ranges.SemVersionRange.GetEnumerator
-  name: GetEnumerator()
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_GetEnumerator
-  commentId: M:Semver.Ranges.SemVersionRange.GetEnumerator
-  fullName: Semver.Ranges.SemVersionRange.GetEnumerator()
-  nameWithType: SemVersionRange.GetEnumerator()
-- uid: Semver.Ranges.SemVersionRange.GetEnumerator*
-  name: GetEnumerator
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_GetEnumerator_
-  commentId: Overload:Semver.Ranges.SemVersionRange.GetEnumerator
-  fullName: Semver.Ranges.SemVersionRange.GetEnumerator
-  nameWithType: SemVersionRange.GetEnumerator
-- uid: Semver.Ranges.SemVersionRange.GetHashCode
-  name: GetHashCode()
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_GetHashCode
-  commentId: M:Semver.Ranges.SemVersionRange.GetHashCode
-  fullName: Semver.Ranges.SemVersionRange.GetHashCode()
-  nameWithType: SemVersionRange.GetHashCode()
-- uid: Semver.Ranges.SemVersionRange.GetHashCode*
-  name: GetHashCode
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_GetHashCode_
-  commentId: Overload:Semver.Ranges.SemVersionRange.GetHashCode
-  fullName: Semver.Ranges.SemVersionRange.GetHashCode
-  nameWithType: SemVersionRange.GetHashCode
-- uid: Semver.Ranges.SemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
-  name: GreaterThan(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_GreaterThan_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.GreaterThan(Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.GreaterThan(SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.GreaterThan*
-  name: GreaterThan
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_GreaterThan_
-  commentId: Overload:Semver.Ranges.SemVersionRange.GreaterThan
-  fullName: Semver.Ranges.SemVersionRange.GreaterThan
-  nameWithType: SemVersionRange.GreaterThan
-- uid: Semver.Ranges.SemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: Inclusive(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Inclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.Inclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.Inclusive(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.Inclusive*
-  name: Inclusive
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Inclusive_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Inclusive
-  fullName: Semver.Ranges.SemVersionRange.Inclusive
-  nameWithType: SemVersionRange.Inclusive
-- uid: Semver.Ranges.SemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: InclusiveOfEnd(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_InclusiveOfEnd_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.InclusiveOfEnd(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.InclusiveOfEnd(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.InclusiveOfEnd*
-  name: InclusiveOfEnd
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_InclusiveOfEnd_
-  commentId: Overload:Semver.Ranges.SemVersionRange.InclusiveOfEnd
-  fullName: Semver.Ranges.SemVersionRange.InclusiveOfEnd
-  nameWithType: SemVersionRange.InclusiveOfEnd
-- uid: Semver.Ranges.SemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: InclusiveOfStart(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_InclusiveOfStart_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.InclusiveOfStart(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.InclusiveOfStart(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.InclusiveOfStart*
-  name: InclusiveOfStart
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_InclusiveOfStart_
-  commentId: Overload:Semver.Ranges.SemVersionRange.InclusiveOfStart
-  fullName: Semver.Ranges.SemVersionRange.InclusiveOfStart
-  nameWithType: SemVersionRange.InclusiveOfStart
-- uid: Semver.Ranges.SemVersionRange.Item(System.Int32)
-  name: Item[Int32]
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Item_System_Int32_
-  commentId: P:Semver.Ranges.SemVersionRange.Item(System.Int32)
-  name.vb: Item(Int32)
-  fullName: Semver.Ranges.SemVersionRange.Item[System.Int32]
-  fullName.vb: Semver.Ranges.SemVersionRange.Item(System.Int32)
-  nameWithType: SemVersionRange.Item[Int32]
-  nameWithType.vb: SemVersionRange.Item(Int32)
-- uid: Semver.Ranges.SemVersionRange.Item*
-  name: Item
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Item_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Item
-  fullName: Semver.Ranges.SemVersionRange.Item
-  nameWithType: SemVersionRange.Item
-- uid: Semver.Ranges.SemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
-  name: LessThan(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_LessThan_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.SemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.SemVersionRange.LessThan(Semver.SemVersion, System.Boolean)
-  nameWithType: SemVersionRange.LessThan(SemVersion, Boolean)
-- uid: Semver.Ranges.SemVersionRange.LessThan*
-  name: LessThan
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_LessThan_
-  commentId: Overload:Semver.Ranges.SemVersionRange.LessThan
-  fullName: Semver.Ranges.SemVersionRange.LessThan
-  nameWithType: SemVersionRange.LessThan
-- uid: Semver.Ranges.SemVersionRange.op_Equality(Semver.Ranges.SemVersionRange,Semver.Ranges.SemVersionRange)
-  name: Equality(SemVersionRange, SemVersionRange)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_op_Equality_Semver_Ranges_SemVersionRange_Semver_Ranges_SemVersionRange_
-  commentId: M:Semver.Ranges.SemVersionRange.op_Equality(Semver.Ranges.SemVersionRange,Semver.Ranges.SemVersionRange)
-  fullName: Semver.Ranges.SemVersionRange.Equality(Semver.Ranges.SemVersionRange, Semver.Ranges.SemVersionRange)
-  nameWithType: SemVersionRange.Equality(SemVersionRange, SemVersionRange)
-- uid: Semver.Ranges.SemVersionRange.op_Equality*
-  name: Equality
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_op_Equality_
-  commentId: Overload:Semver.Ranges.SemVersionRange.op_Equality
-  fullName: Semver.Ranges.SemVersionRange.Equality
-  nameWithType: SemVersionRange.Equality
-- uid: Semver.Ranges.SemVersionRange.op_Implicit(Semver.Ranges.SemVersionRange)~System.Predicate{Semver.SemVersion}
-  name: Implicit(SemVersionRange to Predicate<SemVersion>)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_op_Implicit_Semver_Ranges_SemVersionRange__System_Predicate_Semver_SemVersion_
-  commentId: M:Semver.Ranges.SemVersionRange.op_Implicit(Semver.Ranges.SemVersionRange)~System.Predicate{Semver.SemVersion}
-  name.vb: Widening(SemVersionRange to Predicate(Of SemVersion))
-  fullName: Semver.Ranges.SemVersionRange.Implicit(Semver.Ranges.SemVersionRange to System.Predicate<Semver.SemVersion>)
-  fullName.vb: Semver.Ranges.SemVersionRange.Widening(Semver.Ranges.SemVersionRange to System.Predicate(Of Semver.SemVersion))
-  nameWithType: SemVersionRange.Implicit(SemVersionRange to Predicate<SemVersion>)
-  nameWithType.vb: SemVersionRange.Widening(SemVersionRange to Predicate(Of SemVersion))
-- uid: Semver.Ranges.SemVersionRange.op_Implicit*
-  name: Implicit
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_op_Implicit_
-  commentId: Overload:Semver.Ranges.SemVersionRange.op_Implicit
-  name.vb: Widening
-  fullName: Semver.Ranges.SemVersionRange.Implicit
-  fullName.vb: Semver.Ranges.SemVersionRange.Widening
-  nameWithType: SemVersionRange.Implicit
-  nameWithType.vb: SemVersionRange.Widening
-- uid: Semver.Ranges.SemVersionRange.op_Inequality(Semver.Ranges.SemVersionRange,Semver.Ranges.SemVersionRange)
-  name: Inequality(SemVersionRange, SemVersionRange)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_op_Inequality_Semver_Ranges_SemVersionRange_Semver_Ranges_SemVersionRange_
-  commentId: M:Semver.Ranges.SemVersionRange.op_Inequality(Semver.Ranges.SemVersionRange,Semver.Ranges.SemVersionRange)
-  fullName: Semver.Ranges.SemVersionRange.Inequality(Semver.Ranges.SemVersionRange, Semver.Ranges.SemVersionRange)
-  nameWithType: SemVersionRange.Inequality(SemVersionRange, SemVersionRange)
-- uid: Semver.Ranges.SemVersionRange.op_Inequality*
-  name: Inequality
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_op_Inequality_
-  commentId: Overload:Semver.Ranges.SemVersionRange.op_Inequality
-  fullName: Semver.Ranges.SemVersionRange.Inequality
-  nameWithType: SemVersionRange.Inequality
-- uid: Semver.Ranges.SemVersionRange.Parse(System.String,Semver.Ranges.SemVersionRangeOptions,System.Int32)
-  name: Parse(String, SemVersionRangeOptions, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Parse_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.Parse(System.String,Semver.Ranges.SemVersionRangeOptions,System.Int32)
-  fullName: Semver.Ranges.SemVersionRange.Parse(System.String, Semver.Ranges.SemVersionRangeOptions, System.Int32)
-  nameWithType: SemVersionRange.Parse(String, SemVersionRangeOptions, Int32)
-- uid: Semver.Ranges.SemVersionRange.Parse(System.String,System.Int32)
-  name: Parse(String, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Parse_System_String_System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.Parse(System.String,System.Int32)
-  fullName: Semver.Ranges.SemVersionRange.Parse(System.String, System.Int32)
-  nameWithType: SemVersionRange.Parse(String, Int32)
-- uid: Semver.Ranges.SemVersionRange.Parse*
-  name: Parse
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_Parse_
-  commentId: Overload:Semver.Ranges.SemVersionRange.Parse
-  fullName: Semver.Ranges.SemVersionRange.Parse
-  nameWithType: SemVersionRange.Parse
-- uid: Semver.Ranges.SemVersionRange.ParseNpm(System.String,System.Boolean,System.Int32)
-  name: ParseNpm(String, Boolean, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_ParseNpm_System_String_System_Boolean_System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.ParseNpm(System.String,System.Boolean,System.Int32)
-  fullName: Semver.Ranges.SemVersionRange.ParseNpm(System.String, System.Boolean, System.Int32)
-  nameWithType: SemVersionRange.ParseNpm(String, Boolean, Int32)
-- uid: Semver.Ranges.SemVersionRange.ParseNpm(System.String,System.Int32)
-  name: ParseNpm(String, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_ParseNpm_System_String_System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.ParseNpm(System.String,System.Int32)
-  fullName: Semver.Ranges.SemVersionRange.ParseNpm(System.String, System.Int32)
-  nameWithType: SemVersionRange.ParseNpm(String, Int32)
-- uid: Semver.Ranges.SemVersionRange.ParseNpm*
-  name: ParseNpm
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_ParseNpm_
-  commentId: Overload:Semver.Ranges.SemVersionRange.ParseNpm
-  fullName: Semver.Ranges.SemVersionRange.ParseNpm
-  nameWithType: SemVersionRange.ParseNpm
-- uid: Semver.Ranges.SemVersionRange.System#Collections#IEnumerable#GetEnumerator
-  name: IEnumerable.GetEnumerator()
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_System_Collections_IEnumerable_GetEnumerator
-  commentId: M:Semver.Ranges.SemVersionRange.System#Collections#IEnumerable#GetEnumerator
-  name.vb: System.Collections.IEnumerable.GetEnumerator()
-  fullName: Semver.Ranges.SemVersionRange.System.Collections.IEnumerable.GetEnumerator()
-  nameWithType: SemVersionRange.IEnumerable.GetEnumerator()
-  nameWithType.vb: SemVersionRange.System.Collections.IEnumerable.GetEnumerator()
-- uid: Semver.Ranges.SemVersionRange.System#Collections#IEnumerable#GetEnumerator*
-  name: IEnumerable.GetEnumerator
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_System_Collections_IEnumerable_GetEnumerator_
-  commentId: Overload:Semver.Ranges.SemVersionRange.System#Collections#IEnumerable#GetEnumerator
-  name.vb: System.Collections.IEnumerable.GetEnumerator
-  fullName: Semver.Ranges.SemVersionRange.System.Collections.IEnumerable.GetEnumerator
-  nameWithType: SemVersionRange.IEnumerable.GetEnumerator
-  nameWithType.vb: SemVersionRange.System.Collections.IEnumerable.GetEnumerator
-- uid: Semver.Ranges.SemVersionRange.ToString
-  name: ToString()
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_ToString
-  commentId: M:Semver.Ranges.SemVersionRange.ToString
-  fullName: Semver.Ranges.SemVersionRange.ToString()
-  nameWithType: SemVersionRange.ToString()
-- uid: Semver.Ranges.SemVersionRange.ToString*
-  name: ToString
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_ToString_
-  commentId: Overload:Semver.Ranges.SemVersionRange.ToString
-  fullName: Semver.Ranges.SemVersionRange.ToString
-  nameWithType: SemVersionRange.ToString
-- uid: Semver.Ranges.SemVersionRange.TryParse(System.String,Semver.Ranges.SemVersionRange@,System.Int32)
-  name: TryParse(String, out SemVersionRange, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParse_System_String_Semver_Ranges_SemVersionRange__System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.TryParse(System.String,Semver.Ranges.SemVersionRange@,System.Int32)
-  name.vb: TryParse(String, ByRef SemVersionRange, Int32)
-  fullName: Semver.Ranges.SemVersionRange.TryParse(System.String, out Semver.Ranges.SemVersionRange, System.Int32)
-  fullName.vb: Semver.Ranges.SemVersionRange.TryParse(System.String, ByRef Semver.Ranges.SemVersionRange, System.Int32)
-  nameWithType: SemVersionRange.TryParse(String, out SemVersionRange, Int32)
-  nameWithType.vb: SemVersionRange.TryParse(String, ByRef SemVersionRange, Int32)
-- uid: Semver.Ranges.SemVersionRange.TryParse(System.String,Semver.Ranges.SemVersionRangeOptions,Semver.Ranges.SemVersionRange@,System.Int32)
-  name: TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParse_System_String_Semver_Ranges_SemVersionRangeOptions_Semver_Ranges_SemVersionRange__System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.TryParse(System.String,Semver.Ranges.SemVersionRangeOptions,Semver.Ranges.SemVersionRange@,System.Int32)
-  name.vb: TryParse(String, SemVersionRangeOptions, ByRef SemVersionRange, Int32)
-  fullName: Semver.Ranges.SemVersionRange.TryParse(System.String, Semver.Ranges.SemVersionRangeOptions, out Semver.Ranges.SemVersionRange, System.Int32)
-  fullName.vb: Semver.Ranges.SemVersionRange.TryParse(System.String, Semver.Ranges.SemVersionRangeOptions, ByRef Semver.Ranges.SemVersionRange, System.Int32)
-  nameWithType: SemVersionRange.TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)
-  nameWithType.vb: SemVersionRange.TryParse(String, SemVersionRangeOptions, ByRef SemVersionRange, Int32)
-- uid: Semver.Ranges.SemVersionRange.TryParse*
-  name: TryParse
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParse_
-  commentId: Overload:Semver.Ranges.SemVersionRange.TryParse
-  fullName: Semver.Ranges.SemVersionRange.TryParse
-  nameWithType: SemVersionRange.TryParse
-- uid: Semver.Ranges.SemVersionRange.TryParseNpm(System.String,Semver.Ranges.SemVersionRange@,System.Int32)
-  name: TryParseNpm(String, out SemVersionRange, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParseNpm_System_String_Semver_Ranges_SemVersionRange__System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.TryParseNpm(System.String,Semver.Ranges.SemVersionRange@,System.Int32)
-  name.vb: TryParseNpm(String, ByRef SemVersionRange, Int32)
-  fullName: Semver.Ranges.SemVersionRange.TryParseNpm(System.String, out Semver.Ranges.SemVersionRange, System.Int32)
-  fullName.vb: Semver.Ranges.SemVersionRange.TryParseNpm(System.String, ByRef Semver.Ranges.SemVersionRange, System.Int32)
-  nameWithType: SemVersionRange.TryParseNpm(String, out SemVersionRange, Int32)
-  nameWithType.vb: SemVersionRange.TryParseNpm(String, ByRef SemVersionRange, Int32)
-- uid: Semver.Ranges.SemVersionRange.TryParseNpm(System.String,System.Boolean,Semver.Ranges.SemVersionRange@,System.Int32)
-  name: TryParseNpm(String, Boolean, out SemVersionRange, Int32)
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParseNpm_System_String_System_Boolean_Semver_Ranges_SemVersionRange__System_Int32_
-  commentId: M:Semver.Ranges.SemVersionRange.TryParseNpm(System.String,System.Boolean,Semver.Ranges.SemVersionRange@,System.Int32)
-  name.vb: TryParseNpm(String, Boolean, ByRef SemVersionRange, Int32)
-  fullName: Semver.Ranges.SemVersionRange.TryParseNpm(System.String, System.Boolean, out Semver.Ranges.SemVersionRange, System.Int32)
-  fullName.vb: Semver.Ranges.SemVersionRange.TryParseNpm(System.String, System.Boolean, ByRef Semver.Ranges.SemVersionRange, System.Int32)
-  nameWithType: SemVersionRange.TryParseNpm(String, Boolean, out SemVersionRange, Int32)
-  nameWithType.vb: SemVersionRange.TryParseNpm(String, Boolean, ByRef SemVersionRange, Int32)
-- uid: Semver.Ranges.SemVersionRange.TryParseNpm*
-  name: TryParseNpm
-  href: v2.3.x/Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_TryParseNpm_
-  commentId: Overload:Semver.Ranges.SemVersionRange.TryParseNpm
-  fullName: Semver.Ranges.SemVersionRange.TryParseNpm
-  nameWithType: SemVersionRange.TryParseNpm
-- uid: Semver.Ranges.SemVersionRangeOptions
-  name: SemVersionRangeOptions
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html
-  commentId: T:Semver.Ranges.SemVersionRangeOptions
-  fullName: Semver.Ranges.SemVersionRangeOptions
-  nameWithType: SemVersionRangeOptions
-- uid: Semver.Ranges.SemVersionRangeOptions.AllowLeadingZeros
-  name: AllowLeadingZeros
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_AllowLeadingZeros
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.AllowLeadingZeros
-  fullName: Semver.Ranges.SemVersionRangeOptions.AllowLeadingZeros
-  nameWithType: SemVersionRangeOptions.AllowLeadingZeros
-- uid: Semver.Ranges.SemVersionRangeOptions.AllowLowerV
-  name: AllowLowerV
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_AllowLowerV
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.AllowLowerV
-  fullName: Semver.Ranges.SemVersionRangeOptions.AllowLowerV
-  nameWithType: SemVersionRangeOptions.AllowLowerV
-- uid: Semver.Ranges.SemVersionRangeOptions.AllowMetadata
-  name: AllowMetadata
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_AllowMetadata
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.AllowMetadata
-  fullName: Semver.Ranges.SemVersionRangeOptions.AllowMetadata
-  nameWithType: SemVersionRangeOptions.AllowMetadata
-- uid: Semver.Ranges.SemVersionRangeOptions.AllowUpperV
-  name: AllowUpperV
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_AllowUpperV
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.AllowUpperV
-  fullName: Semver.Ranges.SemVersionRangeOptions.AllowUpperV
-  nameWithType: SemVersionRangeOptions.AllowUpperV
-- uid: Semver.Ranges.SemVersionRangeOptions.AllowV
-  name: AllowV
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_AllowV
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.AllowV
-  fullName: Semver.Ranges.SemVersionRangeOptions.AllowV
-  nameWithType: SemVersionRangeOptions.AllowV
-- uid: Semver.Ranges.SemVersionRangeOptions.IncludeAllPrerelease
-  name: IncludeAllPrerelease
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_IncludeAllPrerelease
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.IncludeAllPrerelease
-  fullName: Semver.Ranges.SemVersionRangeOptions.IncludeAllPrerelease
-  nameWithType: SemVersionRangeOptions.IncludeAllPrerelease
-- uid: Semver.Ranges.SemVersionRangeOptions.Loose
-  name: Loose
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_Loose
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.Loose
-  fullName: Semver.Ranges.SemVersionRangeOptions.Loose
-  nameWithType: SemVersionRangeOptions.Loose
-- uid: Semver.Ranges.SemVersionRangeOptions.OptionalMinorPatch
-  name: OptionalMinorPatch
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_OptionalMinorPatch
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.OptionalMinorPatch
-  fullName: Semver.Ranges.SemVersionRangeOptions.OptionalMinorPatch
-  nameWithType: SemVersionRangeOptions.OptionalMinorPatch
-- uid: Semver.Ranges.SemVersionRangeOptions.OptionalPatch
-  name: OptionalPatch
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_OptionalPatch
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.OptionalPatch
-  fullName: Semver.Ranges.SemVersionRangeOptions.OptionalPatch
-  nameWithType: SemVersionRangeOptions.OptionalPatch
-- uid: Semver.Ranges.SemVersionRangeOptions.Strict
-  name: Strict
-  href: v2.3.x/Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_Strict
-  commentId: F:Semver.Ranges.SemVersionRangeOptions.Strict
-  fullName: Semver.Ranges.SemVersionRangeOptions.Strict
-  nameWithType: SemVersionRangeOptions.Strict
-- uid: Semver.Ranges.UnbrokenSemVersionRange
-  name: UnbrokenSemVersionRange
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html
-  commentId: T:Semver.Ranges.UnbrokenSemVersionRange
-  fullName: Semver.Ranges.UnbrokenSemVersionRange
-  nameWithType: UnbrokenSemVersionRange
-- uid: Semver.Ranges.UnbrokenSemVersionRange.All
-  name: All
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_All
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.All
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.All
-  nameWithType: UnbrokenSemVersionRange.All
-- uid: Semver.Ranges.UnbrokenSemVersionRange.All*
-  name: All
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_All_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.All
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.All
-  nameWithType: UnbrokenSemVersionRange.All
-- uid: Semver.Ranges.UnbrokenSemVersionRange.AllRelease
-  name: AllRelease
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AllRelease
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.AllRelease
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.AllRelease
-  nameWithType: UnbrokenSemVersionRange.AllRelease
-- uid: Semver.Ranges.UnbrokenSemVersionRange.AllRelease*
-  name: AllRelease
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AllRelease_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.AllRelease
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.AllRelease
-  nameWithType: UnbrokenSemVersionRange.AllRelease
-- uid: Semver.Ranges.UnbrokenSemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
-  name: AtLeast(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AtLeast_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.AtLeast(Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.AtLeast(SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.AtLeast*
-  name: AtLeast
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AtLeast_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.AtLeast
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.AtLeast
-  nameWithType: UnbrokenSemVersionRange.AtLeast
-- uid: Semver.Ranges.UnbrokenSemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
-  name: AtMost(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AtMost_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.AtMost(Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.AtMost(SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.AtMost*
-  name: AtMost
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_AtMost_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.AtMost
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.AtMost
-  nameWithType: UnbrokenSemVersionRange.AtMost
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Contains(Semver.SemVersion)
-  name: Contains(SemVersion)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Contains_Semver_SemVersion_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.Contains(Semver.SemVersion)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Contains(Semver.SemVersion)
-  nameWithType: UnbrokenSemVersionRange.Contains(SemVersion)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Contains*
-  name: Contains
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Contains_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.Contains
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Contains
-  nameWithType: UnbrokenSemVersionRange.Contains
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Empty
-  name: Empty
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Empty
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.Empty
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Empty
-  nameWithType: UnbrokenSemVersionRange.Empty
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Empty*
-  name: Empty
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Empty_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.Empty
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Empty
-  nameWithType: UnbrokenSemVersionRange.Empty
-- uid: Semver.Ranges.UnbrokenSemVersionRange.End
-  name: End
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_End
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.End
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.End
-  nameWithType: UnbrokenSemVersionRange.End
-- uid: Semver.Ranges.UnbrokenSemVersionRange.End*
-  name: End
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_End_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.End
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.End
-  nameWithType: UnbrokenSemVersionRange.End
-- uid: Semver.Ranges.UnbrokenSemVersionRange.EndInclusive
-  name: EndInclusive
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_EndInclusive
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.EndInclusive
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.EndInclusive
-  nameWithType: UnbrokenSemVersionRange.EndInclusive
-- uid: Semver.Ranges.UnbrokenSemVersionRange.EndInclusive*
-  name: EndInclusive
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_EndInclusive_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.EndInclusive
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.EndInclusive
-  nameWithType: UnbrokenSemVersionRange.EndInclusive
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Equals(Semver.Ranges.UnbrokenSemVersionRange)
-  name: Equals(UnbrokenSemVersionRange)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Equals_Semver_Ranges_UnbrokenSemVersionRange_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.Equals(Semver.Ranges.UnbrokenSemVersionRange)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Equals(Semver.Ranges.UnbrokenSemVersionRange)
-  nameWithType: UnbrokenSemVersionRange.Equals(UnbrokenSemVersionRange)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Equals(Semver.SemVersion)
-  name: Equals(SemVersion)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Equals_Semver_SemVersion_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.Equals(Semver.SemVersion)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Equals(Semver.SemVersion)
-  nameWithType: UnbrokenSemVersionRange.Equals(SemVersion)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Equals(System.Object)
-  name: Equals(Object)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Equals_System_Object_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.Equals(System.Object)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Equals(System.Object)
-  nameWithType: UnbrokenSemVersionRange.Equals(Object)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Equals*
-  name: Equals
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Equals_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.Equals
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Equals
-  nameWithType: UnbrokenSemVersionRange.Equals
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: Exclusive(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Exclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Exclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.Exclusive(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Exclusive*
-  name: Exclusive
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Exclusive_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.Exclusive
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Exclusive
-  nameWithType: UnbrokenSemVersionRange.Exclusive
-- uid: Semver.Ranges.UnbrokenSemVersionRange.GetHashCode
-  name: GetHashCode()
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_GetHashCode
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.GetHashCode
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.GetHashCode()
-  nameWithType: UnbrokenSemVersionRange.GetHashCode()
-- uid: Semver.Ranges.UnbrokenSemVersionRange.GetHashCode*
-  name: GetHashCode
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_GetHashCode_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.GetHashCode
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.GetHashCode
-  nameWithType: UnbrokenSemVersionRange.GetHashCode
-- uid: Semver.Ranges.UnbrokenSemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
-  name: GreaterThan(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_GreaterThan_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.GreaterThan(Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.GreaterThan(SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.GreaterThan*
-  name: GreaterThan
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_GreaterThan_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.GreaterThan
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.GreaterThan
-  nameWithType: UnbrokenSemVersionRange.GreaterThan
-- uid: Semver.Ranges.UnbrokenSemVersionRange.IncludeAllPrerelease
-  name: IncludeAllPrerelease
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_IncludeAllPrerelease
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.IncludeAllPrerelease
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.IncludeAllPrerelease
-  nameWithType: UnbrokenSemVersionRange.IncludeAllPrerelease
-- uid: Semver.Ranges.UnbrokenSemVersionRange.IncludeAllPrerelease*
-  name: IncludeAllPrerelease
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_IncludeAllPrerelease_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.IncludeAllPrerelease
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.IncludeAllPrerelease
-  nameWithType: UnbrokenSemVersionRange.IncludeAllPrerelease
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: Inclusive(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Inclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Inclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.Inclusive(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Inclusive*
-  name: Inclusive
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Inclusive_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.Inclusive
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Inclusive
-  nameWithType: UnbrokenSemVersionRange.Inclusive
-- uid: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: InclusiveOfEnd(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_InclusiveOfEnd_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfEnd(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.InclusiveOfEnd(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfEnd*
-  name: InclusiveOfEnd
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_InclusiveOfEnd_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfEnd
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfEnd
-  nameWithType: UnbrokenSemVersionRange.InclusiveOfEnd
-- uid: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  name: InclusiveOfStart(SemVersion, SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_InclusiveOfStart_Semver_SemVersion_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfStart(Semver.SemVersion, Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.InclusiveOfStart(SemVersion, SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfStart*
-  name: InclusiveOfStart
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_InclusiveOfStart_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfStart
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.InclusiveOfStart
-  nameWithType: UnbrokenSemVersionRange.InclusiveOfStart
-- uid: Semver.Ranges.UnbrokenSemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
-  name: LessThan(SemVersion, Boolean)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_LessThan_Semver_SemVersion_System_Boolean_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.LessThan(Semver.SemVersion, System.Boolean)
-  nameWithType: UnbrokenSemVersionRange.LessThan(SemVersion, Boolean)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.LessThan*
-  name: LessThan
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_LessThan_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.LessThan
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.LessThan
-  nameWithType: UnbrokenSemVersionRange.LessThan
-- uid: Semver.Ranges.UnbrokenSemVersionRange.op_Equality(Semver.Ranges.UnbrokenSemVersionRange,Semver.Ranges.UnbrokenSemVersionRange)
-  name: Equality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_op_Equality_Semver_Ranges_UnbrokenSemVersionRange_Semver_Ranges_UnbrokenSemVersionRange_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.op_Equality(Semver.Ranges.UnbrokenSemVersionRange,Semver.Ranges.UnbrokenSemVersionRange)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Equality(Semver.Ranges.UnbrokenSemVersionRange, Semver.Ranges.UnbrokenSemVersionRange)
-  nameWithType: UnbrokenSemVersionRange.Equality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.op_Equality*
-  name: Equality
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_op_Equality_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.op_Equality
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Equality
-  nameWithType: UnbrokenSemVersionRange.Equality
-- uid: Semver.Ranges.UnbrokenSemVersionRange.op_Implicit(Semver.Ranges.UnbrokenSemVersionRange)~System.Predicate{Semver.SemVersion}
-  name: Implicit(UnbrokenSemVersionRange to Predicate<SemVersion>)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_op_Implicit_Semver_Ranges_UnbrokenSemVersionRange__System_Predicate_Semver_SemVersion_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.op_Implicit(Semver.Ranges.UnbrokenSemVersionRange)~System.Predicate{Semver.SemVersion}
-  name.vb: Widening(UnbrokenSemVersionRange to Predicate(Of SemVersion))
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Implicit(Semver.Ranges.UnbrokenSemVersionRange to System.Predicate<Semver.SemVersion>)
-  fullName.vb: Semver.Ranges.UnbrokenSemVersionRange.Widening(Semver.Ranges.UnbrokenSemVersionRange to System.Predicate(Of Semver.SemVersion))
-  nameWithType: UnbrokenSemVersionRange.Implicit(UnbrokenSemVersionRange to Predicate<SemVersion>)
-  nameWithType.vb: UnbrokenSemVersionRange.Widening(UnbrokenSemVersionRange to Predicate(Of SemVersion))
-- uid: Semver.Ranges.UnbrokenSemVersionRange.op_Implicit*
-  name: Implicit
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_op_Implicit_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.op_Implicit
-  name.vb: Widening
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Implicit
-  fullName.vb: Semver.Ranges.UnbrokenSemVersionRange.Widening
-  nameWithType: UnbrokenSemVersionRange.Implicit
-  nameWithType.vb: UnbrokenSemVersionRange.Widening
-- uid: Semver.Ranges.UnbrokenSemVersionRange.op_Inequality(Semver.Ranges.UnbrokenSemVersionRange,Semver.Ranges.UnbrokenSemVersionRange)
-  name: Inequality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_op_Inequality_Semver_Ranges_UnbrokenSemVersionRange_Semver_Ranges_UnbrokenSemVersionRange_
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.op_Inequality(Semver.Ranges.UnbrokenSemVersionRange,Semver.Ranges.UnbrokenSemVersionRange)
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Inequality(Semver.Ranges.UnbrokenSemVersionRange, Semver.Ranges.UnbrokenSemVersionRange)
-  nameWithType: UnbrokenSemVersionRange.Inequality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
-- uid: Semver.Ranges.UnbrokenSemVersionRange.op_Inequality*
-  name: Inequality
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_op_Inequality_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.op_Inequality
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Inequality
-  nameWithType: UnbrokenSemVersionRange.Inequality
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Start
-  name: Start
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Start
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.Start
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Start
-  nameWithType: UnbrokenSemVersionRange.Start
-- uid: Semver.Ranges.UnbrokenSemVersionRange.Start*
-  name: Start
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_Start_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.Start
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.Start
-  nameWithType: UnbrokenSemVersionRange.Start
-- uid: Semver.Ranges.UnbrokenSemVersionRange.StartInclusive
-  name: StartInclusive
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_StartInclusive
-  commentId: P:Semver.Ranges.UnbrokenSemVersionRange.StartInclusive
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.StartInclusive
-  nameWithType: UnbrokenSemVersionRange.StartInclusive
-- uid: Semver.Ranges.UnbrokenSemVersionRange.StartInclusive*
-  name: StartInclusive
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_StartInclusive_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.StartInclusive
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.StartInclusive
-  nameWithType: UnbrokenSemVersionRange.StartInclusive
-- uid: Semver.Ranges.UnbrokenSemVersionRange.ToString
-  name: ToString()
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_ToString
-  commentId: M:Semver.Ranges.UnbrokenSemVersionRange.ToString
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.ToString()
-  nameWithType: UnbrokenSemVersionRange.ToString()
-- uid: Semver.Ranges.UnbrokenSemVersionRange.ToString*
-  name: ToString
-  href: v2.3.x/Semver.Ranges.UnbrokenSemVersionRange.html#Semver_Ranges_UnbrokenSemVersionRange_ToString_
-  commentId: Overload:Semver.Ranges.UnbrokenSemVersionRange.ToString
-  fullName: Semver.Ranges.UnbrokenSemVersionRange.ToString
-  nameWithType: UnbrokenSemVersionRange.ToString
 - uid: Semver.SemVersion
   name: SemVersion
   href: v2.3.x/Semver.SemVersion.html
@@ -1583,17 +808,17 @@ references:
   commentId: Overload:Semver.SemVersion.PrereleaseIdentifiers
   fullName: Semver.SemVersion.PrereleaseIdentifiers
   nameWithType: SemVersion.PrereleaseIdentifiers
-- uid: Semver.SemVersion.Satisfies(Semver.Ranges.SemVersionRange)
+- uid: Semver.SemVersion.Satisfies(Semver.SemVersionRange)
   name: Satisfies(SemVersionRange)
-  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_Semver_Ranges_SemVersionRange_
-  commentId: M:Semver.SemVersion.Satisfies(Semver.Ranges.SemVersionRange)
-  fullName: Semver.SemVersion.Satisfies(Semver.Ranges.SemVersionRange)
+  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_Semver_SemVersionRange_
+  commentId: M:Semver.SemVersion.Satisfies(Semver.SemVersionRange)
+  fullName: Semver.SemVersion.Satisfies(Semver.SemVersionRange)
   nameWithType: SemVersion.Satisfies(SemVersionRange)
-- uid: Semver.SemVersion.Satisfies(Semver.Ranges.UnbrokenSemVersionRange)
+- uid: Semver.SemVersion.Satisfies(Semver.UnbrokenSemVersionRange)
   name: Satisfies(UnbrokenSemVersionRange)
-  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_Semver_Ranges_UnbrokenSemVersionRange_
-  commentId: M:Semver.SemVersion.Satisfies(Semver.Ranges.UnbrokenSemVersionRange)
-  fullName: Semver.SemVersion.Satisfies(Semver.Ranges.UnbrokenSemVersionRange)
+  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_Semver_UnbrokenSemVersionRange_
+  commentId: M:Semver.SemVersion.Satisfies(Semver.UnbrokenSemVersionRange)
+  fullName: Semver.SemVersion.Satisfies(Semver.UnbrokenSemVersionRange)
   nameWithType: SemVersion.Satisfies(UnbrokenSemVersionRange)
 - uid: Semver.SemVersion.Satisfies(System.Predicate{Semver.SemVersion})
   name: Satisfies(Predicate<SemVersion>)
@@ -1604,11 +829,11 @@ references:
   fullName.vb: Semver.SemVersion.Satisfies(System.Predicate(Of Semver.SemVersion))
   nameWithType: SemVersion.Satisfies(Predicate<SemVersion>)
   nameWithType.vb: SemVersion.Satisfies(Predicate(Of SemVersion))
-- uid: Semver.SemVersion.Satisfies(System.String,Semver.Ranges.SemVersionRangeOptions,System.Int32)
+- uid: Semver.SemVersion.Satisfies(System.String,Semver.SemVersionRangeOptions,System.Int32)
   name: Satisfies(String, SemVersionRangeOptions, Int32)
-  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_
-  commentId: M:Semver.SemVersion.Satisfies(System.String,Semver.Ranges.SemVersionRangeOptions,System.Int32)
-  fullName: Semver.SemVersion.Satisfies(System.String, Semver.Ranges.SemVersionRangeOptions, System.Int32)
+  href: v2.3.x/Semver.SemVersion.html#Semver_SemVersion_Satisfies_System_String_Semver_SemVersionRangeOptions_System_Int32_
+  commentId: M:Semver.SemVersion.Satisfies(System.String,Semver.SemVersionRangeOptions,System.Int32)
+  fullName: Semver.SemVersion.Satisfies(System.String, Semver.SemVersionRangeOptions, System.Int32)
   nameWithType: SemVersion.Satisfies(String, SemVersionRangeOptions, Int32)
 - uid: Semver.SemVersion.Satisfies(System.String,System.Int32)
   name: Satisfies(String, Int32)
@@ -1910,6 +1135,475 @@ references:
   commentId: Overload:Semver.SemVersion.WithPrereleaseParsedFrom
   fullName: Semver.SemVersion.WithPrereleaseParsedFrom
   nameWithType: SemVersion.WithPrereleaseParsedFrom
+- uid: Semver.SemVersionRange
+  name: SemVersionRange
+  href: v2.3.x/Semver.SemVersionRange.html
+  commentId: T:Semver.SemVersionRange
+  fullName: Semver.SemVersionRange
+  nameWithType: SemVersionRange
+- uid: Semver.SemVersionRange.All
+  name: All
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_All
+  commentId: P:Semver.SemVersionRange.All
+  fullName: Semver.SemVersionRange.All
+  nameWithType: SemVersionRange.All
+- uid: Semver.SemVersionRange.All*
+  name: All
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_All_
+  commentId: Overload:Semver.SemVersionRange.All
+  fullName: Semver.SemVersionRange.All
+  nameWithType: SemVersionRange.All
+- uid: Semver.SemVersionRange.AllRelease
+  name: AllRelease
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_AllRelease
+  commentId: P:Semver.SemVersionRange.AllRelease
+  fullName: Semver.SemVersionRange.AllRelease
+  nameWithType: SemVersionRange.AllRelease
+- uid: Semver.SemVersionRange.AllRelease*
+  name: AllRelease
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_AllRelease_
+  commentId: Overload:Semver.SemVersionRange.AllRelease
+  fullName: Semver.SemVersionRange.AllRelease
+  nameWithType: SemVersionRange.AllRelease
+- uid: Semver.SemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
+  name: AtLeast(SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_AtLeast_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.AtLeast(Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.AtLeast(SemVersion, Boolean)
+- uid: Semver.SemVersionRange.AtLeast*
+  name: AtLeast
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_AtLeast_
+  commentId: Overload:Semver.SemVersionRange.AtLeast
+  fullName: Semver.SemVersionRange.AtLeast
+  nameWithType: SemVersionRange.AtLeast
+- uid: Semver.SemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
+  name: AtMost(SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_AtMost_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.AtMost(Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.AtMost(SemVersion, Boolean)
+- uid: Semver.SemVersionRange.AtMost*
+  name: AtMost
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_AtMost_
+  commentId: Overload:Semver.SemVersionRange.AtMost
+  fullName: Semver.SemVersionRange.AtMost
+  nameWithType: SemVersionRange.AtMost
+- uid: Semver.SemVersionRange.Contains(Semver.SemVersion)
+  name: Contains(SemVersion)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Contains_Semver_SemVersion_
+  commentId: M:Semver.SemVersionRange.Contains(Semver.SemVersion)
+  fullName: Semver.SemVersionRange.Contains(Semver.SemVersion)
+  nameWithType: SemVersionRange.Contains(SemVersion)
+- uid: Semver.SemVersionRange.Contains*
+  name: Contains
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Contains_
+  commentId: Overload:Semver.SemVersionRange.Contains
+  fullName: Semver.SemVersionRange.Contains
+  nameWithType: SemVersionRange.Contains
+- uid: Semver.SemVersionRange.Count
+  name: Count
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Count
+  commentId: P:Semver.SemVersionRange.Count
+  fullName: Semver.SemVersionRange.Count
+  nameWithType: SemVersionRange.Count
+- uid: Semver.SemVersionRange.Count*
+  name: Count
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Count_
+  commentId: Overload:Semver.SemVersionRange.Count
+  fullName: Semver.SemVersionRange.Count
+  nameWithType: SemVersionRange.Count
+- uid: Semver.SemVersionRange.Create(Semver.UnbrokenSemVersionRange[])
+  name: Create(UnbrokenSemVersionRange[])
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Create_Semver_UnbrokenSemVersionRange___
+  commentId: M:Semver.SemVersionRange.Create(Semver.UnbrokenSemVersionRange[])
+  name.vb: Create(UnbrokenSemVersionRange())
+  fullName: Semver.SemVersionRange.Create(Semver.UnbrokenSemVersionRange[])
+  fullName.vb: Semver.SemVersionRange.Create(Semver.UnbrokenSemVersionRange())
+  nameWithType: SemVersionRange.Create(UnbrokenSemVersionRange[])
+  nameWithType.vb: SemVersionRange.Create(UnbrokenSemVersionRange())
+- uid: Semver.SemVersionRange.Create(System.Collections.Generic.IEnumerable{Semver.UnbrokenSemVersionRange})
+  name: Create(IEnumerable<UnbrokenSemVersionRange>)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Create_System_Collections_Generic_IEnumerable_Semver_UnbrokenSemVersionRange__
+  commentId: M:Semver.SemVersionRange.Create(System.Collections.Generic.IEnumerable{Semver.UnbrokenSemVersionRange})
+  name.vb: Create(IEnumerable(Of UnbrokenSemVersionRange))
+  fullName: Semver.SemVersionRange.Create(System.Collections.Generic.IEnumerable<Semver.UnbrokenSemVersionRange>)
+  fullName.vb: Semver.SemVersionRange.Create(System.Collections.Generic.IEnumerable(Of Semver.UnbrokenSemVersionRange))
+  nameWithType: SemVersionRange.Create(IEnumerable<UnbrokenSemVersionRange>)
+  nameWithType.vb: SemVersionRange.Create(IEnumerable(Of UnbrokenSemVersionRange))
+- uid: Semver.SemVersionRange.Create*
+  name: Create
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Create_
+  commentId: Overload:Semver.SemVersionRange.Create
+  fullName: Semver.SemVersionRange.Create
+  nameWithType: SemVersionRange.Create
+- uid: Semver.SemVersionRange.Empty
+  name: Empty
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Empty
+  commentId: P:Semver.SemVersionRange.Empty
+  fullName: Semver.SemVersionRange.Empty
+  nameWithType: SemVersionRange.Empty
+- uid: Semver.SemVersionRange.Empty*
+  name: Empty
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Empty_
+  commentId: Overload:Semver.SemVersionRange.Empty
+  fullName: Semver.SemVersionRange.Empty
+  nameWithType: SemVersionRange.Empty
+- uid: Semver.SemVersionRange.Equals(Semver.SemVersion)
+  name: Equals(SemVersion)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Equals_Semver_SemVersion_
+  commentId: M:Semver.SemVersionRange.Equals(Semver.SemVersion)
+  fullName: Semver.SemVersionRange.Equals(Semver.SemVersion)
+  nameWithType: SemVersionRange.Equals(SemVersion)
+- uid: Semver.SemVersionRange.Equals(Semver.SemVersionRange)
+  name: Equals(SemVersionRange)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Equals_Semver_SemVersionRange_
+  commentId: M:Semver.SemVersionRange.Equals(Semver.SemVersionRange)
+  fullName: Semver.SemVersionRange.Equals(Semver.SemVersionRange)
+  nameWithType: SemVersionRange.Equals(SemVersionRange)
+- uid: Semver.SemVersionRange.Equals(System.Object)
+  name: Equals(Object)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Equals_System_Object_
+  commentId: M:Semver.SemVersionRange.Equals(System.Object)
+  fullName: Semver.SemVersionRange.Equals(System.Object)
+  nameWithType: SemVersionRange.Equals(Object)
+- uid: Semver.SemVersionRange.Equals*
+  name: Equals
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Equals_
+  commentId: Overload:Semver.SemVersionRange.Equals
+  fullName: Semver.SemVersionRange.Equals
+  nameWithType: SemVersionRange.Equals
+- uid: Semver.SemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: Exclusive(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Exclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.Exclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.Exclusive(SemVersion, SemVersion, Boolean)
+- uid: Semver.SemVersionRange.Exclusive*
+  name: Exclusive
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Exclusive_
+  commentId: Overload:Semver.SemVersionRange.Exclusive
+  fullName: Semver.SemVersionRange.Exclusive
+  nameWithType: SemVersionRange.Exclusive
+- uid: Semver.SemVersionRange.GetEnumerator
+  name: GetEnumerator()
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_GetEnumerator
+  commentId: M:Semver.SemVersionRange.GetEnumerator
+  fullName: Semver.SemVersionRange.GetEnumerator()
+  nameWithType: SemVersionRange.GetEnumerator()
+- uid: Semver.SemVersionRange.GetEnumerator*
+  name: GetEnumerator
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_GetEnumerator_
+  commentId: Overload:Semver.SemVersionRange.GetEnumerator
+  fullName: Semver.SemVersionRange.GetEnumerator
+  nameWithType: SemVersionRange.GetEnumerator
+- uid: Semver.SemVersionRange.GetHashCode
+  name: GetHashCode()
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_GetHashCode
+  commentId: M:Semver.SemVersionRange.GetHashCode
+  fullName: Semver.SemVersionRange.GetHashCode()
+  nameWithType: SemVersionRange.GetHashCode()
+- uid: Semver.SemVersionRange.GetHashCode*
+  name: GetHashCode
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_GetHashCode_
+  commentId: Overload:Semver.SemVersionRange.GetHashCode
+  fullName: Semver.SemVersionRange.GetHashCode
+  nameWithType: SemVersionRange.GetHashCode
+- uid: Semver.SemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
+  name: GreaterThan(SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_GreaterThan_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.GreaterThan(Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.GreaterThan(SemVersion, Boolean)
+- uid: Semver.SemVersionRange.GreaterThan*
+  name: GreaterThan
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_GreaterThan_
+  commentId: Overload:Semver.SemVersionRange.GreaterThan
+  fullName: Semver.SemVersionRange.GreaterThan
+  nameWithType: SemVersionRange.GreaterThan
+- uid: Semver.SemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: Inclusive(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Inclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.Inclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.Inclusive(SemVersion, SemVersion, Boolean)
+- uid: Semver.SemVersionRange.Inclusive*
+  name: Inclusive
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Inclusive_
+  commentId: Overload:Semver.SemVersionRange.Inclusive
+  fullName: Semver.SemVersionRange.Inclusive
+  nameWithType: SemVersionRange.Inclusive
+- uid: Semver.SemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: InclusiveOfEnd(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_InclusiveOfEnd_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.InclusiveOfEnd(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.InclusiveOfEnd(SemVersion, SemVersion, Boolean)
+- uid: Semver.SemVersionRange.InclusiveOfEnd*
+  name: InclusiveOfEnd
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_InclusiveOfEnd_
+  commentId: Overload:Semver.SemVersionRange.InclusiveOfEnd
+  fullName: Semver.SemVersionRange.InclusiveOfEnd
+  nameWithType: SemVersionRange.InclusiveOfEnd
+- uid: Semver.SemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: InclusiveOfStart(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_InclusiveOfStart_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.InclusiveOfStart(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.InclusiveOfStart(SemVersion, SemVersion, Boolean)
+- uid: Semver.SemVersionRange.InclusiveOfStart*
+  name: InclusiveOfStart
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_InclusiveOfStart_
+  commentId: Overload:Semver.SemVersionRange.InclusiveOfStart
+  fullName: Semver.SemVersionRange.InclusiveOfStart
+  nameWithType: SemVersionRange.InclusiveOfStart
+- uid: Semver.SemVersionRange.Item(System.Int32)
+  name: Item[Int32]
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Item_System_Int32_
+  commentId: P:Semver.SemVersionRange.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: Semver.SemVersionRange.Item[System.Int32]
+  fullName.vb: Semver.SemVersionRange.Item(System.Int32)
+  nameWithType: SemVersionRange.Item[Int32]
+  nameWithType.vb: SemVersionRange.Item(Int32)
+- uid: Semver.SemVersionRange.Item*
+  name: Item
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Item_
+  commentId: Overload:Semver.SemVersionRange.Item
+  fullName: Semver.SemVersionRange.Item
+  nameWithType: SemVersionRange.Item
+- uid: Semver.SemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
+  name: LessThan(SemVersion, Boolean)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_LessThan_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.SemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
+  fullName: Semver.SemVersionRange.LessThan(Semver.SemVersion, System.Boolean)
+  nameWithType: SemVersionRange.LessThan(SemVersion, Boolean)
+- uid: Semver.SemVersionRange.LessThan*
+  name: LessThan
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_LessThan_
+  commentId: Overload:Semver.SemVersionRange.LessThan
+  fullName: Semver.SemVersionRange.LessThan
+  nameWithType: SemVersionRange.LessThan
+- uid: Semver.SemVersionRange.op_Equality(Semver.SemVersionRange,Semver.SemVersionRange)
+  name: Equality(SemVersionRange, SemVersionRange)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_op_Equality_Semver_SemVersionRange_Semver_SemVersionRange_
+  commentId: M:Semver.SemVersionRange.op_Equality(Semver.SemVersionRange,Semver.SemVersionRange)
+  fullName: Semver.SemVersionRange.Equality(Semver.SemVersionRange, Semver.SemVersionRange)
+  nameWithType: SemVersionRange.Equality(SemVersionRange, SemVersionRange)
+- uid: Semver.SemVersionRange.op_Equality*
+  name: Equality
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_op_Equality_
+  commentId: Overload:Semver.SemVersionRange.op_Equality
+  fullName: Semver.SemVersionRange.Equality
+  nameWithType: SemVersionRange.Equality
+- uid: Semver.SemVersionRange.op_Implicit(Semver.SemVersionRange)~System.Predicate{Semver.SemVersion}
+  name: Implicit(SemVersionRange to Predicate<SemVersion>)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_op_Implicit_Semver_SemVersionRange__System_Predicate_Semver_SemVersion_
+  commentId: M:Semver.SemVersionRange.op_Implicit(Semver.SemVersionRange)~System.Predicate{Semver.SemVersion}
+  name.vb: Widening(SemVersionRange to Predicate(Of SemVersion))
+  fullName: Semver.SemVersionRange.Implicit(Semver.SemVersionRange to System.Predicate<Semver.SemVersion>)
+  fullName.vb: Semver.SemVersionRange.Widening(Semver.SemVersionRange to System.Predicate(Of Semver.SemVersion))
+  nameWithType: SemVersionRange.Implicit(SemVersionRange to Predicate<SemVersion>)
+  nameWithType.vb: SemVersionRange.Widening(SemVersionRange to Predicate(Of SemVersion))
+- uid: Semver.SemVersionRange.op_Implicit*
+  name: Implicit
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_op_Implicit_
+  commentId: Overload:Semver.SemVersionRange.op_Implicit
+  name.vb: Widening
+  fullName: Semver.SemVersionRange.Implicit
+  fullName.vb: Semver.SemVersionRange.Widening
+  nameWithType: SemVersionRange.Implicit
+  nameWithType.vb: SemVersionRange.Widening
+- uid: Semver.SemVersionRange.op_Inequality(Semver.SemVersionRange,Semver.SemVersionRange)
+  name: Inequality(SemVersionRange, SemVersionRange)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_op_Inequality_Semver_SemVersionRange_Semver_SemVersionRange_
+  commentId: M:Semver.SemVersionRange.op_Inequality(Semver.SemVersionRange,Semver.SemVersionRange)
+  fullName: Semver.SemVersionRange.Inequality(Semver.SemVersionRange, Semver.SemVersionRange)
+  nameWithType: SemVersionRange.Inequality(SemVersionRange, SemVersionRange)
+- uid: Semver.SemVersionRange.op_Inequality*
+  name: Inequality
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_op_Inequality_
+  commentId: Overload:Semver.SemVersionRange.op_Inequality
+  fullName: Semver.SemVersionRange.Inequality
+  nameWithType: SemVersionRange.Inequality
+- uid: Semver.SemVersionRange.Parse(System.String,Semver.SemVersionRangeOptions,System.Int32)
+  name: Parse(String, SemVersionRangeOptions, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_
+  commentId: M:Semver.SemVersionRange.Parse(System.String,Semver.SemVersionRangeOptions,System.Int32)
+  fullName: Semver.SemVersionRange.Parse(System.String, Semver.SemVersionRangeOptions, System.Int32)
+  nameWithType: SemVersionRange.Parse(String, SemVersionRangeOptions, Int32)
+- uid: Semver.SemVersionRange.Parse(System.String,System.Int32)
+  name: Parse(String, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_System_Int32_
+  commentId: M:Semver.SemVersionRange.Parse(System.String,System.Int32)
+  fullName: Semver.SemVersionRange.Parse(System.String, System.Int32)
+  nameWithType: SemVersionRange.Parse(String, Int32)
+- uid: Semver.SemVersionRange.Parse*
+  name: Parse
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_
+  commentId: Overload:Semver.SemVersionRange.Parse
+  fullName: Semver.SemVersionRange.Parse
+  nameWithType: SemVersionRange.Parse
+- uid: Semver.SemVersionRange.ParseNpm(System.String,System.Boolean,System.Int32)
+  name: ParseNpm(String, Boolean, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_ParseNpm_System_String_System_Boolean_System_Int32_
+  commentId: M:Semver.SemVersionRange.ParseNpm(System.String,System.Boolean,System.Int32)
+  fullName: Semver.SemVersionRange.ParseNpm(System.String, System.Boolean, System.Int32)
+  nameWithType: SemVersionRange.ParseNpm(String, Boolean, Int32)
+- uid: Semver.SemVersionRange.ParseNpm(System.String,System.Int32)
+  name: ParseNpm(String, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_ParseNpm_System_String_System_Int32_
+  commentId: M:Semver.SemVersionRange.ParseNpm(System.String,System.Int32)
+  fullName: Semver.SemVersionRange.ParseNpm(System.String, System.Int32)
+  nameWithType: SemVersionRange.ParseNpm(String, Int32)
+- uid: Semver.SemVersionRange.ParseNpm*
+  name: ParseNpm
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_ParseNpm_
+  commentId: Overload:Semver.SemVersionRange.ParseNpm
+  fullName: Semver.SemVersionRange.ParseNpm
+  nameWithType: SemVersionRange.ParseNpm
+- uid: Semver.SemVersionRange.System#Collections#IEnumerable#GetEnumerator
+  name: IEnumerable.GetEnumerator()
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_System_Collections_IEnumerable_GetEnumerator
+  commentId: M:Semver.SemVersionRange.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator()
+  fullName: Semver.SemVersionRange.System.Collections.IEnumerable.GetEnumerator()
+  nameWithType: SemVersionRange.IEnumerable.GetEnumerator()
+  nameWithType.vb: SemVersionRange.System.Collections.IEnumerable.GetEnumerator()
+- uid: Semver.SemVersionRange.System#Collections#IEnumerable#GetEnumerator*
+  name: IEnumerable.GetEnumerator
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_System_Collections_IEnumerable_GetEnumerator_
+  commentId: Overload:Semver.SemVersionRange.System#Collections#IEnumerable#GetEnumerator
+  name.vb: System.Collections.IEnumerable.GetEnumerator
+  fullName: Semver.SemVersionRange.System.Collections.IEnumerable.GetEnumerator
+  nameWithType: SemVersionRange.IEnumerable.GetEnumerator
+  nameWithType.vb: SemVersionRange.System.Collections.IEnumerable.GetEnumerator
+- uid: Semver.SemVersionRange.ToString
+  name: ToString()
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_ToString
+  commentId: M:Semver.SemVersionRange.ToString
+  fullName: Semver.SemVersionRange.ToString()
+  nameWithType: SemVersionRange.ToString()
+- uid: Semver.SemVersionRange.ToString*
+  name: ToString
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_ToString_
+  commentId: Overload:Semver.SemVersionRange.ToString
+  fullName: Semver.SemVersionRange.ToString
+  nameWithType: SemVersionRange.ToString
+- uid: Semver.SemVersionRange.TryParse(System.String,Semver.SemVersionRange@,System.Int32)
+  name: TryParse(String, out SemVersionRange, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRange__System_Int32_
+  commentId: M:Semver.SemVersionRange.TryParse(System.String,Semver.SemVersionRange@,System.Int32)
+  name.vb: TryParse(String, ByRef SemVersionRange, Int32)
+  fullName: Semver.SemVersionRange.TryParse(System.String, out Semver.SemVersionRange, System.Int32)
+  fullName.vb: Semver.SemVersionRange.TryParse(System.String, ByRef Semver.SemVersionRange, System.Int32)
+  nameWithType: SemVersionRange.TryParse(String, out SemVersionRange, Int32)
+  nameWithType.vb: SemVersionRange.TryParse(String, ByRef SemVersionRange, Int32)
+- uid: Semver.SemVersionRange.TryParse(System.String,Semver.SemVersionRangeOptions,Semver.SemVersionRange@,System.Int32)
+  name: TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_
+  commentId: M:Semver.SemVersionRange.TryParse(System.String,Semver.SemVersionRangeOptions,Semver.SemVersionRange@,System.Int32)
+  name.vb: TryParse(String, SemVersionRangeOptions, ByRef SemVersionRange, Int32)
+  fullName: Semver.SemVersionRange.TryParse(System.String, Semver.SemVersionRangeOptions, out Semver.SemVersionRange, System.Int32)
+  fullName.vb: Semver.SemVersionRange.TryParse(System.String, Semver.SemVersionRangeOptions, ByRef Semver.SemVersionRange, System.Int32)
+  nameWithType: SemVersionRange.TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)
+  nameWithType.vb: SemVersionRange.TryParse(String, SemVersionRangeOptions, ByRef SemVersionRange, Int32)
+- uid: Semver.SemVersionRange.TryParse*
+  name: TryParse
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_
+  commentId: Overload:Semver.SemVersionRange.TryParse
+  fullName: Semver.SemVersionRange.TryParse
+  nameWithType: SemVersionRange.TryParse
+- uid: Semver.SemVersionRange.TryParseNpm(System.String,Semver.SemVersionRange@,System.Int32)
+  name: TryParseNpm(String, out SemVersionRange, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_TryParseNpm_System_String_Semver_SemVersionRange__System_Int32_
+  commentId: M:Semver.SemVersionRange.TryParseNpm(System.String,Semver.SemVersionRange@,System.Int32)
+  name.vb: TryParseNpm(String, ByRef SemVersionRange, Int32)
+  fullName: Semver.SemVersionRange.TryParseNpm(System.String, out Semver.SemVersionRange, System.Int32)
+  fullName.vb: Semver.SemVersionRange.TryParseNpm(System.String, ByRef Semver.SemVersionRange, System.Int32)
+  nameWithType: SemVersionRange.TryParseNpm(String, out SemVersionRange, Int32)
+  nameWithType.vb: SemVersionRange.TryParseNpm(String, ByRef SemVersionRange, Int32)
+- uid: Semver.SemVersionRange.TryParseNpm(System.String,System.Boolean,Semver.SemVersionRange@,System.Int32)
+  name: TryParseNpm(String, Boolean, out SemVersionRange, Int32)
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_TryParseNpm_System_String_System_Boolean_Semver_SemVersionRange__System_Int32_
+  commentId: M:Semver.SemVersionRange.TryParseNpm(System.String,System.Boolean,Semver.SemVersionRange@,System.Int32)
+  name.vb: TryParseNpm(String, Boolean, ByRef SemVersionRange, Int32)
+  fullName: Semver.SemVersionRange.TryParseNpm(System.String, System.Boolean, out Semver.SemVersionRange, System.Int32)
+  fullName.vb: Semver.SemVersionRange.TryParseNpm(System.String, System.Boolean, ByRef Semver.SemVersionRange, System.Int32)
+  nameWithType: SemVersionRange.TryParseNpm(String, Boolean, out SemVersionRange, Int32)
+  nameWithType.vb: SemVersionRange.TryParseNpm(String, Boolean, ByRef SemVersionRange, Int32)
+- uid: Semver.SemVersionRange.TryParseNpm*
+  name: TryParseNpm
+  href: v2.3.x/Semver.SemVersionRange.html#Semver_SemVersionRange_TryParseNpm_
+  commentId: Overload:Semver.SemVersionRange.TryParseNpm
+  fullName: Semver.SemVersionRange.TryParseNpm
+  nameWithType: SemVersionRange.TryParseNpm
+- uid: Semver.SemVersionRangeOptions
+  name: SemVersionRangeOptions
+  href: v2.3.x/Semver.SemVersionRangeOptions.html
+  commentId: T:Semver.SemVersionRangeOptions
+  fullName: Semver.SemVersionRangeOptions
+  nameWithType: SemVersionRangeOptions
+- uid: Semver.SemVersionRangeOptions.AllowLeadingZeros
+  name: AllowLeadingZeros
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_AllowLeadingZeros
+  commentId: F:Semver.SemVersionRangeOptions.AllowLeadingZeros
+  fullName: Semver.SemVersionRangeOptions.AllowLeadingZeros
+  nameWithType: SemVersionRangeOptions.AllowLeadingZeros
+- uid: Semver.SemVersionRangeOptions.AllowLowerV
+  name: AllowLowerV
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_AllowLowerV
+  commentId: F:Semver.SemVersionRangeOptions.AllowLowerV
+  fullName: Semver.SemVersionRangeOptions.AllowLowerV
+  nameWithType: SemVersionRangeOptions.AllowLowerV
+- uid: Semver.SemVersionRangeOptions.AllowMetadata
+  name: AllowMetadata
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_AllowMetadata
+  commentId: F:Semver.SemVersionRangeOptions.AllowMetadata
+  fullName: Semver.SemVersionRangeOptions.AllowMetadata
+  nameWithType: SemVersionRangeOptions.AllowMetadata
+- uid: Semver.SemVersionRangeOptions.AllowUpperV
+  name: AllowUpperV
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_AllowUpperV
+  commentId: F:Semver.SemVersionRangeOptions.AllowUpperV
+  fullName: Semver.SemVersionRangeOptions.AllowUpperV
+  nameWithType: SemVersionRangeOptions.AllowUpperV
+- uid: Semver.SemVersionRangeOptions.AllowV
+  name: AllowV
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_AllowV
+  commentId: F:Semver.SemVersionRangeOptions.AllowV
+  fullName: Semver.SemVersionRangeOptions.AllowV
+  nameWithType: SemVersionRangeOptions.AllowV
+- uid: Semver.SemVersionRangeOptions.IncludeAllPrerelease
+  name: IncludeAllPrerelease
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_IncludeAllPrerelease
+  commentId: F:Semver.SemVersionRangeOptions.IncludeAllPrerelease
+  fullName: Semver.SemVersionRangeOptions.IncludeAllPrerelease
+  nameWithType: SemVersionRangeOptions.IncludeAllPrerelease
+- uid: Semver.SemVersionRangeOptions.Loose
+  name: Loose
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Loose
+  commentId: F:Semver.SemVersionRangeOptions.Loose
+  fullName: Semver.SemVersionRangeOptions.Loose
+  nameWithType: SemVersionRangeOptions.Loose
+- uid: Semver.SemVersionRangeOptions.OptionalMinorPatch
+  name: OptionalMinorPatch
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_OptionalMinorPatch
+  commentId: F:Semver.SemVersionRangeOptions.OptionalMinorPatch
+  fullName: Semver.SemVersionRangeOptions.OptionalMinorPatch
+  nameWithType: SemVersionRangeOptions.OptionalMinorPatch
+- uid: Semver.SemVersionRangeOptions.OptionalPatch
+  name: OptionalPatch
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_OptionalPatch
+  commentId: F:Semver.SemVersionRangeOptions.OptionalPatch
+  fullName: Semver.SemVersionRangeOptions.OptionalPatch
+  nameWithType: SemVersionRangeOptions.OptionalPatch
+- uid: Semver.SemVersionRangeOptions.Strict
+  name: Strict
+  href: v2.3.x/Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Strict
+  commentId: F:Semver.SemVersionRangeOptions.Strict
+  fullName: Semver.SemVersionRangeOptions.Strict
+  nameWithType: SemVersionRangeOptions.Strict
 - uid: Semver.SemVersionStyles
   name: SemVersionStyles
   href: v2.3.x/Semver.SemVersionStyles.html
@@ -1982,3 +1676,303 @@ references:
   commentId: F:Semver.SemVersionStyles.Strict
   fullName: Semver.SemVersionStyles.Strict
   nameWithType: SemVersionStyles.Strict
+- uid: Semver.UnbrokenSemVersionRange
+  name: UnbrokenSemVersionRange
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html
+  commentId: T:Semver.UnbrokenSemVersionRange
+  fullName: Semver.UnbrokenSemVersionRange
+  nameWithType: UnbrokenSemVersionRange
+- uid: Semver.UnbrokenSemVersionRange.All
+  name: All
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_All
+  commentId: P:Semver.UnbrokenSemVersionRange.All
+  fullName: Semver.UnbrokenSemVersionRange.All
+  nameWithType: UnbrokenSemVersionRange.All
+- uid: Semver.UnbrokenSemVersionRange.All*
+  name: All
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_All_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.All
+  fullName: Semver.UnbrokenSemVersionRange.All
+  nameWithType: UnbrokenSemVersionRange.All
+- uid: Semver.UnbrokenSemVersionRange.AllRelease
+  name: AllRelease
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_AllRelease
+  commentId: P:Semver.UnbrokenSemVersionRange.AllRelease
+  fullName: Semver.UnbrokenSemVersionRange.AllRelease
+  nameWithType: UnbrokenSemVersionRange.AllRelease
+- uid: Semver.UnbrokenSemVersionRange.AllRelease*
+  name: AllRelease
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_AllRelease_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.AllRelease
+  fullName: Semver.UnbrokenSemVersionRange.AllRelease
+  nameWithType: UnbrokenSemVersionRange.AllRelease
+- uid: Semver.UnbrokenSemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
+  name: AtLeast(SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_AtLeast_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.AtLeast(Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.AtLeast(SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.AtLeast*
+  name: AtLeast
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_AtLeast_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.AtLeast
+  fullName: Semver.UnbrokenSemVersionRange.AtLeast
+  nameWithType: UnbrokenSemVersionRange.AtLeast
+- uid: Semver.UnbrokenSemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
+  name: AtMost(SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_AtMost_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.AtMost(Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.AtMost(Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.AtMost(SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.AtMost*
+  name: AtMost
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_AtMost_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.AtMost
+  fullName: Semver.UnbrokenSemVersionRange.AtMost
+  nameWithType: UnbrokenSemVersionRange.AtMost
+- uid: Semver.UnbrokenSemVersionRange.Contains(Semver.SemVersion)
+  name: Contains(SemVersion)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Contains_Semver_SemVersion_
+  commentId: M:Semver.UnbrokenSemVersionRange.Contains(Semver.SemVersion)
+  fullName: Semver.UnbrokenSemVersionRange.Contains(Semver.SemVersion)
+  nameWithType: UnbrokenSemVersionRange.Contains(SemVersion)
+- uid: Semver.UnbrokenSemVersionRange.Contains*
+  name: Contains
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Contains_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.Contains
+  fullName: Semver.UnbrokenSemVersionRange.Contains
+  nameWithType: UnbrokenSemVersionRange.Contains
+- uid: Semver.UnbrokenSemVersionRange.Empty
+  name: Empty
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Empty
+  commentId: P:Semver.UnbrokenSemVersionRange.Empty
+  fullName: Semver.UnbrokenSemVersionRange.Empty
+  nameWithType: UnbrokenSemVersionRange.Empty
+- uid: Semver.UnbrokenSemVersionRange.Empty*
+  name: Empty
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Empty_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.Empty
+  fullName: Semver.UnbrokenSemVersionRange.Empty
+  nameWithType: UnbrokenSemVersionRange.Empty
+- uid: Semver.UnbrokenSemVersionRange.End
+  name: End
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_End
+  commentId: P:Semver.UnbrokenSemVersionRange.End
+  fullName: Semver.UnbrokenSemVersionRange.End
+  nameWithType: UnbrokenSemVersionRange.End
+- uid: Semver.UnbrokenSemVersionRange.End*
+  name: End
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_End_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.End
+  fullName: Semver.UnbrokenSemVersionRange.End
+  nameWithType: UnbrokenSemVersionRange.End
+- uid: Semver.UnbrokenSemVersionRange.EndInclusive
+  name: EndInclusive
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_EndInclusive
+  commentId: P:Semver.UnbrokenSemVersionRange.EndInclusive
+  fullName: Semver.UnbrokenSemVersionRange.EndInclusive
+  nameWithType: UnbrokenSemVersionRange.EndInclusive
+- uid: Semver.UnbrokenSemVersionRange.EndInclusive*
+  name: EndInclusive
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_EndInclusive_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.EndInclusive
+  fullName: Semver.UnbrokenSemVersionRange.EndInclusive
+  nameWithType: UnbrokenSemVersionRange.EndInclusive
+- uid: Semver.UnbrokenSemVersionRange.Equals(Semver.SemVersion)
+  name: Equals(SemVersion)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Equals_Semver_SemVersion_
+  commentId: M:Semver.UnbrokenSemVersionRange.Equals(Semver.SemVersion)
+  fullName: Semver.UnbrokenSemVersionRange.Equals(Semver.SemVersion)
+  nameWithType: UnbrokenSemVersionRange.Equals(SemVersion)
+- uid: Semver.UnbrokenSemVersionRange.Equals(Semver.UnbrokenSemVersionRange)
+  name: Equals(UnbrokenSemVersionRange)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Equals_Semver_UnbrokenSemVersionRange_
+  commentId: M:Semver.UnbrokenSemVersionRange.Equals(Semver.UnbrokenSemVersionRange)
+  fullName: Semver.UnbrokenSemVersionRange.Equals(Semver.UnbrokenSemVersionRange)
+  nameWithType: UnbrokenSemVersionRange.Equals(UnbrokenSemVersionRange)
+- uid: Semver.UnbrokenSemVersionRange.Equals(System.Object)
+  name: Equals(Object)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Equals_System_Object_
+  commentId: M:Semver.UnbrokenSemVersionRange.Equals(System.Object)
+  fullName: Semver.UnbrokenSemVersionRange.Equals(System.Object)
+  nameWithType: UnbrokenSemVersionRange.Equals(Object)
+- uid: Semver.UnbrokenSemVersionRange.Equals*
+  name: Equals
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Equals_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.Equals
+  fullName: Semver.UnbrokenSemVersionRange.Equals
+  nameWithType: UnbrokenSemVersionRange.Equals
+- uid: Semver.UnbrokenSemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: Exclusive(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Exclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.Exclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.Exclusive(SemVersion, SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.Exclusive*
+  name: Exclusive
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Exclusive_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.Exclusive
+  fullName: Semver.UnbrokenSemVersionRange.Exclusive
+  nameWithType: UnbrokenSemVersionRange.Exclusive
+- uid: Semver.UnbrokenSemVersionRange.GetHashCode
+  name: GetHashCode()
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_GetHashCode
+  commentId: M:Semver.UnbrokenSemVersionRange.GetHashCode
+  fullName: Semver.UnbrokenSemVersionRange.GetHashCode()
+  nameWithType: UnbrokenSemVersionRange.GetHashCode()
+- uid: Semver.UnbrokenSemVersionRange.GetHashCode*
+  name: GetHashCode
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_GetHashCode_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.GetHashCode
+  fullName: Semver.UnbrokenSemVersionRange.GetHashCode
+  nameWithType: UnbrokenSemVersionRange.GetHashCode
+- uid: Semver.UnbrokenSemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
+  name: GreaterThan(SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_GreaterThan_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.GreaterThan(Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.GreaterThan(SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.GreaterThan*
+  name: GreaterThan
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_GreaterThan_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.GreaterThan
+  fullName: Semver.UnbrokenSemVersionRange.GreaterThan
+  nameWithType: UnbrokenSemVersionRange.GreaterThan
+- uid: Semver.UnbrokenSemVersionRange.IncludeAllPrerelease
+  name: IncludeAllPrerelease
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_IncludeAllPrerelease
+  commentId: P:Semver.UnbrokenSemVersionRange.IncludeAllPrerelease
+  fullName: Semver.UnbrokenSemVersionRange.IncludeAllPrerelease
+  nameWithType: UnbrokenSemVersionRange.IncludeAllPrerelease
+- uid: Semver.UnbrokenSemVersionRange.IncludeAllPrerelease*
+  name: IncludeAllPrerelease
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_IncludeAllPrerelease_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.IncludeAllPrerelease
+  fullName: Semver.UnbrokenSemVersionRange.IncludeAllPrerelease
+  nameWithType: UnbrokenSemVersionRange.IncludeAllPrerelease
+- uid: Semver.UnbrokenSemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: Inclusive(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Inclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.Inclusive(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.Inclusive(SemVersion, SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.Inclusive*
+  name: Inclusive
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Inclusive_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.Inclusive
+  fullName: Semver.UnbrokenSemVersionRange.Inclusive
+  nameWithType: UnbrokenSemVersionRange.Inclusive
+- uid: Semver.UnbrokenSemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: InclusiveOfEnd(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_InclusiveOfEnd_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.InclusiveOfEnd(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.InclusiveOfEnd(SemVersion, SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.InclusiveOfEnd*
+  name: InclusiveOfEnd
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_InclusiveOfEnd_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.InclusiveOfEnd
+  fullName: Semver.UnbrokenSemVersionRange.InclusiveOfEnd
+  nameWithType: UnbrokenSemVersionRange.InclusiveOfEnd
+- uid: Semver.UnbrokenSemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  name: InclusiveOfStart(SemVersion, SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_InclusiveOfStart_Semver_SemVersion_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.InclusiveOfStart(Semver.SemVersion, Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.InclusiveOfStart(SemVersion, SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.InclusiveOfStart*
+  name: InclusiveOfStart
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_InclusiveOfStart_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.InclusiveOfStart
+  fullName: Semver.UnbrokenSemVersionRange.InclusiveOfStart
+  nameWithType: UnbrokenSemVersionRange.InclusiveOfStart
+- uid: Semver.UnbrokenSemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
+  name: LessThan(SemVersion, Boolean)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_LessThan_Semver_SemVersion_System_Boolean_
+  commentId: M:Semver.UnbrokenSemVersionRange.LessThan(Semver.SemVersion,System.Boolean)
+  fullName: Semver.UnbrokenSemVersionRange.LessThan(Semver.SemVersion, System.Boolean)
+  nameWithType: UnbrokenSemVersionRange.LessThan(SemVersion, Boolean)
+- uid: Semver.UnbrokenSemVersionRange.LessThan*
+  name: LessThan
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_LessThan_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.LessThan
+  fullName: Semver.UnbrokenSemVersionRange.LessThan
+  nameWithType: UnbrokenSemVersionRange.LessThan
+- uid: Semver.UnbrokenSemVersionRange.op_Equality(Semver.UnbrokenSemVersionRange,Semver.UnbrokenSemVersionRange)
+  name: Equality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_op_Equality_Semver_UnbrokenSemVersionRange_Semver_UnbrokenSemVersionRange_
+  commentId: M:Semver.UnbrokenSemVersionRange.op_Equality(Semver.UnbrokenSemVersionRange,Semver.UnbrokenSemVersionRange)
+  fullName: Semver.UnbrokenSemVersionRange.Equality(Semver.UnbrokenSemVersionRange, Semver.UnbrokenSemVersionRange)
+  nameWithType: UnbrokenSemVersionRange.Equality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
+- uid: Semver.UnbrokenSemVersionRange.op_Equality*
+  name: Equality
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_op_Equality_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.op_Equality
+  fullName: Semver.UnbrokenSemVersionRange.Equality
+  nameWithType: UnbrokenSemVersionRange.Equality
+- uid: Semver.UnbrokenSemVersionRange.op_Implicit(Semver.UnbrokenSemVersionRange)~System.Predicate{Semver.SemVersion}
+  name: Implicit(UnbrokenSemVersionRange to Predicate<SemVersion>)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_op_Implicit_Semver_UnbrokenSemVersionRange__System_Predicate_Semver_SemVersion_
+  commentId: M:Semver.UnbrokenSemVersionRange.op_Implicit(Semver.UnbrokenSemVersionRange)~System.Predicate{Semver.SemVersion}
+  name.vb: Widening(UnbrokenSemVersionRange to Predicate(Of SemVersion))
+  fullName: Semver.UnbrokenSemVersionRange.Implicit(Semver.UnbrokenSemVersionRange to System.Predicate<Semver.SemVersion>)
+  fullName.vb: Semver.UnbrokenSemVersionRange.Widening(Semver.UnbrokenSemVersionRange to System.Predicate(Of Semver.SemVersion))
+  nameWithType: UnbrokenSemVersionRange.Implicit(UnbrokenSemVersionRange to Predicate<SemVersion>)
+  nameWithType.vb: UnbrokenSemVersionRange.Widening(UnbrokenSemVersionRange to Predicate(Of SemVersion))
+- uid: Semver.UnbrokenSemVersionRange.op_Implicit*
+  name: Implicit
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_op_Implicit_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.op_Implicit
+  name.vb: Widening
+  fullName: Semver.UnbrokenSemVersionRange.Implicit
+  fullName.vb: Semver.UnbrokenSemVersionRange.Widening
+  nameWithType: UnbrokenSemVersionRange.Implicit
+  nameWithType.vb: UnbrokenSemVersionRange.Widening
+- uid: Semver.UnbrokenSemVersionRange.op_Inequality(Semver.UnbrokenSemVersionRange,Semver.UnbrokenSemVersionRange)
+  name: Inequality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_op_Inequality_Semver_UnbrokenSemVersionRange_Semver_UnbrokenSemVersionRange_
+  commentId: M:Semver.UnbrokenSemVersionRange.op_Inequality(Semver.UnbrokenSemVersionRange,Semver.UnbrokenSemVersionRange)
+  fullName: Semver.UnbrokenSemVersionRange.Inequality(Semver.UnbrokenSemVersionRange, Semver.UnbrokenSemVersionRange)
+  nameWithType: UnbrokenSemVersionRange.Inequality(UnbrokenSemVersionRange, UnbrokenSemVersionRange)
+- uid: Semver.UnbrokenSemVersionRange.op_Inequality*
+  name: Inequality
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_op_Inequality_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.op_Inequality
+  fullName: Semver.UnbrokenSemVersionRange.Inequality
+  nameWithType: UnbrokenSemVersionRange.Inequality
+- uid: Semver.UnbrokenSemVersionRange.Start
+  name: Start
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Start
+  commentId: P:Semver.UnbrokenSemVersionRange.Start
+  fullName: Semver.UnbrokenSemVersionRange.Start
+  nameWithType: UnbrokenSemVersionRange.Start
+- uid: Semver.UnbrokenSemVersionRange.Start*
+  name: Start
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_Start_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.Start
+  fullName: Semver.UnbrokenSemVersionRange.Start
+  nameWithType: UnbrokenSemVersionRange.Start
+- uid: Semver.UnbrokenSemVersionRange.StartInclusive
+  name: StartInclusive
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_StartInclusive
+  commentId: P:Semver.UnbrokenSemVersionRange.StartInclusive
+  fullName: Semver.UnbrokenSemVersionRange.StartInclusive
+  nameWithType: UnbrokenSemVersionRange.StartInclusive
+- uid: Semver.UnbrokenSemVersionRange.StartInclusive*
+  name: StartInclusive
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_StartInclusive_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.StartInclusive
+  fullName: Semver.UnbrokenSemVersionRange.StartInclusive
+  nameWithType: UnbrokenSemVersionRange.StartInclusive
+- uid: Semver.UnbrokenSemVersionRange.ToString
+  name: ToString()
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_ToString
+  commentId: M:Semver.UnbrokenSemVersionRange.ToString
+  fullName: Semver.UnbrokenSemVersionRange.ToString()
+  nameWithType: UnbrokenSemVersionRange.ToString()
+- uid: Semver.UnbrokenSemVersionRange.ToString*
+  name: ToString
+  href: v2.3.x/Semver.UnbrokenSemVersionRange.html#Semver_UnbrokenSemVersionRange_ToString_
+  commentId: Overload:Semver.UnbrokenSemVersionRange.ToString
+  fullName: Semver.UnbrokenSemVersionRange.ToString
+  nameWithType: UnbrokenSemVersionRange.ToString

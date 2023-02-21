@@ -2,4 +2,4 @@
 uid: Semver
 summary: *content
 ---
-The core classes for manipulating and parsing semantic versions.
+Classes for manipulating and parsing semantic versions and semantic version ranges.

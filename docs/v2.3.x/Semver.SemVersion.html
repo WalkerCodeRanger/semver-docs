@@ -2220,7 +2220,7 @@ public bool PrecedenceMatches(SemVersion other)</code></pre>
     </tbody>
   </table>
   <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
-  <h4 id="Semver_SemVersion_Satisfies_Semver_Ranges_SemVersionRange_" data-uid="Semver.SemVersion.Satisfies(Semver.Ranges.SemVersionRange)">Satisfies(SemVersionRange)</h4>
+  <h4 id="Semver_SemVersion_Satisfies_Semver_SemVersionRange_" data-uid="Semver.SemVersion.Satisfies(Semver.SemVersionRange)">Satisfies(SemVersionRange)</h4>
   <div class="markdown level1 summary"><p>Checks if this version is contained in the given range.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2239,7 +2239,7 @@ public bool PrecedenceMatches(SemVersion other)</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a></td>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>The range to evaluate.</p>
 </td>
@@ -2281,7 +2281,7 @@ otherwise <span class="xref">false</span>.</p>
     </tbody>
   </table>
   <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
-  <h4 id="Semver_SemVersion_Satisfies_Semver_Ranges_UnbrokenSemVersionRange_" data-uid="Semver.SemVersion.Satisfies(Semver.Ranges.UnbrokenSemVersionRange)">Satisfies(UnbrokenSemVersionRange)</h4>
+  <h4 id="Semver_SemVersion_Satisfies_Semver_UnbrokenSemVersionRange_" data-uid="Semver.SemVersion.Satisfies(Semver.UnbrokenSemVersionRange)">Satisfies(UnbrokenSemVersionRange)</h4>
   <div class="markdown level1 summary"><p>Checks if this version is contained in the given unbroken range.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2300,7 +2300,7 @@ otherwise <span class="xref">false</span>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Semver.Ranges.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a></td>
+        <td><a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a></td>
         <td><span class="parametername">range</span></td>
         <td><p>The unbroken range to evaluate.</p>
 </td>
@@ -2403,7 +2403,7 @@ otherwise <span class="xref">false</span>.</p>
     </tbody>
   </table>
   <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
-  <h4 id="Semver_SemVersion_Satisfies_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32_" data-uid="Semver.SemVersion.Satisfies(System.String,Semver.Ranges.SemVersionRangeOptions,System.Int32)">Satisfies(String, SemVersionRangeOptions, Int32)</h4>
+  <h4 id="Semver_SemVersion_Satisfies_System_String_Semver_SemVersionRangeOptions_System_Int32_" data-uid="Semver.SemVersion.Satisfies(System.String,Semver.SemVersionRangeOptions,System.Int32)">Satisfies(String, SemVersionRangeOptions, Int32)</h4>
   <div class="markdown level1 summary"><p>Checks if this version is contained in the given range.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -2428,11 +2428,11 @@ otherwise <span class="xref">false</span>.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
         <td><span class="parametername">options</span></td>
         <td><p>A bitwise combination of enumeration values that indicates the style
 elements that can be present in <code data-dev-comment-type="paramref" class="paramref">range</code>. The overload without this
-parameter defaults to <a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_Strict">Strict</a>.</p>
+parameter defaults to <a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Strict">Strict</a>.</p>
 </td>
       </tr>
       <tr>
@@ -2461,9 +2461,9 @@ otherwise <span class="xref">false</span>.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="Semver_SemVersion_Satisfies_System_String_Semver_Ranges_SemVersionRangeOptions_System_Int32__remarks">Remarks</h5>
+  <h5 id="Semver_SemVersion_Satisfies_System_String_Semver_SemVersionRangeOptions_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If checks against a range will be performed repeatedly, it is much more
-efficient to parse the range into a <a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a> once and use that
+efficient to parse the range into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> once and use that
 object to repeatedly check for containment.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -2484,7 +2484,7 @@ object to repeatedly check for containment.</p>
       <tr>
         <td><span class="xref">System.ArgumentException</span></td>
         <td><p><code data-dev-comment-type="paramref" class="paramref">options</code> is not a valid
-<a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html">SemVersionRangeOptions</a> value.</p>
+<a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a> value.</p>
 </td>
       </tr>
       <tr>
@@ -2510,7 +2510,7 @@ is too large for an <span class="xref">System.Int32</span>.</p>
   <a id="Semver_SemVersion_Satisfies_" data-uid="Semver.SemVersion.Satisfies*"></a>
   <h4 id="Semver_SemVersion_Satisfies_System_String_System_Int32_" data-uid="Semver.SemVersion.Satisfies(System.String,System.Int32)">Satisfies(String, Int32)</h4>
   <div class="markdown level1 summary"><p>Checks if this version is contained in the given range. The range is parsed using
-<a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_Strict">Strict</a>.</p>
+<a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Strict">Strict</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2561,7 +2561,7 @@ otherwise <span class="xref">false</span>.</p>
   </table>
   <h5 id="Semver_SemVersion_Satisfies_System_String_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If checks against a range will be performed repeatedly, it is much more
-efficient to parse the range into a <a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a> once and use that
+efficient to parse the range into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> once and use that
 object to repeatedly check for containment.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -2588,7 +2588,7 @@ zero.</p>
       <tr>
         <td><span class="xref">System.FormatException</span></td>
         <td><p>The <code data-dev-comment-type="paramref" class="paramref">range</code> is invalid or not in a
-format compliant with <a class="xref" href="Semver.Ranges.SemVersionRangeOptions.html#Semver_Ranges_SemVersionRangeOptions_Strict">Strict</a>.</p>
+format compliant with <a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Strict">Strict</a>.</p>
 </td>
       </tr>
       <tr>
@@ -2660,8 +2660,8 @@ otherwise <span class="xref">false</span>.</p>
   </table>
   <h5 id="Semver_SemVersion_SatisfiesNpm_System_String_System_Boolean_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If checks against a range will be performed repeatedly, it is much more
-efficient to parse the range into a <a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a> once using
-<a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_ParseNpm_System_String_System_Boolean_System_Int32_">ParseNpm(String, Boolean, Int32)</a> and use that object to
+efficient to parse the range into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> once using
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_ParseNpm_System_String_System_Boolean_System_Int32_">ParseNpm(String, Boolean, Int32)</a> and use that object to
 repeatedly check for containment.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -2752,8 +2752,8 @@ otherwise <span class="xref">false</span>.</p>
   </table>
   <h5 id="Semver_SemVersion_SatisfiesNpm_System_String_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If checks against a range will be performed repeatedly, it is much more
-efficient to parse the range into a <a class="xref" href="Semver.Ranges.SemVersionRange.html">SemVersionRange</a> once using
-<a class="xref" href="Semver.Ranges.SemVersionRange.html#Semver_Ranges_SemVersionRange_ParseNpm_System_String_System_Int32_">ParseNpm(String, Int32)</a> and use that object to
+efficient to parse the range into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> once using
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_ParseNpm_System_String_System_Int32_">ParseNpm(String, Int32)</a> and use that object to
 repeatedly check for containment.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
