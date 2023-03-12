@@ -64,6 +64,15 @@ The special wildcard comparison `*-*` matches all versions including prerelease 
 it is combined with another comparison (e.g. `*-* >=1.5.0`), it satisfies the requirement that the
 prerelease version matches some comparison for all prerelease versions.
 
+##### Constructing Prerelease Ranges
+
+When creating version ranges meant to include prerelease versions it is helpful to know and make use
+of the fact that `-0` is the lowest possible prerelease version. Thus a range like `>= 1.2.3-0` will
+include all prerelease versions of version `1.2.3`. This can also be used as the upper bound in a
+range containing all prerelease versions. For example, a range containing all prerelease versions of
+`1.0.0` up through but not including prerelease versions of `2.0.0` would be `*-* >=1.0.0-0
+<2.0.0-0`.
+
 #### Basic Operators
 
 There are five basic operators. Each prefixes a version number to form a comparison to that version.

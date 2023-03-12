@@ -124,6 +124,12 @@ versions <code>1.6.0-rc</code> or <code>1.23.1-alpha</code>.</p>
 <p>The special wildcard comparison <code>*-*</code> matches all versions including prerelease versions. Thus, when
 it is combined with another comparison (e.g. <code>*-* &gt;=1.5.0</code>), it satisfies the requirement that the
 prerelease version matches some comparison for all prerelease versions.</p>
+<h5 id="constructing-prerelease-ranges">Constructing Prerelease Ranges</h5>
+<p>When creating version ranges meant to include prerelease versions it is helpful to know and make use
+of the fact that <code>-0</code> is the lowest possible prerelease version. Thus a range like <code>&gt;= 1.2.3-0</code> will
+include all prerelease versions of version <code>1.2.3</code>. This can also be used as the upper bound in a
+range containing all prerelease versions. For example, a range containing all prerelease versions of
+<code>1.0.0</code> up through but not including prerelease versions of <code>2.0.0</code> would be <code>*-* &gt;=1.0.0-0 &lt;2.0.0-0</code>.</p>
 <h4 id="basic-operators">Basic Operators</h4>
 <p>There are five basic operators. Each prefixes a version number to form a comparison to that version.
 The basic operators are:</p>
