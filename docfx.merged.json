@@ -24,7 +24,8 @@
         "globalMetadata":
         {
             "_disableContribution": false,
-            "_appTitle": "semver"
+            "_appTitle": "semver",
+            "_gitUrlPattern": "github"
         },
         "globalMetadataFiles": [ ],
         "fileMetadataFiles": [],
