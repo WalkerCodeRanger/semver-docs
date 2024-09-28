@@ -23,7 +23,7 @@
         "dest": "build/merged",
         "globalMetadata":
         {
-            "_disableContribution": true,
+            "_disableContribution": false,
             "_appTitle": "semver"
         },
         "globalMetadataFiles": [ ],
