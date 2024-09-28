@@ -45,8 +45,10 @@ Task("metadata")
     .IsDependentOn("build-solution")
     .Does(() =>
 {
+    Information($"Building docfx.v2.3.x.json");
     Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "v2.3.0");
     DocFxMetadata("./docfx.v2.3.x.json");
+    Information($"Building docfx.v3.0.x.json");
     Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "master");
     DocFxMetadata("./docfx.v3.0.x.json");
 });
