@@ -125,6 +125,8 @@ leading zeros are considered equal (e.g. &apos;<code>15</code>&apos; is equal to
 </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
   <a id="Semver_PrereleaseIdentifier__ctor_" data-uid="Semver.PrereleaseIdentifier.#ctor*"></a>
   <h4 id="Semver_PrereleaseIdentifier__ctor_System_Int32_" data-uid="Semver.PrereleaseIdentifier.#ctor(System.Int32)">PrereleaseIdentifier(Int32)</h4>
   <div class="markdown level1 summary"><p>Construct a valid numeric <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a> from an integer value.</p>
@@ -168,6 +170,8 @@ leading zeros are considered equal (e.g. &apos;<code>15</code>&apos; is equal to
       </tr>
     </tbody>
   </table>
+  
+  
   <a id="Semver_PrereleaseIdentifier__ctor_" data-uid="Semver.PrereleaseIdentifier.#ctor*"></a>
   <h4 id="Semver_PrereleaseIdentifier__ctor_System_String_System_Boolean_" data-uid="Semver.PrereleaseIdentifier.#ctor(System.String,System.Boolean)">PrereleaseIdentifier(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Constructs a valid <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a>.</p>
@@ -239,6 +243,8 @@ a numeric identifier when <code data-dev-comment-type="paramref" class="paramref
   </table>
   <h3 id="properties">Properties
   </h3>
+  
+  
   <a id="Semver_PrereleaseIdentifier_NumericValue_" data-uid="Semver.PrereleaseIdentifier.NumericValue*"></a>
   <h4 id="Semver_PrereleaseIdentifier_NumericValue" data-uid="Semver.PrereleaseIdentifier.NumericValue">NumericValue</h4>
   <div class="markdown level1 summary"><p>The numeric value of the prerelease identifier if it is a numeric identifier, otherwise
@@ -269,6 +275,8 @@ otherwise <span class="xref">null</span>.</p>
   <h5 id="Semver_PrereleaseIdentifier_NumericValue_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The numeric value of a prerelease identifier will never be negative.</p>
 </div>
+  
+  
   <a id="Semver_PrereleaseIdentifier_Value_" data-uid="Semver.PrereleaseIdentifier.Value*"></a>
   <h4 id="Semver_PrereleaseIdentifier_Value" data-uid="Semver.PrereleaseIdentifier.Value">Value</h4>
   <div class="markdown level1 summary"><p>The string value of the prerelease identifier even if it is a numeric identifier.</p>
@@ -302,6 +310,8 @@ identifiers with different numbers of leading zeros.</p>
 </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Semver_PrereleaseIdentifier_CompareTo_" data-uid="Semver.PrereleaseIdentifier.CompareTo*"></a>
   <h4 id="Semver_PrereleaseIdentifier_CompareTo_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.CompareTo(Semver.PrereleaseIdentifier)">CompareTo(PrereleaseIdentifier)</h4>
   <div class="markdown level1 summary"><p>Compares two identifiers and indicates whether this instance precedes, follows, or is
@@ -354,6 +364,8 @@ considered equal (e.g. '<code>15</code>' is equal to '<code>015</code>'). Alphan
 compared lexically in ASCII sort order. Invalid alphanumeric identifiers are
 compared via an ordinal string comparision.</p>
 </div>
+  
+  
   <a id="Semver_PrereleaseIdentifier_CompareTo_" data-uid="Semver.PrereleaseIdentifier.CompareTo*"></a>
   <h4 id="Semver_PrereleaseIdentifier_CompareTo_System_Object_" data-uid="Semver.PrereleaseIdentifier.CompareTo(System.Object)">CompareTo(Object)</h4>
   <div class="markdown level1 summary"><p>Compares this identifier to an <span class="xref">System.Object</span> and indicates whether this instance
@@ -423,6 +435,8 @@ compared via an ordinal string comparision.</p>
       </tr>
     </tbody>
   </table>
+  
+  
   <a id="Semver_PrereleaseIdentifier_Equals_" data-uid="Semver.PrereleaseIdentifier.Equals*"></a>
   <h4 id="Semver_PrereleaseIdentifier_Equals_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.Equals(Semver.PrereleaseIdentifier)">Equals(PrereleaseIdentifier)</h4>
   <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
@@ -470,6 +484,8 @@ otherwise <span class="xref">false</span>.</p>
   <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are considered equal (e.g. '<code>15</code>'
 is equal to '<code>015</code>').</p>
 </div>
+  
+  
   <a id="Semver_PrereleaseIdentifier_Equals_" data-uid="Semver.PrereleaseIdentifier.Equals*"></a>
   <h4 id="Semver_PrereleaseIdentifier_Equals_System_Object_" data-uid="Semver.PrereleaseIdentifier.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"><p>Determines whether the given object is equal to this identifier.</p>
@@ -519,6 +535,8 @@ otherwise <span class="xref">false</span>.</p>
   <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are considered equal (e.g. '<code>15</code>'
 is equal to '<code>015</code>').</p>
 </div>
+  
+  
   <a id="Semver_PrereleaseIdentifier_GetHashCode_" data-uid="Semver.PrereleaseIdentifier.GetHashCode*"></a>
   <h4 id="Semver_PrereleaseIdentifier_GetHashCode" data-uid="Semver.PrereleaseIdentifier.GetHashCode">GetHashCode()</h4>
   <div class="markdown level1 summary"><p>Gets a hash code for this identifier.</p>
@@ -550,6 +568,8 @@ is equal to '<code>015</code>').</p>
   <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are have the same hash code (e.g.
 '<code>15</code>' has the same hash code as '<code>015</code>').</p>
 </div>
+  
+  
   <a id="Semver_PrereleaseIdentifier_ToString_" data-uid="Semver.PrereleaseIdentifier.ToString*"></a>
   <h4 id="Semver_PrereleaseIdentifier_ToString" data-uid="Semver.PrereleaseIdentifier.ToString">ToString()</h4>
   <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
@@ -580,6 +600,8 @@ a default <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIden
   <div><span class="xref">System.ValueType.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
+  
+  
   <a id="Semver_PrereleaseIdentifier_op_Equality_" data-uid="Semver.PrereleaseIdentifier.op_Equality*"></a>
   <h4 id="Semver_PrereleaseIdentifier_op_Equality_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_Equality(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">Equality(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
   <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
@@ -632,6 +654,8 @@ the value of <code data-dev-comment-type="paramref" class="paramref">right</code
   <div class="markdown level1 remarks"><p>Numeric identifiers with leading zeros are considered equal (e.g. '<code>15</code>'
 is equal to '<code>015</code>').</p>
 </div>
+  
+  
   <a id="Semver_PrereleaseIdentifier_op_Implicit_" data-uid="Semver.PrereleaseIdentifier.op_Implicit*"></a>
   <h4 id="Semver_PrereleaseIdentifier_op_Implicit_Semver_PrereleaseIdentifier__System_String" data-uid="Semver.PrereleaseIdentifier.op_Implicit(Semver.PrereleaseIdentifier)~System.String">Implicit(PrereleaseIdentifier to String)</h4>
   <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
@@ -675,6 +699,8 @@ a default <a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIden
       </tr>
     </tbody>
   </table>
+  
+  
   <a id="Semver_PrereleaseIdentifier_op_Inequality_" data-uid="Semver.PrereleaseIdentifier.op_Inequality*"></a>
   <h4 id="Semver_PrereleaseIdentifier_op_Inequality_Semver_PrereleaseIdentifier_Semver_PrereleaseIdentifier_" data-uid="Semver.PrereleaseIdentifier.op_Inequality(Semver.PrereleaseIdentifier,Semver.PrereleaseIdentifier)">Inequality(PrereleaseIdentifier, PrereleaseIdentifier)</h4>
   <div class="markdown level1 summary"><p>Determines whether two identifiers are <em>not</em> equal.</p>
@@ -742,6 +768,10 @@ is equal to '<code>015</code>').</p>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>

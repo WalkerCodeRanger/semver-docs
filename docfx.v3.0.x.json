@@ -42,7 +42,7 @@
         "dest": "build/v3.0.x",
         "globalMetadata":
         {
-            "_disableContribution": true,
+            "_disableContribution": false,
             "_appTitle": "semver"
         },
         "globalMetadataFiles": [ ],
