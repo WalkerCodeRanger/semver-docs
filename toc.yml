@@ -1,7 +1,7 @@
 items:
   - name: v3.0.x
     href: v3.0.x/
-    topicHref: v3.0.x/index.md
+    topicHref: v3.0.x/
   - name: v2.3.x
     href: v2.3.x/
-    topicHref: v2.3.x/index.md
+    topicHref: v2.3.x/
