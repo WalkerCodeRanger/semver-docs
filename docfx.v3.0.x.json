@@ -8,7 +8,8 @@
         }],
         "dest": "v3.0.x",
         "force": true,
-        "properties": { "TargetFramework": "net5.0" }
+        "properties": { "TargetFramework": "net5.0" },
+        "shouldSkipMarkup": true
     }],
     "build":
     {

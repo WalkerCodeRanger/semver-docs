@@ -73,12 +73,14 @@
   
   <h1 id="Semver_SemVersionStyles" data-uid="Semver.SemVersionStyles" class="text-break">Enum SemVersionStyles
   </h1>
-  <div class="markdown level0 summary"><p>Determines the styles that are allowed in version strings passed to the
+  <div class="markdown level0 summary">
+<p>Determines the styles that are allowed in version strings passed to the
 <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Parse_System_String_Semver_SemVersionStyles_System_Int32_">Parse(String, SemVersionStyles, Int32)</a> and
 <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_TryParse_System_String_Semver_SemVersionStyles_Semver_SemVersion__System_Int32_">TryParse(String, SemVersionStyles, out SemVersion, Int32)</a>
 methods. These styles only affect which strings are accepted when parsing. The
 constructed version numbers are valid semantic versions without any of the
 optional features in the original string.</p>
+
 <p>This enumeration supports a bitwise combination of its member values (e.g.
 <code>SemVersionStyles.AllowWhitespace | SemVersionStyles.AllowV</code>).</p>
 </div>
@@ -102,61 +104,74 @@ public enum SemVersionStyles</code></pre>
     <tbody>
       <tr>
         <td id="Semver_SemVersionStyles_AllowLeadingWhitespace">AllowLeadingWhitespace</td>
-        <td><p>Allow leading whitespace. When combined with leading &quot;v&quot;, the whitespace
-must come before the &quot;v&quot;.</p>
+        <td>
+Allow leading whitespace. When combined with leading &quot;v&quot;, the whitespace
+must come before the &quot;v&quot;.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_AllowLeadingZeros">AllowLeadingZeros</td>
-        <td><p>Allow leading zeros on major, minor, patch, and prerelease version numbers.</p>
+        <td>
+<p>Allow leading zeros on major, minor, patch, and prerelease version numbers.</p>
+
 <p>Leading zeros will be removed from the constructed version number.</p>
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_AllowLowerV">AllowLowerV</td>
-        <td><p>Allow a leading lowercase &quot;v&quot;.</p>
+        <td>
+Allow a leading lowercase &quot;v&quot;.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_AllowTrailingWhitespace">AllowTrailingWhitespace</td>
-        <td><p>Allow trailing whitespace.</p>
+        <td>
+Allow trailing whitespace.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_AllowUpperV">AllowUpperV</td>
-        <td><p>Allow a leading uppercase &quot;V&quot;.</p>
+        <td>
+Allow a leading uppercase &quot;V&quot;.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_AllowV">AllowV</td>
-        <td><p>Allow a leading &quot;v&quot; or &quot;V&quot;.</p>
+        <td>
+Allow a leading &quot;v&quot; or &quot;V&quot;.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_AllowWhitespace">AllowWhitespace</td>
-        <td><p>Allow leading and/or trailing whitespace. When combined with leading &quot;v&quot;,
-the leading whitespace must come before the &quot;v&quot;.</p>
+        <td>
+Allow leading and/or trailing whitespace. When combined with leading &quot;v&quot;,
+the leading whitespace must come before the &quot;v&quot;.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_Any">Any</td>
-        <td><p>Accept any version string format supported.</p>
+        <td>
+<p>Accept any version string format supported.</p>
+
 <p>The formats accepted by this style will change if/when more formats are supported.</p>
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_OptionalMinorPatch">OptionalMinorPatch</td>
-        <td><p>Minor and patch version numbers are optional.</p>
+        <td>
+Minor and patch version numbers are optional.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_OptionalPatch">OptionalPatch</td>
-        <td><p>Patch version number is optional.</p>
+        <td>
+Patch version number is optional.
 </td>
       </tr>
       <tr>
         <td id="Semver_SemVersionStyles_Strict">Strict</td>
-        <td><p>Accept version strings strictly conforming to the SemVer 2.0 spec.</p>
+        <td>
+Accept version strings strictly conforming to the SemVer 2.0 spec.
 </td>
       </tr>
     </tbody>

@@ -274,53 +274,63 @@ includes prerelease versions with the same major and minor version. (npm issue
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Semver.SemVersion.html">SemVersion</a></h4>
-      <section><p>A semantic version number. Conforms with v2.0.0 of semantic versioning
-(<a href="https://semver.org">semver.org</a>).</p>
+      <section>
+A semantic version number. Conforms with v2.0.0 of semantic versioning
+(<a href="https://semver.org">semver.org</a>).
 </section>
       <h4><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></h4>
-      <section><p>A range of <a class="xref" href="Semver.SemVersion.html">SemVersion</a> values. A range can have gaps in it and may include only
+      <section>
+A range of <a class="xref" href="Semver.SemVersion.html">SemVersion</a> values. A range can have gaps in it and may include only
 some prerelease versions between included release versions. For a range that cannot have
-gaps see the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> class.</p>
+gaps see the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> class.
 </section>
       <h4><a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a></h4>
-      <section><p>A range of <a class="xref" href="Semver.SemVersion.html">SemVersion</a> values with no gaps. The more general and flexible range
+      <section>
+A range of <a class="xref" href="Semver.SemVersion.html">SemVersion</a> values with no gaps. The more general and flexible range
 class <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> is typically used instead. It combines multiple
 <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s. <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> can be used
-directly if it is important to reflect that something must be a range with no gaps in it.</p>
+directly if it is important to reflect that something must be a range with no gaps in it.
 </section>
     <h3 id="structs">Structs
   </h3>
       <h4><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></h4>
-      <section><p>An individual metadata identifier for a semantic version.</p>
+      <section>
+An individual metadata identifier for a semantic version.
 </section>
       <h4><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></h4>
-      <section><p>An individual prerelease identifier for a semantic version.</p>
+      <section>
+An individual prerelease identifier for a semantic version.
 </section>
     <h3 id="enums">Enums
   </h3>
       <h4><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></h4>
-      <section><p>Determines the parsing options and allowed styles of range and version strings passed
+      <section>
+<p>Determines the parsing options and allowed styles of range and version strings passed
 to the <a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> and
 <a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a>
 methods. These styles only affect which strings are accepted when parsing. The
 constructed ranges and version numbers are valid semantic version ranges without any of the
 optional features in the original string.</p>
+
 <p>Most options only allow additional version styles. However, the
 <a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option modifies how version ranges are interpreted. With
 this option, all prerelease versions within the range bounds will be considered to be in the
 range. Without this option, only prerelease versions where one comparison with the same
 major, minor, and patch versions is prerelease will satisfy the range. For more information,
 see the <a href="https://semver-nuget.org/ranges/">range expressions documentation</a>.</p>
+
 <p>This enumeration supports a bitwise combination of its member values (e.g.
 <code>SemVersionRangeOptions.OptionalPatch | SemVersionRangeOptions.AllowV</code>).</p>
 </section>
       <h4><a class="xref" href="Semver.SemVersionStyles.html">SemVersionStyles</a></h4>
-      <section><p>Determines the styles that are allowed in version strings passed to the
+      <section>
+<p>Determines the styles that are allowed in version strings passed to the
 <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Parse_System_String_Semver_SemVersionStyles_System_Int32_">Parse(String, SemVersionStyles, Int32)</a> and
 <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_TryParse_System_String_Semver_SemVersionStyles_Semver_SemVersion__System_Int32_">TryParse(String, SemVersionStyles, out SemVersion, Int32)</a>
 methods. These styles only affect which strings are accepted when parsing. The
 constructed version numbers are valid semantic versions without any of the
 optional features in the original string.</p>
+
 <p>This enumeration supports a bitwise combination of its member values (e.g.
 <code>SemVersionStyles.AllowWhitespace | SemVersionStyles.AllowV</code>).</p>
 </section>

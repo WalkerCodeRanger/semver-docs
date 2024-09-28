@@ -73,12 +73,14 @@
   
   <h1 id="Semver_SemVersionStyles" data-uid="Semver.SemVersionStyles" class="text-break">Class SemVersionStyles
   </h1>
-  <div class="markdown level0 summary"><p>Determines the styles that are allowed in version strings passed to the
+  <div class="markdown level0 summary">
+<p>Determines the styles that are allowed in version strings passed to the
 <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Parse_System_String_Semver_SemVersionStyles_System_Int32_">Parse(String, SemVersionStyles, Int32)</a> and
 <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_TryParse_System_String_Semver_SemVersionStyles_Semver_SemVersion__System_Int32_">TryParse(String, SemVersionStyles, out SemVersion, Int32)</a>
 methods. These styles only affect which strings are accepted when parsing. The
 constructed version numbers are valid semantic versions without any of the
 optional features in the original string.</p>
+
 <p>This enumeration supports a bitwise combination of its member values (e.g.
 <code>SemVersionStyles.AllowWhitespace | SemVersionStyles.AllowV</code>).</p>
 </div>
@@ -99,8 +101,9 @@ optional features in the original string.</p>
   
   
   <h4 id="Semver_SemVersionStyles_AllowLeadingWhitespace" data-uid="Semver.SemVersionStyles.AllowLeadingWhitespace">AllowLeadingWhitespace</h4>
-  <div class="markdown level1 summary"><p>Allow leading whitespace. When combined with leading &quot;v&quot;, the whitespace
-must come before the &quot;v&quot;.</p>
+  <div class="markdown level1 summary">
+Allow leading whitespace. When combined with leading &quot;v&quot;, the whitespace
+must come before the &quot;v&quot;.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -125,7 +128,9 @@ must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_AllowLeadingZeros" data-uid="Semver.SemVersionStyles.AllowLeadingZeros">AllowLeadingZeros</h4>
-  <div class="markdown level1 summary"><p>Allow leading zeros on major, minor, patch, and prerelease version numbers.</p>
+  <div class="markdown level1 summary">
+<p>Allow leading zeros on major, minor, patch, and prerelease version numbers.</p>
+
 <p>Leading zeros will be removed from the constructed version number.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -151,7 +156,8 @@ must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_AllowLowerV" data-uid="Semver.SemVersionStyles.AllowLowerV">AllowLowerV</h4>
-  <div class="markdown level1 summary"><p>Allow a leading lowercase &quot;v&quot;.</p>
+  <div class="markdown level1 summary">
+Allow a leading lowercase &quot;v&quot;.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -176,7 +182,8 @@ must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_AllowTrailingWhitespace" data-uid="Semver.SemVersionStyles.AllowTrailingWhitespace">AllowTrailingWhitespace</h4>
-  <div class="markdown level1 summary"><p>Allow trailing whitespace.</p>
+  <div class="markdown level1 summary">
+Allow trailing whitespace.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -201,7 +208,8 @@ must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_AllowUpperV" data-uid="Semver.SemVersionStyles.AllowUpperV">AllowUpperV</h4>
-  <div class="markdown level1 summary"><p>Allow a leading uppercase &quot;V&quot;.</p>
+  <div class="markdown level1 summary">
+Allow a leading uppercase &quot;V&quot;.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -226,7 +234,8 @@ must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_AllowV" data-uid="Semver.SemVersionStyles.AllowV">AllowV</h4>
-  <div class="markdown level1 summary"><p>Allow a leading &quot;v&quot; or &quot;V&quot;.</p>
+  <div class="markdown level1 summary">
+Allow a leading &quot;v&quot; or &quot;V&quot;.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -251,8 +260,9 @@ must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_AllowWhitespace" data-uid="Semver.SemVersionStyles.AllowWhitespace">AllowWhitespace</h4>
-  <div class="markdown level1 summary"><p>Allow leading and/or trailing whitespace. When combined with leading &quot;v&quot;,
-the leading whitespace must come before the &quot;v&quot;.</p>
+  <div class="markdown level1 summary">
+Allow leading and/or trailing whitespace. When combined with leading &quot;v&quot;,
+the leading whitespace must come before the &quot;v&quot;.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -277,7 +287,9 @@ the leading whitespace must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_Any" data-uid="Semver.SemVersionStyles.Any">Any</h4>
-  <div class="markdown level1 summary"><p>Accept any version string format supported.</p>
+  <div class="markdown level1 summary">
+<p>Accept any version string format supported.</p>
+
 <p>The formats accepted by this style will change if/when more formats are supported.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -303,7 +315,8 @@ the leading whitespace must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_OptionalMinorPatch" data-uid="Semver.SemVersionStyles.OptionalMinorPatch">OptionalMinorPatch</h4>
-  <div class="markdown level1 summary"><p>Minor and patch version numbers are optional.</p>
+  <div class="markdown level1 summary">
+Minor and patch version numbers are optional.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -328,7 +341,8 @@ the leading whitespace must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_OptionalPatch" data-uid="Semver.SemVersionStyles.OptionalPatch">OptionalPatch</h4>
-  <div class="markdown level1 summary"><p>Patch version number is optional.</p>
+  <div class="markdown level1 summary">
+Patch version number is optional.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -353,7 +367,8 @@ the leading whitespace must come before the &quot;v&quot;.</p>
   
   
   <h4 id="Semver_SemVersionStyles_Strict" data-uid="Semver.SemVersionStyles.Strict">Strict</h4>
-  <div class="markdown level1 summary"><p>Accept version strings strictly conforming to the SemVer 2.0 spec.</p>
+  <div class="markdown level1 summary">
+Accept version strings strictly conforming to the SemVer 2.0 spec.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

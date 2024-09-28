@@ -73,7 +73,8 @@
   
   <h1 id="Semver_MetadataIdentifier" data-uid="Semver.MetadataIdentifier" class="text-break">Struct MetadataIdentifier
   </h1>
-  <div class="markdown level0 summary"><p>An individual metadata identifier for a semantic version.</p>
+  <div class="markdown level0 summary">
+An individual metadata identifier for a semantic version.
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="implements">
@@ -101,13 +102,16 @@
     <pre><code class="lang-csharp hljs">public readonly struct MetadataIdentifier : IEquatable&lt;MetadataIdentifier&gt;, IComparable&lt;MetadataIdentifier&gt;, IComparable</code></pre>
   </div>
   <h5 id="Semver_MetadataIdentifier_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>The metadata for a semantic version is composed of dot (&apos;<code>.</code>&apos;) separated identifiers.
+  <div class="markdown level0 remarks">
+<p>The metadata for a semantic version is composed of dot (&apos;<code>.</code>&apos;) separated identifiers.
 A valid identifier is a non-empty string of ASCII alphanumeric and hyphen characters
 (<code>[0-9A-Za-z-]</code>). Metadata identifiers are compared lexically in ASCII sort order.</p>
+
 <p>Because <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a> is a struct, the default value is a
 <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a> with a <span class="xref">null</span> value. However, the
 <a class="xref" href="Semver.html">Semver</a> namespace types do not accept and will not return such a
 <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
+
 <p>Invalid metadata identifiers including arbitrary Unicode characters and empty string can
 currently be produced by the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion__ctor_System_Int32_System_Int32_System_Int32_System_String_System_String_">SemVersion(Int32, Int32, Int32, String, String)</a>
 constructor. Such identifiers are compared via an ordinal string comparision.</p>
@@ -118,7 +122,8 @@ constructor. Such identifiers are compared via an ordinal string comparision.</p
   
   <a id="Semver_MetadataIdentifier__ctor_" data-uid="Semver.MetadataIdentifier.#ctor*"></a>
   <h4 id="Semver_MetadataIdentifier__ctor_System_String_" data-uid="Semver.MetadataIdentifier.#ctor(System.String)">MetadataIdentifier(String)</h4>
-  <div class="markdown level1 summary"><p>Constructs a valid <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
+  <div class="markdown level1 summary">
+Constructs a valid <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -153,14 +158,12 @@ constructor. Such identifiers are compared via an ordinal string comparision.</p
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> is <span class="xref">null</span>.</p>
-</td>
+        <td>The <code data-dev-comment-type="paramref" class="paramref">value</code> is <span class="xref">null</span>.</td>
       </tr>
       <tr>
         <td><span class="xref">System.ArgumentException</span></td>
-        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> is empty or contains invalid characters
-(i.e. characters that are not ASCII alphanumerics or hyphens).</p>
-</td>
+        <td>The <code data-dev-comment-type="paramref" class="paramref">value</code> is empty or contains invalid characters
+(i.e. characters that are not ASCII alphanumerics or hyphens).</td>
       </tr>
     </tbody>
   </table>
@@ -170,7 +173,8 @@ constructor. Such identifiers are compared via an ordinal string comparision.</p
   
   <a id="Semver_MetadataIdentifier_Value_" data-uid="Semver.MetadataIdentifier.Value*"></a>
   <h4 id="Semver_MetadataIdentifier_Value" data-uid="Semver.MetadataIdentifier.Value">Value</h4>
-  <div class="markdown level1 summary"><p>The string value of the metadata identifier.</p>
+  <div class="markdown level1 summary">
+The string value of the metadata identifier.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -188,9 +192,8 @@ constructor. Such identifiers are compared via an ordinal string comparision.</p
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The string value of this metadata identifier or <span class="xref">null</span> if this is
-a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
-</td>
+        <td>The string value of this metadata identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -200,8 +203,9 @@ a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifi
   
   <a id="Semver_MetadataIdentifier_CompareTo_" data-uid="Semver.MetadataIdentifier.CompareTo*"></a>
   <h4 id="Semver_MetadataIdentifier_CompareTo_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.CompareTo(Semver.MetadataIdentifier)">CompareTo(MetadataIdentifier)</h4>
-  <div class="markdown level1 summary"><p>Compares two identifiers and indicates whether this instance precedes, follows, or is
-equal to the other in sort order.</p>
+  <div class="markdown level1 summary">
+Compares two identifiers and indicates whether this instance precedes, follows, or is
+equal to the other in sort order.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -236,23 +240,24 @@ equal to the other in sort order.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><p>An integer that indicates whether this instance precedes, follows, or is equal to
-<code data-dev-comment-type="paramref" class="paramref">value</code> in sort order.</p>
+        <td>
+An integer that indicates whether this instance precedes, follows, or is equal to
+<code data-dev-comment-type="paramref" class="paramref">value</code> in sort order.
 <table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>0</td><td>This instance is equal to <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>1</td><td>This instance follows <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr></tbody></table>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Semver_MetadataIdentifier_CompareTo_Semver_MetadataIdentifier__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Identifiers are compared lexically in ASCII sort order. Invalid identifiers are
-compared via an ordinal string comparision.</p>
-</div>
+  <div class="markdown level1 remarks">Identifiers are compared lexically in ASCII sort order. Invalid identifiers are
+compared via an ordinal string comparision.</div>
   
   
   <a id="Semver_MetadataIdentifier_CompareTo_" data-uid="Semver.MetadataIdentifier.CompareTo*"></a>
   <h4 id="Semver_MetadataIdentifier_CompareTo_System_Object_" data-uid="Semver.MetadataIdentifier.CompareTo(System.Object)">CompareTo(Object)</h4>
-  <div class="markdown level1 summary"><p>Compares this identifier to an <span class="xref">System.Object</span> and indicates whether this instance
-precedes, follows, or is equal to the object in sort order.</p>
+  <div class="markdown level1 summary">
+Compares this identifier to an <span class="xref">System.Object</span> and indicates whether this instance
+precedes, follows, or is equal to the object in sort order.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -287,8 +292,9 @@ precedes, follows, or is equal to the object in sort order.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><p>An integer that indicates whether this instance precedes, follows, or is equal to
-<code data-dev-comment-type="paramref" class="paramref">value</code> in sort order.</p>
+        <td>
+An integer that indicates whether this instance precedes, follows, or is equal to
+<code data-dev-comment-type="paramref" class="paramref">value</code> in sort order.
 <table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>0</td><td>This instance is equal to <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>1</td><td>This instance follows <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">value</code>
                         is <span class="xref">null</span>.</td></tr></tbody></table>
 </td>
@@ -296,9 +302,8 @@ precedes, follows, or is equal to the object in sort order.</p>
     </tbody>
   </table>
   <h5 id="Semver_MetadataIdentifier_CompareTo_System_Object__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Identifiers are compared lexically in ASCII sort order. Invalid identifiers are
-compared via an ordinal string comparision.</p>
-</div>
+  <div class="markdown level1 remarks">Identifiers are compared lexically in ASCII sort order. Invalid identifiers are
+compared via an ordinal string comparision.</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -310,8 +315,7 @@ compared via an ordinal string comparision.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.ArgumentException</span></td>
-        <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is not a <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
-</td>
+        <td><code data-dev-comment-type="paramref" class="paramref">value</code> is not a <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -319,7 +323,8 @@ compared via an ordinal string comparision.</p>
   
   <a id="Semver_MetadataIdentifier_Equals_" data-uid="Semver.MetadataIdentifier.Equals*"></a>
   <h4 id="Semver_MetadataIdentifier_Equals_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.Equals(Semver.MetadataIdentifier)">Equals(MetadataIdentifier)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
+  <div class="markdown level1 summary">
+Determines whether two identifiers are equal.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -354,9 +359,8 @@ compared via an ordinal string comparision.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to the this identifier;
-otherwise <span class="xref">false</span>.</p>
-</td>
+        <td><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to the this identifier;
+            otherwise <span class="xref">false</span>.</td>
       </tr>
     </tbody>
   </table>
@@ -364,8 +368,7 @@ otherwise <span class="xref">false</span>.</p>
   
   <a id="Semver_MetadataIdentifier_Equals_" data-uid="Semver.MetadataIdentifier.Equals*"></a>
   <h4 id="Semver_MetadataIdentifier_Equals_System_Object_" data-uid="Semver.MetadataIdentifier.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"><p>Determines whether the given object is equal to this identifier.</p>
-</div>
+  <div class="markdown level1 summary">Determines whether the given object is equal to this identifier.</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -399,9 +402,8 @@ otherwise <span class="xref">false</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to the this identifier;
-otherwise <span class="xref">false</span>.</p>
-</td>
+        <td><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to the this identifier;
+            otherwise <span class="xref">false</span>.</td>
       </tr>
     </tbody>
   </table>
@@ -411,8 +413,7 @@ otherwise <span class="xref">false</span>.</p>
   
   <a id="Semver_MetadataIdentifier_GetHashCode_" data-uid="Semver.MetadataIdentifier.GetHashCode*"></a>
   <h4 id="Semver_MetadataIdentifier_GetHashCode" data-uid="Semver.MetadataIdentifier.GetHashCode">GetHashCode()</h4>
-  <div class="markdown level1 summary"><p>Gets a hash code for this identifier.</p>
-</div>
+  <div class="markdown level1 summary">Gets a hash code for this identifier.</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -429,8 +430,7 @@ otherwise <span class="xref">false</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><p>A hash code for this identifier.</p>
-</td>
+        <td>A hash code for this identifier.</td>
       </tr>
     </tbody>
   </table>
@@ -440,7 +440,8 @@ otherwise <span class="xref">false</span>.</p>
   
   <a id="Semver_MetadataIdentifier_ToString_" data-uid="Semver.MetadataIdentifier.ToString*"></a>
   <h4 id="Semver_MetadataIdentifier_ToString" data-uid="Semver.MetadataIdentifier.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
+  <div class="markdown level1 summary">
+Converts this identifier into an equivalent string value.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -458,9 +459,8 @@ otherwise <span class="xref">false</span>.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The string value of this identifier or <span class="xref">null</span> if this is
-a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></p>
-</td>
+        <td>The string value of this identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
       </tr>
     </tbody>
   </table>
@@ -472,7 +472,8 @@ a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifi
   
   <a id="Semver_MetadataIdentifier_op_Equality_" data-uid="Semver.MetadataIdentifier.op_Equality*"></a>
   <h4 id="Semver_MetadataIdentifier_op_Equality_Semver_MetadataIdentifier_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.op_Equality(Semver.MetadataIdentifier,Semver.MetadataIdentifier)">Equality(MetadataIdentifier, MetadataIdentifier)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
+  <div class="markdown level1 summary">
+Determines whether two identifiers are equal.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -512,9 +513,8 @@ a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifi
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is the same as
-the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</p>
-</td>
+        <td><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is the same as
+            the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</td>
       </tr>
     </tbody>
   </table>
@@ -522,7 +522,8 @@ the value of <code data-dev-comment-type="paramref" class="paramref">right</code
   
   <a id="Semver_MetadataIdentifier_op_Implicit_" data-uid="Semver.MetadataIdentifier.op_Implicit*"></a>
   <h4 id="Semver_MetadataIdentifier_op_Implicit_Semver_MetadataIdentifier__System_String" data-uid="Semver.MetadataIdentifier.op_Implicit(Semver.MetadataIdentifier)~System.String">Implicit(MetadataIdentifier to String)</h4>
-  <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
+  <div class="markdown level1 summary">
+Converts this identifier into an equivalent string value.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -557,9 +558,8 @@ the value of <code data-dev-comment-type="paramref" class="paramref">right</code
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The string value of this identifier or <span class="xref">null</span> if this is
-a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
-</td>
+        <td>The string value of this identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</td>
       </tr>
     </tbody>
   </table>
@@ -567,7 +567,8 @@ a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifi
   
   <a id="Semver_MetadataIdentifier_op_Inequality_" data-uid="Semver.MetadataIdentifier.op_Inequality*"></a>
   <h4 id="Semver_MetadataIdentifier_op_Inequality_Semver_MetadataIdentifier_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.op_Inequality(Semver.MetadataIdentifier,Semver.MetadataIdentifier)">Inequality(MetadataIdentifier, MetadataIdentifier)</h4>
-  <div class="markdown level1 summary"><p>Determines whether two identifiers are <em>not</em> equal.</p>
+  <div class="markdown level1 summary">
+Determines whether two identifiers are <em>not</em> equal.
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -607,9 +608,8 @@ a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifi
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is different
-from the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</p>
-</td>
+        <td><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is different
+            from the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</td>
       </tr>
     </tbody>
   </table>

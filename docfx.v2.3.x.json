@@ -8,7 +8,8 @@
         }],
         "dest": "v2.3.x",
         "force": true,
-        "properties": { "TargetFramework": "net452" }
+        "properties": { "TargetFramework": "net452" },
+        "shouldSkipMarkup": true
     }],
     "build":
     {

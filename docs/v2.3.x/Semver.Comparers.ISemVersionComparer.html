@@ -73,8 +73,9 @@
   
   <h1 id="Semver_Comparers_ISemVersionComparer" data-uid="Semver.Comparers.ISemVersionComparer" class="text-break">Interface ISemVersionComparer
   </h1>
-  <div class="markdown level0 summary"><p>An interface that combines equality and order comparison for the <a class="xref" href="Semver.SemVersion.html">SemVersion</a>
-class.</p>
+  <div class="markdown level0 summary">
+An interface that combines equality and order comparison for the <a class="xref" href="Semver.SemVersion.html">SemVersion</a>
+class.
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -99,9 +100,10 @@ class.</p>
     <pre><code class="lang-csharp hljs">public interface ISemVersionComparer : IEqualityComparer&lt;SemVersion&gt;, IComparer&lt;SemVersion&gt;, IComparer</code></pre>
   </div>
   <h5 id="Semver_Comparers_ISemVersionComparer_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This interface provides a type for the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_PrecedenceComparer">PrecedenceComparer</a> and
-<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_SortOrderComparer">SortOrderComparer</a> so that separate properties aren't needed for the
-<span class="xref">System.Collections.Generic.IEqualityComparer&lt;T&gt;</span> and <span class="xref">System.Collections.Generic.IComparer&lt;T&gt;</span> of <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+  <div class="markdown level0 remarks">
+This interface provides a type for the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_PrecedenceComparer">PrecedenceComparer</a> and
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_SortOrderComparer">SortOrderComparer</a> so that separate properties aren&apos;t needed for the
+<span class="xref">System.Collections.Generic.IEqualityComparer&lt;T&gt;</span> and <span class="xref">System.Collections.Generic.IComparer&lt;T&gt;</span> of <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.
 </div>
 </article>
           </div>
