@@ -7,5 +7,5 @@ versioning spec from [semver.org](http://semver.org).
 * [v3.0.x API Docs](v3.0.x/index.md)
 * [v2.3.x API Docs](v2.3.x/index.md)
 * [`semver` NuGet Package](https://www.nuget.org/packages/semver)
-* [GitHub Project](https://github.com/maxhauser/semver)
+* [GitHub Project](https://github.com/WalkerCodeRanger/semver)
 * [Source Code for Doc Website](https://github.com/WalkerCodeRanger/semver-docs)
