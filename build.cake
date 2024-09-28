@@ -58,6 +58,8 @@ Task("build")
     // Even force build doesn't properly clean up old files
     CleanDirectories("./build");
     CleanDirectories("./docs");
+
+    // Build all the individual versions and a "merged" version for root pages
     Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "master");
     Information($"Building docfx.v2.3.x.json");
     DocFxBuild("./docfx.v2.3.x.json", new DocFxBuildSettings() { Force = true, });
@@ -66,11 +68,14 @@ Task("build")
     Information($"Building docfx.merged.json");
     DocFxBuild("./docfx.merged.json", new DocFxBuildSettings() { Force = true, });
 
+    // Merge the various versions
     CopyDirectory("build/merged", "docs");
     CleanDirectories("./docs/v2.3.x");
     CleanDirectories("./docs/v3.0.x");
     CopyDirectory("build/v2.3.x/v2.3.x", "docs/v2.3.x");
     CopyDirectory("build/v3.0.x/v3.0.x", "docs/v3.0.x");
+
+    // These files aren't needed and are incorrect due to the merging process
     DeleteFile("docs/xrefmap.yml");
     DeleteFile("docs/manifest.json");
 });
