@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MetadataIdentifier
+   | semver </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MetadataIdentifier
+   | semver ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semver.MetadataIdentifier">
+  
+  
+  <h1 id="Semver_MetadataIdentifier" data-uid="Semver.MetadataIdentifier" class="text-break">Class MetadataIdentifier
+  </h1>
+  <div class="markdown level0 summary"><p>An individual metadata identifier for a semantic version.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">MetadataIdentifier</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semver.html">Semver</a></h6>
+  <h6><strong>Assembly</strong>: Semver.dll</h6>
+  <h5 id="Semver_MetadataIdentifier_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class MetadataIdentifier : ValueType</code></pre>
+  </div>
+  <h5 id="Semver_MetadataIdentifier_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The metadata for a semantic version is composed of dot (&apos;<code>.</code>&apos;) separated identifiers.
+A valid identifier is a non-empty string of ASCII alphanumeric and hyphen characters
+(<code>[0-9A-Za-z-]</code>). Metadata identifiers are compared lexically in ASCII sort order.</p>
+<p>Because <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a> is a struct, the default value is a
+<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a> with a <span class="xref">null</span> value. However, the
+<a class="xref" href="Semver.html">Semver</a> namespace types do not accept and will not return such a
+<a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Semver_MetadataIdentifier__ctor_" data-uid="Semver.MetadataIdentifier.#ctor*"></a>
+  <h4 id="Semver_MetadataIdentifier__ctor_System_String_" data-uid="Semver.MetadataIdentifier.#ctor(System.String)">MetadataIdentifier(String)</h4>
+  <div class="markdown level1 summary"><p>Constructs a valid <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MetadataIdentifier(string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">value</code> is empty or contains invalid characters
+(i.e. characters that are not ASCII alphanumerics or hyphens).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Semver_MetadataIdentifier_Value_" data-uid="Semver.MetadataIdentifier.Value*"></a>
+  <h4 id="Semver_MetadataIdentifier_Value" data-uid="Semver.MetadataIdentifier.Value">Value</h4>
+  <div class="markdown level1 summary"><p>The string value of the metadata identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string value of this metadata identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Semver_MetadataIdentifier_CompareTo_" data-uid="Semver.MetadataIdentifier.CompareTo*"></a>
+  <h4 id="Semver_MetadataIdentifier_CompareTo_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.CompareTo(Semver.MetadataIdentifier)">CompareTo(MetadataIdentifier)</h4>
+  <div class="markdown level1 summary"><p>Compares two identifiers and indicates whether this instance precedes, follows, or is
+equal to the other in sort order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(MetadataIdentifier value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>An integer that indicates whether this instance precedes, follows, or is equal to
+<code data-dev-comment-type="paramref" class="paramref">value</code> in sort order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>0</td><td>This instance is equal to <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>1</td><td>This instance follows <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr></tbody></table>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_MetadataIdentifier_CompareTo_Semver_MetadataIdentifier__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Identifiers are compared lexically in ASCII sort order. Invalid identifiers are
+compared via an ordinal string comparison.</p>
+</div>
+  <a id="Semver_MetadataIdentifier_CompareTo_" data-uid="Semver.MetadataIdentifier.CompareTo*"></a>
+  <h4 id="Semver_MetadataIdentifier_CompareTo_System_Object_" data-uid="Semver.MetadataIdentifier.CompareTo(System.Object)">CompareTo(Object)</h4>
+  <div class="markdown level1 summary"><p>Compares this identifier to an <span class="xref">System.Object</span> and indicates whether this instance
+precedes, follows, or is equal to the object in sort order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>An integer that indicates whether this instance precedes, follows, or is equal to
+<code data-dev-comment-type="paramref" class="paramref">value</code> in sort order.</p>
+<table><thead><tr><th>Value</th><th>Condition</th></tr></thead><tbody><tr><td>-1</td><td>This instance precedes <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>0</td><td>This instance is equal to <code data-dev-comment-type="paramref" class="paramref">value</code>.</td></tr><tr><td>1</td><td>This instance follows <code data-dev-comment-type="paramref" class="paramref">value</code> or <code data-dev-comment-type="paramref" class="paramref">value</code>
+                        is <span class="xref">null</span>.</td></tr></tbody></table>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_MetadataIdentifier_CompareTo_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Identifiers are compared lexically in ASCII sort order. Invalid identifiers are
+compared via an ordinal string comparison.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is not a <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_MetadataIdentifier_Equals_" data-uid="Semver.MetadataIdentifier.Equals*"></a>
+  <h4 id="Semver_MetadataIdentifier_Equals_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.Equals(Semver.MetadataIdentifier)">Equals(MetadataIdentifier)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(MetadataIdentifier value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to this identifier;
+otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_MetadataIdentifier_Equals_" data-uid="Semver.MetadataIdentifier.Equals*"></a>
+  <h4 id="Semver_MetadataIdentifier_Equals_System_Object_" data-uid="Semver.MetadataIdentifier.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the given object is equal to this identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">value</code> is equal to this identifier;
+otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_MetadataIdentifier_GetHashCode_" data-uid="Semver.MetadataIdentifier.GetHashCode*"></a>
+  <h4 id="Semver_MetadataIdentifier_GetHashCode" data-uid="Semver.MetadataIdentifier.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets a hash code for this identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A hash code for this identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_MetadataIdentifier_ToString_" data-uid="Semver.MetadataIdentifier.ToString*"></a>
+  <h4 id="Semver_MetadataIdentifier_ToString" data-uid="Semver.MetadataIdentifier.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string value of this identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="Semver_MetadataIdentifier_op_Equality_" data-uid="Semver.MetadataIdentifier.op_Equality*"></a>
+  <h4 id="Semver_MetadataIdentifier_op_Equality_Semver_MetadataIdentifier_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.op_Equality(Semver.MetadataIdentifier,Semver.MetadataIdentifier)">Equality(MetadataIdentifier, MetadataIdentifier)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two identifiers are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(MetadataIdentifier left, MetadataIdentifier right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is the same as
+the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_MetadataIdentifier_op_Implicit_" data-uid="Semver.MetadataIdentifier.op_Implicit*"></a>
+  <h4 id="Semver_MetadataIdentifier_op_Implicit_Semver_MetadataIdentifier__System_String" data-uid="Semver.MetadataIdentifier.op_Implicit(Semver.MetadataIdentifier)~System.String">Implicit(MetadataIdentifier to String)</h4>
+  <div class="markdown level1 summary"><p>Converts this identifier into an equivalent string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string (MetadataIdentifier metadataIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">metadataIdentifier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string value of this identifier or <span class="xref">null</span> if this is
+a default <a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_MetadataIdentifier_op_Inequality_" data-uid="Semver.MetadataIdentifier.op_Inequality*"></a>
+  <h4 id="Semver_MetadataIdentifier_op_Inequality_Semver_MetadataIdentifier_Semver_MetadataIdentifier_" data-uid="Semver.MetadataIdentifier.op_Inequality(Semver.MetadataIdentifier,Semver.MetadataIdentifier)">Inequality(MetadataIdentifier, MetadataIdentifier)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two identifiers are <em>not</em> equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(MetadataIdentifier left, MetadataIdentifier right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the value of <code data-dev-comment-type="paramref" class="paramref">left</code> is different
+from the value of <code data-dev-comment-type="paramref" class="paramref">right</code>; otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable&lt;&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

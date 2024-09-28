@@ -1,0 +1,393 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SemVersionRangeOptions
+   | semver </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SemVersionRangeOptions
+   | semver ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semver.SemVersionRangeOptions">
+  
+  
+  <h1 id="Semver_SemVersionRangeOptions" data-uid="Semver.SemVersionRangeOptions" class="text-break">Class SemVersionRangeOptions
+  </h1>
+  <div class="markdown level0 summary"><p>Determines the parsing options and allowed styles of range and version strings passed
+to the <a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> and
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a>
+methods. These styles only affect which strings are accepted when parsing. The
+constructed ranges and version numbers are valid semantic version ranges without any of the
+optional features in the original string.</p>
+<p>Most options only allow additional version styles. However, the
+<a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option modifies how version ranges are interpreted. With
+this option, all prerelease versions within the range bounds will be considered to be in the
+range. Without this option, only prerelease versions where one comparison with the same
+major, minor, and patch versions is prerelease will satisfy the range. For more information,
+see the <a href="https://semver-nuget.org/ranges/">range expressions documentation</a>.</p>
+<p>This enumeration supports a bitwise combination of its member values (e.g.
+<code>SemVersionRangeOptions.OptionalPatch | SemVersionRangeOptions.AllowV</code>).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SemVersionRangeOptions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semver.html">Semver</a></h6>
+  <h6><strong>Assembly</strong>: Semver.dll</h6>
+  <h5 id="Semver_SemVersionRangeOptions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SemVersionRangeOptions : Enum</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Semver_SemVersionRangeOptions_AllowLeadingZeros" data-uid="Semver.SemVersionRangeOptions.AllowLeadingZeros">AllowLeadingZeros</h4>
+  <div class="markdown level1 summary"><p>Allow leading zeros on major, minor, patch, and prerelease version numbers.</p>
+<p>Leading zeros will be removed from the constructed version number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions AllowLeadingZeros</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_AllowLowerV" data-uid="Semver.SemVersionRangeOptions.AllowLowerV">AllowLowerV</h4>
+  <div class="markdown level1 summary"><p>Allow a leading lowercase &quot;v&quot; on versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions AllowLowerV</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_AllowMetadata" data-uid="Semver.SemVersionRangeOptions.AllowMetadata">AllowMetadata</h4>
+  <div class="markdown level1 summary"><p>Allow version numbers with build metadata in version range expressions. The metadata
+will be removed/ignored for the definition of the version range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions AllowMetadata</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_AllowUpperV" data-uid="Semver.SemVersionRangeOptions.AllowUpperV">AllowUpperV</h4>
+  <div class="markdown level1 summary"><p>Allow a leading uppercase &quot;V&quot; on versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions AllowUpperV</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_AllowV" data-uid="Semver.SemVersionRangeOptions.AllowV">AllowV</h4>
+  <div class="markdown level1 summary"><p>Allow a leading &quot;v&quot; or &quot;V&quot; on versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions AllowV</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_IncludeAllPrerelease" data-uid="Semver.SemVersionRangeOptions.IncludeAllPrerelease">IncludeAllPrerelease</h4>
+  <div class="markdown level1 summary"><p>Include all prerelease versions in the range rather than just prerelease versions
+matching a prerelease identifier in the range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions IncludeAllPrerelease</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_Loose" data-uid="Semver.SemVersionRangeOptions.Loose">Loose</h4>
+  <div class="markdown level1 summary"><p>Accept any version string format supported.</p>
+<p>The formats accepted by this style will change if/when more formats are supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions Loose</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_OptionalMinorPatch" data-uid="Semver.SemVersionRangeOptions.OptionalMinorPatch">OptionalMinorPatch</h4>
+  <div class="markdown level1 summary"><p>Minor and patch version numbers are optional on versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions OptionalMinorPatch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_OptionalPatch" data-uid="Semver.SemVersionRangeOptions.OptionalPatch">OptionalPatch</h4>
+  <div class="markdown level1 summary"><p>Patch version number is optional on versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions OptionalPatch</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_Strict" data-uid="Semver.SemVersionRangeOptions.Strict">Strict</h4>
+  <div class="markdown level1 summary"><p>Accept versions strictly conforming to the SemVer 2.0 spec without metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const SemVersionRangeOptions Strict</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h4 id="Semver_SemVersionRangeOptions_value__" data-uid="Semver.SemVersionRangeOptions.value__">value__</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int value__</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -13,18 +13,17 @@
     "build":
     {
         "content":
-        [
-            {
-                "files":
-                [
-                    "v*/**.yml",
-                    "v*/*.md",
-                    "toc.yml",
-                    "*.md"
-                ],
-                "exclude": [ "README.md" ]
-            }
-        ],
+        [{
+            "files":
+            [
+                "v2.3.x/*.yml",
+                "v2.3.x/*.md",
+                "toc.yml",
+                "*.md"
+            ],
+            "exclude": [ "README.md" ],
+            "version": "v2.3.x"
+        }],
         "resource":
         [{
             "files": [
@@ -36,12 +35,11 @@
         "overwrite":
         [{
             "files": [ "apidoc/**.md" ],
-            "exclude": [
-                "obj/**",
-                "docs/**"
-            ]
+            "src": "v2.3.x",
+            "dest": "v2.3.x",
+            "version": "v2.3.x"
         }],
-        "dest": "docs",
+        "dest": "build/v2.3.x",
         "globalMetadata":
         {
             "_disableContribution": true,

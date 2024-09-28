@@ -1,0 +1,1908 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SemVersionRange
+   | semver </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SemVersionRange
+   | semver ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semver.SemVersionRange">
+  
+  
+  <h1 id="Semver_SemVersionRange" data-uid="Semver.SemVersionRange" class="text-break">Class SemVersionRange
+  </h1>
+  <div class="markdown level0 summary"><p>A range of <a class="xref" href="Semver.SemVersion.html">SemVersion</a> values. A range can have gaps in it and may include only
+some prerelease versions between included release versions. For a range that cannot have
+gaps see the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SemVersionRange</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>&gt;</div>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+    <div><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>&gt;</div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semver.html">Semver</a></h6>
+  <h6><strong>Assembly</strong>: Semver.dll</h6>
+  <h5 id="Semver_SemVersionRange_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SemVersionRange : Object</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Semver_SemVersionRange_All_" data-uid="Semver.SemVersionRange.All*"></a>
+  <h4 id="Semver_SemVersionRange_All" data-uid="Semver.SemVersionRange.All">All</h4>
+  <div class="markdown level1 summary"><p>The range that contains both all release and prerelease versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange All { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>The range that contains both all release and prerelease versions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_AllRelease_" data-uid="Semver.SemVersionRange.AllRelease*"></a>
+  <h4 id="Semver_SemVersionRange_AllRelease" data-uid="Semver.SemVersionRange.AllRelease">AllRelease</h4>
+  <div class="markdown level1 summary"><p>The range that contains all release versions but no prerelease versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange AllRelease { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>The range that contains all release versions but no prerelease versions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Count_" data-uid="Semver.SemVersionRange.Count*"></a>
+  <h4 id="Semver_SemVersionRange_Count" data-uid="Semver.SemVersionRange.Count">Count</h4>
+  <div class="markdown level1 summary"><p>The number of <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s that make up this range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s that make up this range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Empty_" data-uid="Semver.SemVersionRange.Empty*"></a>
+  <h4 id="Semver_SemVersionRange_Empty" data-uid="Semver.SemVersionRange.Empty">Empty</h4>
+  <div class="markdown level1 summary"><p>The empty range that contains no versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Empty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>The empty range that contains no versions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Item_" data-uid="Semver.SemVersionRange.Item*"></a>
+  <h4 id="Semver_SemVersionRange_Item_System_Int32_" data-uid="Semver.SemVersionRange.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Get the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> making up this range at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnbrokenSemVersionRange this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> to
+get.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a></td>
+        <td><p>The <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> making up this range at the given
+index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Semver_SemVersionRange_AtLeast_" data-uid="Semver.SemVersionRange.AtLeast*"></a>
+  <h4 id="Semver_SemVersionRange_AtLeast_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.AtLeast(Semver.SemVersion,System.Boolean)">AtLeast(SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing versions equal to or greater than the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange AtLeast(SemVersion version, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The range will contain all versions greater than or equal to this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given version if it is prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions greater than or equal to the given version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_AtMost_" data-uid="Semver.SemVersionRange.AtMost*"></a>
+  <h4 id="Semver_SemVersionRange_AtMost_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.AtMost(Semver.SemVersion,System.Boolean)">AtMost(SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing versions equal to or less than the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange AtMost(SemVersion version, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The range will contain all versions less than or equal to this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given version if it is prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions less than or equal to the given version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Contains_" data-uid="Semver.SemVersionRange.Contains*"></a>
+  <h4 id="Semver_SemVersionRange_Contains_Semver_SemVersion_" data-uid="Semver.SemVersionRange.Contains(Semver.SemVersion)">Contains(SemVersion)</h4>
+  <div class="markdown level1 summary"><p>Determine whether this range contains the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(SemVersion version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version to test against the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the version is contained in the range,
+otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Create_" data-uid="Semver.SemVersionRange.Create*"></a>
+  <h4 id="Semver_SemVersionRange_Create_Semver_UnbrokenSemVersionRange___" data-uid="Semver.SemVersionRange.Create(Semver.UnbrokenSemVersionRange[])">Create(UnbrokenSemVersionRange[])</h4>
+  <div class="markdown level1 summary"><p>Construct a range that joins the given <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s. It will
+contain all versions contained by any of the given unbroken ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Create(params UnbrokenSemVersionRange[] ranges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>[]</td>
+        <td><span class="parametername">ranges</span></td>
+        <td><p>The unbroken ranges to join into a single range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range that joins the given <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s. It will
+contain all versions contained by any of the given unbroken ranges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersionRange_Create_Semver_UnbrokenSemVersionRange____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The unbroken ranges are simplified and sorted. So, the resulting
+<a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> may not contain the same number of
+<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s in the same order as passed to this method.</p>
+</div>
+  <a id="Semver_SemVersionRange_Create_" data-uid="Semver.SemVersionRange.Create*"></a>
+  <h4 id="Semver_SemVersionRange_Create_System_Collections_Generic_IEnumerable_Semver_UnbrokenSemVersionRange__" data-uid="Semver.SemVersionRange.Create(System.Collections.Generic.IEnumerable{Semver.UnbrokenSemVersionRange})">Create(IEnumerable&lt;UnbrokenSemVersionRange&gt;)</h4>
+  <div class="markdown level1 summary"><p>Construct a range that joins the given <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s. It will
+contain all versions contained by any of the given unbroken ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Create(IEnumerable&lt;UnbrokenSemVersionRange&gt; ranges)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>&gt;</td>
+        <td><span class="parametername">ranges</span></td>
+        <td><p>The unbroken ranges to join into a single range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range that joins the given <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s. It will
+contain all versions contained by any of the given unbroken ranges.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersionRange_Create_System_Collections_Generic_IEnumerable_Semver_UnbrokenSemVersionRange___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The unbroken ranges are simplified and sorted. So, the resulting
+<a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> may not contain the same number of
+<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s in the same order as passed to this method.</p>
+</div>
+  <a id="Semver_SemVersionRange_Equals_" data-uid="Semver.SemVersionRange.Equals*"></a>
+  <h4 id="Semver_SemVersionRange_Equals_Semver_SemVersion_" data-uid="Semver.SemVersionRange.Equals(Semver.SemVersion)">Equals(SemVersion)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing only a single version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Equals(SemVersion version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version the range should contain.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing only the given version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Equals_" data-uid="Semver.SemVersionRange.Equals*"></a>
+  <h4 id="Semver_SemVersionRange_Equals_Semver_SemVersionRange_" data-uid="Semver.SemVersionRange.Equals(Semver.SemVersionRange)">Equals(SemVersionRange)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two version ranges are equal. Due to the complexity of ranges, it may
+be possible for two ranges to match the same set of versions but be expressed in
+different ways and so not be equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(SemVersionRange other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">other</code> is equal to this range;
+otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Equals_" data-uid="Semver.SemVersionRange.Equals*"></a>
+  <h4 id="Semver_SemVersionRange_Equals_System_Object_" data-uid="Semver.SemVersionRange.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Determines whether the given object is equal to this range. Due to the complexity of
+ranges, it may be possible for two ranges to match the same set of versions but be
+expressed in different ways and so not be equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if <code data-dev-comment-type="paramref" class="paramref">obj</code> is equal to this range;
+otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Exclusive_" data-uid="Semver.SemVersionRange.Exclusive*"></a>
+  <h4 id="Semver_SemVersionRange_Exclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.Exclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)">Exclusive(SemVersion, SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing all versions between the given versions excluding those versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Exclusive(SemVersion start, SemVersion end, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The range will contain only versions greater than this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>The range will contain only versions less than this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given versions if they are prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions between the given versions including the end but
+not the start.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_GetEnumerator_" data-uid="Semver.SemVersionRange.GetEnumerator*"></a>
+  <h4 id="Semver_SemVersionRange_GetEnumerator" data-uid="Semver.SemVersionRange.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Get an enumerator that iterates through the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s
+making up this range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;UnbrokenSemVersionRange&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>&gt;</td>
+        <td><p>An enumerator that iterates through the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s
+making up this range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_GetHashCode_" data-uid="Semver.SemVersionRange.GetHashCode*"></a>
+  <h4 id="Semver_SemVersionRange_GetHashCode" data-uid="Semver.SemVersionRange.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets a hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A hash code for this instance, suitable for use in hashing algorithms
+and data structures like a hash table.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_GreaterThan_" data-uid="Semver.SemVersionRange.GreaterThan*"></a>
+  <h4 id="Semver_SemVersionRange_GreaterThan_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.GreaterThan(Semver.SemVersion,System.Boolean)">GreaterThan(SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing versions greater than the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange GreaterThan(SemVersion version, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The range will contain all versions greater than this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given version if it is prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions greater than the given version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Inclusive_" data-uid="Semver.SemVersionRange.Inclusive*"></a>
+  <h4 id="Semver_SemVersionRange_Inclusive_Semver_SemVersion_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.Inclusive(Semver.SemVersion,Semver.SemVersion,System.Boolean)">Inclusive(SemVersion, SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing all versions between the given versions including those versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Inclusive(SemVersion start, SemVersion end, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The range will contain only versions greater than or equal to this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>The range will contain only versions less than or equal to this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given versions if they are prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions between the given versions including those versions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_InclusiveOfEnd_" data-uid="Semver.SemVersionRange.InclusiveOfEnd*"></a>
+  <h4 id="Semver_SemVersionRange_InclusiveOfEnd_Semver_SemVersion_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.InclusiveOfEnd(Semver.SemVersion,Semver.SemVersion,System.Boolean)">InclusiveOfEnd(SemVersion, SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing all versions between the given versions including the end but
+not the start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange InclusiveOfEnd(SemVersion start, SemVersion end, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The range will contain only versions greater than this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>The range will contain only versions less than or equal to this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given versions if they are prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions between the given versions including the end but
+not the start.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_InclusiveOfStart_" data-uid="Semver.SemVersionRange.InclusiveOfStart*"></a>
+  <h4 id="Semver_SemVersionRange_InclusiveOfStart_Semver_SemVersion_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.InclusiveOfStart(Semver.SemVersion,Semver.SemVersion,System.Boolean)">InclusiveOfStart(SemVersion, SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing all versions between the given versions including the start
+but not the end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange InclusiveOfStart(SemVersion start, SemVersion end, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>The range will contain only versions greater than or equal to this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">end</span></td>
+        <td><p>The range will contain only versions less than this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given versions if they are prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions between the given versions including the start but
+not the end.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_LessThan_" data-uid="Semver.SemVersionRange.LessThan*"></a>
+  <h4 id="Semver_SemVersionRange_LessThan_Semver_SemVersion_System_Boolean_" data-uid="Semver.SemVersionRange.LessThan(Semver.SemVersion,System.Boolean)">LessThan(SemVersion, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Construct a range containing versions less than the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange LessThan(SemVersion version, bool includeAllPrerelease = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersion.html">SemVersion</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The range will contain all versions less than this.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Include all prerelease versions in the range rather
+than just those matching the given version if it is prerelease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><p>A range containing versions less than the given version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Parse_" data-uid="Semver.SemVersionRange.Parse*"></a>
+  <h4 id="Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_" data-uid="Semver.SemVersionRange.Parse(System.String,Semver.SemVersionRangeOptions,System.Int32)">Parse(String, SemVersionRangeOptions, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://semver-nuget.org/ranges/">standard
+range syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> using the given options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Parse(string range, SemVersionRangeOptions options, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://semver-nuget.org/ranges/">standard range syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>A bitwise combination of enumeration values that indicates the style
+elements that can be present in <code data-dev-comment-type="paramref" class="paramref">range</code> and the options to use when
+constructing the range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">options</code> is not a valid
+<a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a> value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.FormatException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">range</code> is invalid or not in a
+format compliant with <code data-dev-comment-type="paramref" class="paramref">options</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_Parse_" data-uid="Semver.SemVersionRange.Parse*"></a>
+  <h4 id="Semver_SemVersionRange_Parse_System_String_System_Int32_" data-uid="Semver.SemVersionRange.Parse(System.String,System.Int32)">Parse(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://semver-nuget.org/ranges/">standard
+range syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> using the
+<a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Strict">Strict</a> option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange Parse(string range, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://semver-nuget.org/ranges/">standard range syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.FormatException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">range</code> is invalid or not in a
+format compliant with the <a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Strict">Strict</a> option.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_ParseNpm_" data-uid="Semver.SemVersionRange.ParseNpm*"></a>
+  <h4 id="Semver_SemVersionRange_ParseNpm_System_String_System_Boolean_System_Int32_" data-uid="Semver.SemVersionRange.ParseNpm(System.String,System.Boolean,System.Int32)">ParseNpm(String, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://github.com/npm/node-semver/#ranges">
+npm syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange ParseNpm(string range, bool includeAllPrerelease, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://github.com/npm/node-semver/#ranges">npm syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Whether to include all prerelease versions in the
+range rather than just prerelease versions matching a prerelease identifier in the range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersionRange_ParseNpm_System_String_System_Boolean_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The npm &quot;loose&quot; option is not supported. The
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> method provides more control over
+parsing. However, it does not accept all the npm syntax.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.FormatException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">range</code> is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_ParseNpm_" data-uid="Semver.SemVersionRange.ParseNpm*"></a>
+  <h4 id="Semver_SemVersionRange_ParseNpm_System_String_System_Int32_" data-uid="Semver.SemVersionRange.ParseNpm(System.String,System.Int32)">ParseNpm(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://github.com/npm/node-semver/#ranges">
+npm syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SemVersionRange ParseNpm(string range, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://github.com/npm/node-semver/#ranges">npm syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersionRange_ParseNpm_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The npm &quot;loose&quot; option is not supported. The
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> method provides more control over
+parsing. However, it does not accept all the npm syntax.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">range</code> is <span class="xref">null</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.FormatException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">range</code> is invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_ToString_" data-uid="Semver.SemVersionRange.ToString*"></a>
+  <h4 id="Semver_SemVersionRange_ToString" data-uid="Semver.SemVersionRange.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Converts this version range to an equivalent string value in
+<a href="https://semver-nuget.org/ranges/">standard range syntax</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The <span class="xref">System.String</span> equivalent of this version in
+<a href="https://semver-nuget.org/ranges/">standard range syntax</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersionRange_ToString_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Because version ranges are simplified and sorted, this method may return
+a different, but equivalent, range string from the originally parsed one. Ranges
+including all prerelease versions are indicated with the idiom of prefixing each
+comparison group with &quot;<code><em>-</em></code>&quot;. This includes all prerelease versions because it
+matches all prerelease versions.</p>
+</div>
+  <a id="Semver_SemVersionRange_TryParse_" data-uid="Semver.SemVersionRange.TryParse*"></a>
+  <h4 id="Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRange__System_Int32_" data-uid="Semver.SemVersionRange.TryParse(System.String,Semver.SemVersionRange@,System.Int32)">TryParse(String, out SemVersionRange, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://semver-nuget.org/ranges/">standard
+range syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> using the
+<a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_Strict">Strict</a> option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string range, out SemVersionRange semverRange, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://semver-nuget.org/ranges/">standard range syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">semverRange</span></td>
+        <td><p>The converted <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">false</span> when an invalid version range string is passed,
+otherwise <span class="xref">true</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_TryParse_" data-uid="Semver.SemVersionRange.TryParse*"></a>
+  <h4 id="Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_" data-uid="Semver.SemVersionRange.TryParse(System.String,Semver.SemVersionRangeOptions,Semver.SemVersionRange@,System.Int32)">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://semver-nuget.org/ranges/">standard
+range syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> using the given options.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string range, SemVersionRangeOptions options, out SemVersionRange semverRange, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://semver-nuget.org/ranges/">standard range syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>A bitwise combination of enumeration values that indicates the style
+elements that can be present in <code data-dev-comment-type="paramref" class="paramref">range</code> and the options to use when
+constructing the range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">semverRange</span></td>
+        <td><p>The converted <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">false</span> when an invalid version range string is passed,
+otherwise <span class="xref">true</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">options</code> is not a valid
+<a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a> value.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_TryParseNpm_" data-uid="Semver.SemVersionRange.TryParseNpm*"></a>
+  <h4 id="Semver_SemVersionRange_TryParseNpm_System_String_Semver_SemVersionRange__System_Int32_" data-uid="Semver.SemVersionRange.TryParseNpm(System.String,Semver.SemVersionRange@,System.Int32)">TryParseNpm(String, out SemVersionRange, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://github.com/npm/node-semver/#ranges">
+npm syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseNpm(string range, out SemVersionRange semverRange, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://github.com/npm/node-semver/#ranges">npm syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">semverRange</span></td>
+        <td><p>The converted <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">false</span> when an invalid version range string is passed,
+otherwise <span class="xref">true</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersionRange_TryParseNpm_System_String_Semver_SemVersionRange__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The npm &quot;loose&quot; option is not supported. The
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a> method
+provides more control over parsing. However, it does not accept all the npm syntax.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_TryParseNpm_" data-uid="Semver.SemVersionRange.TryParseNpm*"></a>
+  <h4 id="Semver_SemVersionRange_TryParseNpm_System_String_System_Boolean_Semver_SemVersionRange__System_Int32_" data-uid="Semver.SemVersionRange.TryParseNpm(System.String,System.Boolean,Semver.SemVersionRange@,System.Int32)">TryParseNpm(String, Boolean, out SemVersionRange, Int32)</h4>
+  <div class="markdown level1 summary"><p>Convert a version range string in the <a href="https://github.com/npm/node-semver/#ranges">
+npm syntax</a> into a <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParseNpm(string range, bool includeAllPrerelease, out SemVersionRange semverRange, int maxLength = 2048)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The version range string to parse. Accepts the
+<a href="https://github.com/npm/node-semver/#ranges">npm syntax</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeAllPrerelease</span></td>
+        <td><p>Whether to include all prerelease versions in the
+range rather than just prerelease versions matching a prerelease identifier in the range.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">semverRange</span></td>
+        <td><p>The converted <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxLength</span></td>
+        <td><p>The maximum length of <code data-dev-comment-type="paramref" class="paramref">range</code> that should be
+parsed. This prevents attacks using very long version range strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">false</span> when an invalid version range string is passed,
+otherwise <span class="xref">true</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Semver_SemVersionRange_TryParseNpm_System_String_System_Boolean_Semver_SemVersionRange__System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The npm &quot;loose&quot; option is not supported. The
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a> method
+provides more control over parsing. However, it does not accept all the npm syntax.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">maxLength</code> is less than zero.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="Semver_SemVersionRange_op_Equality_" data-uid="Semver.SemVersionRange.op_Equality*"></a>
+  <h4 id="Semver_SemVersionRange_op_Equality_Semver_SemVersionRange_Semver_SemVersionRange_" data-uid="Semver.SemVersionRange.op_Equality(Semver.SemVersionRange,Semver.SemVersionRange)">Equality(SemVersionRange, SemVersionRange)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two version ranges are equal. Due to the complexity of ranges, it may
+be possible for two ranges to match the same set of versions but be expressed in
+different ways and so not be equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(SemVersionRange left, SemVersionRange right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the two values are equal, otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_op_Implicit_" data-uid="Semver.SemVersionRange.op_Implicit*"></a>
+  <h4 id="Semver_SemVersionRange_op_Implicit_Semver_SemVersionRange__System_Predicate_Semver_SemVersion_" data-uid="Semver.SemVersionRange.op_Implicit(Semver.SemVersionRange)~System.Predicate{Semver.SemVersion}">Implicit(SemVersionRange to Predicate&lt;SemVersion&gt;)</h4>
+  <div class="markdown level1 summary"><p>Convert this range into a predicate function indicating whether a version is contained
+in the range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Predicate&lt;SemVersion&gt;(SemVersionRange range)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">range</span></td>
+        <td><p>The range to convert into a predicate function.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Semver.SemVersion.html">SemVersion</a>&gt;</td>
+        <td><p>A predicate that indicates whether a given version is contained in this range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="Semver_SemVersionRange_op_Inequality_" data-uid="Semver.SemVersionRange.op_Inequality*"></a>
+  <h4 id="Semver_SemVersionRange_op_Inequality_Semver_SemVersionRange_Semver_SemVersionRange_" data-uid="Semver.SemVersionRange.op_Inequality(Semver.SemVersionRange,Semver.SemVersionRange)">Inequality(SemVersionRange, SemVersionRange)</h4>
+  <div class="markdown level1 summary"><p>Determines whether two version ranges are <em>not</em> equal. Due to the complexity of
+ranges, it may be possible for two ranges to match the same set of versions but be
+expressed in different ways and so not be equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(SemVersionRange left, SemVersionRange right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><span class="xref">true</span> if the two ranges are <em>not</em> equal, otherwise <span class="xref">false</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyList&lt;&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.Generic.IReadOnlyCollection&lt;&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

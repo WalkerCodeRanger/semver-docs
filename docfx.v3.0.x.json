@@ -1,0 +1,58 @@
+{
+    "metadata": 
+    [{
+        "src": 
+        [{
+            "src": "src/v3.0.0/",
+            "files": [ "Semver/**/net5.0/*.dll" ]
+        }],
+        "dest": "v3.0.x",
+        "force": true,
+        "properties": { "TargetFramework": "net5.0" }
+    }],
+    "build":
+    {
+        "content":
+        [{
+            "files":
+            [
+                "v3.0.x/*.yml",
+                "v3.0.x/*.md",
+                "toc.yml",
+                "*.md"
+            ],
+            "exclude": [ "README.md" ],
+            "version": "v3.0.x"
+        }],
+        "resource":
+        [{
+            "files": [
+                "images/**",
+                "CNAME",
+                "ranges/index.html"
+            ]
+        }],
+        "overwrite":
+        [{
+            "files": [ "apidoc/**.md" ],
+            "src": "v3.0.x",
+            "dest": "v3.0.x",
+            "version": "v3.0.x"
+        }],
+        "dest": "build/v3.0.x",
+        "globalMetadata":
+        {
+            "_disableContribution": true,
+            "_appTitle": "semver"
+        },
+        "globalMetadataFiles": [ ],
+        "fileMetadataFiles": [],
+        "template": [ "default" ],
+        "postProcessors": [],
+        "markdownEngineName": "markdig",
+        "noLangKeyword": false,
+        "keepFileLink": false,
+        "cleanupCacheHistory": false,
+        "disableGitFeatures": false
+    }
+}

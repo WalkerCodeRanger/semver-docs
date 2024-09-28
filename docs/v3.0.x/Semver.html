@@ -1,0 +1,355 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Semver
+   | semver </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Semver
+   | semver ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Semver">
+  
+  <h1 id="Semver" data-uid="Semver" class="text-break">Namespace Semver
+  </h1>
+  <div class="markdown level0 summary">
+<p>Classes for manipulating and parsing semantic versions and semantic version ranges.</p>
+</div>
+  <div class="markdown level0 conceptual"><h3 id="range-syntax">Range Syntax</h3>
+<p>A version range is composed of one or more comparisons (e.g. <code>&gt;=1.2.6</code>). These comparisons are
+joined into comparison sets with whitespace (e.g. <code>&gt;=1.2.6 &lt;2.0.0</code>). A comparison set forms an
+intersection of the comparisons in the set. That is, for a version to be included in the range, it
+must satisfy all the comparisons in that set. Comparison sets can be joined together using the <code>||</code>
+operator (e.g. <code>&gt;=1.2.6 &lt;2.0.0 || 2.0.0-beta</code>). The <code>||</code> forms a union of the comparison sets. That
+is, for a version to be included in the range, it must satisfy <em>one</em> of the comparison sets.</p>
+<p>The simple joining of basic and advanced comparisons is enough to create any sort of version range.
+For example:</p>
+<ul>
+<li><code>4.32.9</code></li>
+<li><code>3.*</code></li>
+<li><code>&gt;=1.3.5 &lt;3.1.0</code></li>
+<li><code>^1.2.6 || 2.0.0-rc</code></li>
+</ul>
+<p>There are two things to note about ranges. First, that a range can contain version gaps if it is
+composed of multiple comparison sets. Second, that by default not all prerelease versions are
+included in a range. Only prerelease versions whose major, minor, and patch versions are equal to a
+comparison version that is itself prerelease are includes (see <a href="#prerelease-versions">Prerelease
+Versions</a>).</p>
+<h4 id="versions-in-ranges">Versions in Ranges</h4>
+<p>By default the syntax of all versions appear in a range expression must strictly conform to the
+semantic versioning spec and not have a metadata section. This can be relaxed using the
+<a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a>.</p>
+<h4 id="comparison-sets">Comparison Sets</h4>
+<p>Comparison sets combine one or more comparisons consisting of basic operators, advanced operators,
+and wildcards into a single <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>.
+Individual comparisons in a comparison set may be optional surrounded by one or more spaces on
+either side. A space is not needed to separate two comparisons (e.g. <code>&gt;1.0.0&lt;2.0.0</code>).</p>
+<p>Since all comparisons in a comparison set must be met, they can always be simplified down to an
+unbroken range with a minimum and maximum version each of which may or may not be included in the
+range.</p>
+<p>Comparison sets can be combined using the <code>||</code> operator. The <code>||</code> operator may be optionally
+separated from the comparison sets by one or more spaces on either side. The <code>||</code> operator unions
+the comparison sets it joins together.</p>
+<h4 id="prerelease-versions">Prerelease Versions</h4>
+<p>By default, not all prerelease versions are included in a version range. This can be overridden with
+the <a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option.
+Alternatively, including the comparison <code>*-*</code> in a comparison set will make that comparison set
+include all prerelease versions. This does not affect the other comparison sets allowing some
+comparison sets to include all prerelease versions while others do not.</p>
+<p>Without the <a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option,
+only prerelease versions contained in the range and matching the major, minor, and patch version of
+some comparison in the range that is a prerelease version will be included. For example, the range
+<code>&gt;=1.2.0-alpha &lt;2.0.0</code> includes the prerelease versions <code>1.2.0-alpha</code> and <code>1.2.0-beta</code> but not the
+versions <code>1.6.0-rc</code> or <code>1.23.1-alpha</code>.</p>
+<p>The special wildcard comparison <code>*-*</code> matches all versions including prerelease versions. Thus, when
+it is combined with another comparison (e.g. <code>*-* &gt;=1.5.0</code>), it satisfies the requirement that the
+prerelease version matches some comparison for all prerelease versions.</p>
+<h5 id="constructing-prerelease-ranges">Constructing Prerelease Ranges</h5>
+<p>When creating version ranges meant to include prerelease versions it is helpful to know and make use
+of the fact that <code>-0</code> is the lowest possible prerelease version. Thus a range like <code>&gt;= 1.2.3-0</code> will
+include all prerelease versions of version <code>1.2.3</code>. This can also be used as the upper bound in a
+range containing all prerelease versions. For example, a range containing all prerelease versions of
+<code>1.0.0</code> up through but not including prerelease versions of <code>2.0.0</code> would be <code>*-* &gt;=1.0.0-0 &lt;2.0.0-0</code>.</p>
+<h4 id="basic-operators">Basic Operators</h4>
+<p>There are five basic operators. Each prefixes a version number to form a comparison to that version.
+The basic operators are:</p>
+<ul>
+<li><code>&lt;</code> Less than</li>
+<li><code>&lt;=</code> Less than or equal to</li>
+<li><code>&gt;</code> Greater than</li>
+<li><code>&gt;=</code> Greater than or equal to</li>
+<li><code>=</code> Equal</li>
+</ul>
+<p>If no operator is specified, then equality is assumed, so this operator is optional, but may be
+included.</p>
+<h4 id="advanced-operators">Advanced Operators</h4>
+<p>There are two advanced operators that provide both a lower and upper bound with a single comparison.</p>
+<h5 id="compatible-operator-caret">Compatible Operator (Caret)</h5>
+<p>The caret (<code>^</code>) is the compatible operator. It matches all backwards compatible versions to the
+given version according to the semantic version specification. Thus it matches all versions greater
+than or equal to the given version and less than the next major version. Since many authors treat a
+<code>0.x.y</code> version as if the <code>x</code> were the major &quot;breaking-change&quot; indicator, the caret operator behaves
+differently when used with initial development versions (i.e. <code>0.x.y</code>). The exact rule is that it
+allows changes that do not modify the left-most non-zero element of the major, minor, or patch
+version. In other words, this allows patch and minor updates for versions <code>1.0.0-0</code> and above, patch
+updates for versions <code>0.x.y-* &gt;=0.1.0</code>, and only prerelease updates for versions <code>0.0.x-*</code>.</p>
+<p>The caret operator is always equivalent to a <code>&gt;=</code> combined with a <code>&lt;</code>. The examples below illustrate
+each of the possible cases.</p>
+<ul>
+<li><code>^1.2.3</code> := <code>&gt;=1.2.3 &lt;2.0.0-0</code></li>
+<li><code>^0.2.3</code> := <code>&gt;=0.2.3 &lt;0.3.0-0</code></li>
+<li><code>^0.0.3</code> := <code>&gt;=0.0.3 &lt;0.0.4-0</code> (i.e. <code>=0.0.3</code>)</li>
+<li><code>^1.2.3-beta.2</code> := <code>&gt;=1.2.3-beta.2 &lt;2.0.0-0</code> Note that prereleases in the <code>1.2.3</code> version will be
+allowed, if they are greater than or equal to <code>beta.2</code>. So, <code>1.2.3-beta.4</code> would be allowed, but
+<code>1.2.4-beta.2</code> would not, because it is a prerelease with a different major, minor, or patch
+version.</li>
+<li><code>^0.0.3-beta</code> := <code>&gt;=0.0.3-beta &lt;0.0.4-0</code> Note that prereleases in the <code>0.0.3</code> version only will be
+allowed, if they are greater than or equal to <code>beta</code>. So, <code>0.0.3-pr.2</code> would be allowed.</li>
+</ul>
+<h5 id="approximately-equivalent-operator-tilde">Approximately Equivalent Operator (Tilde)</h5>
+<p>The tilde (<code>~</code>) is the approximately equivalent operator. This allows only bug fix releases for the
+given version. That is, it matches only versions with a patch level difference.</p>
+<p>The tilde operator is always equivalent to a <code>&gt;=</code> combined with a <code>&lt;</code>. The examples below illustrate
+each of the possible cases.</p>
+<ul>
+<li><code>~1.2.3</code> := <code>&gt;=1.2.3 &lt;1.3.0-0</code></li>
+<li><code>~0.2.3</code> := <code>&gt;=0.2.3 &lt;0.3.0-0</code></li>
+<li><code>~1.2.3-beta.2</code> := <code>&gt;=1.2.3-beta.2 &lt;1.3.0-0</code> Note that prereleases in the <code>1.2.3</code> version will be
+allowed, if they are greater than or equal to <code>beta.2</code>. So, <code>1.2.3-beta.4</code> would be allowed, but
+<code>1.2.4-beta.2</code> would not, because it is a prerelease of a different major, minor, or patch
+version.</li>
+</ul>
+<h4 id="wildcards">Wildcards</h4>
+<p>In addition to the basic and advanced operators, comparisons can be formed using wildcards. A
+wildcard comparison cannot be combined with an operator. The wildcard character &quot;<code>*</code>&quot; may be used in
+place of the major, minor, or patch version as well as the final prerelease identifier.</p>
+<p>A wildcard in the major, minor, or patch version matches any version number in that position. For
+example, <code>2.*.*</code> matches all release versions with a major version of <code>2</code>. If a version number is
+replaced with a wildcard, then all later version numbers must also be wildcards. Thus <code>2.*.6</code> is an
+invalid wildcard version. Additionally, no prerelease identifiers can be specified after a wildcard
+version number. A wildcard may be optionally used to match all prerelease versions (e.g. <code>1.2.*-*</code>).
+In a wildcard version with multiple wildcards, the subsequent wildcards can be omitted. For example,
+<code>6.*.*</code> can be shortened to <code>6.*</code> and <code>*.*.*</code> can be shortened to just <code>*</code>.</p>
+<p>A wildcard may be used in place of the final prerelease identifier (e.g. <code>1.2.3-alpha.*</code>,
+<code>1.2.3-*</code>). Such a prerelease wildcard will match all prerelease versions with the same prerelease
+identifiers as appear before the prerelease wildcard. It does not match prerelease versions with no
+identifier in that place. For example, <code>1.2.3-alpha.*</code> does not match <code>1.2.3-alpha</code>, but it does
+match <code>1.2.3-alpha.0</code> and <code>1.2.3-alpha.something</code>.</p>
+<p>There are two wildcard versions of special note. The first &quot;<code>*</code>&quot; matches all release versions. The
+second &quot;<code>*-*</code>&quot; matches all versions both release and prerelease. The latter can be used in a
+comparison set to include all prerelease versions in that comparison set.</p>
+<h4 id="differences-from-npm-syntax">Differences from npm Syntax</h4>
+<p>Unfortunately, there is no official standard for the syntax of semantic versions ranges. However,
+the syntax defined by the npm package seems to have become somewhat of a defacto standard. Many
+other tools and libraries implement a similar syntax. However, they often have subtle or major
+differences in the syntax or interpretation. The standard syntax of this library is also inspired by
+the npm syntax but has major deviations for clarity and increased flexibility. The differences
+between npm syntax and the syntax used by this library are listed below with a brief statement of
+the reasoning behind the difference.</p>
+<ul>
+<li>Omitted minor and patch versions are not treated as wildcards.
+<ul>
+<li>Treating them as wildcards is surprising and unintuitive. People are used to omitted version
+numbers being zero. For example, the version <code>2.1</code> is read as <code>2.1.0</code> not as <code>2.1.*</code>.</li>
+</ul>
+</li>
+<li>Asterisk '<code>*</code>' is the only wildcard character, '<code>X</code>' and '<code>x</code>' are not supported.
+<ul>
+<li>Both '<code>X</code>' and '<code>x</code>' are valid characters inside prerelease identifiers and so couldn't be used
+for a wildcard in a prerelease identifiers. Also, '<code>*</code>' is more clearly and universally
+recognized as a wildcard.</li>
+</ul>
+</li>
+<li>A wildcard is allowed as the last prerelease identifier.
+<ul>
+<li>This adds a lot of flexibility and expressiveness to ranges. It also provides a syntax
+equivalent to the allow all prerelease option (e.g. include <code>*-*</code> in a comparison set). Finally,
+it is a natural and expected extension of the wildcard version number syntax.</li>
+</ul>
+</li>
+<li>Wildcards can't be combined with operators.
+<ul>
+<li>It is difficult and confusing to reason about the interaction of the wildcard with the operator.
+At the same time most wildcard operator combinations have straightforward equivalent expressions
+that do not involve a wildcard. So removing this does not limit the expressiveness of ranges.</li>
+</ul>
+</li>
+<li>Hyphen ranges aren't supported.
+<ul>
+<li>Hyphen is a valid character in semantic versions. As a result, whitespace must be included on
+either side of the hyphen. If that whitespace is omitted, it easily leads to a valid range
+expression different than intended. The requirement for spaces only applies to the hyphen and
+not any of the other operators so it breaks expectations. Finally hyphen ranges aren't that much
+shorter or clearer than a simple greater than or equal to combined with a less than (e.g.
+&quot;<code>1.1.0 - 2.0.0</code>&quot; is equivalent to &quot;<code>&gt;=1.1.0 &lt;2.2.0</code>&quot;).</li>
+</ul>
+</li>
+<li>Only ASCII space characters are allowed within a range.</li>
+</ul>
+<h3 id="parsing-npm-range-syntax">Parsing npm Range Syntax</h3>
+<p>The <a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">ParseNpm</a>
+and related methods enable the parsing of <a href="https://github.com/npm/node-semver#ranges">npm range
+syntax</a> into a version range. The <a href="https://github.com/npm/node-semver#ranges">npm range
+syntax</a> is defined and implemented by the npm project.</p>
+<h4 id="deviations-from-npm-range-syntax">Deviations from npm Range Syntax</h4>
+<p>There are a few minor differences between the syntax supported by npm and by
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">ParseNpm</a>
+and related methods methods. In all cases these are arguably bugs or at least inconsistencies in how
+npm parses ranges. An issue has been filed with the npm project for each and is included for
+reference in the list of differences below.</p>
+<ul>
+<li>Build metadata can be combined with partial versions. (npm issue
+<a href="https://github.com/npm/node-semver/issues/509">#509</a>)</li>
+<li>Prerelease versions cannot follow wildcards. (npm issue
+<a href="https://github.com/npm/node-semver/issues/510">#510</a> and
+<a href="https://github.com/npm/node-semver/issues/509">#509</a>)</li>
+<li>A minor or patch version cannot follow a wildcard. (npm issue
+<a href="https://github.com/npm/node-semver/issues/511">#511</a>)</li>
+<li>The tilde wildcard range (e.g. &quot;<code>~1.2.*</code>&quot;) with the include all prerelease versions option
+includes prerelease versions with the same major and minor version. (npm issue
+<a href="https://github.com/npm/node-semver/issues/512">#512</a>)</li>
+</ul>
+</div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Semver.MetadataIdentifier.html">MetadataIdentifier</a></h4>
+      <section><p>An individual metadata identifier for a semantic version.</p>
+</section>
+      <h4><a class="xref" href="Semver.PrereleaseIdentifier.html">PrereleaseIdentifier</a></h4>
+      <section><p>An individual prerelease identifier for a semantic version.</p>
+</section>
+      <h4><a class="xref" href="Semver.SemVersion.html">SemVersion</a></h4>
+      <section><p>A semantic version number. Conforms with v2.0.0 of semantic versioning
+(<a href="https://semver.org">semver.org</a>).</p>
+</section>
+      <h4><a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a></h4>
+      <section><p>A range of <a class="xref" href="Semver.SemVersion.html">SemVersion</a> values. A range can have gaps in it and may include only
+some prerelease versions between included release versions. For a range that cannot have
+gaps see the <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> class.</p>
+</section>
+      <h4><a class="xref" href="Semver.SemVersionRangeOptions.html">SemVersionRangeOptions</a></h4>
+      <section><p>Determines the parsing options and allowed styles of range and version strings passed
+to the <a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_Parse_System_String_Semver_SemVersionRangeOptions_System_Int32_">Parse(String, SemVersionRangeOptions, Int32)</a> and
+<a class="xref" href="Semver.SemVersionRange.html#Semver_SemVersionRange_TryParse_System_String_Semver_SemVersionRangeOptions_Semver_SemVersionRange__System_Int32_">TryParse(String, SemVersionRangeOptions, out SemVersionRange, Int32)</a>
+methods. These styles only affect which strings are accepted when parsing. The
+constructed ranges and version numbers are valid semantic version ranges without any of the
+optional features in the original string.</p>
+<p>Most options only allow additional version styles. However, the
+<a class="xref" href="Semver.SemVersionRangeOptions.html#Semver_SemVersionRangeOptions_IncludeAllPrerelease">IncludeAllPrerelease</a> option modifies how version ranges are interpreted. With
+this option, all prerelease versions within the range bounds will be considered to be in the
+range. Without this option, only prerelease versions where one comparison with the same
+major, minor, and patch versions is prerelease will satisfy the range. For more information,
+see the <a href="https://semver-nuget.org/ranges/">range expressions documentation</a>.</p>
+<p>This enumeration supports a bitwise combination of its member values (e.g.
+<code>SemVersionRangeOptions.OptionalPatch | SemVersionRangeOptions.AllowV</code>).</p>
+</section>
+      <h4><a class="xref" href="Semver.SemVersionStyles.html">SemVersionStyles</a></h4>
+      <section><p>Determines the styles that are allowed in version strings passed to the
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_Parse_System_String_Semver_SemVersionStyles_System_Int32_">Parse(String, SemVersionStyles, Int32)</a> and
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_TryParse_System_String_Semver_SemVersionStyles_Semver_SemVersion__System_Int32_">TryParse(String, SemVersionStyles, out SemVersion, Int32)</a>
+methods. These styles only affect which strings are accepted when parsing. The
+constructed version numbers are valid semantic versions without any of the
+optional features in the original string.</p>
+<p>This enumeration supports a bitwise combination of its member values (e.g.
+<code>SemVersionStyles.AllowWhitespace | SemVersionStyles.AllowV</code>).</p>
+</section>
+      <h4><a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a></h4>
+      <section><p>A range of <a class="xref" href="Semver.SemVersion.html">SemVersion</a> values with no gaps. The more general and flexible range
+class <a class="xref" href="Semver.SemVersionRange.html">SemVersionRange</a> is typically used instead. It combines multiple
+<a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a>s. <a class="xref" href="Semver.UnbrokenSemVersionRange.html">UnbrokenSemVersionRange</a> can be used
+directly if it is important to reflect that something must be a range with no gaps in it.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

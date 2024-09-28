@@ -46,7 +46,9 @@ Task("metadata")
     .Does(() =>
 {
     Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "v2.3.0");
-    DocFxMetadata();
+    DocFxMetadata("./docfx.v2.3.x.json");
+    Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "master");
+    DocFxMetadata("./docfx.v3.0.x.json");
 });
 
 Task("build")
@@ -54,12 +56,23 @@ Task("build")
     .Does(() =>
 {
     // Even force build doesn't properly clean up old files
+    CleanDirectories("./build");
     CleanDirectories("./docs");
     Environment.SetEnvironmentVariable("DOCFX_SOURCE_BRANCH_NAME", "master");
-    DocFxBuild(new DocFxBuildSettings()
-    {
-        Force = true,
-    });
+    Information($"Building docfx.v2.3.x.json");
+    DocFxBuild("./docfx.v2.3.x.json", new DocFxBuildSettings() { Force = true, });
+    Information($"Building docfx.v3.0.x.json");
+    DocFxBuild("./docfx.v3.0.x.json", new DocFxBuildSettings() { Force = true, });
+    Information($"Building docfx.merged.json");
+    DocFxBuild("./docfx.merged.json", new DocFxBuildSettings() { Force = true, });
+
+    CopyDirectory("build/merged", "docs");
+    CleanDirectories("./docs/v2.3.x");
+    CleanDirectories("./docs/v3.0.x");
+    CopyDirectory("build/v2.3.x/v2.3.x", "docs/v2.3.x");
+    CopyDirectory("build/v3.0.x/v3.0.x", "docs/v3.0.x");
+    DeleteFile("docs/xrefmap.yml");
+    DeleteFile("docs/manifest.json");
 });
 
 Task("serve")

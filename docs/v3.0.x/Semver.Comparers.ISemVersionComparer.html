@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>A Semantic Version Library for .Net | semver </title>
+    <title>Interface ISemVersionComparer
+   | semver </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="A Semantic Version Library for .Net | semver ">
+    <meta name="title" content="Interface ISemVersionComparer
+   | semver ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,67 +68,26 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="a-semantic-version-library-for-net">A Semantic Version Library for .Net</h1>
-
-<p>Create, parse, and manipulate semantic version numbers with the <code>SemVersion</code> class and semantic
-version ranges with the <code>SemVersionRange</code> class. This library complies with v2.0.0 of the semantic
-versioning spec from <a href="http://semver.org">semver.org</a>.</p>
-<h2 id="installation">Installation</h2>
-<p>With the NuGet console:</p>
-<pre><code class="lang-powershell">Install-Package semver
-</code></pre>
-<h2 id="parsing">Parsing</h2>
-<pre><code class="lang-csharp">var version = SemVersion.Parse(&quot;1.1.0-rc.1+e471d15&quot;, SemVersionStyles.Strict);
-</code></pre>
-<h2 id="constructing">Constructing</h2>
-<pre><code class="lang-csharp">var v1 = new SemVersion(1, 0);
-var vNextRc = SemVersion.ParsedFrom(1, 1, 0, &quot;rc.1&quot;);
-</code></pre>
-<h2 id="comparing">Comparing</h2>
-<pre><code class="lang-csharp">if (version.ComparePrecedenceTo(vNextRc) == 0)
-    Console.WriteLine($&quot;{version} has the same precedence as {vNextRc}&quot;);
-
-if (version.CompareSortOrderTo(vNextRc) &gt; 0)
-    Console.WriteLine($&quot;{version} sorts after {vNextRc}&quot;);
-</code></pre>
-<p>Outputs:</p>
-<pre><code class="lang-text">1.1.0-rc.1+e471d15 has the same precedence as 1.1.0-rc.1
-1.1.0-rc.1+e471d15 sorts after 1.1.0-rc.1
-</code></pre>
-<h2 id="manipulating">Manipulating</h2>
-<pre><code class="lang-csharp">Console.WriteLine($&quot;Current: {version}&quot;);
-if (version.IsPrerelease)
-{
-    Console.WriteLine($&quot;Prerelease: {version.Prerelease}&quot;);
-    Console.WriteLine($&quot;Next release version is: {version.WithoutPrereleaseOrMetadata()}&quot;);
-}
-</code></pre>
-<p>Outputs:</p>
-<pre><code class="lang-text">Current: 1.1.0-rc.1+e471d15
-Prerelease: rc.1
-Next release version is: 1.1.0
-</code></pre>
-<h2 id="version-ranges">Version Ranges</h2>
-<pre><code class="lang-csharp">var range = SemVersionRange.Parse(&quot;^1.0.0&quot;);
-var prereleaseRange = SemVersionRange.ParseNpm(&quot;^1.0.0&quot;, includeAllPrerelease: true);
-Console.WriteLine($&quot;Range: {range}&quot;);
-Console.WriteLine($&quot;Prerelease range: {prereleaseRange}&quot;);
-Console.WriteLine($&quot;Range includes version {version}: {range.Contains(version)}&quot;);
-Console.WriteLine($&quot;Prerelease range includes version {version}: {prereleaseRange.Contains(version)}&quot;);
-
-// Alternative: another way to call SemVersionRange.Contains(version)
-version.Satisfies(range);
-
-// Alternative: slower because it parses the range on every call
-version.SatisfiesNpm(&quot;^1.0.0&quot;, includeAllPrerelease: true)
-</code></pre>
-<p>Outputs:</p>
-<pre><code class="lang-text">Range: 1.*
-Prerelease range: *-* 1.*
-Range includes version 1.1.0-rc.1+e471d15: False
-Prerelease range includes version 1.1.0-rc.1+e471d15: True
-</code></pre>
+            <article class="content wrap" id="_content" data-uid="Semver.Comparers.ISemVersionComparer">
+  
+  
+  <h1 id="Semver_Comparers_ISemVersionComparer" data-uid="Semver.Comparers.ISemVersionComparer" class="text-break">Interface ISemVersionComparer
+  </h1>
+  <div class="markdown level0 summary"><p>An interface that combines equality and order comparison for the <a class="xref" href="Semver.SemVersion.html">SemVersion</a>
+class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Semver.Comparers.html">Semver.Comparers</a></h6>
+  <h6><strong>Assembly</strong>: Semver.dll</h6>
+  <h5 id="Semver_Comparers_ISemVersionComparer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISemVersionComparer</code></pre>
+  </div>
+  <h5 id="Semver_Comparers_ISemVersionComparer_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface provides a type for the <a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_PrecedenceComparer">PrecedenceComparer</a> and
+<a class="xref" href="Semver.SemVersion.html#Semver_SemVersion_SortOrderComparer">SortOrderComparer</a> so that separate properties aren't needed for the
+<span class="xref">System.Collections.Generic.IEqualityComparer`1</span> and <span class="xref">System.Collections.Generic.IComparer`1</span> of <a class="xref" href="Semver.SemVersion.html">SemVersion</a>.</p>
+</div>
 </article>
           </div>
           

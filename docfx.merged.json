@@ -1,0 +1,39 @@
+{
+    "build":
+    {
+        "content":
+        [{
+            "files":
+            [
+                "v*/toc.yml",
+                "v*/*.md",
+                "toc.yml",
+                "*.md"
+            ],
+            "exclude": [ "README.md" ]
+        }],
+        "resource":
+        [{
+            "files": [
+                "images/**",
+                "CNAME",
+                "ranges/index.html"
+            ]
+        }],
+        "dest": "build/merged",
+        "globalMetadata":
+        {
+            "_disableContribution": true,
+            "_appTitle": "semver"
+        },
+        "globalMetadataFiles": [ ],
+        "fileMetadataFiles": [],
+        "template": [ "default" ],
+        "postProcessors": [],
+        "markdownEngineName": "markdig",
+        "noLangKeyword": false,
+        "keepFileLink": false,
+        "cleanupCacheHistory": false,
+        "disableGitFeatures": false
+    }
+}
