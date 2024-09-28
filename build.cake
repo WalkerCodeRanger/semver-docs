@@ -1,7 +1,7 @@
 #addin nuget:?package=Cake.DocFx&version=1.0.0
-#tool nuget:?package=docfx.console&version=2.59.0
+#tool nuget:?package=docfx.console&version=2.59.4
 #tool nuget:?package=NuGet.CommandLine&version=6.0.0
-#tool nuget:?package=vswhere&version=3.0.1
+#tool nuget:?package=vswhere&version=3.1.7
 
 var target = Argument("target", "build");
 var configuration = Argument("configuration", "Release");
