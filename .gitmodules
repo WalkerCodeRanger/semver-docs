@@ -1,3 +1,6 @@
 [submodule "semver"]
 	path = src/v2.3.0
 	url = https://github.com/WalkerCodeRanger/semver
+[submodule "src/v3.0.0"]
+	path = src/v3.0.0
+	url = https://github.com/WalkerCodeRanger/semver

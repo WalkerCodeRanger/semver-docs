@@ -11,23 +11,33 @@ var configuration = Argument("configuration", "Release");
 Task("nuget-restore")
     .Does(() =>
 {
-    var solution = GetFiles("src/**/Semver.sln").Single();
-    NuGetRestore(solution);
+    var solutions = GetFiles("src/**/Semver.sln");
+    foreach (var solution in solutions)
+    {
+        Information($"Restoring NuGet for {solution}");
+        NuGetRestore(solution, new NuGetRestoreSettings { Verbosity = NuGetVerbosity.Quiet });
+    }
 });
 Task("build-solution")
     .IsDependentOn("nuget-restore")
     .Does(() =>
 {
     // Find MSBuild since it is on a non-standard path on my machine
-    var vsPath = VSWhereLatest(new VSWhereLatestSettings { Requires = "Microsoft.Component.MSBuild"});
+    var vsPath = VSWhereLatest(new VSWhereLatestSettings { Requires = "Microsoft.Component.MSBuild" });
     Information("vsPath: {0}", vsPath);
     var msBuildPath = vsPath.CombineWithFilePath(@"MSBuild\Current\Bin\MSBuild.exe");
-    var solution = GetFiles("src/**/Semver.csproj").Single();
-    MSBuild(solution, settings =>
+    var projects = GetFiles("src/**/Semver.csproj");
+    foreach (var project in projects)
     {
-        settings.WithTarget("Rebuild").WithProperty("TargetFramework", "net452");
-        settings.ToolPath = msBuildPath;
-    });
+        Information($"Building {project}");
+        MSBuild(project, settings =>
+        {
+            settings.WithTarget("Rebuild");
+            if (project.FullPath.Contains("v2.3.0"))
+                settings.WithProperty("TargetFramework", "net452");
+            settings.ToolPath = msBuildPath;
+        });
+    }
 });
 
 Task("metadata")
