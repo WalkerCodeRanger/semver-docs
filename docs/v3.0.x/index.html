@@ -94,6 +94,23 @@ if (version.CompareSortOrderTo(vNextRc) &gt; 0)
 <pre><code class="lang-text">1.1.0-rc.1+e471d15 has the same precedence as 1.1.0-rc.1
 1.1.0-rc.1+e471d15 sorts after 1.1.0-rc.1
 </code></pre>
+<h2 id="sorting-and-enumerable-maxmin">Sorting and Enumerable Max/Min</h2>
+<p>Since there are two ways of comparing semantic versions, the desired comparison must be specified
+when sorting or comparing.</p>
+<pre><code class="lang-csharp">var examples = new List&lt;Example&gt; { ... };
+// Put in sort order
+var sorted = examples.OrderBy(e =&gt; e.Version, SemVersion.SortOrderComparer);
+// Order by precedence, then by release date
+var ordered = examples.OrderBy(e =&gt; e.Version, SemVersion.PrecedenceComparer)
+                      .ThenBy(e =&gt; e.Released);
+
+var versions = new List&lt;SemVersion&gt; { vNextRc, v1 };
+var max = versions.Max(SemVersion.SortOrderComparer);
+console.WriteLine($&quot;Max version is {max}&quot;);
+</code></pre>
+<p>Outputs:</p>
+<pre><code class="lang-text">Max version is 1.1.0-rc.1
+</code></pre>
 <h2 id="manipulating">Manipulating</h2>
 <pre><code class="lang-csharp">Console.WriteLine($&quot;Current: {version}&quot;);
 if (version.IsPrerelease)
